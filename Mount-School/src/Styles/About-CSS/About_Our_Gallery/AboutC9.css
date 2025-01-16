@@ -1,0 +1,77 @@
+
+  .awards-recognition {
+    padding: 60px 100px;
+    text-align: center;
+  }
+  
+  .awards-recognition__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .awards-recognition__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .text_About_C9{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .black-text_C9 {
+    color: black;
+  }
+  
+  .blue-text_C9 {
+    color: #2C3192; /* Adjust to match red */
+  }
+  
+  .lines_C9 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    display: inline-block; /* To ensure lines center with the text */
+  }
+  
+  .line_C9 {
+    width: 300px; /* Width of the lines */
+    height: 2px; /* Line thickness */
+    border-radius: 5px;
+  }
+  
+  .black-line_C9 {
+    background-color: #3c3c3c; /* Dark gray color for the black line */
+    margin-left: 0;
+    margin-right: 160px;
+  }
+  
+  .red-line_C9 {
+    background-color: #d32f2f; /* Red color for the second line */
+    margin-top: 4px; /* Add vertical gap between lines */
+    position: absolute;
+    top: 4px;
+    left: 180px; /* Half-right push relative to black line */
+  }
+  
+  @media (max-width: 768px) {
+    .text_About_C9{
+      text-align: left;
+      font-size: 1.6rem;
+    }
+    .awards-recognition{
+      padding: 10px;
+    }
+
+    .awards-recognition__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+  }

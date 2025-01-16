@@ -1,0 +1,9 @@
+.Gallery-content{
+    margin-top: 140px;
+}
+
+@media(max-width:760px){
+    .Gallery-content{
+        margin-top: 60px;
+    }
+}

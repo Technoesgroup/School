@@ -1,0 +1,70 @@
+/* Container Styling */
+.gallery-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 65px 100px;
+  }
+  
+  .gallery-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+  }
+  
+  .gallery-container h3 {
+    font-size: 1.3rem;
+    margin: 10px 0 20px;
+  }
+  
+  /* Grid Layout */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Video Card */
+  .video-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .play-button span {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-bottom: 3px;
+  }
+  
+  .video-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  

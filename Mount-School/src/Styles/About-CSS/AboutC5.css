@@ -1,0 +1,122 @@
+.b-con {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+  }
+  
+  .s-con {
+    text-align: end;
+    max-width: 51%;
+  
+  }
+  
+  .s-con h1 {
+    font-size: 2rem; 
+    line-height: 1.1;
+    font-weight: 700;
+    font-family:sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  
+  .s-con p {
+    font-size: 1em;
+    font-family:sans-serif;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+  }
+ 
+  
+  button:hover {
+    background-color: #e04343;
+  }
+  
+  .image img {
+    max-width: 400px;
+    height: auto;
+  }
+
+
+  .text_About_C5{
+    margin-bottom: 30px;
+    text-align: end;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .black-text_C5 {
+    color: black;
+  }
+  
+  .red-text_C5 {
+    color: #d32f2f; /* Adjust to match red */
+  }
+  
+  .lines_C5 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    display: inline-block; /* To ensure lines center with the text */
+  }
+  
+  .line_C5 {
+    width: 145px; /* Width of the lines */
+    height: 2px; /* Line thickness */
+    border-radius: 5px;
+  }
+  
+  .black-line_C5 {
+    background-color: #3c3c3c; /* Dark gray color for the black line */
+    margin-right: 90px; /* Push black line left */
+  }
+  
+  .red-line_C5 {
+    background-color: #2C3192; /* Red color for the second line */
+    margin-top: 4px; /* Add vertical gap between lines */
+    position: absolute;
+    top: 4px;
+    left: 90px; /* Half-right push relative to black line */
+  }
+    
+  .blue-text_C5{
+    color: #2C3192;
+  }
+/* Responsive styling */
+@media (max-width: 768px) {
+  .b-con {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .s-con {
+    text-align: center; /* Center-align text for smaller screens */
+    max-width: 90%; /* Adjust width for better readability */
+    margin-bottom: 20px;
+  }
+
+  .text_About_C5{
+    text-align: left;
+  }
+
+  .s-con h1 {
+    text-align: left;
+    font-size:  1.6rem; /* Adjust font size for smaller screens */
+  }
+
+  .s-con p {
+    text-align: left;
+    font-size: 0.8rem; /* Slightly smaller text for compact screens */
+  }
+
+  .image img {
+    max-width: 100%; /* Make image take up full width */
+    height: auto;
+    margin-top: 20px; /* Add space between text and image */
+  }
+}

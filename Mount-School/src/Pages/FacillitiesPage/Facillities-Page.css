@@ -1,0 +1,8 @@
+.Facillitie-content{
+    margin-top: 140px;
+}
+@media(max-width:760px){
+    .Facillitie-content{
+        margin-top: 40px;
+    }
+}

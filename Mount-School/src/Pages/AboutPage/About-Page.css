@@ -1,0 +1,9 @@
+.About-content{
+    margin-top: 140px
+}
+
+@media(max-width:760px){
+    .About-content{
+        margin-top: 100px
+    }
+}

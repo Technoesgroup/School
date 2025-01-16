@@ -1,0 +1,285 @@
+/* Header styles */
+@font-face {
+  font-family: 'DegularDemoMedium';
+  src: url('../../public/fonts/fonnts.com-DegularDemo-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Takes full width of the screen */
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 80px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 210px;
+  height: 82px;
+}
+
+.contact-info-nav {
+  margin-left: 50px;
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #525252;
+}
+
+.contact-info-nav span {
+  font-family: 'DegularDemoMedium';
+  display: flex;
+  align-items: center; /* Icons and text will align properly */
+  gap: 8px; /* Space between icon and text */
+}
+
+.contact-info i {
+  font-family: 'DegularDemoMedium';
+  margin-right: 5px;
+}
+
+.enquire-btn {
+  font-family: 'DegularDemoMedium';
+  position: relative;
+  padding: 14px 18px;
+  background-color: blue; /* Initial color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out; /* Smooth color change */
+  animation: color-flash 1s infinite; /* Background color animation */
+}
+
+.enquire-btn:hover {
+  box-shadow: 0px 0px 10px orange;
+} 
+
+/* Background color flash animation */
+@keyframes color-flash {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+/* Navigation styles */
+.header-nav {
+  width: 100%;
+  background-color: #2c3e94;
+}
+
+.header-nav ul {
+  font-family: 'DegularDemoMedium';
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 6px 52px;
+  color: white;
+}
+
+.Phone {
+  color: #2c3e94;
+}
+
+.mail {
+  font-family: 'DegularDemoMedium';
+  color: #2c3e94;
+}
+
+.header-nav ul li {
+  font-family: 'DegularDemoMedium';
+  display: flex; /* Align icon and text together */
+  align-items: center;
+  cursor: pointer;
+  color: white; /* Change the default text color to white */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+.header-nav ul li a:hover {
+  color: #FFC107; /* Change text color to red */
+}
+
+.header-nav ul li a {
+  transition: color 0.2s, transform 0.3s;
+  cursor: pointer;
+  font-size: 15px;
+  color: white; /* Links ka color white karna */
+  text-decoration: none; /* Default underline ko hata dena */
+}
+
+.header-nav ul li:hover .arrow-icon {
+  color: #FFC107;
+  transform: rotate(180deg); /* Rotate the arrow icon */
+}
+
+/* Ensure smooth rotation */
+.arrow-icon {
+  margin-bottom: 8px;
+  transition: transform 0.3s ease; /* Smooth rotation animation */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav ul li {
+  position: relative;
+}
+
+.header-nav ul li .dropdown {
+  width: 160px;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  border-radius: 12px;
+  left: 0;
+  text-align: left;
+  background-color: #2c3e94;
+  border: 1px solid #FFC107;
+  box-shadow: 0 4px 6px rgba(18, 20, 125, 0.546);
+  padding: 20px;
+  visibility: hidden; /* Make it hidden but still part of the layout */
+  z-index: 1000;
+}
+
+/* Improved display logic */
+.header-nav ul li:hover .dropdown {
+  visibility: visible;
+  display: block;
+}
+
+.header-nav ul li .dropdown a {
+  font-size: 19px;
+  margin-top: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.dropdown a:hover {
+  color: #007bff;
+}
+
+/* General styles */
+.nav-items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-items li {
+  position: relative;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+/* Base styles (unchanged) */
+
+/* Mobile-specific styles */
+@media (max-width: 760px) {
+  .header-top {
+    display: none; /* Hide header-top on mobile */
+  }
+
+  .header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+  }
+
+  .header-nav {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .mobile-logo {
+    display: block; /* Show logo on mobile */
+    width: 150px; /* Adjust the size of the logo */
+  }
+
+  .nav-items {
+    display: none; /* Initially hide the nav items on mobile */
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #2c3e94;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(18, 20, 125, 0.546);
+  }
+
+  .nav-items.open {
+    display: flex; /* Show the nav items when the mobile menu is open */
+    align-items: start;
+    text-align: left;
+  }
+
+  .mobile-menu-icon {
+    display: block; /* Show the menu icon on mobile */
+    cursor: pointer;
+ 
+  }
+
+  .header-nav .menu-icon,
+  .header-nav .close-icon {
+    color: rgb(0, 0, 0);
+    margin-right: 25px;
+    font-size: 35px;
+  
+  }
+
+  .header-nav ul {
+    display: none; /* Hide regular nav links */
+  }
+
+  .header-nav ul li {
+    font-size: 18px;
+    text-align: center;
+  }
+}

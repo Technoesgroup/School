@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'DegularDemoMedium';
+  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.AcadeC4-container {
+  padding: 50px 100px;
+}
+
+.inner-Container-C4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border: 1.4px solid rgb(212, 208, 208);
+}
+
+.upper-images-C4 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.upper-image-C4 {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.Academic-titleC4 {
+  font-family: 'DegularDemoMedium';
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.lower-images-C4 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lower-image-C4 {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.small-C4 {
+  width: 200px;
+  height: 210px;
+}
+
+.large-C4 {
+  width: 310px;
+  height: 210px;
+}
+
+.AcadeC4-content {
+  top: 0;
+  font-family: 'DegularDemoMedium';
+  max-width: 700px;
+  text-align: justify;
+}
+
+.AcadeC4-content h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.AcadeC4-content p {
+  color: grey;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .AcadeC4-container {
+    padding: 30px 50px;
+  }
+
+  .inner-Container-C4 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upper-image-C4 {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .large-C4 {
+    width: 150px;
+    height: 130px;
+  }
+
+  .small-C4{
+    width: 150px;
+    height: 130px;
+  }
+
+  .AcadeC4-content p{
+    font-size: 0.9rem;
+  }
+
+  .AcadeC4-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .AcadeC4-container {
+    padding: 20px;
+  }
+
+  .inner-Container-C4 {
+    padding: 10px;
+    border: none;
+  }
+}

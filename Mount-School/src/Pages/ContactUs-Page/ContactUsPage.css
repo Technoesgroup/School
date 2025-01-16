@@ -1,0 +1,8 @@
+.Contact-content{
+    margin-top: 140px;
+}
+@media(max-width:760px){
+    .Contact-content{
+        margin-top: 50px;
+    }
+}

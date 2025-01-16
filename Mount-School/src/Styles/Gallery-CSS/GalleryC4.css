@@ -1,0 +1,44 @@
+/* Photo Gallery Container */
+.photo-gallery-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px 100px;
+  }
+  
+  .photo-gallery-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Photo Grid Layout */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 5px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Individual Photo Card */
+  .photo-card {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .photo-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  

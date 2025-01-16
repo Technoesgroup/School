@@ -1,0 +1,9 @@
+.Committe-content{
+    margin-top: 140px;
+}
+@media(max-width:760px){
+    .Committe-content{
+        /* width: 100%; */
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,151 @@
+/* Full-width styles */
+.contact-container {
+  font-family: 'DegularDemoMedium';
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(to right, white 50%, #f4f5fc 50%);
+  height: 550px;
+  padding: 20px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-section .highlight {
+  color: #2c318f;
+}
+
+.form-section p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #666;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #2c318f;
+  color: white;
+  width: 83%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1f256f;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-info div {
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  font-weight: bold;
+  color: black;
+}
+
+.map-section {
+  padding: 40px;
+  flex: 1;
+  position: relative;
+  height: 80%;
+}
+
+.map-section iframe {
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    background: linear-gradient(to bottom, white 50%, #f4f5fc 50%);
+  }
+
+  .form-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form-section h2 {
+    font-size: 24px;
+  }
+
+  .form-section p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  form input,
+  form textarea {
+    width: 100%; /* Full-width input fields */
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .map-section {
+    padding: 10px;
+    height: 300px;
+  }
+
+  .map-section iframe {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-section h2 {
+    font-size: 20px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-info span {
+    font-size: 14px;
+  }
+}

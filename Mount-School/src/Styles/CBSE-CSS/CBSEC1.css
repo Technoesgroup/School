@@ -1,0 +1,24 @@
+.CBSE-container_2 {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-img_CBSE{
+    width: 100%;
+    height: 510px;
+    object-fit:fill;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure image is below content */
+  }
+  @media(max-width:760px){
+    .hero-img_CBSE{
+      height: 310px;
+      object-fit:cover;
+    }
+  }

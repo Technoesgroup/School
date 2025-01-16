@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'DegularDemoMedium';
+  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.AcadC6-container {
+  padding: 50px 100px;
+}
+
+.inner-Container-C6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border: 1.4px solid rgb(212, 208, 208);
+}
+
+.upper-images-C6 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.upper-image-C6 {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.Academic-titleC6 {
+  font-family: 'DegularDemoMedium';
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.lower-images-C6 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lower-image-C6 {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.small-C6 {
+  width: 200px;
+  height: 210px;
+}
+
+.large-C6 {
+  width: 310px;
+  height: 210px;
+}
+
+.AcadC6-content {
+  top: 0;
+  font-family: 'DegularDemoMedium';
+  max-width: 700px;
+  text-align: justify;
+}
+
+.AcadC6-content h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.AcadC6-content p {
+  color: grey;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .AcadC6-container {
+    padding: 30px 50px;
+  }
+
+  .inner-Container-C6 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upper-image-C6 {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .large-C6 {
+    width: 150px;
+    height: 130px;
+  }
+
+  .small-C6{
+    width: 150px;
+    height: 130px;
+  }
+
+  .AcadC6-content p {
+    font-size: 0.9rem;
+  }
+
+  .AcadC6-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .AcadC6-container {
+    padding: 20px;
+  }
+
+
+  .inner-Container-C6 {
+    padding: 10px;
+    border: none;
+  }
+}

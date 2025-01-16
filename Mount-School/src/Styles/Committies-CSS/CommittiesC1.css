@@ -1,0 +1,18 @@
+.Committe-container_1 {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-img_Committe1{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure image is below content */
+  }

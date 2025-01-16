@@ -1,0 +1,61 @@
+/* CSS File */
+.management-card {
+  background-color: #4AAFF7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.283);
+}
+
+.management-card__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.management-card__content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.management-card__name {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.management-card__description {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .management-card {
+    flex-direction: row;
+    padding: 20px 40px;
+  }
+
+  .management-card__image img {
+    width: 210px;
+    height: 280px;
+  }
+
+  .management-card__content {
+    margin-left: 40px;
+    text-align: left;
+  }
+}
+
+@media(max-width:760px){
+  .management-card__description {
+    text-align: left;
+  }
+
+  .management-card__name {
+   text-align: left;
+  }
+}

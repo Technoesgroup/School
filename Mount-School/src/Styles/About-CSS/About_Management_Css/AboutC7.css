@@ -1,0 +1,40 @@
+.our-management {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .our-management__title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .our-management__title span {
+    color: #c53c3d;
+  }
+
+  .text_About_C7{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .black-text_C7 {
+    color: black;
+  }
+  
+  .blue-text_C7 {
+    color: #2C3192; /* Adjust to match red */
+  }
+  
+@media(max-width:760px){
+  .our-management__title {
+    font-size: 1.4rem;
+  }
+  .text_About_C7{
+    font-size: 1.4rem;
+  }
+}
+  

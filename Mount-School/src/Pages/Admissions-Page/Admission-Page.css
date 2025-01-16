@@ -1,0 +1,9 @@
+.Admission-content{
+    margin-top: 140px;
+}
+
+@media(max-width:760px){
+    .Admission-content{
+        margin-top: 50px;
+    }
+}

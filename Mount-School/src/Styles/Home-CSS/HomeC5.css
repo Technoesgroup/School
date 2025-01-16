@@ -1,0 +1,124 @@
+.facilities-container-Home5 {
+  max-width: 1200px;
+  font-family: 'DegularDemoMedium';
+  text-align: center;
+  padding: 60px 20px; /* Adjust padding for smaller screens */
+}
+
+.facilities-title {
+  font-family: 'DegularDemoMedium';
+  margin-bottom: 30px;
+  font-size: 2rem; /* Adjust for better visibility */
+}
+
+.school-name {
+  font-family: 'DegularDemoMedium';
+  color: #2C3191; /* School name color */
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+  gap: 20px;
+}
+
+.facility-item {
+  font-family: 'DegularDemoMedium';
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facility-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensure image fits within the container */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.facility-title {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.facility-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 49, 145, 0.9); /* Semi-transparent blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.facility-title-overlay-D1 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.facility-item:hover .facility-overlay {
+  transform: translateY(0); /* Show overlay on hover */
+}
+
+.facility-item:hover .facility-image {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .facilities-grid {
+    gap: 15px; /* Reduce spacing */
+  }
+
+  .facilities-title {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+
+  .facility-image {
+    height: 180px; /* Adjust image size */
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .facilities-grid {
+    grid-template-columns: 1fr; /* Single column */
+  }
+
+  .facility-image {
+    height: 160px; /* Further reduce image height */
+  }
+
+  .facility-title {
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .facilities-title {
+    font-size: 1.2rem; /* Smaller title font */
+  }
+
+  .facility-title-overlay-D1 {
+    font-size: 0.9rem; /* Smaller overlay font */
+  }
+
+  .facility-image {
+    height: 150px; /* Reduce image height */
+  }
+}

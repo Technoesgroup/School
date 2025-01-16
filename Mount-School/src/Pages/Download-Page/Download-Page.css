@@ -1,0 +1,9 @@
+.Download-content{
+    margin-top: 140px;
+}
+
+@media(max-width:760px){
+    .Download-content{
+        margin-top: 40px;
+    }
+}

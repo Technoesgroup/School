@@ -1,0 +1,87 @@
+.events {
+    padding: 20px  100px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .event-title {
+    text-align: left;
+    color: #0085ff;
+    margin-bottom: 15px;
+  }
+  
+  .event-description {
+    color: #333;
+    text-align: justify;
+  }
+  
+  .event-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .event-img {
+    width: 100%; /* Three images ek row mein */
+    height: 340px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+
+  .event-img-lower {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .small-img-C7{
+    width: 32%;
+    height: 280px;
+  }
+  .large-img-C7{
+    width: 67%;
+    height: 280px;
+  }
+  .lower-image-C7{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+
+
+  @media (max-width: 768px) {
+  .events {
+    padding: 10px;
+    }
+
+  .event-title {
+    font-size: 18px;
+  }
+  
+  .event-description {
+    font-size: 14px;
+  }
+  
+  .event-img {
+    height: auto;
+  }
+  
+  .lower-image-C7 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .small-img-C7, .large-img-C7 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-title {
+  font-size: 16px;
+  }
+}

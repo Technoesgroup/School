@@ -1,0 +1,65 @@
+/* Default styles for arrows */
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px ;
+  border-radius: 50%;
+  width: 35px; /* Default size */
+  height: 35px;
+}
+
+.custom-prev-arrow {
+  left: 12px; /* Default position */
+}
+
+.custom-next-arrow {
+  right: 12px; /* Default position */
+}
+
+.arrow-icon {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: white;
+  font-size: 2rem; /* Default icon size */
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .custom-prev-arrow,
+  .custom-next-arrow {
+    width: 34px; /* Smaller arrow size */
+    height: 34px;
+    padding: 6px; /* Adjust padding */
+  }
+
+  .custom-prev-arrow {
+    left: 5px; /* Adjust position */
+  }
+
+  .custom-next-arrow {
+    right: 21px; /* Adjust position */
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem; /* Smaller icon size */
+  }
+}
+
+/* Responsive styles for screens smaller than 480px */
+@media (max-width: 480px) {
+  .custom-prev-arrow,
+  .custom-next-arrow {
+    width: 30px; /* Extra small arrow size */
+    height: 30px;
+    padding: 4px; /* Adjust padding further */
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem; /* Extra small icon size */
+  }
+}

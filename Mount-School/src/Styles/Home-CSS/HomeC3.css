@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'DegularDemoMedium';
+  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'DegularDemoMedium';
+}
+
+.Home3-container-Big {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 410px;
+  overflow: hidden;
+}
+
+/* Left Section - Campus Tour */
+.left-section_3 {
+  flex: 2;
+  position: relative;
+}
+
+.campus-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campus-text {
+  font-family: 'DegularDemoMedium';
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Right Section - News and Updates */
+.right-section_3 {
+  font-family: 'DegularDemoMedium';
+  padding: 0;
+  flex: 1;
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.Home3-news-title_up {
+  width: 420px;
+  height: 50px;
+   text-align: center;
+  background-color: #288df9;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 0 20px; /* Add padding to left */
+}
+
+.news-listss {
+  font-family: 'DegularDemoMedium';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Adjust alignment */
+  list-style: none;
+  margin-left: 80px;
+  padding: 0 20px; /* Added padding */
+  width: 100%;
+  height: 350px; /* Specify height for scroll to work */
+  overflow-y: auto; /* Enable vertical scroll */
+  position: relative;
+  margin-bottom: 50px; /* Gap after list */
+}
+
+/* Remove auto-scroll animation for proper manual scrolling */
+.news-listss li {
+  font-family: 'DegularDemoMedium';
+  font-size: 21px;
+  text-align: left;
+  margin: 10px 0;
+  animation: scroll-up  7s linear infinite;
+}
+
+/* Optional: Smooth scrolling */
+.news-listss {
+  scroll-behavior: smooth;
+}
+
+
+.news-listss::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
+}
+
+.news-listss::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* Keyframes for Auto Scroll */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-800%);
+  }
+}
+
+.Home3-view-all-btn{
+  margin-left: 10px;
+  padding: 18px 175px;
+  color: white;
+  border: none;
+  background-color: #2C318F;
+  border-radius: 32px;
+}
+.Home3-view-all-btn:hover{
+   background-color: #0751a1;
+}
+
+.news-listss::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+@media (max-width: 760px) {
+  .Home3-container-Big{
+    width: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 10px;
+  }
+
+  .news-listss::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+
+  /* Left Section - Campus Tour */
+  .left-section_3 {
+    flex: none;
+    height: 200px; /* Adjust video height */
+    margin-bottom: 40px;
+  }
+
+  .campus-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+
+  .campus-text {
+    font-size: 18px; /* Reduce font size */
+    bottom: 10px; /* Adjust spacing */
+    left: 10px;
+  }
+
+  /* Right Section - News and Updates */
+  .right-section_3 {
+    flex: none;
+    width: 100%;
+  }
+
+  .Home3-news-title_up {
+    width: 100%;
+    font-size: 18px; /* Smaller font size for title */
+    height: auto; /* Adjust to content */
+    padding: 10px 0;
+    text-align: center; /* Center the text */
+    margin-bottom: 25px;
+  }
+
+  .news-listss {
+    width: 85%;
+    font-size: 16px; /* Adjust font size */
+    margin-left: 0; /* Align content */
+    height: 190px; /* Reduce height for better fit */
+  }
+
+  .news-listss li {
+    margin: 5px 0; /* Reduce spacing */
+  }
+
+  .Home3-view-all-btn {
+    margin-bottom: 10px;
+    padding: 14px 135px; /* Adjust padding */
+    box-shadow: 2px 4px 8px rgb(0, 0, 0);
+  }
+}
