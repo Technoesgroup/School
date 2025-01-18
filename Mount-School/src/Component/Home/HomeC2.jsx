@@ -63,11 +63,11 @@ function AboutUs() {
   return (
     <>
      <div className="header-Admission">
-   <div>
-   <h3>ADMISSIONS OPEN FOR 2025-2026  <span><button  className='Apply-btn'>APPLY NOW</button></span></h3>
+   <div  className='h3-admission-header'>
+   <h3><span className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn'>APPLY NOW</button></span></h3>
    </div>
-   <div>
-   <h3>ADMISSIONS OPEN FOR 2025-2026  <span><button  className='Apply-btn'>APPLY NOW</button></span></h3>
+   <div className='h3-admission-header'>
+   <h3><span  className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn'>APPLY NOW</button></span></h3>
      
     </div>
     </div>
@@ -78,7 +78,7 @@ function AboutUs() {
           <span className="blue-text_About"> MOUNT LITERA ZEE SCHOOL </span>
         </h1>
       </div>
-      <p>
+      <p className='About-container-paragraph'>
       Mount litera Zee School, Bihta was established in 2016, part of the leading education organization 
       in India-Zee Learn Ltd. [Education Arm of Essel Group]. Mount Litera Zee School provides promising 
       education to the future generation allowing them to travel around their true unique potential. 
@@ -86,8 +86,6 @@ function AboutUs() {
        educational institution which synthesizes human values with the highest quality of teaching- learning
         using the modern technology-driven tools for preparing a well- groomed all-round personality for our 
         society.
-
-
       </p>
 
       <div className="stats-container">

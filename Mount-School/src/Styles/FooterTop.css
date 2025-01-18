@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'DegularDemoMedium';
+  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 .hero-section {
     position: relative;
     height: 480px;

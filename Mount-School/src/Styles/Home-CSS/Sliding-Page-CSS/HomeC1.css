@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'DegularDemoMedium';
+  font-family: 'Degularbold';
   src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
@@ -13,11 +13,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-bottom: 10px; */
   overflow: hidden;
 }
 
 .header-banner{
-  padding: 12px 0;
+   position: relative;
+  font-family: 'Degularbold';
+  padding: 10px 0;
   background-color: #4AAFF7;
   color: white;
   text-align: center;
@@ -46,14 +49,35 @@
   position: relative;
 }
 
+
 .hero-img {
   width: 100%;
   height: 100%;
-  object-fit:cover; /* Ensures the image fills the space proportionally */
+  object-fit: cover;
 }
 
-.content {
+.hero-img-wrapper {
+  position: relative;
+}
+
+.hero-img {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.235); /* Adjust opacity to control darkness */
+  z-index: 1;
+}
+
+.hero-img-wrapper .hero-img {
+  z-index: 0; /* Ensure the image is beneath the hero-img */
+}
+
+
+.hero-contents {
+  position: absolute;
+  top: 125px;
   text-align: left;
   left: 10%;
   z-index: 5;
@@ -61,31 +85,30 @@
   text-shadow: 2px 2px 4px rgba(101, 101, 101, 0.502); /* Add shadow to text for better readability */
 }
 
-.content h1 {
+.hero-contents h1 {
   margin-left: 7px;
-  font-family: 'DegularDemoMedium';
+  font-family: 'Degularbold';
   font-weight: 500;
   font-size: 3rem;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .front-button {
-  font-family: 'DegularDemoMedium';
+  font-family: 'Degularbold';
   margin-left: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 17px 28px;
+  padding: 13px 23px;
   background-color:#2C3192;
   color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.5s ease-in-out; /* Smooth color change */
-  animation: color-flash 1s infinite; /* Background color animation */
+  transition: background-color 0.5s ease-in-out; /* Background color animation */
 }
-
+/* 
 @keyframes color-flash {
   0% {
     background-color:#2C3192;
@@ -97,19 +120,20 @@
   100% {
     background-color:#2C3192;
   }
-}
+} */
 
 .front-button:hover {
- background-color: #d12f2f;
+ background-color: #FFC107;
   color: white;
 }
 
 .change-col {
-  color:#2C3192;
+  font-family: 'Degularbold';
+  color: #ffffff;;
 }
 
-.text-size {
-  font-size: 0.8rem;
+.Admission-text-size {
+ font-family: 'PoppinsSemiBold';
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -126,12 +150,12 @@
 }
 
 @media (max-width: 768px) {
-  .content h1 {
+  .hero-contents h1 {
     margin-top: 80px;
     font-size: 1.6rem;
   }
 
-  .content {
+  .hero-contents {
     margin-top: 30px;
     position: absolute;
     text-align: left;

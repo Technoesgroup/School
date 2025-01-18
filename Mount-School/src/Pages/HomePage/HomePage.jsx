@@ -1,35 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react';
 import '../HomePage/HomePage.css';
 import Comp1 from '../../Component/Home/Sliding-First-Page/HomeC1';
 import Comp2 from '../../Component/Home/HomeC2';
 import Comp3 from '../../Component/Home/HomeC3';
-import Comp4 from  '../../Component/Home/HomeC4';
-import Comp5 from  '../../Component/Home/HomeC5';
-import Comp6 from  '../../Component/Home/HomeC6';
-import Comp7 from  '../../Component/Home/HomeC7';
-import Comp8 from  '../../Component/Home/HomeC8';
-import Comp9 from  '../../Component/Home/HomeC9';
-import Comp10 from  '../../Component/Home/HomeC10';
-// import Comp11 from  '../../Component/Home/HomeC11';
+import Comp4 from '../../Component/Home/HomeC4';
+import Comp5 from '../../Component/Home/HomeC5';
+import Comp6 from '../../Component/Home/HomeC6';
+import Comp7 from '../../Component/Home/HomeC7';
+import Comp8 from '../../Component/Home/HomeC8';
+import Comp9 from '../../Component/Home/HomeC9';
+import Comp10 from '../../Component/Home/HomeC10';
 
-function Home() {
+const Home = ({toggleForm})=>{
+
   return (
-    <div className='Component'>
-    <div className='HomeComponent'>
-      <Comp1 />
-      <Comp2 />
-      <Comp3 />
-      <Comp4 />
-      <Comp5 />
-      <Comp6 />
-      <Comp7 />
-      <Comp8 />
-      <Comp9 />
-      <Comp10 />
-      {/* <Comp11 /> */}
+    <div className="Component">
+      <div className="HomeComponent">
+        <Comp1 />
+        <Comp2 />
+        <Comp3 />
+        <Comp4 />
+        <Comp5 />
+        <Comp6 />
+        <Comp7 />
+        <Comp8 />
+        <Comp9 />
+        <Comp10 />
+      </div>
+      {/* Button to toggle the admission form */}
+      <button className="fixed-button"  onClick={toggleForm}>
+        ENQUIRE FOR ADMISSION
+      </button>
     </div>
-  </div>
-  )
+  );
 }
 
 export default Home;

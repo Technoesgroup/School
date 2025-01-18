@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Styles/Navbar.css";
-import logo from "../image/Logo Sticker 8cm (1)_page-0001.png";
+import logo from "../image/LogoMLZS.svg";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-const Header = () => {
+const Header = ({ toggleForm }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -31,42 +31,47 @@ const Header = () => {
 
   const dropdownItems = {
     About: [
-      { label: "About the school", to: "about-1" },
-      { label: "Vision & Mission", to: "about-2" },
-      { label: "Management", to: "about-2" },
-      { label: "Awards & Honors", to: "about-2" },
+      { label: "About the school", to: "About-section"},
+      { label: "Vision & Mission", to: "Vision-section" },
+      { label: "Management",       to:"Management-section" },
+      { label: "Awards & Honors",  to: "Awards-section" },
     ],
     Academics: [
-      { label: "  Learning Pathways ", to: "academics-1" },
-      { label: "Co-Curricular Activities ", to: "academics-2" },
+      { label: "  Learning Pathways ", to: "Learning-section" },
+      { label: "Co-Curricular Activities ", to: "Activities-section" },
     ],
     Admission: [
-      { label: "Process", to: "admission-1" },
-      { label: "Fee Structure", to: "admission-2" },
+      { label: "Overview", to: "Overview-section" },
+      { label: "Admission Process", to: "Admission-section" },
+      { label: "Course&Fee", to: "Course&Fee-section" },
     ],
     Committee: [
-      { label: "PTA", to: "committee-1" },
-      { label: "Disciplinary", to: "committee-2" },
+      { label: "PTA", to: "pta-section" }, // Matches id in DocumentSection
+      { label: "SMC", to: "smc-section" }, // Matches id in DocumentSection
     ],
     Download: [
-      { label: "Syllabus", to: "download-1" },
-      { label: "Forms", to: "download-2" },
+      { label: "Sample Paper X", to: "Sample_Paper-section" },
+      { label: "CBSE Circular", to: "Sample_Paper-section" },
+      { label: "Book List", to: "CBSE_CIRCULAR-section" },
+      { label: "Holiday List", to: "Book_List-section" },
     ],
   };
 
 return (
-    <header className="header">
+    <header className="nav-header">
       <div className="header-top">
         <img src={logo} alt="Logo" className="logo" />
         <div className="contact-info-nav">
-          <span>
-            <PhoneIcon className="Phone" /> +91 9771485809
+          <span  className="two-numbers">
+            <PhoneIcon className="Phone" />
+             +91 9771485809
+             <span  className="dusra-num">+91 9771485810</span>
           </span>
-          <span>
+          <span  className="email-text">
             <EmailIcon className="mail" /> mlzsbihta@gmail.com
           </span>
         </div>
-        <button className="enquire-btn">ENQUIRE NOW</button>
+        <button className="enquire-btn"  onClick={toggleForm}>ENQUIRE NOW</button>
       </div>
 
       <nav className="header-nav">
@@ -98,10 +103,13 @@ return (
               {activeDropdown === menu && (
                 <div className="dropdown">
                   {dropdownItems[menu].map((item, idx) => (
-
-                    <ScrollLink key={idx}  to={item.to} smooth={true} duration={500}  onClick={closeMobileMenu}>
-                      {item.label}
-                    </ScrollLink>
+                    <Link
+                    key={idx}
+                    to={`/${menu.toLowerCase()}#${item.to}`} // Hash link to section
+                    onClick={closeMobileMenu}
+                  >
+                    {item.label}
+                  </Link>
                   ))}
                 </div>
               )}

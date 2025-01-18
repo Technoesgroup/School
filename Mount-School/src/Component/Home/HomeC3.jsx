@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Styles/Home-CSS/HomeC3.css';
-import videoCampus from '../../image/6034472_Football_Field_1920x1080.mp4';
+import videoCampus from '../../image/School_Video.mp4';
 
 const HomeC3 = () => {
   return (
@@ -18,7 +18,7 @@ const HomeC3 = () => {
 
       {/* Right Side - News and Updates */}
       <div className="right-section_3">
-        <h2 className="Home3-news-title_up">Latest News And Updates</h2>
+        <h2 className="Home3-news-title_up">LATEST NEWS AND UPDATES</h2>
         <ul className="news-listss">
           <li>Event Echoes</li>
           <li>ATL School of the  Month</li>

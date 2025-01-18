@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../Styles/Academics-CSS/AcademicsC7.css'; // Styling file ka import
 import AcademicC71 from '../../image/IMG_20240726_195817.jpg';
 import AcademicC72 from '../../image/s4.jpg';
 import AcademicC73 from '../../image/s5.jpg';
+import { useLocation } from 'react-router-dom';
 
 const AcademicsC7 = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
   return (
     <div className="events">
       <h2><strong>Events</strong></h2>

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/Footer.css'; // CSS file for styling
-import FooterImg from '../image/Logo Sticker 8cm (1)_page-0001.png';
+
+import FooterImg from '../image/LogoMLZS.svg';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PinterestIcon from '@mui/icons-material/Pinterest';

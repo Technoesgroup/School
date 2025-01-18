@@ -1,28 +1,34 @@
-.facilities-container-Home5 {
-  max-width: 1200px;
+.Home5-facilities-container {
+  width: 100%;
+  max-width: 100%;
   font-family: 'DegularDemoMedium';
   text-align: center;
-  padding: 60px 20px; /* Adjust padding for smaller screens */
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column; /* Ensure all elements stack vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
-.facilities-title {
+.Home5-facilities-title {
   font-family: 'DegularDemoMedium';
   margin-bottom: 30px;
   font-size: 2rem; /* Adjust for better visibility */
 }
 
-.school-name {
+.Home5-school-name {
   font-family: 'DegularDemoMedium';
   color: #2C3191; /* School name color */
 }
 
-.facilities-grid {
+.Home5-facilities-grid {
+  max-width: 1050px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Responsive grid */
   gap: 20px;
 }
 
-.facility-item {
+.Home5-facility-item {
   font-family: 'DegularDemoMedium';
   position: relative;
   overflow: hidden;
@@ -30,7 +36,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.facility-image {
+.Home5-facility-image {
   width: 100%;
   height: 200px;
   object-fit: cover; /* Ensure image fits within the container */
@@ -38,7 +44,7 @@
   transition: transform 0.3s ease;
 }
 
-.facility-title {
+ .Home5-facility-title {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -46,9 +52,9 @@
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-}
+} 
 
-.facility-overlay {
+.Home5-facility-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -62,17 +68,17 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.facility-title-overlay-D1 {
+.Home5-facility-title-overlay-D1 {
   color: white;
   font-size: 1rem;
   text-align: center;
 }
 
-.facility-item:hover .facility-overlay {
+.Home5-facility-item:hover .Home5-facility-overlay {
   transform: translateY(0); /* Show overlay on hover */
 }
 
-.facility-item:hover .facility-image {
+.Home5-facility-item:hover .Home5-facility-image {
   transform: scale(1.05); /* Slight zoom effect */
 }
 
@@ -80,45 +86,48 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .facilities-grid {
+  .Home5-facilities-grid {
     gap: 15px; /* Reduce spacing */
   }
 
-  .facilities-title {
+  .Home5-facilities-title {
     font-size: 1.5rem; /* Adjust title size */
   }
 
-  .facility-image {
+  .Home5-facility-image {
     height: 180px; /* Adjust image size */
   }
 }
 
 /* Mobile Screens */
 @media (max-width: 768px) {
-  .facilities-grid {
+  .Home5-facilities-container {
+    width: auto;
+  }
+  .Home5-facilities-grid {
     grid-template-columns: 1fr; /* Single column */
   }
 
-  .facility-image {
+  .Home5-facility-image {
     height: 160px; /* Further reduce image height */
   }
 
-  .facility-title {
+  .Home5-facility-title {
     font-size: 1rem; /* Adjust font size */
   }
 }
 
 /* Extra Small Screens */
 @media (max-width: 480px) {
-  .facilities-title {
+  .Home5-facilities-title {
     font-size: 1.2rem; /* Smaller title font */
   }
 
-  .facility-title-overlay-D1 {
+  .Home5-facility-title-overlay-D1 {
     font-size: 0.9rem; /* Smaller overlay font */
   }
 
-  .facility-image {
+  .Home5-facility-image {
     height: 150px; /* Reduce image height */
   }
 }
