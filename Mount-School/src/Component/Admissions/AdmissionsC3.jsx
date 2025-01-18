@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../Styles/Admission-CSS/AdmissionC3.css';
+import { useLocation } from 'react-router-dom';
 
 const AdmissionC3 = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
+
+   
   const ageCriteria = [
     { className: 'Nursery', age: '2+ Years' },
     { className: 'Jr KG', age: '3 Years' },
@@ -17,6 +32,8 @@ const AdmissionC3 = () => {
     { className: 'IX', age: '13 Years' },
     { className: 'X', age: '14 Years' },
   ];
+
+
 
   return (
     <div className="admission-container">

@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Admission-CSS/AdmissionC6.css"; // Separate CSS file for styling
+import { useLocation } from "react-router-dom";
 
 
 const CourseFee = () => {
+  
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
+
   return (
     <div className="course-fee-container">
     <div id="Course&Fee-section">

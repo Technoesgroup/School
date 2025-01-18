@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Download-CSS/DownloadC3.css";
+import { useLocation } from "react-router-dom";
 
 const DocumentSection = () => {
   const documents = [
@@ -8,6 +9,18 @@ const DocumentSection = () => {
     { id: "Book_List-section", title: "Book List", description: "Download the comprehensive document outlining the school’s rules, policies, and expected conduct for students, parents, and staff." },
     { id: "Holiday_List-section", title: "Holiday List", description: "Download the comprehensive document outlining the school’s rules, policies, and expected conduct for students, parents, and staff." },
   ];
+
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
 
   return (
     <div className="DownloadC3-document-container">

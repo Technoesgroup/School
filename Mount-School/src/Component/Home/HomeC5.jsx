@@ -18,21 +18,21 @@ const Facilities = () => {
   ];
 
   return (
-    <div className="facilities-container-Home5">
-      <h2 className="facilities-title">
-        Facilities at <span className="school-name"> Mount Litera Zee School</span>
+    <div className="Home5-facilities-container">
+      <h2 className="Home5-facilities-title">
+        Facilities at <span className="Home5-school-name"> Mount Litera Zee School</span>
       </h2>
-      <div className="facilities-grid">
+      <div className="Home5-facilities-grid">
         {facilities.map((facility, index) => (
-          <div key={index} className="facility-item">
+          <div key={index} className="Home5-facility-item">
             <img
               src={facility.image}
               alt={facility.title}
-              className="facility-image"
+              className="Home5-facility-image"
             />
-            <div className="facility-title">{facility.title}</div>
-            <div className="facility-overlay">
-              <div className="facility-title-overlay-D1">{facility.description1}</div><br></br>
+            <div className="Home5-facility-title">{facility.title}</div>
+            <div className="Home5-facility-overlay">
+              <div className="Home5-facility-title-overlay-D1">{facility.description1}</div><br></br>
               {/* <div className="facility-title-overlay">{facility.description2}</div> */}
             </div>
           </div>

@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Academics-CSS/AcademicsC8.css";
 import image1 from '../../image/20231031_103916.jpg';
 import image2 from '../../image/20231031_103932.jpg';
 import image3 from '../../image/20231031_103843.jpg';
 import image4 from '../../image/20231031_103847.jpg';
 import image5 from '../../image/20231031_103811.jpg';
+import { useLocation } from "react-router-dom";
 
 const HalloweenEvent = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
   return (
     <div className="halloween-event">
       {/* Header Section */}

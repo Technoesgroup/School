@@ -59,10 +59,11 @@
   font-size: 1rem;
   color: white;
   text-decoration: none;
-  padding: 0 45px; /* Controls the clickable area */
+  padding: 0 40px; /* Controls the clickable area */
   height: 50px;
-  line-height: 40px;
+  line-height: 46px;
   box-sizing: border-box;
+  text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

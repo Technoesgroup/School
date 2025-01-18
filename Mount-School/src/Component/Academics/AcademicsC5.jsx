@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Academics-CSS/AcademicsC5.css";
 import image1 from "../../image/1B7A5369.jpg";
 import image2 from "../../image/IMG-20240522-WA0064.jpg";
 import image3 from "../../image/332651516_1267840104082038_69494475655152421_n.jpg";
 import image4 from '../../image/s2.jpg';
+import { useLocation } from "react-router-dom";
 
 const AcademicsC5 = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
   return (
     <div className="AcadC5-container">
      <div className="inner-Container-C5">

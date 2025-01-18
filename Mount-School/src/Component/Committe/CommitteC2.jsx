@@ -37,7 +37,7 @@ function CommittieC2() {
               className={index === activeIndex ? "active" : ""}
               onClick={() => handleScroll(link.target, index)}
             >
-              <span className="text-change">{link.label}</span>
+              <span className="CommitteC2-text-change">{link.label}</span>
             </li>
           ))}
         </ul>

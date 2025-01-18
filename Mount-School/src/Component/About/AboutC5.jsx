@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import  Vision  from '../../image/Image_5.png';
 import '../../Styles/About-CSS/AboutC5.css';
+import { useLocation } from "react-router-dom";
 
-function AboutC4(){
+function AboutC5(){
+
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
+
     return(
         <div className="b-con">
         <div className="s-con">
@@ -28,4 +42,4 @@ function AboutC4(){
     
 }
 
-export default AboutC4;
+export default AboutC5;

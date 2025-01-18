@@ -9,7 +9,7 @@ function AcademicsC2() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
-    { label: "Learning Pathway", target: "Learning-section" },
+    { label: "Learning Pathway",         target: "Learning-section" },
     { label: "Co-Curricular Activities", target: "Activities-section" },
   ];
 

@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../../Styles/About-CSS/AboutC3.css'; // Add CSS styles for the component
 import Icon_1 from '../../image/mortarboard 1.png';
 import Icon_2 from '../../image/Band.png';
 import Icon_3 from '../../image/Book.png';
 
 const About3 = () => {
+  const location = useLocation(); // React Router hook to access location
+
   const cardsData = [
     {
-      icon: Icon_2, // Add the relevant icon or replace with an image
+      icon: Icon_2,
       title: 'Your Child Deserves an Opportunity to Achieve Their Dreams to the Fullest',
       description: 'Unlock the doors to all-round holistic excellence at Mount Litera Zee School.',
     },
@@ -23,22 +26,33 @@ const About3 = () => {
     },
   ];
 
+  // Scroll to section based on hash in URL
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', ''); // Remove the # from hash
+      const element = document.getElementById(id); // Find the element by ID
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+      }
+    }
+  }, [location]);
+
   return (
-    <div id='About-section' className="about-section">
+    <div id="About-section" className="about-section">
       <div className="leader-header_C3">
-        <h1  className='text_About_C3'>
+        <h1 className="text_About_C3">
           <span className="black-text_C3">About</span>
-           <span className="blue-text_C3">  the  School</span>
+          <span className="blue-text_C3"> the School</span>
         </h1>
       </div>
       <div className="about-section__cards">
         {cardsData.map((card, index) => (
           <div key={index} className="about-section__card">
-          <div className='White-Circle'>
-          <div className="about-section__icon">
-          <img  className='img-Icon' src={card.icon} alt="Card Icon" />
-          </div>
-          </div>
+            <div className="White-Circle">
+              <div className="about-section__icon">
+                <img className="img-Icon" src={card.icon} alt="Card Icon" />
+              </div>
+            </div>
             <h3 className="about-section__card-title">{card.title}</h3>
             <p className="about-section__card-description">{card.description}</p>
           </div>
@@ -49,3 +63,4 @@ const About3 = () => {
 };
 
 export default About3;
+

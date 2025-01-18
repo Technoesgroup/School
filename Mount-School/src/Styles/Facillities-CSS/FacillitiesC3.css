@@ -1,28 +1,33 @@
-.facilities-container {
-  max-width: 1200px;
+.F-facilities-container {
+  width: 100%;
   font-family: 'DegularDemoMedium';
+  align-items: center;
   text-align: center;
-  padding: 80px 40px; /* Adjust padding for smaller screens */
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column; /* Ensure all elements stack vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */ /* Adjust padding for smaller screens */
 }
 
-.facilities-title {
+.F-facilities-title {
   font-family: 'DegularDemoMedium';
   margin-bottom: 30px;
   font-size: 2rem; /* Adjust for better visibility */
 }
 
-.school-name {
+.F-school-name {
   font-family: 'DegularDemoMedium';
   color: #2C3191; /* School name color */
 }
 
-.facilities-grid {
+.F-facilities-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Responsive grid */
   gap: 20px;
 }
 
-.facility-item {
+.F-facility-item {
   font-family: 'DegularDemoMedium';
   position: relative;
   overflow: hidden;
@@ -30,7 +35,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.facility-image {
+.F-facility-image {
   width: 100%;
   height: 200px;
   object-fit: cover; /* Ensure image fits within the container */
@@ -38,7 +43,7 @@
   transition: transform 0.3s ease;
 }
 
-.facility-title {
+.F-facility-title {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -48,7 +53,7 @@
   font-weight: bold;
 }
 
-.facility-overlay {
+.F-facility-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -62,17 +67,17 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.facility-title-overlay-D1 {
+.F-facility-title-overlay-D1 {
   color: white;
   font-size: 1rem;
   text-align: center;
 }
 
-.facility-item:hover .facility-overlay {
+.F-facility-item:hover .F-facility-overlay {
   transform: translateY(0); /* Show overlay on hover */
 }
 
-.facility-item:hover .facility-image {
+.F-facility-item:hover .F-facility-image {
   transform: scale(1.05); /* Slight zoom effect */
 }
 
@@ -80,48 +85,48 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .facilities-grid {
+  .F-facilities-grid {
     gap: 15px; /* Reduce spacing */
   }
 
-  .facilities-title {
+  .F-facilities-title {
     font-size: 1.5rem; /* Adjust title size */
   }
 
-  .facility-image {
+  .F-facility-image {
     height: 180px; /* Adjust image size */
   }
 }
 
 /* Mobile Screens */
 @media (max-width: 768px) {
-  .facilities-grid {
+  .F-facilities-grid {
     grid-template-columns: 1fr; /* Single column */
   }
 
-  .facility-image {
+  .F-facility-image {
     height: 160px; /* Further reduce image height */
   }
 
-  .facility-title {
+  .F-facility-title {
     font-size: 1rem; /* Adjust font size */
   }
 }
 
 /* Extra Small Screens */
 @media (max-width: 480px) {
-  .facilities-title {
+  .F-facilities-title {
     font-size: 1.2rem; /* Smaller title font */
   }
 
-  .facility-title-overlay-D1 {
+  .F-facility-title-overlay-D1 {
     font-size: 0.9rem; /* Smaller overlay font */
   }
 
-  .facility-image {
+  .F-facility-image {
     height: 150px; /* Reduce image height */
   }
-  .facilities-container {
+  .F-facilities-container {
     max-width: 1200px;
     font-family: 'DegularDemoMedium';
     text-align: center;

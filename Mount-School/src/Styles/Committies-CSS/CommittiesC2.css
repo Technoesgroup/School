@@ -55,12 +55,12 @@
   content: none;
 }
 
-.text-change {
+.CommitteC2-text-change {
   font-size: 1rem;
   color: white;
   text-decoration: none;
   padding: 0 20px; /* Controls the clickable area */
-  height: 40px;
+  height: 50px;
   line-height: 40px;
   box-sizing: border-box;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -85,7 +85,7 @@
 }
 
 /* Active menu item */
-.CommitteC2-Ab-NAV ul li.active .text-change {
+.CommitteC2-Ab-NAV ul li.active .CommitteC2-text-change {
   background-color: #2C3192;
   color: white;
 }

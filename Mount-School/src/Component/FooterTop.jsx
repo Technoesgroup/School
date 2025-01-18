@@ -10,13 +10,6 @@ const FooterTop = () => {
           <br />
           <button className="cta-button">Talk To Us →</button>
         </div>
-        <div className="hero-navigation">
-          <ul>
-            <li>Enquire For Admissions</li>
-            <li>How To Apply For Admission</li>
-            <li>Application Form</li>
-          </ul>
-        </div>
       </div>
     </div>
   );

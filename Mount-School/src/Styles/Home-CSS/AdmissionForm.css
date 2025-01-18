@@ -1,0 +1,179 @@
+/* Modal container styles */
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../../../public/Poppins-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url('../../../public/Poppins-SemiBold.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url('../../../public/Poppins-Regular.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.Enquire-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(41, 41, 41, 0.929); /* Black background with opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2500;
+  }
+  
+  .Enquire-admission{
+    border-radius: 5px;
+    background-color: #FFC107;
+  }
+  /* Form container */
+  .Enquire-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00bfff;
+    border-radius: 10px;
+    width: 100%; /* Smaller form width */
+    max-width: 300px; /* Limit max width */
+    padding: 25px  35px; /* Reduce padding for compact look */
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form header */
+  .Enquire-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-bottom: 10px; */
+  }
+
+  .Enquire-admission-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Enquire-form-header h2 {
+    left: 11.2%;
+    position: relative;
+    font-family: 'PoppinsMedium';
+    margin: 0;
+    line-height: 4;
+    font-size: 16px; /* Smaller font size */
+    color:white;
+    letter-spacing: 2px;
+  }
+
+  
+  .Enquire-close-button {
+    background-color: #2c3191;
+    position: relative;
+    top: -8px;
+    right: -10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .Enquire-close-button:hover{
+    background-color: transparent;
+  }
+  
+  /* Form content */
+  .Enquire-admission {
+    padding: 8px 2px;
+
+  }
+  
+  .Enquire-input-field {
+    margin: 2px 12px /* Smaller spacing between fields */
+  }
+  
+  .Enquire-input-field input {
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 8px; /* Reduce padding */
+    font-size: 14px; /* Smaller input text */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .Enquire-input-field input::placeholder{
+    font-size: 12px;
+  }
+  
+  .Enquire-form-agreement {
+    text-align: center;
+    font-size: 0.6rem; /* Smaller text */
+    color: #202020;
+    line-height: 2;
+    font-family: 'PoppinsSemiBold';
+    margin-left: 8px;
+    margin-top: 9px;
+    margin-bottom: 18px
+  }
+  
+  .Enquire-submit-button {
+    background-color: #2c3191;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px; /* Smaller button size */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Enquire-submit-button:hover {
+    background-color: #3b46a6;
+  } 
+
+  @media(max-width:760px){
+      .Enquire-form-container {
+        max-width: 300px;
+        padding: 12px;
+      }
+      .Enquire-form-header h2 {
+        font-size: 1rem;
+      }
+      .Enquire-input-field input {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+      .Enquire-form-agreement {
+        font-size: 0.7rem;
+      }
+      .Enquire-submit-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+      }
+  }
+
+  @media (max-width: 480px) {
+    .Enquire-form-container {
+      max-width: 90%; /* Use 90% of the screen width */
+      padding: 10px;
+    }
+  
+  }

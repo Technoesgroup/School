@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Academics-CSS/AcademicsC4.css";
 import image1 from "../../image/Frame(4).jpg";
 import image2 from "../../image/1B7A5541.jpg";
 import image3 from "../../image/Frame12.jpg";
 import image4 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
+import { useLocation } from "react-router-dom";
 
 const AcademicsC4 = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+     if (location.hash) {
+       const id = location.hash.replace('#', ''); // Remove the # from hash
+       const element = document.getElementById(id); // Find the element by ID
+       if (element) {
+         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+       }
+     }
+   }, [location]);
+
   return (
     <div className="AcadeC4-container">
    <div className="inner-Container-C4">
