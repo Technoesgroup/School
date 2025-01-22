@@ -2,9 +2,7 @@ import React from 'react'
 import '../FacillitiesPage/Facillities-Page.css';
 import Comp1 from '../../Component/Facillities/FacillitiesC1';
 import Comp2 from '../../Component/Facillities/FacillitiesC2';
-import Comp3 from  '../../Component/Facillities/FacillitiesC3';
-
-
+import Comp3 from '../../Component/Facillities/LabPage';
 
 
 function FacilitiePage() {

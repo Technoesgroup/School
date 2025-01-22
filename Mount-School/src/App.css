@@ -28,7 +28,7 @@ a{
   left: 0;
   width:350px;
   height: 100vh;
-  z-index: 1500; /* Ensure it appears above everything, including the Navbar */ 
+  z-index: 2500; /* Ensure it appears above everything, including the Navbar */ 
 }
 
  .admission-form-container {
@@ -38,4 +38,8 @@ a{
   padding: 20px;
   position: relative;
   animation: ease-in;
+}
+
+@media(max-width:760px){
+
 }

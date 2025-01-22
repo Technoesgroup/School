@@ -1,88 +1,168 @@
-/* Container styling */
-.Committie-document-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 1200px; /* Container ki width ko limit karenge */
-  margin: 40px auto; /* Center align karne ke liye */
-  padding: 20px; /* Side se padding denge */
-  box-sizing: border-box; /* Padding ke sath width handle hogi */
-  font-family: Arial, sans-serif;
+@font-face {
+  font-family: 'DegularBold';
+  src: url('../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
-/* Each card */
-.Committie-document-card {
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../../../public/Poppins-Medium.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url('../../../public/Poppins-SemiBold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Committee-app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 100px;
+}
+
+.Committee-section-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #ffbf00, #4da3ff);
-  border-radius: 8px;
+  gap: 20px;
   padding: 20px;
-  color: #000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Text section */
-.Committie-document-content {
+.Committee-section-card.Committee-reverse {
+  display: flex;
+  gap: 25%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.Committee-section-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.Committee-text-content {
   flex: 1;
 }
 
-.Committie-document-title {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+.Committee-text-content h2 {
+  font-family: 'DegularBold';
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.Committie-document-description {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  color: #333;
+.Committee-text-content p {
+  font-family: 'PoppinsMedium';
+  line-height: 2;
+  max-width: 400px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-/* Download Button */
-.Committie-download-button {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
+.Committee-download-btn {
+  font-family: 'PoppinsSemiBold';
+  padding: 12px 15px;
+  background-color: #2C3192;
+  color: #fff;
+  border: none;
   border-radius: 5px;
-  color: #333;
-  padding: 8px 16px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-.Committie-download-button:hover {
-  background-color: #e0e0e0;
+.Committee-download-btn:hover {
+  background-color: #003b8b;
 }
 
-/* MOBILE VIEW - Responsive Design */
-@media (max-width: 768px) {
-  /* Adjust container padding for smaller screens */
-  .Committie-document-container {
-    padding: 10px;
+.Committee-section-image {
+  flex: 1;
+  width: 100%;
+  max-width: 370px;
+  height: auto;
+  object-fit: cover;
+}
+
+.Committee-IMAGE-SECTION-Contains {
+  position: relative;
+  display: inline-block;
+}
+
+.Committee-corner-border {
+  position: absolute;
+  top: -3px; /* Adjust for proper positioning */
+  right: -1px; /* Adjust for proper positioning */
+  width: 200px; /* Width of the border */
+  height: 190px; /* Height of the border */
+  border: 9px solid #2C3192; /* Blue border */
+  border-top: none; /* Remove the top part of the border */
+  border-left: none; /* Remove the left part of the border */
+  transform: rotateX(180deg);
+  border-radius: 2px; /* Match the image's corner radius */
+  z-index: 1;
+  pointer-events: none; /* Ensures the border doesn't block clicks */
+}
+
+
+@media screen and (max-width: 768px) {
+  .Committee-app-container {
+    padding: 20px;
   }
 
-  /* Stack items vertically in each card */
-  .Committie-document-card {
+  .Committee-section-card {
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start */
+    gap: 20px;
     text-align: left;
   }
 
-  /* Reduce font sizes for smaller screens */
-  .Committie-document-title {
-    font-size: 1.2rem;
+  .Committee-text-content {
+    text-align: left;
   }
 
-  .Committie-document-description {
-    font-size: 0.9rem;
+  .Committee-text-content h2 {
+    font-size: 20px;
   }
 
-  /* Adjust button placement */
-  .Committie-download-button {
-    margin-top: 15px; /* Add space between text and button */
-    align-self: stretch; /* Make button span full width */
-    text-align: center;
+  .Committee-text-content p {
+    font-size: 14px;
   }
+
+  .Committee-download-btn {
+    font-size: 14px;
+  }
+
+  .Committee-section-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Committee-corner-border {
+    display: none; /* Optional: Hide the corner border for better alignment */
+  }
+  
+  .Committee-section-card.Committee-reverse  {
+    flex-direction:column;
+  }
+
+  .Committee-download-btn {
+    padding: 9px 12px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
 }
+
+
 

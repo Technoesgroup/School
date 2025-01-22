@@ -13,9 +13,9 @@ function CBSEC2() {
     { label: "Norms", target: "Holiday-section" },
     { label: "Curriculum", target: "Norms-section" },
     { label: "Affiliation ", target: "Curriculum-section" },
-    { label: "Trust ", target: "Affiliation-section" },
-    { label: "NOC", target: "Trust-section" },
-    { label: "Recognition ", target: "NOC-section" },
+    { label: "NOC", target: "Curriculum-section" },
+    { label: "Recognition", target: "Affiliation-section" },
+    { label: "Trust ", target: "NOC-section" },
   ];
 
   const toggleMobileMenu = () => {

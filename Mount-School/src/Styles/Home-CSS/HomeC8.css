@@ -1,6 +1,19 @@
+
 @font-face {
   font-family: 'DegularDemoMedium';
   src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PopponsMedium';
+  src: url('../../../public/Poppins-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PopponsRegular';
+  src: url('../../../public/Poppins-Regular.ttf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
@@ -12,30 +25,12 @@
   margin-bottom: 40px;
 }
 
-.Home-section__title {
-  font-family: 'DegularDemoMedium';
-  font-size: 26px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
 
-.Home-section__title .highlight {
-  font-family: 'DegularDemoMedium';
-  color: #292E86;
-}
-
-
-.Home-section__icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image fills the circle */
-  border-radius: 50%; /* Ensures image is also circular */
-}
-
-.img-Icon {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.oldman-Img-Icon {
+  width: 100%; /* Ensures the image fills the circle */
+  height: 100%; /* Maintains the aspect ratio within the circle */
+  object-fit: cover; /* Ensures the image scales correctly and fills the circle */
+  border-radius: 50%;
 }
 
 .Home-section__cards {
@@ -46,7 +41,7 @@
   gap: 20px;
   overflow-x: auto; /* Enable horizontal scrolling */
   scroll-behavior: smooth; /* Smooth scrolling */
-  padding: 50px 10px; /* Add some padding for spacing */
+  padding: 55px 10px; /* Add some padding for spacing */
   width: 100%; /* Ensure full container width */
 }
 
@@ -74,39 +69,46 @@
 
 .Home-White-Circle {
   width: 60px;
-  height: 60px;
+  height: 60px; /* Make sure width and height are equal for a perfect circle */
+  padding: 0;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 50%;
+  border-radius: 50%; /* Makes it a circle */
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
+  overflow: hidden; /* Ensures the image does not overflow outside the circle */
 }
 
-.Home-section__icon {
-  z-index: 8;
-  position: relative;
-}
 
 .Home-section__card-title {
   font-family: 'DegularDemoMedium';
   font-size: 19px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 40px;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .Home-section__card-description {
-  font-family: 'DegularDemoMedium';
+  font-family: 'PopponsRegular';
   padding-top: 20px;
-  font-size: 12px;
+  font-size: 10px;
   color: #333;
+}
+
+.Home-section__card-des-father{
+  font-family: 'PopponsMedium';
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 0.7rem;
 }
 
 .leader-header_C3 {
@@ -131,25 +133,25 @@
 }
 
 .ICon-left-right {
-  margin-top: 40px;
+  margin-top: 30px;
   gap: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.left-icon {
-  padding-top: 7px;
+.white-left-icon {
+  padding-top: 9px;
   width: 45px;
-  height: 38px;
+  height: 36px;
   background-color: rgb(222, 222, 222);
   border-radius: 50%;
 }
 
-.right-icon {
-  padding-top: 7px;
+.white-right-icon {
+  padding-top: 9px;
   width: 45px;
-  height: 38px;
+  height: 36px;
   background-color: rgb(224, 224, 224);
   border-radius: 50%;
 }
@@ -157,21 +159,34 @@
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .Home-section__cards {
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+    gap: 20px;
     margin-top: 20px;
   }
+  
+.Home-White-Circle{
+  top: -40px;
+}
 
   .Home-section__card {
-    width: 250px;
-    height: 120px; /* Let content determine height */
+    width: 320px;
+    height: 180px; /* Let content determine height */
     padding: 20px;
+  }
+
+  .Home-section__card-des-father{
+    font-size: 0.5rem;
+  }
+
+  .Home-section__cards.infinite-scroll {
+    animation: scroll 15s linear infinite; /* Adjust duration as needed */
+    display: flex;
   }
 
 
   .Home-section__card-title {
     font-size: 18px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .Home-section__card-description {
@@ -192,8 +207,13 @@
 
 @media (max-width: 480px) {
   .Home-section__card {
-    width: 280px;
-    height: 120px;
+    width: 320px;
+    height: 180px;
+    padding: 10px;
+  }
+
+  .Home-section__card {
+    flex: 0 0 200px; /* Adjust card size for small screens */
     padding: 10px;
   }
 
@@ -203,20 +223,21 @@
   }
 
   .Home-section__card-title {
-    font-size: 16px;
-  }
-
-  .Home-section__card-description {
     font-size: 12px;
   }
 
-  .Home-White-Circle {
-   
+  .Home-section__card-description {
+    font-size: 0.7rem;
   }
+
 
   .left-icon,
   .right-icon {
     width: 30px;
     height: 25px;
   }
+}
+.Home-section__cards.infinite-scroll {
+  animation: scroll 8s linear infinite; /* Adjust duration as needed */
+  display: flex;
 }

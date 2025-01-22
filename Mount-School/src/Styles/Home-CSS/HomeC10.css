@@ -81,6 +81,7 @@ form button:hover {
 }
 
 .map-section {
+  display: inline-block;
   padding: 40px;
   flex: 1;
   position: relative;
@@ -92,6 +93,36 @@ form button:hover {
   height: 100%;
 }
 
+.map-section-corner-border_1{
+  position: absolute;
+  top: 0;
+  right: 3px;
+  width: 300px;
+  height: 216px;
+  border: 45px solid #2C3192;
+  border-top: none;
+  border-left: none;
+  transform: rotateX(180deg);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.map-section-corner-border_2 {
+  position: absolute;
+  bottom: 0; /* Position it at the bottom */
+  right: 3px; /* Align it to the right */
+  width: 300px;
+  height: 216px;
+  border: 45px solid #2C3192;
+  border-bottom: none; /* Remove the bottom border */
+  border-left: none; /* Remove the left border */
+  z-index: 1;
+  transform: rotateX(180deg);
+  pointer-events: none;
+}
+
+
+/*  */
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .contact-container {
@@ -105,6 +136,15 @@ form button:hover {
     padding: 20px;
     text-align: center;
   }
+
+  .map-section-corner-border_1{
+    display: none;
+  }
+
+  .map-section-corner-border_2{
+    display: none;
+  }
+
 
   .form-section h2 {
     font-size: 24px;
@@ -125,8 +165,9 @@ form button:hover {
   }
 
   .contact-info {
+    margin-top: 10px;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     font-size: 12px;
   }

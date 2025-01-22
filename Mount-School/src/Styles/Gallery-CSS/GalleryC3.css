@@ -1,70 +1,123 @@
 /* Container Styling */
 .gallery-container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 65px 100px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 65px 20px; /* Reduced padding for smaller screens */
+}
+
+.gallery-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.gallery-container h3 {
+  font-size: 1.3rem;
+  margin: 10px 0 20px;
+}
+
+/* Grid Layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Video Card */
+.video-card {
+  position: relative;
+  width: 100%; /* Full width of grid item */
+  max-width: 300px; /* Limit the width for larger screens */
+  cursor: pointer;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Play Button */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 0, 0, 0.8); /* Red circle */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button span {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+
+.video-title {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 30px 15px; /* Further reduce padding for smaller screens */
   }
-  
-  .gallery-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 60px;
-    font-weight: bold;
-  }
-  
-  .gallery-container h3 {
-    font-size: 1.3rem;
-    margin: 10px 0 20px;
-  }
-  
-  /* Grid Layout */
+
   .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 10px;
-    justify-items: center;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card size for smaller screens */
+    gap: 8px; /* Reduce gap between cards */
   }
-  
-  /* Video Card */
+
   .video-card {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    cursor: pointer;
+    max-width: 250px; /* Adjust card size for smaller screens */
   }
-  
-  .video-thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 0, 0, 0.8);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 40px; /* Smaller play button */
+    height: 40px;
   }
-  
+
   .play-button span {
-    color: white;
-    font-size: 1.5rem;
-    padding-left: 5px;
-    padding-bottom: 3px;
+    font-size: 1.2rem; /* Adjust font size of the play icon */
   }
-  
+
   .video-title {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 0.9rem; /* Smaller title font size */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Compact layout for very small screens */
+    gap: 5px; /* Tighten spacing */
+  }
+
+  .video-card {
+    max-width: 200px; /* Further adjust card size */
+  }
+
+  .play-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .play-button span {
+    font-size: 1rem; /* Smaller play icon */
+  }
+
+  .video-title {
+    font-size: 0.8rem; /* Adjust font size for very small screens */
+  }
+}

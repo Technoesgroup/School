@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import  Vision  from '../../image/Image_5.png';
+import  Vision  from '../../image/IMG_20240726_195817.jpg';
 import '../../Styles/About-CSS/AboutC5.css';
 import { useLocation } from "react-router-dom";
 

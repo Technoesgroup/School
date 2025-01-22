@@ -60,7 +60,7 @@ const AdmissionProcess = () => {
             have applied. The Principal will meet the parent with the child and
             on his approval parents can proceed with the admission.
           </p>
-          <button className="enroll-button">ENROLL NOW</button>
+          <button className="admission-enroll-button">ENROLL NOW</button>
         </div>
       </div>
     </div>

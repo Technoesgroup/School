@@ -12,7 +12,7 @@ function DownloadC2() {
     { label: "Sample Paper X", target: "Sample_Paper-section" },
     { label: "CBSE CIRCULAR", target: "Sample_Paper-section" },
     { label: "Book List", target: "CBSE_CIRCULAR-section" },
-    { label: "Holiday List", target: "Book_List-section" },
+    { label: "Holiday List", target: "CBSE_CIRCULAR-section" },
   ];
 
   const toggleMobileMenu = () => {

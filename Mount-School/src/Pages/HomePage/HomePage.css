@@ -19,13 +19,9 @@
   font-style: normal;
 }
 
-
-
-
-
 .HomeComponent{
     /* width: 100%; */
-    margin-top: 132px;
+    margin-top: 130px;
 }
 @media(max-width:760px){
     .HomeComponent{
@@ -40,9 +36,9 @@
   font-size: 14px;
   font-family: 'PoppinsMedium';
   top: 60%;
-  right: -77px; /* Place the button on the right */
+  right: 0; /* Place the button on the right */
   position: fixed; /* Fix the position */
-  transform: translateY(50%) rotate(270deg); /* Center vertically and rotate */
+  transform: translateX(39%) translateY(50%) rotate(270deg); /* Center vertically and rotate */
   color: white; /* Text color */
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */

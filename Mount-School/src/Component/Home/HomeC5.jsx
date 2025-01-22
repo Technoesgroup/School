@@ -9,12 +9,12 @@ import ComputerLabImg from "../../image/ComputerLab.png";
 
 const Facilities = () => {
   const facilities = [
-    { title: "Library", image: LibraryImg ,  description1:'Library'},
-    { title: "Playground", image: PlaygroundImg,  description1:'Playground' },
-    { title: "Smart Classroom", image: SmartClassroomImg,   description1:'Smart Classroom' },
-    { title: "Science Lab", image: ScienceLabImg,    description1:'Science Lab' },
-    { title: "Transport", image: TransportImg ,   description1:'Transport '},
-    { title: "Computer Lab", image: ComputerLabImg,   description1:'Computer Lab' },
+    { title: "LIBRARY", image: LibraryImg ,  description1:'LIBRARY', description2:'The School offers over 5000 books, journals, and resources that inspire learning, nurture imagination, and support intellectual growth.'},
+    { title: "SPORTS & OPEN GYM", image: PlaygroundImg,  description1:'SPORTS & OPEN GYM',description2:'SPORTS & OPEN GYM-The School provides students with opportunities to stay active, build teamwork, and develop discipline through a variety of outdoor sports and fitness training.' },
+    { title: "SMART CLASSROOM", image: SmartClassroomImg,   description1:'SMART CLASSROOM',description2:'The School is equipped with advanced interactive technology, seamlessly blend traditional teaching with digital tools .' },
+    { title: "SCIENCE LAB", image: ScienceLabImg,    description1:'SCIENCE LAB', description2:'The school has four different labs for Physics, Biology, Chemistry & Mathematics' },
+    { title: "DANCE STUDIO", image: TransportImg ,   description1:'DANCE STUDIO', description2:'The school fosters creativity and discipline, offering a professional space for students to explore various dance forms and enhance physical fitness.'},
+    { title: "COMPUTER LAB", image: ComputerLabImg,   description1:'COMPUTER LAB' ,description2:'The school has 50+ systems, equips students for a tech-driven future through coding, design, and digital skills.'},
   ];
 
   return (
@@ -33,7 +33,7 @@ const Facilities = () => {
             <div className="Home5-facility-title">{facility.title}</div>
             <div className="Home5-facility-overlay">
               <div className="Home5-facility-title-overlay-D1">{facility.description1}</div><br></br>
-              {/* <div className="facility-title-overlay">{facility.description2}</div> */}
+              <div className="Home5-facility-title-overlay-D2">{facility.description2}</div>
             </div>
           </div>
           

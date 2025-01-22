@@ -1,88 +1,164 @@
-/* Container styling */
-.DownloadC3-document-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 1200px; /* Container ki width ko limit karenge */
-    margin: 40px auto; /* Center align karne ke liye */
-    padding: 20px; /* Side se padding denge */
-    box-sizing: border-box; /* Padding ke sath width handle hogi */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Each card */
-  .DownloadC3-document-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #ffbf00, #4da3ff);
-    border-radius: 8px;
+@font-face {
+  font-family: 'DegularBold';
+  src: url('../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../../../public/Poppins-Medium.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url('../../../public/Poppins-SemiBold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Downloads-app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 100px;
+}
+
+.Downloads-section-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Downloads-section-card.Downloads-reverse {
+  display: flex;
+  gap: 25%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.Downloads-section-card img {
+  width: 100%;
+}
+
+.Downloads-text-content {
+  flex: 1;
+}
+
+.Downloads-text-content h2 {
+  font-family: 'DegularBold';
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Downloads-text-content p {
+  font-family: 'PoppinsMedium';
+  line-height: 2;
+  max-width: 400px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.Downloads-download-btn {
+  font-family: 'PoppinsSemiBold';
+  padding: 12px 15px;
+  background-color: #2C3192;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Downloads-download-btn:hover {
+  background-color: #003b8b;
+}
+
+.Downloads-section-image {
+  flex: 1;
+  width: 100%;
+  max-width: 370px;
+  height: auto;
+  object-fit: cover;
+}
+
+.Downloads-IMAGE-SECTION-Contains {
+  position: relative;
+  display: inline-block;
+}
+
+.Downloads-corner-border {
+  position: absolute;
+  top: -3px; /* Adjust for proper positioning */
+  right: -1px; /* Adjust for proper positioning */
+  width: 200px; /* Width of the border */
+  height: 190px; /* Height of the border */
+  border: 9px solid #2C3192; /* Blue border */
+  border-top: none; /* Remove the top part of the border */
+  border-left: none; /* Remove the left part of the border */
+  transform: rotateX(180deg);
+  border-radius: 2px; /* Match the image's corner radius */
+  z-index: 1;
+  pointer-events: none; /* Ensures the border doesn't block clicks */
+}
+
+
+@media screen and (max-width: 768px) {
+  .Downloads-app-container {
     padding: 20px;
-    color: #000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .Downloads-section-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .Downloads-text-content {
+    text-align: left;
+  }
+
+  .Downloads-text-content h2 {
+    font-size: 20px;
+  }
+
+  .Downloads-text-content p {
+    font-size: 14px;
+  }
+
+  .Downloads-download-btn {
+    font-size: 14px;
+  }
+
+  .Downloads-section-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Downloads-corner-border {
+    display: none; /* Optional: Hide the corner border for better alignment */
   }
   
-  /* Text section */
-  .DownloadC3-document-content {
-    flex: 1;
+  .Downloads-section-card.Downloads-reverse  {
+    flex-direction:column;
   }
-  
-  .DownloadC3-document-title {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
+
+  .Downloads-download-btn {
+    padding: 9px 12px;
+    font-size: 10px;
+    margin-bottom: 10px;
   }
-  
-  .DownloadC3-document-description {
-    margin: 10px 0 0;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  /* Download Button */
-  .DownloadC3-download-button {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: #333;
-    padding: 8px 16px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .DownloadC3-download-button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  /* MOBILE VIEW - Responsive Design */
-  @media (max-width: 768px) {
-    /* Adjust container padding for smaller screens */
-    .DownloadC3-document-container {
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-  
-    /* Stack items vertically in each card */
-    .DownloadC3-document-card {
-      flex-direction: column;
-      align-items: flex-start; /* Align items to the start */
-      text-align: left;
-    }
-  
-    /* Reduce font sizes for smaller screens */
-    .DownloadC3-document-title {
-      font-size: 1.2rem;
-    }
-  
-    .DownloadC3-document-description {
-      font-size: 0.9rem;
-    }
-  
-    /* Adjust button placement */
-    .DownloadC3-download-button {
-      margin-top: 15px; /* Add space between text and button */
-      align-self: stretch; /* Make button span full width */
-      text-align: center;
-    }
-  }
+ 
+}
