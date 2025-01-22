@@ -11,6 +11,17 @@ import heroImg5 from '../../../image/s4.jpg';
 
 function HomeC1() {
 
+  const settings = {
+    dots: true, // Show navigation dots
+    infinite: true, // Infinite scrolling
+    speed: 400, // Animation speed
+    slidesToShow: 1, // Show one slide at a time
+    slidesToScroll: 1, // Scroll one slide at a time
+    autoplay: true, // Auto-play the slides
+    autoplaySpeed: 2000, // Auto-play speed (3 seconds)
+    rtl: true, // Enable right-to-left sliding
+    arrows: false, // Hide navigation arrows
+  };
 
   return (
     <>
@@ -34,7 +45,7 @@ function HomeC1() {
             </span>
           </button>
         </div>
-        <Slider className="hero-slider">
+        <Slider {...settings} className="hero-slider">
           <div>
             <div className="hero-img-wrapper">
               <img src={heroImg1} alt="Slide 1" className="hero-img" />

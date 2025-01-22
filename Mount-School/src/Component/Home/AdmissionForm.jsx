@@ -8,12 +8,12 @@ const AdmissionForm = ({ closeForm }) => {
         <div className="Enquire-form-header">
           <h2>ENQUIRE FOR ADMISSION</h2>
           <hr className="Enquire-header-line" />
-          <button className="Enquire-close-button" onClick={closeForm}>
+         <span className="closebtn-squire"> <button className="Enquire-close-button" onClick={closeForm}>
             X
-          </button>
+          </button></span>
         </div>
         <div className="Enquire-admission">
-          <form className="Enquire-admission-form">
+          <form className="Enquires-admission-formss">
             <InputField label="Parent’s First Name" type="text" placeholder="Parent’s First Name" />
             <InputField label="Parent’s Last Name" type="text" placeholder="Parent’s Last Name" />
             <InputField label="Parent’s Phone Number" type="tel" placeholder="+91 Parent’s Phone Number" />

@@ -1,81 +1,120 @@
-import React from 'react';
-import '../../Styles/Home-CSS/HomeC8.css'; // Add CSS styles for the component
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import imageParents1 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-import imageParents2 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-import imageParents3 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-import imageParents4 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-import imageParents5 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-import imageParents6 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-import imageParents7 from '../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg';
-
+import React, { useRef, useEffect } from "react";
+import "../../Styles/Home-CSS/HomeC8.css";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import imageParents1 from "../../image/Untitled design.png";
+import imageParents2 from "../../image/Untitled design (1).png";
+import imageParents3 from "../../image/WhatsApp Image 2025-01-18 at 17.06.11_ec006aeb.jpg";
+import imageParents4 from "../../image/Untitled design (3).png";
+import imageParents5 from "../../image/WhatsApp Image 2025-01-20 at 17.43.12_1ddb4dda.jpg";
+import imageParents6 from "../../image/Toow2.png";
+import imageParents7 from "../../image/WhatsApp Image 2025-01-20 at 17.43.11_aa2e7139.jpg";
+import imageParents8 from "../../image/WhatsApp Image 2025-01-20 at 17.43.12_33ec7cb8.jpg";
+import imageParents9 from "../../image/Toow.png";
 
 const Home8 = () => {
+  const scrollRef = useRef(null);
+
+  // Auto-scroll effect
+  useEffect(() => {
+    const scroll = scrollRef.current;
+    const interval = setInterval(() => {
+      if (scroll) {
+        scroll.scrollLeft += 1; // Adjust the speed here
+        if (scroll.scrollLeft >= scroll.scrollWidth - scroll.offsetWidth) {
+          scroll.scrollLeft = 0; // Reset scroll
+        }
+      }
+    }, 20); // Adjust the scroll interval here
+    return () => clearInterval(interval);
+  }, []);
+
   const cardsData = [
     {
-      icon: imageParents1, // Add the relevant icon or replace with an image
-      title: 'Your Child Deserves an Opportunity to Achieve Their Dreams to the Fullest',
-      description: 'Unlock the doors to all-round holistic excellence at Mount Litera Zee School.',
+      icon: imageParents1,
+      description: " I’ve noticed a profound change in my child’s behaviour, becoming more considerate and socially aware. The school’s focus on empathy and teaching students to understand and respect others",
+      title: "Mr. Milind Mahipal",
+      father_of:"F/O: Saumya Mahipal, VIIA"
     },
     {
       icon: imageParents2,
-      title: 'Academic, Co-Curricular, Personal, Emotional, and Spiritual Brilliance',
-      description: 'Time to ensure that your child gets what he deserves. It’s time to take him to Mount Litera Zee School.',
+      title: "Mr. Chandan Singh",
+      description: "I feel so supported by Mount Litera Zee School in my role as a parent. The school maintains an open line of communication, and the parent-teacher meetings are always insightful.",
+      father_of:"F/O: Prachit Singh IA"
     },
     {
       icon: imageParents3,
-      title: 'About Mount Litera Zee School',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+      title: "Mr. Avinash Kumar",
+      description: "As a parent, I always prioritize the safety of my child, and Mount Litera Zee School, Bihta has exceeded my expectations. The campus is secure, and the staff are attentive and caring.",
+      father_of:"F/O: Harshita Kumari IB"
     },
     {
-      icon: imageParents4, // Add the relevant icon or replace with an image
-      title: 'Your Child Deserves an Opportunity to Achieve Their Dreams to the Fullest',
-      description: 'Unlock the doors to all-round holistic excellence at Mount Litera Zee School.',
+      icon: imageParents4,
+      title: "Sunil Kumar Sinha",
+      description: "The community outreach programs at MLZS, Bihta have made a lasting impact on my child. Through volunteering, environmental initiatives, social projects, my child has learned the importance of giving back to society.",
+      father_of:"F/O: Trisha Kumari III & Tanishka Kumari VII"
     },
     {
       icon: imageParents5,
-      title: 'Academic, Co-Curricular, Personal, Emotional, and Spiritual Brilliance',
-      description: 'Time to ensure that your child gets what he deserves. It’s time to take him to Mount Litera Zee School.',
+      title: "Mr. Rajendra Kumar",
+      description: "My three children have gained confidence in speaking in front of an audience. The school has truly helped my child become more articulate, confident, and able to express themselves clearly",
+      father_of:"F/O: Sristi VIIA, Sakshi VA & Surbhi Sr. Kg"
     },
     {
-      icon:imageParents6,
-      title: 'About Mount Litera Zee School',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+      icon: imageParents6,
+      title: "Mr. Sonu Kunal",
+      description: "My child now navigates social situations with more maturity, and I’m grateful for the school’s emphasis on emotional well-being alongside academics",
+      father_of:"F/O: Sanidhya Kunal VIIA & Shaurya Kunal IB"
     },
     {
-      icon: imageParents7, // Add the relevant icon or replace with an image
-      title: 'Your Child Deserves an Opportunity to Achieve Their Dreams to the Fullest',
-      description: 'Unlock the doors to all-round holistic excellence at Mount Litera Zee School.',
+      icon: imageParents7,
+      title: "Mr. Shyam Jee",
+      description: "My child loves the hands-on approach to learning, and I can see that their curiosity and love for learning have grown immensely. The school's blend of traditional methods with modern teaching strategies",
+      father_of:"F/O: Ananya, IIIA"
     },
-  
+    {
+      icon: imageParents8,
+      title: "Mr. Dhiraj Singh",
+      description: "The opportunities for my children to engage in creative activities like painting, music have been incredible. Mount Litera Zee School places a strong emphasis on nurturing creative expression",
+      father_of:"F/O: Chhavi Singh XA & Naman Singh IV"
+    },
+    {
+      icon: imageParents9,
+      title: "Mr. Sanmay Bharadwaj",
+      description: "I’m thrilled with how Mount Litera Zee School focuses on well-rounded development. They provide not only rigorous academics but also foster physical fitness, artistic expression, and character building.",
+      father_of:"F/O: Aarambh Bharadwaj IIA"
+    },
   ];
 
   return (
     <div className="Home-section">
       <div className="leader-header_C3">
-        <h1  className='text_About_C3'>
-          <span className="black-text_C3">PARENT'S</span>
-           <span className="blue-text_C3"> SPEAK</span>
+        <h1 className="text_About_C3">
+          <span className="black-text_C3">PARENT'S</span>{" "}
+          <span className="blue-text_C3">SPEAK</span>
         </h1>
       </div>
-      <div className="Home-section__cards">
+      <div className="Home-section__cards infinite-scroll" ref={scrollRef}>
         {cardsData.map((card, index) => (
           <div key={index} className="Home-section__card">
-          <div className='Home-White-Circle'>
-          <div className="Home-section__icon">
-          <img  className='img-Icon' src={card.icon} alt="H" />
-          </div>
-          </div>
-          <p className="Home-section__card-description">{card.description}</p>
+            <div className="Home-White-Circle">
+              {/* <div className="Home-section__icon"> */}
+                <img className="oldman-Img-Icon" src={card.icon} alt="H" />
+              {/* </div> */}
+            </div>
+            <p className="Home-section__card-description">{card.description}</p>
             <h2 className="Home-section__card-title">{card.title}</h2>
-           
+            <p  className="Home-section__card-des-father">{card.father_of}</p>
           </div>
         ))}
       </div>
-      <div  className='ICon-left-right'>
-             <div className='left-icon'> <KeyboardArrowLeftIcon /></div>
-             <div  className='right-icon'> <ChevronRightIcon /></div>
+      <div className="ICon-left-right">
+        <div className="white-left-icon">
+          <KeyboardArrowLeftIcon />
+        </div>
+        <div className="white-right-icon">
+          <ChevronRightIcon />
+        </div>
       </div>
     </div>
   );

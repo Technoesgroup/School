@@ -27,7 +27,6 @@ const Home = ({toggleForm})=>{
         <Comp9 />
         <Comp10 />
       </div>
-      {/* Button to toggle the admission form */}
       <button className="fixed-button"  onClick={toggleForm}>
         ENQUIRE FOR ADMISSION
       </button>

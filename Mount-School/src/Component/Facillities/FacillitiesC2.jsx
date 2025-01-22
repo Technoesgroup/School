@@ -4,13 +4,13 @@ import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-function Facilities_C2() {
+function FacillitieC2() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
     { label: "Facilities", target: "Facilities-section" },
-  
+   
   ];
 
   const toggleMobileMenu = () => {
@@ -27,7 +27,7 @@ function Facilities_C2() {
   };
 
   return (
-    <div className="FacilitiesC2-Ab-NAV">
+    <div className="FacillitieC2-Ab-NAV">
       {/* Full-width menu for larger screens */}
       <div className="desktop-menu">
         <ul>
@@ -37,7 +37,7 @@ function Facilities_C2() {
               className={index === activeIndex ? "active" : ""}
               onClick={() => handleScroll(link.target, index)}
             >
-              <span className="FacilitiesC2-text-change">{link.label}</span>
+              <span className="FacillitieC2-text-change">{link.label}</span>
             </li>
           ))}
         </ul>
@@ -72,4 +72,4 @@ function Facilities_C2() {
   );
 }
 
-export default Facilities_C2;
+export default FacillitieC2;

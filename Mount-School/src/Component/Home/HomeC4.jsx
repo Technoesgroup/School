@@ -6,7 +6,8 @@ const AdmissionsBanner = () => {
   return (
     <div className="admissions-banner4">
       <div className="admission-content-4">
-        <h2>Admissions Now Open for</h2>
+       <div  className="contents-of-admission">
+       <h2>Admissions Now Open for</h2>
         <h1>2025-2026</h1>
         <p>
           Secure your child's future with our 
@@ -14,6 +15,7 @@ const AdmissionsBanner = () => {
           development programs
         </p>
         <button className="enquire-btns">ENQUIRE NOW</button>
+       </div>
       </div>
       <div className="image-sections-4">
         <img

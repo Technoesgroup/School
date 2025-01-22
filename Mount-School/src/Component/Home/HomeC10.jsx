@@ -1,5 +1,8 @@
 import React from "react";
 import "../../Styles/Home-CSS/HomeC10.css";
+import DraftsOutlinedIcon from '@mui/icons-material/DraftsOutlined';
+import WifiCalling3OutlinedIcon from '@mui/icons-material/WifiCalling3Outlined';
+import FaxOutlinedIcon from '@mui/icons-material/FaxOutlined';
 
 const HomeC10 = () => {
   return (
@@ -23,15 +26,15 @@ const HomeC10 = () => {
         </form>
         <div className="contact-info">
           <div>
-            <span>📞 PHONE</span>
+            <span> <WifiCalling3OutlinedIcon />PHONE</span>
             <p>03 5432 1234</p>
           </div>
           <div>
-            <span>📠 FAX</span>
+            <span> <FaxOutlinedIcon /> FAX</span>
             <p>03 5432 1234</p>
           </div>
           <div>
-            <span>📧 EMAIL</span>
+            <span><DraftsOutlinedIcon /> EMAIL</span>
             <p>info@mlzsc.com.au</p>
           </div>
         </div>
@@ -39,16 +42,19 @@ const HomeC10 = () => {
 
       {/* Right Section */}
       <div className="map-section">
-        <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.869607768694!2d84.88386581540766!3d25.619808118999873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e310d5395a4eb%3A0x607cd44dc90dce8!2sMount%20Litera%20Zee%20School%2C%20Bihta!5e0!3m2!1sen!2sin!4v1677666726334!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: "0" }}
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
+  <iframe
+    title="Google Map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509552!2d144.95373631531868!3d-37.81627977975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d5592b7bc0629%3A0x1e934bdc4c3c600f!2sMOUNT%20LITERA%20ZEE%20SCHOOL%2C%20BIHTA!5e0!3m2!1sen!2sin!4v1672359475287!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: "0" }}
+    allowFullScreen=""
+    loading="lazy"
+  ></iframe>
+  <div className="map-section-corner-border_1"></div>
+  <div className="map-section-corner-border_2"></div>
+</div>
+
     </div>
   );
 };

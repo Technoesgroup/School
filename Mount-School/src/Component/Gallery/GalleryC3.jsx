@@ -1,30 +1,35 @@
 import React from "react";
 import "../../Styles/Gallery-CSS/GalleryC3.css";
+import image1 from '../../image/20240210_142537.jpg';
+import image2 from '../../image/Takonda.jpg';
+import image3 from '../../image/s4.jpg';
+import image4 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
+
 
 const VideoGallery = () => {
   const galleryData = [
     {
       id: 1,
       title: "Annual Day",
-      image: "https://via.placeholder.com/400x250",
+      image: image1,
       videoLink: "#",
     },
     {
       id: 2,
       title: "Taekwondo Program",
-      image: "https://via.placeholder.com/400x250",
+      image: image2,
       videoLink: "#",
     },
     {
       id: 3,
       title: "Independence Day",
-      image: "https://via.placeholder.com/400x250",
+      image: image3,
       videoLink: "#",
     },
     {
       id: 4,
       title: "Run For Unity Marathon",
-      image: "https://via.placeholder.com/400x250",
+      image: image4,
       videoLink: "#",
     },
   ];

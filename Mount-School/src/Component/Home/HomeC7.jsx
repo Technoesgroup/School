@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/Home-CSS/HomeC7.css"; // Add custom styles here
-import indImg from "../../image/Image_5.png";
+import indImg from "../../image/IMG_20240726_195817.jpg";
 import RangImg from "../../image/IMG-20241029-WA0056.jpg";
 import DandiyaImg from "../../image/IMG20241009115034.jpg";
 import AnualImg from "../../image/s2.jpg";

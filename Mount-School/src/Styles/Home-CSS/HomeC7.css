@@ -25,7 +25,7 @@
 
 .highlight-event {
   font-family: 'DegularDemoMedium';
-  color:black; /* Matches the MLZS color */
+  color:#2C318F; /* Matches the MLZS color */
 }
 
 .events-grid {
@@ -85,11 +85,16 @@
   text-align: center; /* Center align title */
 }
 
+.event-content p{
+  color: white;
+}
+
 .event-description {
   font-family: 'DegularDemoMedium';
   font-size: 12px;
   line-height: 2;
   text-align: left; /* Center align description */
+  color: white;
 }
 
 
@@ -115,6 +120,10 @@
   }
   .events-grid {
     grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+
+  .events-title{
+    font-size: 20px;
   }
 
   /* .event-image {
