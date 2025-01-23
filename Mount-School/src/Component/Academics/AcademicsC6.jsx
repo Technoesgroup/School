@@ -1,23 +1,12 @@
-import React, { useEffect } from "react";
 import "../../Styles/Academics-CSS/AcademicsC6.css";
 import image1 from "../../image/Frame(4).jpg";
 import image2 from "../../image/398656726_799334345538648_1497034543001386452_n.jpg";
 import image3 from "../../image/375274451_762995312505885_8871098864985837921_n.jpg";
 import image4 from '../../image/393728330_791349343003815_5609259183610318279_n.jpg';
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook2";
 
 const AcademicsC6 = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+      useScrollToSection();
   return (
     <div className="AcadC6-container">
      <div className="inner-Container-C6">

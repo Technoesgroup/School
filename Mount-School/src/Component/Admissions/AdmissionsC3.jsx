@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../Styles/Admission-CSS/AdmissionC3.css';
-import { useLocation } from 'react-router-dom';
+import useScrollToSection from "../Hook/CustomHook2";
 
 const AdmissionC3 = () => {
 
@@ -24,23 +24,13 @@ const AdmissionC3 = () => {
   ];
   
 
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+useScrollToSection();
 
    
 
   return (
-    <div className="admission-container">
-      <div id="Overview-section">
+    <div id="Overview-section" className="admission-container">
+      <div>
         <h2 className="admission-title">
           <strong className="highlights">ADMISSION</strong> OVERVIEW
         </h2>

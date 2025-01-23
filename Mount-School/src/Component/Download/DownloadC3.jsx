@@ -1,55 +1,60 @@
-import React, { useEffect } from "react";
 import "../../Styles/Download-CSS/DownloadC3.css";
-import image1 from '../../image/Marks.png';
-import image2 from '../../image/Gro.png';
-import image3 from '../../image/tttt.png';
-import image4 from '../../image/Calender.png';
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook";
+import image1 from '../../image/393834027_792046122934137_8956640947945114484_n.jpg';
+import image2 from '../../image/1B7A5022.jpg';
+
+
+
 
 const DocumentSection = () => {
-   const sections = [
-       {
-        id:"Sample_Paper-section",
-         title: "Sample Paper X",
-         description:
-           "The CBSE Board has released Sample Paper X to help students understand the exam pattern and marking scheme. We encourage all students to download and practice this paper for better preparation.",
-         image: image1, // Replace with the actual path
-         buttonText: "Download PDF",
-         pdf: "/pdfs/CBSE_Holidays.pdf",
-       },
-       {
-        id:"Sample_Paper-section",
-         title: "CBSE Circular",
-         description:
-           "Stay updated with the latest notifications, guidelines, and announcements from the CBSE Board. This circular contains crucial information regarding academic schedules, examination patterns, and other key updates for the academic year.",
-         image:image2, // Replace with the actual path
-         buttonText: "Download PDF",
-         pdf: "/pdfs/CBSE_Holidays.pdf",
-       },
-       {
-        id:"CBSE_CIRCULAR-section",
-        title: "Book List",
+
+  useScrollToSection();
+
+    const sections = [
+      {
+        id:"Sample-paper-section",
+        title: "Sample Paper X",
         description:
-          "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject.",
-        image: image3, // Replace with the actual path
+          "The CBSE Board has released Sample Paper X to help students understand the exam pattern and marking scheme. We encourage all students to download and practice this paper for better preparation.",
+        image: image1, // Replace with the actual path
         buttonText: "Download PDF",
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },
       {
-        id:"CBSE_CIRCULAR-section",
-        title: "Holiday List",
+        id:"CBSE-Paper-section",
+        title: "CBSE Circular",
         description:
-          "Plan your year ahead with the comprehensive holiday calendar! The list includes all scheduled holidays, vacations, and special observances for the academic session, ensuring you stay informed and prepared.",
-        image:image4, // Replace with the actual path
+          "Stay updated with the latest notifications, guidelines, and announcements from the CBSE Board. This circular contains crucial information regarding academic schedules, examination patterns, and other key updates for the academic year.",
+        image:image2, // Replace with the actual path
         buttonText: "Download PDF",
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },
-     ];
+      {
+        id:"Book-list-section",
+        title: "Book List",
+        description:
+          "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject. ",
+        image: image1, // Replace with the actual path
+        buttonText: "Download PDF",
+        pdf: "/pdfs/CBSE_Holidays.pdf",
+      },
+      {
+        id:"Holiday-section",
+        title: "Holiday List",
+        description:
+          "Plan your year ahead with the comprehensive holiday calendar! The list includes all scheduled holidays, vacations, and special observances for the academic session, ensuring you stay informed and prepared.",
+        image:image2, // Replace with the actual path
+        buttonText: "Download PDF",
+        pdf: "/pdfs/CBSE_Holidays.pdf",
+      },
+    ];
 
-     
+   
+
+
    function SectionCard({ id, title, description, image, buttonText, reverse }) {
     return (
-      <div  id={id} className={`Downloads-section-card ${reverse ? "Downloads-reverse" : ""}`}>
+      <div id={id} className={`Downloads-section-card ${reverse ? "Downloads-reverse" : ""}`}>
         <div className="Downloads-text-content">
           <h2>{title}</h2>
           <p>{description}</p>
@@ -65,19 +70,7 @@ const DocumentSection = () => {
     );
   }
 
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
-
-   return (
+  return (
     <div className="Downloads-app-container">
     {sections.map((sec, index) => (
       <SectionCard

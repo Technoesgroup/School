@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import "../../Styles/Committies-CSS/CommittiesC3.css";
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook";
 import image1 from '../../image/393834027_792046122934137_8956640947945114484_n.jpg';
 import image2 from '../../image/1B7A5022.jpg';
 
 
 const DocumentSection = () => {
 
+  useScrollToSection();
+  
     const sections = [
       {
         id:"pta-section",
@@ -18,7 +20,7 @@ const DocumentSection = () => {
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },
       {
-        id:"pta-section",
+        id:"SMC-section",
         title: "SMC",
         description:
           "The School Management Committee (SMC) ensures transparency and accountability in the school’s operations. ",
@@ -28,17 +30,8 @@ const DocumentSection = () => {
       },
     ];
 
-  const location = useLocation();
 
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+    
 
 
    function SectionCard({ id, title, description, image, buttonText, reverse }) {

@@ -10,12 +10,12 @@ function CBSEC2() {
 
   const links = [
     { label: "Holiday", target: "Holiday-section" },
-    { label: "Norms", target: "Holiday-section" },
-    { label: "Curriculum", target: "Norms-section" },
-    { label: "Affiliation ", target: "Curriculum-section" },
-    { label: "NOC", target: "Curriculum-section" },
-    { label: "Recognition", target: "Affiliation-section" },
-    { label: "Trust ", target: "NOC-section" },
+    { label: "Norms", target: "Norms-section" },
+    { label: "Curriculum", target: "Curriculum-section" },
+    { label: "Affiliation ", target: "Affiliation-section" },
+    { label: "NOC", target: "NOC-section" },
+    { label: "Recognition", target: "Recognition-section" },
+    { label: "Trust ", target: "Trust-section" },
   ];
 
   const toggleMobileMenu = () => {

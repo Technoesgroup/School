@@ -1,33 +1,24 @@
-import React, { useEffect } from "react";
 import "../../Styles/Academics-CSS/AcademicsC8.css";
 import image1 from '../../image/20231031_103916.jpg';
 import image2 from '../../image/20231031_103932.jpg';
 import image3 from '../../image/20231031_103843.jpg';
 import image4 from '../../image/20231031_103847.jpg';
 import image5 from '../../image/20231031_103811.jpg';
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook2";
 
 const HalloweenEvent = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+     
+  useScrollToSection();
+  
   return (
-    <div className="halloween-event">
+    <div className="Academics-halloween-event">
       {/* Header Section */}
-      <header className="event-header">
+      <header className="Academics-event-header">
         <h1>Halloween Day, 31 Oct 2024</h1>
       </header>
 
       {/* Description Section */}
-      <section className="event-description">
+      <section className="Academics-event-description">
         <p>
           Halloween Day at Mount Litera Zee School (MLZS) is celebrated as an
           exciting and creative event, blending fun, learning, and festive vibes. 
@@ -46,20 +37,19 @@ const HalloweenEvent = () => {
         </p>
       </section>
 
-      {/* Image Gallery Section */}
-      <section className="event-gallery">
-        <div className="gallery-first-row">
-          <img  className="small-Halloween-img"   src={image1} alt="Halloween costume parade " />
-          <img  className="large-Halloween-img" src={image2} alt="Students in costumes  large-Halloween-img " />
-        </div>
-        <div className="gallery-row">
-          <img src={image3} alt="Halloween kid's performance" />
-          <img src={image4} alt="Scary costumes showcase" />
-        </div>
-        <div className="gallery-row">
-          <img  className="none" src={image5} alt="Creative Halloween makeup" />
-        </div>
-      </section>
+  <section className="Academics-event-gallery">
+  <div className="Academics-gallery-first-row">
+    <img className="Academics-small-Halloween-img" src={image1} alt="Left smaller image" />
+    <img className="Academics-large-Halloween-img" src={image2} alt="Right larger image" />
+  </div>
+  <div className="Academics-gallery-row">
+    <img className="Academics-equal-Halloween-img" src={image3} alt="Bottom image 1" />
+    <img className="Academics-equal-Halloween-img" src={image4} alt="Bottom image 2" />
+    <img className="Academics-equal-Halloween-img none" src={image5} alt="Bottom image 3" />
+  </div>
+</section>
+
+
     </div>
   );
 };

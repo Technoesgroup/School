@@ -29,6 +29,8 @@ const AppContent = () => {
   const [isFormVisible, setFormVisible] = useState(false);
 
   useEffect(() => {
+
+   
     // Show the admission form only on the homepage
     if (location.pathname === "/") {
       setFormVisible(true);

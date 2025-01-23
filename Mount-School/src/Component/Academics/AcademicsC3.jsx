@@ -1,28 +1,19 @@
-import React, { useEffect } from "react";
 import "../../Styles/Academics-CSS/AcademicsC3.css";
 import Acitvity1 from  '../../image/IMG20241009115034.jpg';     
 import Acitvity2 from  '../../image/304783286_3341234766202615_9176711875652758687_n.jpg';                     
 import Acitvity3 from  '../../image/Rectangle 23814.png'; 
 import Acitvity4 from  '../../image/IMG-20241029-WA0056.jpg'; 
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook2";
+
+
 
 const AcademicsC3 = () => {
 
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+useScrollToSection();  
 
   return (
-    <div className="learning-pathways-container">
-      <h2  id="Learning-section">
+    <div  id="Learning-section" className="learning-pathways-container">
+      <h2 >
         <span className="learning-title">LEARNING</span>{" "}
         <span className="pathways-title">PATHWAYS</span>
       </h2>

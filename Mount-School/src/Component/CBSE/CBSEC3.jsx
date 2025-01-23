@@ -22,7 +22,7 @@ const DocumentSection = () => {
       pdf: "/pdfs/CBSE_Holidays.pdf",
     },
     {
-      id:"Holiday-section",
+      id:"Norms-section",
       title: "Norms",
       description:
         "Our school follows CBSE norms to maintain a high standard of education. This includes guidelines for classroom practices, evaluation, attendance, and extracurricular activities that align with the CBSE framework.",
@@ -31,7 +31,7 @@ const DocumentSection = () => {
       pdf: "/pdfs/CBSE_Holidays.pdf",
     },
     {
-      id:"Norms-section",
+      id:"Curriculum-section",
       title: "Curriculum",
       description:
       "We provide a well-structured curriculum designed by CBSE to foster holistic growth, including subjects, co-curricular activities, and special programs aimed at developing students' academic and personal skills.",
@@ -40,7 +40,7 @@ const DocumentSection = () => {
       pdf: "/pdfs/CBSE_Holidays.pdf",
     },
     {
-      id:"Curriculum-section",
+      id:"Affiliation-section",
       title: "Affiliation Letter",
       description:
       "This document is the official confirmation of our school’s affiliation with CBSE. It assures parents and guardians of the school’s adherence to the CBSE’s rules and regulations, ensuring quality education.",
@@ -49,7 +49,7 @@ const DocumentSection = () => {
       pdf: "/pdfs/CBSE_Holidays.pdf",
     },
     {
-      id:"Curriculum-section",
+      id:"NOC-section",
       title: "NOC (No Objection Certificate)",
       description:
       'The NOC is issued by the Education Department, confirming that the school is recognized and authorized to operate. It is an essential document for the establishment and management of educational institutions.',
@@ -58,7 +58,7 @@ const DocumentSection = () => {
       pdf: "/pdfs/CBSE_Holidays.pdf",
     },
     {
-      id:"Affiliation-section",
+      id:"Recognition-section",
       title: "Recognition Certificate",
       description:
         "We are proud to announce that our school has been honored with a Recognition Certificate by the Central Board of Secondary Education (CBSE). This achievement reflects our commitment to academic excellence, holistic development, and adherence to the highest educational standards.",
@@ -67,7 +67,7 @@ const DocumentSection = () => {
       pdf: "/pdfs/CBSE_Holidays.pdf",
     },
     {
-      id:"NOC-section",
+      id:"Trust-section",
       title: "Trust Dead",
       description:
         "Legal trust deed documentation outlining the governance and management structure of the school.",

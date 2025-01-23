@@ -32,7 +32,8 @@ const Header = ({ toggleForm }) => {
   const dropdownItems = {
     About: [
       { label: "About the school", to: "About-section"},
-      { label: "Vision & Mission", to: "Vision-section" },
+      { label: "Vision", to: "Vision-section" },
+      { label: "Mission", to: "Mision-section" },
       { label: "Management",       to:"Management-section" },
       { label: "Awards & Honors",  to: "Awards-section" },
     ],
@@ -50,10 +51,10 @@ const Header = ({ toggleForm }) => {
       { label: "SMC", to: "smc-section" }, // Matches id in DocumentSection
     ],
     Download: [
-      { label: "Sample Paper X", to: "Sample_Paper-section" },
-      { label: "CBSE Circular", to: "Sample_Paper-section" },
-      { label: "Book List", to: "CBSE_CIRCULAR-section" },
-      { label: "Holiday List", to: "Book_List-section" },
+      { label: "Sample Paper X", to: "Sample-paper-section" },
+      { label: "CBSE Circular", to: "CBSE-Paper-section" },
+      { label: "Book List", to: "Book-list-section" },
+      { label: "Holiday List", to: "Holiday-section" },
     ],
   };
 
