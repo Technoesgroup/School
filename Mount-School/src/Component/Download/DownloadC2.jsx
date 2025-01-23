@@ -9,10 +9,10 @@ function DownloadC2() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
-    { label: "Sample Paper X", target: "Sample_Paper-section" },
-    { label: "CBSE CIRCULAR", target: "Sample_Paper-section" },
-    { label: "Book List", target: "CBSE_CIRCULAR-section" },
-    { label: "Holiday List", target: "CBSE_CIRCULAR-section" },
+    { label: "Sample-paper-section", target: "Sample-paper-section" },
+    { label: "CBSE Circular", target: "CBSE-Paper-section" },
+    { label: "Book List", target: "Book-list-section" },
+    { label: "Holiday List", target: "Holiday-section" },
   ];
 
   const toggleMobileMenu = () => {
@@ -27,6 +27,7 @@ function DownloadC2() {
       setIsMobileMenuOpen(false); // Close the mobile menu
     }
   };
+  
 
   return (
     <div className="DownloadC2-Ab-NAV">

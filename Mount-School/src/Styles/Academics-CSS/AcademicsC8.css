@@ -5,7 +5,7 @@ body {
     background-color: #f8f9fa;
   }
   
-  .halloween-event {
+  .Academics-halloween-event {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px  100px;
@@ -14,115 +14,94 @@ body {
     /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
   }
   
-  .event-header {
+  .Academics-event-header {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .event-header h1 {
+  .Academics-event-header h1 {
     font-size: 2rem;
     color: #333;
   }
   
-  .event-description {
+  .Academics-event-description {
     margin-bottom: 30px;
     line-height: 1.6;
     color: #555;
   }
   
-  .event-description p {
+  .Academics-event-description p {
     margin-bottom: 15px;
   }
   
-  .event-gallery {
+  .Academics-event-gallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
     justify-content: center;
   }
   
-  .gallery-first-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .gallery-first-row img{
-    border-radius: 28px;
-    max-width: 700px;
-    height: 250px;
-  }
-
-  .small-Halloween-img{
-    width: 250px;
-    margin-right: 13px;
-  }
-
-  .large-Halloween-img{
-    width: 650px;
-  }
-
-  .gallery-row {
+  .Academics-gallery-first-row {
     display: flex;
     gap: 10px;
+    justify-content: center;
   }
   
-  .gallery-row img {
-    width: 300px;
-    height: 290px;
+  .Academics-small-Halloween-img {
+    width: 250px; /* Smaller width */
+    height: 250px;
+    border-radius: 10px;
     object-fit: cover;
-    border-radius: 32px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  } 
-
-
+  }
+  
+  .Academics-large-Halloween-img {
+    width: 650px; /* Larger width */
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .Academics-gallery-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .Academics-equal-Halloween-img {
+    width: 300px; /* Equal size for bottom images */
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Responsive styles for smaller screens */
   @media (max-width: 768px) {
-    .gallery-row img {
-      width: 100%;
-      height: auto;
+    .Academics-gallery-first-row img,
+    .Academics-gallery-row img {
+      width: 150px; /* Set a smaller width */
+      height: 150px; /* Set a smaller height */
+      object-fit: cover; /* Ensure images maintain aspect ratio */
+      border-radius: 10px; /* Keep consistent rounded corners */
     }
-    
-    .halloween-event{
-      padding: 20px;
+  
+    .Academics-halloween-event {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .none {
+      display: none; /* Hide the fifth image */
     }
 
+    .Academics-event-header h1 {
+      font-size: 1.7rem;
+      color: #333;
+      text-align: left;
+    }
 
-    
-  .gallery-first-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .gallery-first-row img{
-    border-radius: 5px;
-    max-width: 500px;
-    height: 150px;
-  }
-
-  .small-Halloween-img{
-    width: 130px;
-    margin-right: 13px;
-  }
-
-  .large-Halloween-img{
-    width: 250px;
-  }
-
-  .gallery-row {
-    display: flex;
-    gap: 5px;
+    .Academics-event-description p {
+       font-size: 14px;
+       text-align: left;
+    }
   }
   
-  .gallery-row img {
-    width: 160px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  } 
-  .none{
-    display: none;
-  }
-  }
   

@@ -1,24 +1,12 @@
-import React, { useEffect } from "react";
 import  Vision  from '../../image/IMG_20240726_195817.jpg';
 import '../../Styles/About-CSS/AboutC5.css';
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook2";
 
 function AboutC5(){
-
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+         useScrollToSection();
 
     return(
-        <div className="b-con">
+        <div id="Mision-section" className="b-con">
         <div className="s-con">
         <h1  className="text_About_C5">
         <span className="black-text_C5">OUR</span> 

@@ -8,7 +8,7 @@ import proof from '../../image/proof-reading 1.png';
 import Id  from '../../image/identity-card 1.png';
 import  photo from '../../image/image-Gallery1.png';
 import  report from '../../image/report-card 1.png';
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook2";
 
 const AdmissionsC4 = () => {
   const documentList = [
@@ -23,17 +23,7 @@ const AdmissionsC4 = () => {
     { id: 9, icon: certificateOff2, text: "Blood Group Proof" },
   ];
 
-  const location = useLocation();
-
-  useEffect(() => {
-     if (location.hash) {
-       const id = location.hash.replace('#', ''); // Remove the # from hash
-       const element = document.getElementById(id); // Find the element by ID
-       if (element) {
-         element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-       }
-     }
-   }, [location]);
+  useScrollToSection();
 
   return (
     <div className="documents-container">

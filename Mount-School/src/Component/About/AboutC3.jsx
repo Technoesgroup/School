@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import '../../Styles/About-CSS/AboutC3.css'; // Add CSS styles for the component
 import Icon_1 from '../../image/mortarboard 1.png';
 import Icon_2 from '../../image/Band.png';
 import Icon_3 from '../../image/Book.png';
+import useScrollToSection from "../Hook/CustomHook2";
 
 const About3 = () => {
-  const location = useLocation(); // React Router hook to access location
+
+  useScrollToSection();
 
   const cardsData = [
     {
@@ -26,16 +26,9 @@ const About3 = () => {
     },
   ];
 
-  // Scroll to section based on hash in URL
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', ''); // Remove the # from hash
-      const element = document.getElementById(id); // Find the element by ID
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-      }
-    }
-  }, [location]);
+
+
+
 
   return (
     <div id="About-section" className="about-section">

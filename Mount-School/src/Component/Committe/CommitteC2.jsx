@@ -10,7 +10,7 @@ function CommittieC2() {
 
   const links = [
     { label: "PTA", target: "pta-section" },
-    { label: "SMC", target: "pta-section" },
+    { label: "SMC", target: "SMC-section" },
   ];
 
   const toggleMobileMenu = () => {

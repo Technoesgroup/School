@@ -1,20 +1,11 @@
 import React, { useEffect } from "react";
 import  Vision  from '../../image/Image.png';
 import '../../Styles/About-CSS/AboutC4.css';
-import { useLocation } from "react-router-dom";
+import useScrollToSection from "../Hook/CustomHook2";
 
 function AboutC4(){
-  const location = useLocation();
 
-   useEffect(() => {
-      if (location.hash) {
-        const id = location.hash.replace('#', ''); // Remove the # from hash
-        const element = document.getElementById(id); // Find the element by ID
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-        }
-      }
-    }, [location]);
+      useScrollToSection();
 
     return(
         <div id='Vision-section' className="bc-con">
