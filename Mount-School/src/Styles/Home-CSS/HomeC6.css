@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'DegularDemoMedium';
-  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('../Font.css');
 
 /* Full-width desktop styles remain the same */
 .leader-message {
@@ -21,8 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .contentss {
@@ -33,6 +27,8 @@
 }
 
 .small-text {
+  font-family: 'Poppins-Regular';
+  /* font-weight: 800; */
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -67,6 +63,7 @@
 }
 
 .contentss h2 {
+  font-family: 'Degularbold';
   font-size: 38px;
   margin: 10px 0;
 }
@@ -93,12 +90,12 @@
 }
 
 .leader-Image {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .leader-image {
   width: 100%;
-  max-width: 330px;
+  max-width: 340px;
   height: 421px;
 }
 

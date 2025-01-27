@@ -1,3 +1,11 @@
+@import url('../Font.css');
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .learning-pathways-container {
   scroll-margin-top: 130px;
     text-align: center;
@@ -6,26 +14,30 @@
   }
   
   .learning-title {
+    font-family: 'Degularbold';
     color: rgb(0, 0, 0);
     font-weight: bold;
   }
   
   .pathways-title {
+    font-family: 'Degularbold';
     color:#2C3192;
     font-weight: bold;
   }
   
   .Academics-description {
+    font-family: 'PoppinsMedium';
     padding-top: 20px;
     padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 100px;
     margin: 5px 0;
     color: gray;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   
   .Academics-content-container {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,15 +45,19 @@
   }
   
   .Academics-text-section {
+    
     flex: 1;
     max-width: 500px;
     text-align: left;
   }
   .Academics-text-section p{
+    font-family: 'PoppinsMedium';
+    line-height: 2;
     color: gray;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .Academics-text-section h3{
+    font-family: 'Degularbold';
     font-size: 1.2rem;
     margin-bottom: 30px;
   }
@@ -53,7 +69,8 @@
   }
   
   .learning-domains li {
-    font-size: 1.1rem;
+    font-family: 'PoppinsMedium';
+    font-size: 1rem;
     display: flex;
     align-items: center;
     margin: 20px 0;
@@ -69,7 +86,7 @@
     max-width: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 8px;
   }
   
   .Academic-image-section img {
@@ -80,15 +97,15 @@
   
   .Academic-image-section img:nth-child(3) {
     width: 210px;
-    height: 230px;
+    height: 210px;
     margin-bottom: 0; /* Ensure no bottom margin */
   }
   
   /* 4th image styling */
   .Academic-image-section img:nth-child(4) {
     width: 300px;
-    height: 240px;
-    margin-top: -5px; /* Remove space between 3rd and 4th images */
+    height: 210px;
+    margin-top: 0; /* Remove space between 3rd and 4th images */
   }
 
   @media(max-width:760px){

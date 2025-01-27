@@ -1,3 +1,5 @@
+@import url('../Font.css');
+
 .course-fee-container {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -7,6 +9,7 @@
   }
   
   .course-fee-title {
+    font-family: 'Degularbold';
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
@@ -19,6 +22,8 @@
   .course-fee-description,
   .course-fee-instructions,
   .additional-info {
+    font-family: 'PoppinsMedium';
+    /* font-size: 16px; */
     margin: 10px 0;
     text-align: justify;
   }
@@ -29,24 +34,26 @@
   }
   
   .fee-list li {
+    font-family: 'PoppinsMedium';
     margin: 5px 0;
   }
   
   .download-link {
+    font-family: 'PoppinsSemibold';
     display: block;
     font-weight: bold;
     margin: 20px 0;
+    font-size: 16px;
     text-decoration: none;
-    color: #007bff;
+    color: #000000;
   }
   
   .download-button {
-    background-color: #007bff;
+    background-color:#2C3191;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
   }
   
   .download-button:hover {

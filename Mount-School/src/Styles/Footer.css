@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'DegularDemoMedium';
-  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('./Font.css');
 
 .footer {
   background-color: #2b2f77;
@@ -15,6 +10,10 @@
   position: relative;
 }
 
+.footer-section.first-section p{
+padding-left: 0;
+}
+
 .footer-section {
   flex: 1;
   min-width: 262px;
@@ -22,8 +21,9 @@
 }
 
 .footer-section p {
-  padding-left: 12px;
-  font-size: 0.8rem;
+  padding-left: 10px;
+  font-family: 'Poppins-Regular';
+  font-size: 0.6rem;
   margin: 10px 0;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .footer-section ul li {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .footer-section ul li a {
@@ -67,6 +67,7 @@
 }
 
 .social-icons a {
+  font-family: 'Poppins-Regular';
   margin-right: 10px;
   color:rgb(234, 234, 234);
   font-size: 18px;
@@ -127,6 +128,7 @@
 }
 
 .footer-content p {
+  font-family: 'Poppins-Regular';
   font-size: 0.8rem;
   margin: 0;
 }

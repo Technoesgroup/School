@@ -33,8 +33,12 @@
     z-index: 2500;
   }
   
-  .Enquire-admission{
-    padding: 18px 8px;
+  .Admissionform-Enquire-admission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:  8px;
     border-radius: 5px;
     background-color: #FFC107;
   }
@@ -48,7 +52,7 @@
     border-radius: 10px;
     width: 100%; /* Smaller form width */
     max-width: 300px; /* Limit max width */
-    padding: 20px  30px; /* Reduce padding for compact look */
+    padding: 20px; /* Reduce padding for compact look */
     position: relative;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,15 +63,15 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* margin-bottom: 10px; */
   }
 
   .Enquires-admission-formss{
     display: flex;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   
   .Enquire-form-header h2 {
@@ -88,7 +92,7 @@
     right: -32px;
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     color: black;
   }
@@ -104,7 +108,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4px 16px; /* Reduce padding */
+    padding: 4px; /* Reduce padding */
     font-size: 14px; /* Smaller input text */
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -114,17 +118,16 @@
     font-size: 9px;
     color: rgb(176, 176, 176);
   }
-.Enquire-input-field{
-  margin-right: 34px;
-}
+
+
   .Enquire-form-agreement {
     text-align: center;
-    font-size: 0.6rem; /* Smaller text */
+    font-size: 0.5rem; /* Smaller text */
     color: #202020;
     line-height: 2;
     font-family: 'PoppinsSemiBold';
     margin-left: 8px;
-    margin-top: 9px;
+    margin-top: 5px;
     margin-bottom: 18px
   }
   
@@ -150,6 +153,7 @@
     }
   
     .Enquire-form-container {
+      top: 30px;
       width: 60%; /* Use most of the screen width */
       max-width: none; /* Remove max-width restriction */
       padding: 15px; /* Adjust padding for mobile */
@@ -157,10 +161,6 @@
       border-radius: 8px;
     }
 
-    .Enquire-admission  form{
-      max-width: 250px;
-      padding: 0;
-    }
   
     .Enquire-form-header h2 {
       line-height: 2;
@@ -170,14 +170,12 @@
     }
   
     .Enquire-close-button {
-      top: -5px;
-      right: -21px;
+      top: -2px;
       font-size: 1.1rem; /* Larger close button for accessibility */
     }
   
-    .Enquire-input-field {
-      padding: 0;
-      margin: 0; /* Add consistent spacing between inputs */
+    .Enquires-admission-formss{
+      padding: 20px;
     }
   
     .Enquires-admission-formss input {
@@ -197,7 +195,7 @@
       padding: 12px 0; /* Increase padding for better usability */
     }
   
-    .Enquire-admission {
+    .Admissionform-Enquire-admission {
       padding: 15px; /* Adjust inner padding */
     }
   }
@@ -208,11 +206,12 @@
       padding: 10px; /* Reduce padding */
     }
 
-    .Enquire-admission{
+    .Admissionform-Enquire-admission{
       padding: 12px 5px;
     }
   
     .Enquire-form-header h2 {
+      margin-bottom: 10px;
       line-height: 2;
       font-size: 1rem; /* Slightly smaller header for very small screens */
     }

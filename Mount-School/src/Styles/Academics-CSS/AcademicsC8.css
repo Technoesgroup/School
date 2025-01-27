@@ -1,5 +1,6 @@
+@import url('../Font.css');
+
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -20,21 +21,26 @@ body {
   }
   
   .Academics-event-header h1 {
-    font-size: 2rem;
-    color: #333;
+    font-family: 'PoppinsSemibold';
+    font-size: 1.2rem;
+    color: #4AAFF7;
   }
   
   .Academics-event-description {
+    font-family: 'PoppinsMedium';
+    font-size: 0.9rem;
     margin-bottom: 30px;
-    line-height: 1.6;
-    color: #555;
+    line-height: 2;
+    color: #252525;
   }
   
   .Academics-event-description p {
     margin-bottom: 15px;
+    font-family: 'PoppinsMedium';
   }
   
   .Academics-event-gallery {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -48,14 +54,16 @@ body {
   }
   
   .Academics-small-Halloween-img {
-    width: 250px; /* Smaller width */
+    width: 100%;
+    max-width: 300px; /* Smaller width */
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
   }
   
   .Academics-large-Halloween-img {
-    width: 650px; /* Larger width */
+    width: 100%;
+    max-width: 750px; /* Larger width */
     height: 250px;
     border-radius: 10px;
     object-fit: cover;
@@ -68,8 +76,9 @@ body {
   }
   
   .Academics-equal-Halloween-img {
-    width: 300px; /* Equal size for bottom images */
-    height: 200px;
+    width: 100%;
+    max-width: 400px; /* Equal size for bottom images */
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
   }

@@ -26,22 +26,22 @@ const AdmissionsC4 = () => {
   useScrollToSection();
 
   return (
-    <div className="documents-container">
-      <h2 className="documents-title">Documents for Admissions:</h2>
-      <p className="documents-subtitle">
+    <div className="AdmissionC4-documents-container">
+      <h2 className="AdmissionC4-documents-title">Documents for Admissions:</h2>
+      <p className="AdmissionC4-documents-subtitle">
         The following documents are required during admission:
       </p>
-      <div className="documents-grid">
+      <div className="AdmissionC4-documents-grid">
         {documentList.map((doc) => (
-          <div key={doc.id} className="document-item">
+          <div key={doc.id} className="AdmissionC4-document-item">
             <div className="Adimission-icon">
-                <img src={doc.icon} alt=""  className=" Admissions-img"/>
+                <img src={doc.icon} alt=""  className=" AdmissionC4-img"/>
             </div>
-            <p className="document-text">{doc.text}</p>
+            <p className="AdmissionC4-document-text">{doc.text}</p>
           </div>
         ))}
       </div>
-      <p className="documents-footer">
+      <p className="AdmissionC4-documents-footer">
         <strong>Kindly bring the originals & zerox of all documents mentioned above at the time of admission.</strong>
       </p>
     </div>

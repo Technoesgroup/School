@@ -1,35 +1,43 @@
 /* General styling */
-.documents-container {
-    padding: 50px 60px;
+@import url('../Font.css');
+
+.AdmissionC4-documents-container {
+    padding: 40px 100px;
     text-align: center;
     font-family: Arial, sans-serif;
     color: #333;
   }
   
-  .documents-title {
+  .AdmissionC4-documents-container h2{
+    font-family: 'DegularSemibold';
+  }
+
+  .AdmissionC4-documents-title {
+    font-family: 'DegularSemibold';
     text-align: left;
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .documents-subtitle {
+  .AdmissionC4-documents-subtitle {
+    font-family: 'PoppinsMedium';
     text-align: left;
     margin-bottom: 20px;
     color: #666;
   }
   
   /* Grid container */
-  .documents-grid {
+  .AdmissionC4-documents-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Fixed 3 boxes in one row */
-    gap: 20px;
+    gap: 80px;
     justify-items: center;
     align-items: center;
   }
   
   /* Each item */
-  .document-item {
+  .AdmissionC4-document-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,21 +46,20 @@
     transition: transform 0.3s;
   }
   
-  .document-item:hover {
+  .AdmissionC4-document-item:hover {
     transform: translateY(-5px);
   }
   
   .Adimission-icon {
-    /* font-size: 1rem; */
     color: #2e56b6; /* Blue color for icons */
     margin-bottom: 10px;
   }
 
-  .Admissions-img{
-     width: 52%;
+  .AdmissionC4-img{
+     width: 45%;
   }
   
-  .document-text {
+  .AdmissionC4-document-text {
     width: 46%;
     font-size: 0.9rem;
     color: #555;
@@ -60,31 +67,31 @@
   }
   
   /* Footer */
-  .documents-footer {
+  .AdmissionC4-documents-footer {
     text-align: left;
     margin-top: 30px;
     /* font-weight: bold; */
     color: #000;
   }
   @media(max-width:760px){
-    .documents-grid {
+    .AdmissionC4-documents-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* Fixed 3 boxes in one row */
       gap: 20px;
       justify-items: center;
       align-items: center;
     }
-    .documents-title {
+    .AdmissionC4-documents-title {
       font-size: 1.2rem;
     }
-    .documents-container {
+    .AdmissionC4-documents-container {
       padding: 50px 20px;
       text-align: center;
       font-family: Arial, sans-serif;
       color: #333;
     }
     
-  .Admissions-img{
+  .AdmissionC4-img{
     width: 42%;
  }
   }

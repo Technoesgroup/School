@@ -2,7 +2,7 @@ import React from "react";
 import "../../Styles/Gallery-CSS/GalleryC3.css";
 import image1 from '../../image/20240210_142537.jpg';
 import image2 from '../../image/Takonda.jpg';
-import image3 from '../../image/s4.jpg';
+import image3 from '../../image/IMG_20240726_195817.jpg';
 import image4 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
 
 
@@ -41,7 +41,7 @@ const VideoGallery = () => {
       <h3>Video Gallery</h3>
 
       {/* Video Cards */}
-      <div className="video-grid">
+      <div className="GalleryC4-video-grid">
         {galleryData.map((item) => (
           <div key={item.id} className="video-card">
             <a href={item.videoLink} target="_blank" rel="noreferrer">

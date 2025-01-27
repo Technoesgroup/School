@@ -12,14 +12,14 @@ const AdmissionForm = ({ closeForm }) => {
             X
           </button></span>
         </div>
-        <div className="Enquire-admission">
+        <div className="Admissionform-Enquire-admission">
           <form className="Enquires-admission-formss">
-            <InputField label="Parent’s First Name" type="text" placeholder="Parent’s First Name" />
-            <InputField label="Parent’s Last Name" type="text" placeholder="Parent’s Last Name" />
-            <InputField label="Parent’s Phone Number" type="tel" placeholder="+91 Parent’s Phone Number" />
-            <InputField label="Parent’s Email" type="email" placeholder="Parent’s Email" />
-            <InputField label="Parent’s Location" type="text" placeholder="Parent’s Location" />
-            <InputField label="Grade" type="text" placeholder="Grade" />
+            <input label="Parent’s First Name" type="text" placeholder="Parent’s First Name" required />
+            <input label="Parent’s Last Name" type="text" placeholder="Parent’s Last Name" required/>
+            <input label="Parent’s Phone Number" type="tel" placeholder="+91 Parent’s Phone Number" required/>
+            <input label="Parent’s Email" type="email" placeholder="Parent’s Email" required/>
+            <input label="Parent’s Location" type="text" placeholder="Parent’s Location" required/>
+            <input label="Grade" type="text" placeholder="Grade" required/>
             <p className="Enquire-form-agreement">
               By submitting this form, I agree to receive notifications from the School in the form of SMS/E-mail/Call.
             </p>
@@ -31,12 +31,5 @@ const AdmissionForm = ({ closeForm }) => {
   );
 };
 
-const InputField = ({ label, type, placeholder }) => {
-  return (
-    <div className="Enquire-input-field">
-      <input type={type} placeholder={placeholder} required />
-    </div>
-  );
-};
 
 export default AdmissionForm;

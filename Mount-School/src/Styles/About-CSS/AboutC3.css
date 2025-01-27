@@ -1,10 +1,4 @@
-/*  */
-@font-face {
-    font-family: 'DegularDemoMedium';
-    src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
+@import url('../Font.css');
   
   
   .about-section {
@@ -15,7 +9,7 @@
   }
   
   .about-section__title {
-    font-family: 'DegularDemoMedium';
+    font-family: 'Degularbold';
     font-size: 26px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -74,17 +68,17 @@
   }
   
   .about-section__card-title {
-    font-family: 'DegularDemoMedium';
-    font-size: 19px;
+    font-family: 'DegularSemibold';
+    font-size: 18px;
     color:#FFC107;
     font-weight: bold;
-    margin-top: 30px; /* Adds space below the icon */
+    margin-top: 20px; 
   }
   
   .about-section__card-description {
     font-family: 'DegularDemoMedium';
-    padding-top: 20px;
-    font-size: 12px;
+    padding-top: 10px;
+    font-size: 18px;
     color: #ffffff;
   }
   

@@ -1,10 +1,9 @@
 import "../../Styles/Download-CSS/DownloadC3.css";
 import useScrollToSection from "../Hook/CustomHook";
-import image1 from '../../image/393834027_792046122934137_8956640947945114484_n.jpg';
-import image2 from '../../image/1B7A5022.jpg';
-
-
-
+import image1 from '../../image/Marks.png';
+import image2 from '../../image/Gro.png';
+import image3 from '../../image/tttt.png';
+import image4 from '../../image/Calender.png';
 
 const DocumentSection = () => {
 
@@ -34,7 +33,7 @@ const DocumentSection = () => {
         title: "Book List",
         description:
           "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject. ",
-        image: image1, // Replace with the actual path
+        image: image3, // Replace with the actual path
         buttonText: "Download PDF",
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },
@@ -43,7 +42,7 @@ const DocumentSection = () => {
         title: "Holiday List",
         description:
           "Plan your year ahead with the comprehensive holiday calendar! The list includes all scheduled holidays, vacations, and special observances for the academic session, ensuring you stay informed and prepared.",
-        image:image2, // Replace with the actual path
+        image:image4, // Replace with the actual path
         buttonText: "Download PDF",
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },

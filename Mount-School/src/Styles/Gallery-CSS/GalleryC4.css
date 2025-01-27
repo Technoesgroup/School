@@ -2,20 +2,21 @@
 .photo-gallery-container {
   text-align: center;
   font-family: Arial, sans-serif;
-  padding: 20px 20px; /* Reduced padding for smaller screens */
+  padding: 20px 80px; /* Reduced padding for smaller screens */
 }
 
 .photo-gallery-container h2 {
+  font-family: 'DegularBold';
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 /* Photo Grid Layout */
-.photo-grid {
+.GalleryC4-photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-  gap: 10px;
+  gap: 30px;
   justify-items: center;
   margin-top: 20px;
 }
@@ -24,7 +25,7 @@
 .photo-card {
   position: relative;
   width: 100%; /* Full width of grid item */
-  max-width: 300px; /* Set a max width */
+  max-width: 340px; /* Set a max width */
   height: 250px;
   overflow: hidden;
   border-radius: 8px;
@@ -84,7 +85,7 @@
     padding: 10px; /* Further reduce padding for smaller screens */
   }
 
-  .photo-grid {
+  .GalleryC4-photo-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid items */
     gap: 5px; /* Reduce gap for tighter layout */
   }
@@ -99,7 +100,7 @@
 }
 
 @media (max-width: 480px) {
-  .photo-grid {
+  .GalleryC4-photo-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Even smaller grid items */
   }
 

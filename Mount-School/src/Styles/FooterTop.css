@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'DegularDemoMedium';
-  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('./Font.css');
 
 .hero-section {
     position: relative;
@@ -37,13 +32,13 @@
   padding: 0 50px;
 }
   
-  
   .hero-content {
     color: white;
     max-width: 600px;
   }
   
   .hero-content h1 {
+    font-family: 'Degularbold';
     font-size: 2rem;
     margin-bottom: 20px;
   }

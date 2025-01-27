@@ -1,16 +1,30 @@
+@import url('../Font.css');
+
 .admission-container {
     padding: 50px  100px;
-    font-family: Arial, sans-serif;
     line-height: 1.6;
   }
 
   .admission-title{
+    font-family: 'Degularbold';
     text-align: center;
     margin-bottom: 10px;
   }
 
+  .AdmissionsC3-age-criteria  h3{
+    font-family: 'DegularSemibold';
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .AdmissionsC3-age-criteria  p{
+    font-family:'PoppinsMedium';
+    line-height: 2;
+    font-size: 14px;
+  }
 
   .highlights{
+    font-family: 'Degularbold';
     color: #2C3192;
   }
   
@@ -31,15 +45,19 @@
   
   .age-table th,
   .age-table td {
+    font-weight: 400;
     text-align: center;
     padding: 12px 15px;
     border: 1px solid #ddd;
-    font-size: 16px;
+    font-size: 14px;
   }
-  
+
+  .age-table td{
+    font-family: 'Poppins-Regular';
+  }
   .age-table th {
     background-color: #f4f4f4;
-    font-weight: bold;
+    font-family: 'PoppinsSemibold';
   }
   
   .age-table tr:nth-child(even) {
@@ -51,20 +69,25 @@
   }
   
   .age-table td {
-    color: #333;
+    color: #4d4d4d;
   }
   
   .age-table th {
     color: #333;
   }
   
-  
-  .entry-criteria ul {
+  .AdmissionC3-entry-criteria h3{
+    font-family: 'DegularSemibold';
+  }
+
+  .AdmissionC3-entry-criteria ul {
     list-style-type: disc;
     margin-left: 20px;
   }
   
-  .entry-criteria li {
+  .AdmissionC3-entry-criteria li {
+    font-family:'PoppinsMedium';
+    font-size: 14px;
     margin-bottom: 8px;
     color: #444;
   }

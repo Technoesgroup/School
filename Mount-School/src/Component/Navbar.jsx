@@ -3,7 +3,6 @@ import "../Styles/Navbar.css";
 import logo from "../image/LogoMLZS.svg";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -84,7 +83,7 @@ return (
             <MenuIcon className="menu-icon" />
           )}
         </div>
-        <ul className={`nav-items ${isMobileMenuOpen ? "open" : ""}`}>
+        <ul className={`navb-items ${isMobileMenuOpen ? "open" : ""}`}>
           <li>
             <Link to="/" onClick={closeMobileMenu}>
               Home

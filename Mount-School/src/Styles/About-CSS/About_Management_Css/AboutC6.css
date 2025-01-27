@@ -21,15 +21,17 @@
 }
 
 .management-card__name {
+  font-family: 'DegularSemibold';
   font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .management-card__description {
+  font-family: 'PoppinsMedium';
+  line-height: 2;
   font-size: 0.9rem;
   color: #ffffff;
-  line-height: 1.5;
 }
 
 /* Responsive Design */

@@ -11,6 +11,10 @@ import Comp8 from '../../Component/Academics/AcademicsC8';
 import Comp10 from '../../Component/Academics/AcademicsC10';
 import Comp9 from '../../Component/Academics/AcademicsC9';
 import Comp11 from '../../Component/Academics/AcademicsC11';
+import Comp12 from '../../Component/Academics/AcademicsC12';
+import Comp13 from '../../Component/Academics/AcademicsC13';
+import Comp14 from '../../Component/Academics/AcademicsC14';
+
 
 function Academics() {
   return (
@@ -27,6 +31,9 @@ function Academics() {
       <Comp10 />
       <Comp9 />
       <Comp11 />
+      <Comp12 />
+      <Comp13 />
+      <Comp14 />
       </div>
   </div>
   )

@@ -1,21 +1,14 @@
-@font-face {
-    font-family: 'DegularDemoMedium';
-    src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
+@import url('../Font.css');
   
 
 /* Photo Gallery Container */
 .Home-photo-gallery-container {
-    font-family: 'DegularDemoMedium';
     text-align: center;
-    font-family: Arial, sans-serif;
     padding: 20px 0;
   }
   
   .Home-photo-gallery-container h2 {
-    font-family: 'DegularDemoMedium';
+    font-family: 'Degularbold';
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;

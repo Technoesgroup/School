@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "../../Styles/Home-CSS/HomeC8.css";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -13,76 +13,83 @@ import imageParents8 from "../../image/WhatsApp Image 2025-01-20 at 17.43.12_33e
 import imageParents9 from "../../image/Toow.png";
 
 const Home8 = () => {
-  const scrollRef = useRef(null);
+  const cardsContainerRef = useRef(null);
 
-  // Auto-scroll effect
-  useEffect(() => {
-    const scroll = scrollRef.current;
-    const interval = setInterval(() => {
-      if (scroll) {
-        scroll.scrollLeft += 1; // Adjust the speed here
-        if (scroll.scrollLeft >= scroll.scrollWidth - scroll.offsetWidth) {
-          scroll.scrollLeft = 0; // Reset scroll
-        }
-      }
-    }, 20); // Adjust the scroll interval here
-    return () => clearInterval(interval);
-  }, []);
+  const scrollLeft = () => {
+    if (cardsContainerRef.current) {
+      cardsContainerRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (cardsContainerRef.current) {
+      cardsContainerRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    }
+  };
 
   const cardsData = [
     {
       icon: imageParents1,
-      description: " I’ve noticed a profound change in my child’s behaviour, becoming more considerate and socially aware. The school’s focus on empathy and teaching students to understand and respect others",
+      description:
+        "I’ve noticed a profound change in my child’s behaviour, becoming more considerate and socially aware. The school’s focus on empathy and teaching students to understand and respect others.",
       title: "Mr. Milind Mahipal",
-      father_of:"F/O: Saumya Mahipal, VIIA"
+      father_of: "F/O: Saumya Mahipal, VIIA",
     },
     {
       icon: imageParents2,
       title: "Mr. Chandan Singh",
-      description: "I feel so supported by Mount Litera Zee School in my role as a parent. The school maintains an open line of communication, and the parent-teacher meetings are always insightful.",
-      father_of:"F/O: Prachit Singh IA"
+      description:
+        "I feel so supported by Mount Litera Zee School in my role as a parent. The school maintains an open line of communication, and the parent-teacher meetings are always insightful.",
+      father_of: "F/O: Prachit Singh IA",
     },
     {
       icon: imageParents3,
       title: "Mr. Avinash Kumar",
-      description: "As a parent, I always prioritize the safety of my child, and Mount Litera Zee School, Bihta has exceeded my expectations. The campus is secure, and the staff are attentive and caring.",
-      father_of:"F/O: Harshita Kumari IB"
+      description:
+        "As a parent, I always prioritize the safety of my child, and Mount Litera Zee School, Bihta has exceeded my expectations. The campus is secure, and the staff are attentive and caring.",
+      father_of: "F/O: Harshita Kumari IB",
     },
     {
       icon: imageParents4,
       title: "Sunil Kumar Sinha",
-      description: "The community outreach programs at MLZS, Bihta have made a lasting impact on my child. Through volunteering, environmental initiatives, social projects, my child has learned the importance of giving back to society.",
-      father_of:"F/O: Trisha Kumari III & Tanishka Kumari VII"
+      description:
+        "The community outreach programs at MLZS, Bihta have made a lasting impact on my child. Through volunteering, environmental initiatives, social projects, my child has learned the importance of giving back to society.",
+      father_of: "F/O: Trisha Kumari III & Tanishka Kumari VII",
     },
     {
       icon: imageParents5,
       title: "Mr. Rajendra Kumar",
-      description: "My three children have gained confidence in speaking in front of an audience. The school has truly helped my child become more articulate, confident, and able to express themselves clearly",
-      father_of:"F/O: Sristi VIIA, Sakshi VA & Surbhi Sr. Kg"
+      description:
+        "My three children have gained confidence in speaking in front of an audience. The school has truly helped my child become more articulate, confident, and able to express themselves clearly.",
+      father_of: "F/O: Sristi VIIA, Sakshi VA & Surbhi Sr. Kg",
     },
     {
       icon: imageParents6,
       title: "Mr. Sonu Kunal",
-      description: "My child now navigates social situations with more maturity, and I’m grateful for the school’s emphasis on emotional well-being alongside academics",
-      father_of:"F/O: Sanidhya Kunal VIIA & Shaurya Kunal IB"
+      description:
+        "My child now navigates social situations with more maturity, and I’m grateful for the school’s emphasis on emotional well-being alongside academics.",
+      father_of: "F/O: Sanidhya Kunal VIIA & Shaurya Kunal IB",
     },
     {
       icon: imageParents7,
       title: "Mr. Shyam Jee",
-      description: "My child loves the hands-on approach to learning, and I can see that their curiosity and love for learning have grown immensely. The school's blend of traditional methods with modern teaching strategies",
-      father_of:"F/O: Ananya, IIIA"
+      description:
+        "My child loves the hands-on approach to learning, and I can see that their curiosity and love for learning have grown immensely. The school's blend of traditional methods with modern teaching strategies.",
+      father_of: "F/O: Ananya, IIIA",
     },
     {
       icon: imageParents8,
       title: "Mr. Dhiraj Singh",
-      description: "The opportunities for my children to engage in creative activities like painting, music have been incredible. Mount Litera Zee School places a strong emphasis on nurturing creative expression",
-      father_of:"F/O: Chhavi Singh XA & Naman Singh IV"
+      description:
+        "The opportunities for my children to engage in creative activities like painting, music have been incredible. Mount Litera Zee School places a strong emphasis on nurturing creative expression.",
+      father_of: "F/O: Chhavi Singh XA & Naman Singh IV",
     },
     {
       icon: imageParents9,
       title: "Mr. Sanmay Bharadwaj",
-      description: "I’m thrilled with how Mount Litera Zee School focuses on well-rounded development. They provide not only rigorous academics but also foster physical fitness, artistic expression, and character building.",
-      father_of:"F/O: Aarambh Bharadwaj IIA"
+      description:
+        "I’m thrilled with how Mount Litera Zee School focuses on well-rounded development. They provide not only rigorous academics but also foster physical fitness, artistic expression, and character building.",
+      father_of: "F/O: Aarambh Bharadwaj IIA",
     },
   ];
 
@@ -94,25 +101,26 @@ const Home8 = () => {
           <span className="blue-text_C3">SPEAK</span>
         </h1>
       </div>
-      <div className="Home-section__cards infinite-scroll" ref={scrollRef}>
+      <div
+        className="Home-section__cards infinite-scroll"
+        ref={cardsContainerRef}
+      >
         {cardsData.map((card, index) => (
-          <div key={index} className="Home-section__card">
+          <div key={index} className="Home-section__card infinite-scroll">
             <div className="Home-White-Circle">
-              {/* <div className="Home-section__icon"> */}
-                <img className="oldman-Img-Icon" src={card.icon} alt="H" />
-              {/* </div> */}
+              <img className="oldman-Img-Icon" src={card.icon} alt="H" />
             </div>
             <p className="Home-section__card-description">{card.description}</p>
             <h2 className="Home-section__card-title">{card.title}</h2>
-            <p  className="Home-section__card-des-father">{card.father_of}</p>
+            <p className="Home-section__card-des-father">{card.father_of}</p>
           </div>
         ))}
       </div>
       <div className="ICon-left-right">
-        <div className="white-left-icon">
+        <div className="white-left-icon" onClick={scrollLeft}>
           <KeyboardArrowLeftIcon />
         </div>
-        <div className="white-right-icon">
+        <div className="white-right-icon" onClick={scrollRight}>
           <ChevronRightIcon />
         </div>
       </div>
@@ -121,3 +129,4 @@ const Home8 = () => {
 };
 
 export default Home8;
+

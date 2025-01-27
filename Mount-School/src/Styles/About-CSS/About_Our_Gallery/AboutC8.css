@@ -23,11 +23,13 @@
 }
 
 .recognition-card__content h3 {
+  font-family: 'PoppinsSemibold';
   margin-bottom: 15px;
   font-size: 1rem;
 }
 
 .recognition-card__content p {
+  font-family: 'Poppins-Regular';
   font-size: 0.7rem;
   text-align: left;
   color: rgb(128, 128, 128);
