@@ -17,16 +17,19 @@
   }
 
   .text_About_C7{
+    font-family: 'Degularbold';
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
   }
   
   .black-text_C7 {
+    font-family: 'Degularbold';
     color: black;
   }
   
   .blue-text_C7 {
+    font-family: 'Degularbold';
     color: #2C3192; /* Adjust to match red */
   }
   

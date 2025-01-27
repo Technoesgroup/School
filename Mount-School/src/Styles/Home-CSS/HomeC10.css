@@ -1,13 +1,8 @@
-@font-face {
-  font-family: 'DegularDemoMedium';
-  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('../Font.css');
 
 /* Full-width styles */
 .contact-container {
-  font-family: 'DegularDemoMedium';
+  font-family: 'Degularbold';
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -22,6 +17,7 @@
 }
 
 .form-section h2 {
+  font-family: 'Degularbold';
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -32,10 +28,12 @@
 }
 
 .form-section p {
-  font-size: 14px;
+  font-family: 'PoppinsSemibold';
+  font-weight: 300;
+  font-size: 13px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #666;
+  color: #8c8c8c;
 }
 
 form input,
@@ -132,6 +130,12 @@ form button:hover {
     background: linear-gradient(to bottom, white 50%, #f4f5fc 50%);
   }
 
+  .map-section {
+    max-width: fit-content;
+    border-radius: 0;
+    height: 100%;
+  }
+
   .form-section {
     padding: 20px;
     text-align: center;
@@ -173,12 +177,13 @@ form button:hover {
   }
 
   .map-section {
-    padding: 10px;
+    padding: 0 40px;
     height: 300px;
   }
 
   .map-section iframe {
-    border-radius: 15px;
+    max-width: 400px;
+    border-radius:0 0 0 0;
   }
 }
 

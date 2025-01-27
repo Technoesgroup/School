@@ -1,17 +1,12 @@
-  @font-face {
-    font-family: 'DegularDemoMedium';
-    src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
+@import url('../Font.css');
+
   .AcadC5-container {
     padding: 50px 100px;
   }
   
   .inner-Container-C5 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -34,7 +29,7 @@
   }
   
   .Academic-titleC5 {
-    font-family: 'DegularDemoMedium';
+    font-family: 'Degularbold';
     text-align: left;
     margin-bottom: 20px;
   }
@@ -62,20 +57,22 @@
   
   .AcadC5-content {
     top: 0;
-    font-family: 'DegularDemoMedium';
     max-width: 700px;
     text-align: justify;
   }
   
   .AcadC5-content h2 {
+    font-family: 'Degularbold';
     text-align: left;
     margin-bottom: 30px;
   }
   
   .AcadC5-content p {
-    color: grey;
+    font-family: 'PoppinsMedium';
+    color: rgb(43, 43, 43);
     margin: 10px 0;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 2;
   }
   
   /* Responsive Design */

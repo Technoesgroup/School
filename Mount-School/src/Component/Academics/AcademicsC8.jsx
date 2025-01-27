@@ -20,20 +20,11 @@ const HalloweenEvent = () => {
       {/* Description Section */}
       <section className="Academics-event-description">
         <p>
-          Halloween Day at Mount Litera Zee School (MLZS) is celebrated as an
-          exciting and creative event, blending fun, learning, and festive vibes. 
-          The school transforms into a spooky wonderland with cobwebs, pumpkins, and 
-          themed decorations, creating an immersive experience for students.
-        </p>
-        <p>
-          Activities include a lively costume parade where students showcase 
-          their spooky and imaginative attire, storytelling sessions with kid-friendly 
-          ghost tales, and engaging games such as treasure hunts and pumpkin carving contests. 
-          Workshops on Halloween crafts and performances like themed skits or dances add to 
-          the entertainment, while Halloween-inspired snacks ensure a delightful culinary 
-          experience. Alongside the fun, educational sessions about the history and traditions 
-          of Halloween provide a meaningful learning opportunity. The event promotes creativity, 
-          collaboration, and cultural awareness, making it a memorable occasion for all participants.
+        Mount Litera Zee School Bihta turned into a spooky wonderland on Halloween Day 2024.
+         The students arrived in creative costumes ranging from spooky ghosts to whimsical creatures,
+          adding to the fun and excitement of the day. With themed games, decorations, and a costume
+           parade, the event was a thrilling mix of fun, fright, and laughter, making it a memorable 
+           celebration for all.
         </p>
       </section>
 

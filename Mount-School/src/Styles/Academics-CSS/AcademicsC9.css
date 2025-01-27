@@ -1,5 +1,7 @@
+@import url('../Font.css');
+
 .AcademicsC9-raas-dandiya-container {
-  width: 80%;
+  width: 84%;
   margin: auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -7,14 +9,18 @@
 }
 
 .AcademicsC9-event-title {
+  font-family: 'PoppinsSemibold';
   text-align: left;
-  color: #0047ab;
+  font-size: 1.2rem;
+  color: #4AAFF7;
   margin-bottom: 20px;
 }
 
 .AcademicsC9-event-description {
+  font-family: 'PoppinsMedium';
   text-align: justify;
-  line-height: 1.8;
+  line-height: 2;
+  font-size: 0.9rem;
   margin-bottom: 30px;
 }
 
@@ -34,7 +40,7 @@
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  height: 250px; /* Set height as needed */
+  height: 200px; /* Set height as needed */
   object-fit: cover; /* Ensures images fit nicely */
 }
 
@@ -47,7 +53,7 @@
 
 .AcademicsC9-image-gallery .AcademicsC9-bottom-row img {
   width: 100%;
-  height: 250px; /* Set height as needed */
+  height: 200px; /* Set height as needed */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: cover; /* Ensures images fit nicely */

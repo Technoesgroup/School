@@ -1,203 +1,219 @@
-@font-face {
-  font-family: 'DegularDemoMedium';
-  src: url('../../../public/fonts/fonnts.com-DegularDemo-Semibold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('../Font.css');
 
-@font-face {
-  font-family: 'DegularSemibold';
-  src: url('../../../public/fonts/fonnts.com-DegularDemo-Semibold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
 }
 
 .Home3-container-Big {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  height: 510px;
-  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center align */
+  padding: 0 75px; /* Adjusted padding for smaller screens */
+  max-width: calc(100% - 40px); /* Ensure width doesn't exceed screen with padding */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-/* Left Section - Campus Tour */
+/* Left Section */
 .left-section_3 {
-  flex: 2;
+  width: 60%;
   position: relative;
 }
 
 .campus-video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  border-radius: 8px;
 }
 
 .campus-text {
-  font-family: 'DegularDemoMedium';
   position: absolute;
   bottom: 20px;
   left: 20px;
   color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
 }
 
-/* Right Section - News and Updates */
+
+
 .right-section_3 {
-  width: 100%;
-  font-family: 'DegularDemoMedium';
-  padding: 0;
-  flex: 1;
-  background-color: #ffc107;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: auto;
-  align-items: flex-start; /* Align items to the left */
+  position: relative;
+  max-width: 40%;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .home-container-blue {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'DegularSemibold';
-  width: 100%;
-  letter-spacing:3px;
-  height: 50px;
-  text-align: center;
   background-color: #4AAFF7;
-  color: #ffffff;
-  padding: 0 10px; 
-}
-
-.home-container-blue h2{
-  font-size: 20px;
-}
-
-.Home3-event-containerss {
-  width: 100%;
-  display: flex;
-  flex-direction: column; /* Arrange cards vertically */
-  align-items: center; /* Align items to the top-left */
-  justify-content: center;
-  position: relative;
   padding: 10px;
-  max-width: 400px; /* Limit the width */
-  height: auto; /* Limit the height */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-color: #ffc107;
-  margin: auto;
-  border-radius: 8px;
-  scroll-behavior: smooth; 
+  text-align: center;
+  color: white;
 }
 
+.Home3-news-title_up {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Event Cards */
+.Home3-event-containerss {
+  background-color: #FFC107;
+  height: auto;
+  max-height: 320px; /* Fixed height for scrollable section */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Add spacing between cards */
+  padding-right: 10px; /* Padding to avoid scroll hiding content */
+  /* overflow: hidden; */
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  animation: infinite__Scrolls 28s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes infinite__Scrolls {
+  0% {
+    transform: translateY(70%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+/* Custom Scrollbar Styling (Hidden for Mobile) */
 .Home3-event-containerss::-webkit-scrollbar {
-  display: none; /* Hides scrollbar for Chrome, Edge, and Safari */
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
 }
 
 .Home3-event-card {
+  background-color: #FFC107;
   display: flex;
-  height: 140px;
-  margin-bottom: 10px;
-  background-color:  #ffc107;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
 }
 
 .Home3-event-image {
-  flex-shrink: 0;
-  width: 90px;
-  height: 60px;
+  width: 80px;
+  height: 65px;
+  border-radius: 5px;
   object-fit: cover;
 }
 
 .Home3-event-details {
-  /* flex-grow: 1;  */
-  position: relative;
-  top: -5px;
-  padding-left: 8px;
+  flex: 1;
 }
 
 .Home3-event-title {
-  font-size: 14px;
-  margin-bottom: 3px;
-  color: #000;
+  font-family: 'PoppinsSemibold';
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 0 5px 0;
 }
 
 .Home3-event-description {
-  font-size: 0.7rem;
+  font-family: 'Poppins-Regular';
+  font-size: 0.6rem;
   color: #555;
+  margin: 0 0 5px 0;
 }
 
 .Home3-event-date {
-  font-size: 12px;
-  color: #888;
+  font-size: 0.8rem;
+  color: #999;
 }
 
-.view-all-button {
-  padding: 10px  18px;
-  background-color: #2C3191;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.btn-view{
+width: 95%;
+height: 41px;
+background-color: #FFC107;
+position: absolute;
+bottom: 0;
 }
 
 
-@media (max-width: 760px) {
-  .Home3-container-Big{
-    width: auto;
-    flex-wrap: wrap;
+/* Tablets */
+@media (max-width: 1024px) {
+  .Home3-container-Big {
     flex-direction: column;
-    height: auto; /* Allow height to adjust dynamically */
-    padding: 10px;
   }
 
-  /* Left Section - Campus Tour */
-  .left-section_3 {
-    flex: none;
-    height: 200px; /* Adjust video height */
-    margin-bottom: 40px;
-  }
 
-  .campus-video {
-    height: 100%;
+  .left-section_3,
+  .right-section_3 {
     width: 100%;
-    object-fit: cover;
-    
+  }
+
+  .campus-text h1{
+    font-size: 1rem;
+  }
+
+
+  .Home3-news-title_up {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .Home3-container-Big {
+    padding: 0 10px; /* Reduce side padding */
+  }
+
+  .Home3-container-Big {
+    max-width: 100%; /* Ensure width doesn't exceed screen with padding */
+  }
+
+  .Home3-event-containerss {
+    overflow-y: visible;
+  }
+
+  .right-section_3 {
+    margin-top: 10px;
+    max-width: 100%;
+    padding-left: 0;
   }
 
   .campus-text {
-    font-size: 18px; /* Reduce font size */
-    bottom: 10px; /* Adjust spacing */
+    bottom: 10px;
     left: 10px;
+    font-size: 0.7rem;
   }
 
-  /* Right Section - News and Updates */
-  .right-section_3 {
-    flex: none;
-    width: 100%;
+  .Home3-news-title_up {
+    font-size: 1rem;
   }
-
-  .home-container-blue {
-    width: 100%;
-    letter-spacing:2px;
-    height: 30px;
-  }
-  .home-container-blue h2{
-    font-size: 14px;
-  }
-  .Home3-event-containerss{
-     width: 100%;
-  }
-
 }
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .campus-text {
+    font-size: 0.9rem;
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .Home3-event-card {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .right-section_3 {
+    max-width: 100%;
+  }
+
+  .Home3-event-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+

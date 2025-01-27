@@ -1,21 +1,28 @@
+@import url('../Font.css');
+
 .AcademicsC7-events {
   scroll-margin-top: 160px;
     padding: 20px  100px;
-    font-family: Arial, sans-serif;
+    font-family: 'Degularbold';
     line-height: 1.6;
   }
   
   .AcademicsC7-event-title {
+    font-family: 'PoppinsSemibold';
     text-align: left;
-    color: #0085ff;
+    font-size: 1.2rem;
+    color: #4AAFF7;
     margin-bottom: 15px;
   }
   
   .AcademicsC7-events p{
+    font-family: 'PoppinsMedium';
+    font-size: 0.9rem;
     line-height: 2;
   }
   .AcademicsC7-event-description {
-    color: #333;
+    font-size: 0.9rem;
+    color: #1c1c1c;
     text-align: justify;
   }
   

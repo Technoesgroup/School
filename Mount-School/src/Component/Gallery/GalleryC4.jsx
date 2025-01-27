@@ -36,7 +36,7 @@ const PhotoGallery = () => {
       <h2>PHOTO GALLERY</h2>
 
       {/* Image Grid */}
-      <div className="photo-grid">
+      <div className="GalleryC4-photo-grid">
         {photoData.map((item) => (
           <div key={item.id} className="photo-card">
             <img src={item.image} alt={item.title} className="photo-image" />

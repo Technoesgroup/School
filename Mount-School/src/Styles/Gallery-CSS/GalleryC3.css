@@ -1,25 +1,34 @@
 /* Container Styling */
+@import url('../Font.css');
+
 .gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 65px 20px; /* Reduced padding for smaller screens */
+  margin-left: 15px;
+  padding: 40px 80px; /* Reduced padding for smaller screens */
 }
 
 .gallery-container h2 {
+  font-family: 'DegularBold';
   font-size: 1.8rem;
   margin-bottom: 60px;
   font-weight: bold;
 }
 
 .gallery-container h3 {
+  font-family: 'DegularBold';
   font-size: 1.3rem;
-  margin: 10px 0 20px;
+  margin: 1px 0 20px;
 }
 
 /* Grid Layout */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+.GalleryC4-video-grid {
+  display: flex;
+  flex-wrap: wrap;
+
   gap: 10px;
   justify-items: center;
   margin-top: 20px;
@@ -29,7 +38,7 @@
 .video-card {
   position: relative;
   width: 100%; /* Full width of grid item */
-  max-width: 300px; /* Limit the width for larger screens */
+  max-width: 350px; /* Limit the width for larger screens */
   cursor: pointer;
 }
 
@@ -72,16 +81,12 @@
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
   .gallery-container {
-    padding: 30px 15px; /* Further reduce padding for smaller screens */
+    padding: 30px 10px; /* Further reduce padding for smaller screens */
   }
-
-  .video-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust card size for smaller screens */
-    gap: 8px; /* Reduce gap between cards */
-  }
+/*  */
 
   .video-card {
-    max-width: 250px; /* Adjust card size for smaller screens */
+    max-width: 200px; /* Adjust card size for smaller screens */
   }
 
   .play-button {
@@ -99,13 +104,8 @@
 }
 
 @media (max-width: 480px) {
-  .video-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Compact layout for very small screens */
-    gap: 5px; /* Tighten spacing */
-  }
-
   .video-card {
-    max-width: 200px; /* Further adjust card size */
+    max-width: 150px; /* Further adjust card size */
   }
 
   .play-button {

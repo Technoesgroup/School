@@ -1,12 +1,11 @@
 /* ContactForm.css */
+@import url('../Font.css');
+
 .Contact-Box {
-  margin: 60px 0;
-    font-family: Arial, sans-serif;
+    margin: 60px 0;
     padding: 20px;
     text-align: center;
   }
-  
-
   
   .circle {
     position: absolute;
@@ -28,16 +27,17 @@
     right: 0;
   }
   
-  
   .contact-heading {
+    font-family: 'Degularbold';
     margin-bottom: 20px;
     font-size: 1.8rem;
     font-weight: bold;
   }
   
   .contact-subheading {
+    font-family: 'PoppinsMedium';
     margin-bottom: 50px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .contact-wrapper {
@@ -50,12 +50,14 @@
   }
   
   .Contact-Info {
+    font-family: 'PoppinsMedium';
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
     gap: 30px;
     text-align: left;
+    font-size: 0.8rem;
     background: #2C3192;
     color: white;
     padding: 20px 70px;
@@ -63,6 +65,7 @@
   }
 
   .Contact-Info h4{
+    font-family: 'PoppinsMedium';
     margin-bottom: 8px;
     font-size: 0.8rem;
     color: grey;
@@ -82,6 +85,7 @@
   
   .form-row input,
   textarea {
+    font-family: 'PoppinsMedium';
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;

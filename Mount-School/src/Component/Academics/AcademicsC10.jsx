@@ -5,7 +5,7 @@ import Activity_Image  from '../../image/1B7A4945.jpg'
 const CoCurricular = () => {
   return (
     <div className="AcademicsC10-co-curricular-container">
-      <h2 className="AcademicsC10-header">CO-CURRICULAR ACTIVITIES</h2>
+      <h2 className="AcademicsC10-header">CO-CURRICULAR <span className='AcademicsC10-activity'>ACTIVITIES</span></h2>
       <div className="AcademicsC10-content">
         <div className="AcademicsC10-text-section">
           <p>

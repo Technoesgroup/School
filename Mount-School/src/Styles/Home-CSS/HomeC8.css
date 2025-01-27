@@ -1,27 +1,9 @@
-
-@font-face {
-  font-family: 'DegularDemoMedium';
-  src: url('../../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PopponsMedium';
-  src: url('../../../public/Poppins-Medium.ttf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PopponsRegular';
-  src: url('../../../public/Poppins-Regular.ttf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('../Font.css');
 
 /* Full-width desktop styles remain unchanged */
 .Home-section {
   text-align: center;
-  padding: 25px 40px;
+  padding: 25px 80px;
   margin-bottom: 40px;
 }
 
@@ -34,24 +16,25 @@
 }
 
 .Home-section__cards {
-  margin-top: 50px;
+  position: relative;
+  margin-top: 40px;
   display: flex;
   justify-content: start; /* Align items at the start */
   align-items: center;
   gap: 20px;
+  overflow-y: hidden;
   overflow-x: auto; /* Enable horizontal scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth; 
   padding: 55px 10px; /* Add some padding for spacing */
   width: 100%; /* Ensure full container width */
+  z-index: 3;
 }
+
 
 .Home-section__cards::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Chrome, Safari, Edge */
 }
 
-.Home-section {
-  overflow-x: hidden; /* Prevent scrollbars from always showing */
-}
 
 .Home-section__card {
   flex: 0 0 300px; /* Fix width for each card to show 3 at a time */
@@ -88,8 +71,8 @@
 
 
 .Home-section__card-title {
-  font-family: 'DegularDemoMedium';
-  font-size: 19px;
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   margin-bottom: 5px;
@@ -97,7 +80,7 @@
 }
 
 .Home-section__card-description {
-  font-family: 'PopponsRegular';
+  font-family: 'Poppins-Regular';
   padding-top: 20px;
   font-size: 10px;
   color: #333;
@@ -118,10 +101,10 @@
 }
 
 .text_About_C3 {
-  font-family: 'DegularDemoMedium';
+  font-family: 'Degularbold';
   text-align: center;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: 600;
 }
 
 .black-text_C3 {
@@ -158,6 +141,13 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+
+  .Home-section {
+    text-align: center;
+    padding: 25px 40px;
+    margin-bottom: 40px;
+  }
+
   .Home-section__cards {
     flex-direction: row;
     gap: 20px;
@@ -177,12 +167,6 @@
   .Home-section__card-des-father{
     font-size: 0.5rem;
   }
-
-  .Home-section__cards.infinite-scroll {
-    animation: scroll 15s linear infinite; /* Adjust duration as needed */
-    display: flex;
-  }
-
 
   .Home-section__card-title {
     font-size: 18px;
@@ -236,8 +220,4 @@
     width: 30px;
     height: 25px;
   }
-}
-.Home-section__cards.infinite-scroll {
-  animation: scroll 8s linear infinite; /* Adjust duration as needed */
-  display: flex;
 }

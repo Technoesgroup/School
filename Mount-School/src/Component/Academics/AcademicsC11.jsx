@@ -6,7 +6,7 @@ import image4 from '../../image/20240210_111921.jpg';
 import image5 from '../../image/20240210_133204.jpg';
 import useScrollToSection from "../Hook/CustomHook2";
 
-const HalloweenEvent = () => {
+const Sports = () => {
      
   useScrollToSection();
   
@@ -43,4 +43,4 @@ const HalloweenEvent = () => {
   );
 };
 
-export default HalloweenEvent;
+export default Sports;

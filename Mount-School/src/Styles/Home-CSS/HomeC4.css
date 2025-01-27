@@ -42,12 +42,11 @@ body{
 
 .contents-of-admission{
   position: relative;
-  padding: 30px ;
+  padding: 20px 40px ;
   margin-left: 50px;
   margin-top: 10px;
 }
 .contents-of-admission h2{
-
   font-family: 'DegularBold';
   font-size: 2rem;
 }
@@ -102,14 +101,76 @@ body{
 }
 
 @media (max-width: 760px) {
-  .admission-content-4 {
-    display: none;
-  }
-  .image-sections-4 {
-    width: 100%;
-  }
   .admissions-banner4 {
     margin-top: 20px;
     height: auto; /* Adjust height for smaller screens */
+    position: relative; /* To position the overlay */
+  }
+
+  .image-sections-4 {
+    width: 100%;
+    position: relative; /* For overlay positioning */
+  }
+
+  .image-sections-4 img {
+    width: 100%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container */
+  }
+
+  /* Add overlay on the image */
+  .image-sections-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black transparent overlay */
+    z-index: 1;
+  }
+
+  /* Reposition content on top of the overlay */
+  .admission-content-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Position content on top of the image */
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: none; /* Remove background color */
+    color: white; /* Ensure text is visible on dark overlay */
+    z-index: 2; /* Above the overlay */
+    padding: 45px; /* Add some padding */
+    text-align: left; /* Center align text */
+  }
+
+  .contents-of-admission {
+    margin: 0; /* Center content */
+    padding: 0; /* Remove additional padding */
+  }
+
+  .contents-of-admission h2 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .contents-of-admission h1 {
+    font-size: 1.3rem;
+  }
+
+  .contents-of-admission p {
+    font-size: 0.8rem;
+  }
+
+  .enquire-btns {
+    margin-top: 20px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
   }
 }
+
+

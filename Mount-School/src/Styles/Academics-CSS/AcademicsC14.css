@@ -1,0 +1,56 @@
+/* General Styles */
+.AcademicsC14-achievement-container {
+  background-color: white;
+  padding: 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.AcademicsC14-achievement-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4AAFF7; /* Tailwind blue-600 */
+  margin-bottom: 1rem;
+}
+
+.AcademicsC14-achievement-text {
+  font-family: 'PoppinsMedium';
+  color: #1f1f1f; /* Tailwind gray-700 */
+  line-height: 2;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.AcademicsC14-achievement-image-container {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.AcademicsC14-achievement-image {
+  height: 400px;
+  width: 100%;
+  display: block;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .AcademicsC14-achievement-container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .AcademicsC14-achievement-title {
+    font-size: 1.2rem; /* Reduce title font size */
+    margin-bottom: 0.75rem; /* Adjust spacing */
+  }
+
+  .AcademicsC14-achievement-text {
+    font-size: 0.85rem; /* Slightly smaller text size */
+    margin-bottom: 0.75rem;
+    line-height: 1.8; /* Adjust line height for readability */
+  }
+
+  .AcademicsC14-achievement-image {
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Limit image height */
+  }
+}

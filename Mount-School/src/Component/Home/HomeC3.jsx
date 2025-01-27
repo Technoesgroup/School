@@ -5,6 +5,9 @@ import ScienceExhibition from '../../image/WhatsApp Image 2024-12-30 at 18.51.42
 import PTM from '../../image/393834027_792046122934137_8956640947945114484_n.jpg';
 import Annual_Function from '../../image/1B7A5369.jpg';
 import Parent_Orientation_Programme from '../../image/teacher training 2.jpg';
+import Career from '../../image/373300263_759440476194702_7710447674765630293_n.jpg';
+import pre_board from '../../image/Gro.png';
+import Induction from '../../image/Frame(4).jpg';
 
 const events = [
   {
@@ -31,24 +34,24 @@ const events = [
     date: 'Dec 2020',
     image: Parent_Orientation_Programme,
   },
-  // {
-  //   title: 'Parent Orientation Programme',
-  //   description: 'A Parent Orientation Programme is soon to be held, where Mount Litera Zee School Bitha shall reveal SEP (Students Empowerment ...',
-  //   date: 'Dec 2020',
-  //   image: Parent_Orientation_Programme,
-  // },
-  // {
-  //   title: 'Parent Orientation Programme',
-  //   description: 'A Parent Orientation Programme is soon to be held, where Mount Litera Zee School Bitha shall reveal SEP (Students Empowerment ...',
-  //   date: 'Dec 2020',
-  //   image: Parent_Orientation_Programme,
-  // },
-  // {
-  //   title: 'Parent Orientation Programme',
-  //   description: 'A Parent Orientation Programme is soon to be held, where Mount Litera Zee School Bitha shall reveal SEP (Students Empowerment ...',
-  //   date: 'Dec 2020',
-  //   image: Parent_Orientation_Programme,
-  // },
+  {
+    title: 'Career Counselling Session',
+    description: 'Mount Litera Zee School Bihta is set to ignite the spark of curiosity with its much-awaited Science Exhibition this December...',
+    date: ' 27 Dec 2020',
+    image: Career,
+  },
+  {
+    title: 'Pre-Board 2 Examinations',
+    description: 'Mount Litera Zee School Bihta will be hosting the Parent-Teacher Meeting (PTM) for PT2/Pre-Board on 18th January. This meeting will provide ...',
+    date: 'Jan 2024',
+    image: pre_board,
+  },
+  {
+    title: 'Parent Induction Programme',
+    description: 'In the waning days of January, Mount Litera Zee School Bihta shall, with great pride, present its Annual Function. This grand occasion ...',
+    date: 'Jan 2024',
+    image: Induction,
+  },
 
 ];
 
@@ -77,25 +80,35 @@ const HomeC3 = () => {
           <h1>Campus Tour</h1>
         </div>
       </div>
-      
-    <div className="right-section_3">
-      <div className='home-container-blue'> 
-        <h2 className="Home3-news-title_up">LATEST NEWS AND UPDATES</h2> 
-        </div>
-    <div className="Home3-event-containerss">
-      {events.map((event, index) => (
-        <EventCard
-          key={index}
-          title={event.title}
-          description={event.description}
-          date={event.date}
-          image={event.image}
-        />
-      ))}
-      {/* <button className="view-all-button">View All</button> */}
-    </div>
-   </div>
 
+      <div className="right-section_3">
+        <div className="home-container-blue">
+          <h2 className="Home3-news-title_up">LATEST NEWS AND UPDATES</h2>
+        </div>
+        <div className="Home3-event-containerss">
+        <div className="scroll-content">
+    {events.map((event, index) => (
+      <EventCard
+        key={index}
+        title={event.title}
+        description={event.description}
+        date={event.date}
+        image={event.image}
+      />
+    ))}
+    {/* Duplicate the cards for infinite scrolling */}
+    {/* {events.map((event, index) => (
+      <EventCard
+        key={`duplicate-${index}`}
+        title={event.title}
+        description={event.description}
+        date={event.date}
+        image={event.image}
+      />
+    ))} */}
+  </div>
+        </div>
+      </div>
     </div>
   );
 };

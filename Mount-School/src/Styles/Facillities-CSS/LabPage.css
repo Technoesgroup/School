@@ -22,6 +22,10 @@ body {
     padding: 20px;
     background-color: #ffffff;
   }
+
+  .Facilities-header h2{
+    font-family: 'DegularBold';
+  }
   
   .labs-container {
     position: relative;
@@ -82,7 +86,6 @@ body {
   }
 
   .Facilities-header  h2{
-    font-family: 'PoppinsMedium';
     text-align: center;
     margin-bottom: 30px;
   }
@@ -99,6 +102,8 @@ body {
   /* Mobile View Styles */
 @media screen and (max-width: 768px) {
   .labs-container {
+    gap: 5px;
+    width: 100%;
     padding: 10px; /* Reduced padding for better alignment */
   }
 
@@ -109,9 +114,14 @@ body {
     gap: 15px; /* Add spacing between image and text */
   }
 
+  .lab-card {
+    width: 100%;
+    max-width: 900px; 
+  }
+
   .lab-card img {
     width: 100%; /* Full width of the container */
-    max-width: 100%; /* Remove max width for smaller screens */
+    max-width: 80%; /* Remove max width for smaller screens */
     height: auto;
     margin: 0 auto; /* Center image horizontally */
   }
@@ -132,6 +142,7 @@ body {
   }
 
   .labs-page {
+  width: 90%;
     padding: 0 15px; /* Add padding to the overall page for spacing */
   }
 
@@ -145,6 +156,12 @@ body {
 
   .Facilities-header p {
     font-size: 14px;
+  }
+  .Facilities-header p {
+    font-family: 'PoppinsMedium';
+    max-width: 900px;
+    line-height: 2;
+    text-align: center;
   }
 }
 

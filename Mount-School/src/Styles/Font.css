@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'DegularDemoMedium';
+    src: url('../../public/fonts/fonnts.com-DegularDemo-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'DegularSemibold';
+    src: url('../../public/fonts/fonnts.com-DegularDemo-Semibold.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Degularbold';
+    src: url('../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../public/Poppins-Regular.ttf') format('opentype');
+    font-weight:800 ;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'PoppinsSemibold';
+    src: url('../../public/Poppins-SemiBold.ttf') format('opentype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../../public/Poppins-Medium.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }

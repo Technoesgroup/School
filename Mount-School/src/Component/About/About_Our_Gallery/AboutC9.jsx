@@ -127,8 +127,8 @@ const AboutC9 = () => {
   return (
     <div id='Awards-section' className="awards-recognition">
         <h1  className="text_About_C9">
-        <span className="black-text_C9">OUR </span> 
-       &nbsp;  <span className="blue-text_C9">AWARDS & RECOGNITION</span>
+        <span className="black-text_C9"></span> 
+       &nbsp;  <span className="blue-text_C9">AWARDS & HONORS</span>
         </h1>
        {/* <div className="lines_C9">
         <div className="line_C9 black-line_C9"></div>

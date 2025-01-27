@@ -34,7 +34,7 @@ useScrollToSection();
         <h2 className="admission-title">
           <strong className="highlights">ADMISSION</strong> OVERVIEW
         </h2>
-        <div className="age-criteria">
+        <div className="AdmissionsC3-age-criteria">
           <h3>Age Criteria for Admission</h3>
           <p>
             As per rules promulgated by the CBSE, the Board Examinations (Secondary level) shall
@@ -67,7 +67,7 @@ useScrollToSection();
       </table>
     </div>
       
-      <div className="entry-criteria">
+      <div className="AdmissionC3-entry-criteria">
         <h3>Entry Criteria for Admission</h3>
         <ul>
           <li>Admission will be arranged for students on the basis of interaction assessment.</li>

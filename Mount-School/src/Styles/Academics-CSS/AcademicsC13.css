@@ -1,11 +1,6 @@
-
 @import url('../Font.css');
 
-body{
-    background-color: #FFFFFF;
-}
-
-.AcademicsC12-Diwali-container {
+.AcademicsC13-SGFI_Tournament-container {
     width: 84%;
     margin: auto;
     padding: 20px;
@@ -13,15 +8,15 @@ body{
     color: #333;
   }
   
-  .AcademicsC12-event-title {
+  .AcademicsC13-event-title {
     font-family: 'PoppinsSemibold';
-    text-align: left;
     font-size: 1.2rem;
+    text-align: left;
     color: #4AAFF7;
     margin-bottom: 20px;
   }
   
-  .AcademicsC12-event-description {
+  .AcademicsC13-event-description {
     font-family: 'PoppinsMedium';
     text-align: justify;
     line-height: 2;
@@ -29,19 +24,19 @@ body{
     margin-bottom: 30px;
   }
   
-  .AcademicsC12-image-gallery {
+  .AcademicsC13-image-gallery {
     display: grid;
     gap: 10px;
   }
   
   /* Top images (first row) */
-  .AcademicsC12-image-gallery .AcademicsC12-top-row {
+  .AcademicsC13-image-gallery .AcademicsC13-top-row {
     display: grid;
     grid-template-columns: 1fr 2fr; /* Left image smaller, right image larger */
     gap: 10px;
   }
   
-  .AcademicsC12-image-gallery .AcademicsC12-top-row img {
+  .AcademicsC13-image-gallery .AcademicsC13-top-row img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -50,13 +45,13 @@ body{
   }
   
   /* Bottom images (second row) */
-  .AcademicsC12-image-gallery .AcademicsC12-bottom-row {
+  .AcademicsC13-image-gallery .AcademicsC13-bottom-row {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Left image larger, right image smaller */
+    grid-template-columns: 2fr; /* Left image larger, right image smaller */
     gap: 10px;
   }
   
-  .AcademicsC12-image-gallery .AcademicsC12-bottom-row img {
+  .AcademicsC13-image-gallery .AcademicsC13-bottom-row img {
     width: 100%;
     height: 200px; /* Set height as needed */
     border-radius: 10px;
@@ -67,28 +62,23 @@ body{
   /* General image styles */
   /* Mobile View */
   @media (max-width: 768px) {
-    .AcademicsC12-image-gallery {
+    .AcademicsC13-image-gallery {
       display: flex;
+      flex-direction: column;
       gap: 10px;
     }
   
-    .AcademicsC12-image-gallery .AcademicsC12-top-row,
-    .AcademicsC12-image-gallery .AcademicsC12-bottom-row {
-      grid-template-columns: 1fr; /* Single column for all images */
-    }
-  
-    .AcademicsC12-image-gallery .AcademicsC12-bottom-row img {
+    .AcademicsC13-image-gallery .AcademicsC13-bottom-row img {
       height: 150px;
     }
   
-    .AcademicsC12-image-gallery .AcademicsC12-top-row img {
+    .AcademicsC13-image-gallery .AcademicsC13-top-row img {
       height: 150px;
     }
   
-    .AcademicsC12-image-gallery img {
+    .AcademicsC13-image-gallery img {
       width: 100%;
       height:auto; /* Adjust height automatically */
       object-fit: contain; /* Ensure images scale properly */
     }
   }
-  
