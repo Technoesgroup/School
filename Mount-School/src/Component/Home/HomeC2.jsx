@@ -1,7 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../../Styles/Home-CSS/HomeC2.css';
+import { useNavigate } from 'react-router-dom';
 
 function AboutUs() {
+
+  const navigate = useNavigate();
+
+  const handleApllybtn = ()=>{
+    navigate("/contact-us")
+  }
   const [stats, setStats] = useState({
     skilledStaff: 0,
     teacherStudentRatio: 0,
@@ -64,10 +71,10 @@ function AboutUs() {
     <>
      <div className="header-Admission">
    <div  className='h3-admission-header'>
-   <h3><span className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn'>APPLY NOW</button></span></h3>
+   <h3><span className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn' onClick={handleApllybtn}>APPLY NOW</button></span></h3>
    </div>
    <div className='h3-admission-header'>
-   <h3><span  className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn'>APPLY NOW</button></span></h3>
+   <h3><span  className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn' onClick={handleApllybtn}>APPLY NOW</button></span></h3>
      
     </div>
     </div>

@@ -16,7 +16,7 @@ const Header = ({ toggleForm }) => {
     setActiveDropdown(menuName);
   };
 
-  const handleMouseLeave = () =>{
+  const handleMouseLeave = () => {
     setActiveDropdown(null);
   };
 
@@ -30,24 +30,24 @@ const Header = ({ toggleForm }) => {
 
   const dropdownItems = {
     About: [
-      { label: "About the school", to: "About-section"},
+      { label: "About the school", to: "About-section" },
       { label: "Vision", to: "Vision-section" },
       { label: "Mission", to: "Mision-section" },
-      { label: "Management",       to:"Management-section" },
-      { label: "Awards & Honors",  to: "Awards-section" },
+      { label: "Management", to: "Management-section" },
+      { label: "Awards & Honors", to: "Awards-section" },
     ],
     Academics: [
-      { label: "  Learning Pathways ", to: "Learning-section" },
-      { label: "Co-Curricular Activities ", to: "Activities-section" },
+      { label: "Learning Pathways", to: "Learning-section" },
+      { label: "Co-Curricular Activities", to: "Activities-section" },
     ],
     Admission: [
       { label: "Overview", to: "Overview-section" },
       { label: "Admission Process", to: "Admission-section" },
-      { label: "Course&Fee", to: "Course&Fee-section" },
+      { label: "Course & Fee", to: "Course&Fee-section" },
     ],
     Committee: [
-      { label: "PTA", to: "pta-section" }, // Matches id in DocumentSection
-      { label: "SMC", to: "smc-section" }, // Matches id in DocumentSection
+      { label: "PTA", to: "pta-section" },
+      { label: "SMC", to: "smc-section" },
     ],
     Download: [
       { label: "Sample Paper X", to: "Sample-paper-section" },
@@ -57,21 +57,29 @@ const Header = ({ toggleForm }) => {
     ],
   };
 
-return (
+  return (
     <header className="nav-header">
       <div className="header-top">
         <img src={logo} alt="Logo" className="logo" />
         <div className="contact-info-nav">
-          <span  className="two-numbers">
-            <PhoneIcon className="Phone" />
-             +91 9771485809
-             <span  className="dusra-num">+91 9771485810</span>
+          <span className="two-numbers">
+            <a href="tel:+919771485809" className="contact-link">
+              <PhoneIcon className="Phone" />
+              +91 9771485809
+            </a>
+            <a href="tel:+919771485810" className="contact-link dusra-num">
+              +91 9771485810
+            </a>
           </span>
-          <span  className="email-text">
-            <EmailIcon className="mail" /> mlzsbihta@gmail.com
+          <span className="email-text">
+            <a href="mailto:mlzsbihta@gmail.com" className="contact-link">
+              <EmailIcon className="mail" /> mlzsbihta@gmail.com
+            </a>
           </span>
         </div>
-        <button className="enquire-btn"  onClick={toggleForm}>ENQUIRE NOW</button>
+        <button className="enquire-btn" onClick={toggleForm}>
+          ENQUIRE NOW
+        </button>
       </div>
 
       <nav className="header-nav">
@@ -104,12 +112,12 @@ return (
                 <div className="dropdown">
                   {dropdownItems[menu].map((item, idx) => (
                     <Link
-                    key={idx}
-                    to={`/${menu.toLowerCase()}#${item.to}`} // Hash link to section
-                    onClick={closeMobileMenu}
-                  >
-                    {item.label}
-                  </Link>
+                      key={idx}
+                      to={`/${menu.toLowerCase()}#${item.to}`}
+                      onClick={closeMobileMenu}
+                    >
+                      {item.label}
+                    </Link>
                   ))}
                 </div>
               )}
@@ -143,3 +151,5 @@ return (
 };
 
 export default Header;
+
+

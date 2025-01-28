@@ -3,7 +3,7 @@
 
 .Contact-Box {
     margin: 60px 0;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
   }
   
@@ -67,8 +67,13 @@
   .Contact-Info h4{
     font-family: 'PoppinsMedium';
     margin-bottom: 8px;
-    font-size: 0.8rem;
-    color: grey;
+    font-size: 0.7rem;
+    color: rgb(192, 192, 192);
+  }
+
+  .Contact-Info p{
+    display: flex;
+    gap: 10px;
   }
   
   .contact-form {
@@ -76,15 +81,19 @@
     padding: 30px;
     flex: 2;
   }
+
+  .contact-form form textarea{
+    width: 95%;
+    flex: 1;
+  }
   
-  .form-row {
+  .ConatctUs-form-row {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
   }
   
-  .form-row input,
-  textarea {
+  .ConatctUs-form-row input{
     font-family: 'PoppinsMedium';
     width: 100%;
     padding: 10px;
@@ -92,12 +101,14 @@
     border-radius: 4px;
   }
   
-  textarea {
+  .contact-form form  textarea {
     height: 80px;
   }
   
-  .send-button {
-    background-color: #2C3192;
+  .ContactUs-send-button {
+    margin-left: 260px;
+    width: 200px;
+    background-color: #4AAFF7;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -106,7 +117,7 @@
     transition: background-color 0.3s;
   }
   
-  .send-button:hover {
+  .ContactUs-send-button:hover {
     background-color: #343993;
   }
   

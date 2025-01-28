@@ -4,7 +4,6 @@ import useScrollToSection from "../Hook/CustomHook2";
 
 const AdmissionC3 = () => {
 
-
   const ageData = [
     { class: "Nursery", dob: "01-04-2021 to 31-03-2022", age: "If the child is 3+", date: "31st March 2025" },
     { class: "Jr. Kg.", dob: "01-04-2020 to 31-03-2021", age: "If the child is 4+", date: "31st March 2025" },

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import '../HomePage/HomePage.css';
 import Comp1 from '../../Component/Home/Sliding-First-Page/HomeC1';
 import Comp2 from '../../Component/Home/HomeC2';
@@ -19,7 +18,7 @@ const Home = ({toggleForm})=>{
         <Comp1 />
         <Comp2 />
         <Comp3 />
-        <Comp4 />
+        <Comp4  toggleForm={toggleForm}  />
         <Comp5 />
         <Comp6 />
         <Comp7 />

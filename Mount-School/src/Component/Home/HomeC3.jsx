@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import '../../Styles/Home-CSS/HomeC3.css';
 import videoCampus from '../../image/School_Video.mp4';
 import ScienceExhibition from '../../image/WhatsApp Image 2024-12-30 at 18.51.42_bb1fa60a.jpg';
@@ -37,7 +37,7 @@ const events = [
   {
     title: 'Career Counselling Session',
     description: 'Mount Litera Zee School Bihta is set to ignite the spark of curiosity with its much-awaited Science Exhibition this December...',
-    date: ' 27 Dec 2020',
+    date: '27 Dec 2020',
     image: Career,
   },
   {
@@ -52,7 +52,6 @@ const events = [
     date: 'Jan 2024',
     image: Induction,
   },
-
 ];
 
 const EventCard = ({ title, description, date, image }) => {
@@ -69,15 +68,49 @@ const EventCard = ({ title, description, date, image }) => {
 };
 
 const HomeC3 = () => {
+  const videoRef = useRef(null); // Reference to the video element
+  const [isPlaying, setIsPlaying] = useState(true); // State to track play/pause
+  const [isMuted, setIsMuted] = useState(true); // State to track mute/unmute
+
+  const handlePlayPause = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleMuteUnmute = () => {
+    videoRef.current.muted = !isMuted;
+    setIsMuted(!isMuted);
+  };
+
   return (
     <div className="Home3-container-Big">
       <div className="left-section_3">
-        <video className="campus-video" muted autoPlay loop>
+        <video
+          className="campus-video"
+          muted={isMuted}
+          autoPlay
+          loop
+          ref={videoRef} // Attach the ref to the video element
+        >
           <source src={videoCampus} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="campus-text">
           <h1>Campus Tour</h1>
+          <div className="video-controls">
+            {/* Play/Pause Button */}
+            <button onClick={handlePlayPause} className="video-control-button">
+              {isPlaying ? 'Pause' : 'Play'}
+            </button>
+            {/* Mute/Unmute Button */}
+            <button onClick={handleMuteUnmute} className="video-control-button">
+              {isMuted ? 'Unmute' : 'Mute'}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -86,27 +119,17 @@ const HomeC3 = () => {
           <h2 className="Home3-news-title_up">LATEST NEWS AND UPDATES</h2>
         </div>
         <div className="Home3-event-containerss">
-        <div className="scroll-content">
-    {events.map((event, index) => (
-      <EventCard
-        key={index}
-        title={event.title}
-        description={event.description}
-        date={event.date}
-        image={event.image}
-      />
-    ))}
-    {/* Duplicate the cards for infinite scrolling */}
-    {/* {events.map((event, index) => (
-      <EventCard
-        key={`duplicate-${index}`}
-        title={event.title}
-        description={event.description}
-        date={event.date}
-        image={event.image}
-      />
-    ))} */}
-  </div>
+          <div className="scroll-content">
+            {events.map((event, index) => (
+              <EventCard
+                key={index}
+                title={event.title}
+                description={event.description}
+                date={event.date}
+                image={event.image}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -114,4 +137,5 @@ const HomeC3 = () => {
 };
 
 export default HomeC3;
+
 
