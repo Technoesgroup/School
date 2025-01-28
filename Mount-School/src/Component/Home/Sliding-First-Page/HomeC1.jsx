@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; 
 import Slider from "react-slick";
 import '../../../Styles/Home-CSS/Sliding-Page-CSS/HomeC1.css';
 import "slick-carousel/slick/slick.css";  
@@ -10,6 +11,11 @@ import heroImg4 from '../../../image/s3.jpg';
 import heroImg5 from '../../../image/s4.jpg';
 
 function HomeC1() {
+  
+  const navigate = useNavigate();
+  const handleAdmissionClick = () => {
+    navigate("/admission"); // Programmatically navigate to the admissions page
+  };
 
   const settings = {
     dots: true, // Show navigation dots
@@ -40,7 +46,7 @@ function HomeC1() {
             <span className="change-col">Bihta</span>
           </h1>
           <button className="front-button">
-            <span className="Admission-text-size">
+            <span onClick={handleAdmissionClick} className="Admission-text-size">
               ADMISSIONS
             </span>
           </button>

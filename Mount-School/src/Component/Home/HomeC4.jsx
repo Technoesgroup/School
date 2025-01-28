@@ -2,7 +2,7 @@ import React from "react";
 import "../../Styles/Home-CSS/HomeC4.css"; // Add custom styles here
 import SchoolImg from '../../image/Frame(4).jpg'
 
-const AdmissionsBanner = () => {
+const AdmissionsBanner = ({toggleForm}) => {
   return (
     <div className="admissions-banner4">
       <div className="admission-content-4">
@@ -14,7 +14,7 @@ const AdmissionsBanner = () => {
           innovative <br></br>curriculum and holistic
           development programs
         </p>
-        <button className="enquire-btns">ENQUIRE NOW</button>
+        <button className="enquire-btns"  onClick={toggleForm}>ENQUIRE NOW</button>
        </div>
       </div>
       <div className="image-sections-4">

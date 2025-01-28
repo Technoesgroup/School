@@ -15,15 +15,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  padding: 0 100px;
   text-align: left;
 }
 
 .contentss {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 5px;
 }
 
 .small-text {

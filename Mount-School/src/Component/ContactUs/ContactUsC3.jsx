@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../Styles/Contact-CSS/Contact3.css'
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
 const ContactForm = () => {
   return (
@@ -13,9 +16,9 @@ const ContactForm = () => {
         <div className="Contact-Info">
           <h3>Contact Information</h3>
           <h4>Please fill the form and send us your details. We will get in touch with you shortly.</h4>
-          <p>&#9742; +91 9876543210</p>
-          <p>&#9993; mailadmin@gmail.com</p>
-          <p>&#128205; Jhapura Road, Bihia, Patna, 802103</p>
+          <p><LocalPhoneIcon /> +91 9876543210</p>
+          <p><EmailIcon />mlzsbihta@gmail.com</p>
+          <p><FmdGoodIcon /> Jhapura Road, Bihia, Patna, 802103</p>
         </div>
         <div class="background-container">
        <div class="circle circle1"></div>
@@ -23,16 +26,16 @@ const ContactForm = () => {
           </div>
         <div className="contact-form">
           <form>
-            <div className="form-row">
+            <div className="ConatctUs-form-row">
               <input type="text" placeholder="First Name" required />
               <input type="text" placeholder="Last Name" required />
             </div>
-            <div className="form-row">
+            <div className="ConatctUs-form-row">
               <input type="email" placeholder="Email" required />
               <input type="tel" placeholder="Phone Number" required />
             </div>
             <textarea placeholder="Write your message..." required></textarea>
-            <button type="submit" className="send-button">Send Message</button>
+            <button type="submit" className="ContactUs-send-button">Send Message</button>
           </form>
         </div>
       </div>

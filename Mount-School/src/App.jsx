@@ -19,9 +19,21 @@ import AdmissionForm from "./Component/Home/AdmissionForm";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <AppContent />
     </Router>
   );
+};
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to top of the page whenever the route changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null; // This component doesn't render anything
 };
 
 const AppContent = () => {
@@ -58,7 +70,7 @@ const AppContent = () => {
         <Route path="/" element={<Home toggleForm={toggleForm} />} />
         <Route path="/About" element={<About />} />
       </Routes>
-      <FooterTop />
+      <FooterTop toggleForm={toggleForm}/>
       <Footer />
 
       {/* Admission Form Overlay */}

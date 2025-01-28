@@ -57,20 +57,18 @@ body{
   display: flex;
   gap: 50px;
   font-weight: 500;
-  font-size: 18px;
   color: #525252;
 }
 
 .contact-info-nav span {
   font-family: 'DegularMedium';
   display: flex;
-  align-items: center; /* Icons and text will align properly */
-  gap: 8px; /* Space between icon and text */
+  align-items: center; /* Icons and text will align properly */ /* Space between icon and text */
 }
 
-.contact-info i {
-  font-family: 'DegularMedium';
-  margin-right: 5px;
+.contact-info-nav span a{
+  font-size: 1.1rem;
+  gap: 8px;
 }
 
 .enquire-btn {
@@ -135,11 +133,6 @@ body{
   color: #2c3191;
 }
 
-.email-text{
-  position: relative;
-  top: -5px;
-}
-
 .header-nav ul li {
   font-family: 'DegularMedium';
   display: flex; /* Align icon and text together */
@@ -187,6 +180,10 @@ body{
 
 .header-nav ul li {
   position: relative;
+}
+
+.contact-link{
+  display: flex;
 }
 
 .header-nav ul li .dropdown {
@@ -251,7 +248,7 @@ body{
 .dusra-num{
   position: relative;
   top: 20px;
-  right: 45.9%;
+  right: 44%;
 }
 
 /* Mobile-specific styles */
