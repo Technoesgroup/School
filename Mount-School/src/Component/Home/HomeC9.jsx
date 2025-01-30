@@ -5,7 +5,7 @@ import C2 from '../../image/1B7A4922.jpg';
 import C3 from '../../image/Rectangle 23816.png';
 import C4 from '../../image/1B7A5554.jpg';
 import C5 from '../../image/393756555_791390669666349_153801016084109592_n.jpg';
-import C6 from '../../image/401469301_805388458266570_1033234963827125330_n.jpg';
+import C6 from '../../image/1B7A5328.jpg';
 import C7 from '../../image/Takonda2.png';
 import C8 from '../../image/1B7A4945.jpg';
 import C9 from '../../image/s5.jpg';

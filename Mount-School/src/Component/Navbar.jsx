@@ -11,6 +11,12 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const Header = ({ toggleForm }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
+
+const handleMenuClick = (menuName) => {
+  setActiveItem(menuName);
+};
+
 
   const handleMouseEnter = (menuName) => {
     setActiveDropdown(menuName);
@@ -64,7 +70,7 @@ const Header = ({ toggleForm }) => {
         <div className="contact-info-nav">
           <span className="two-numbers">
             <a href="tel:+919771485809" className="contact-link">
-              <PhoneIcon className="Phone" />
+              <PhoneIcon className="Navbar-Phone" />
               +91 9771485809
             </a>
             <a href="tel:+919771485810" className="contact-link dusra-num">
@@ -73,7 +79,7 @@ const Header = ({ toggleForm }) => {
           </span>
           <span className="email-text">
             <a href="mailto:mlzsbihta@gmail.com" className="contact-link">
-              <EmailIcon className="mail" /> mlzsbihta@gmail.com
+              <EmailIcon className="Navbar-mail" /> mlzsbihta@gmail.com
             </a>
           </span>
         </div>
@@ -104,9 +110,15 @@ const Header = ({ toggleForm }) => {
               onMouseEnter={() => handleMouseEnter(menu)}
               onMouseLeave={handleMouseLeave}
             >
-              <Link to={`/${menu.toLowerCase()}`} onClick={closeMobileMenu}>
-                {menu}
-              </Link>
+          <Link
+            to={`/${menu.toLowerCase()}`}
+            onClick={() => {
+            handleMenuClick(menu);
+            closeMobileMenu();
+          }}
+          >
+          {menu}
+          </Link>
               <ArrowDropDownIcon className="arrow-icon" />
               {activeDropdown === menu && (
                 <div className="dropdown">

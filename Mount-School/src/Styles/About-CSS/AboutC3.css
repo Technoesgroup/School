@@ -29,17 +29,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 38px;
+    gap: 40px;
     flex-wrap: wrap;
   }
   
   .about-section__card {
-    background-color:#292E86 ;
+    background-color:#292E86;
     position: relative;
     border: 3px dashed #060606;
     border-radius: 8px;
     padding: 25px  20px;
-    width: 280px;
+    max-width: 280px;
     height: 180px;
     box-shadow: 0 4px 8px rgba(9, 9, 9, 0.817);
     text-align: center;
@@ -63,6 +63,7 @@
   
   .about-section__icon {
     font-size: 40px;
+    top: 9px;
     z-index: 200;
     position: relative;
   }
@@ -93,9 +94,11 @@
   .text_About_C3{
     font-family: 'DegularDemoMedium';
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 3px;
   }
   
   .black-text_C3 {

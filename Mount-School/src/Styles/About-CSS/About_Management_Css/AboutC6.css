@@ -16,7 +16,7 @@
 }
 
 .management-card__content {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -29,7 +29,7 @@
 
 .management-card__description {
   font-family: 'PoppinsMedium';
-  line-height: 2;
+  line-height: 1.8;
   font-size: 0.9rem;
   color: #ffffff;
 }

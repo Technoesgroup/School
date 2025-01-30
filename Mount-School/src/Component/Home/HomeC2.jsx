@@ -69,16 +69,16 @@ function AboutUs() {
 
   return (
     <>
-     <div className="header-Admission">
+   <div className="header-Admission">
    <div  className='h3-admission-header'>
    <h3><span className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn' onClick={handleApllybtn}>APPLY NOW</button></span></h3>
    </div>
    <div className='h3-admission-header'>
    <h3><span  className='h3-open-admission'>ADMISSIONS OPEN FOR 2025-2026 </span> <span><button  className='Apply-btn' onClick={handleApllybtn}>APPLY NOW</button></span></h3>
-     
+  </div>
     </div>
-    </div>
-    <div className="About-container" ref={containerRef}>
+    <div className="HomeC2-About-container" 
+    ref={containerRef}>
       <div className="leader-header_About">
         <h1>
           <span className="black-text_About">WELCOME TO</span> 

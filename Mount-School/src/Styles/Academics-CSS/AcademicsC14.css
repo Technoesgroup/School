@@ -1,11 +1,11 @@
 /* General Styles */
 .AcademicsC14-achievement-container {
   background-color: white;
-  padding: 1.5rem;
-  max-width: 64rem;
-  margin: 0 auto;
-}
+  width: 84%;
+  margin: auto;
+  padding: 20px;
 
+}
 .AcademicsC14-achievement-title {
   font-size: 1.4rem;
   font-weight: bold;

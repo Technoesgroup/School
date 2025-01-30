@@ -1,5 +1,5 @@
 import React  from  'react';
-import Contact1 from '../../image/401469301_805388458266570_1033234963827125330_n.jpg';
+import Contact1 from '../../image/WhatsApp Image 2025-01-28 at 16.28.53_0945a830.jpg';
 import '../../Styles/Contact-CSS/Contact1.css';
 
 function Contact(){

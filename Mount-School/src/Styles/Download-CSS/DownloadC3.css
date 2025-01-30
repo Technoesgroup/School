@@ -103,7 +103,7 @@ body {
 .Downloads-corner-border {
   position: absolute;
   top: -4px; /* Adjust for proper positioning */
-  right: -4px; /* Adjust for proper positioning */
+  right: -1px; /* Adjust for proper positioning */
   width: 180px; /* Width of the border */
   height: 150px; /* Height of the border */
   border: 9px solid #2C3192; /* Blue border */

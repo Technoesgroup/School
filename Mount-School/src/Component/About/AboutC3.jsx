@@ -11,31 +11,28 @@ const About3 = () => {
   const cardsData = [
     {
       icon: Icon_2,
-      title: 'Your Child Deserves an Opportunity to Achieve Their Dreams to the Fullest',
+      title: 'YOUR CHILD DESERVES AN OPPORTUNITY TO ACHIEVE THEIR DREAMS TO THE FULLEST.',
       description: 'Unlock the doors to all-round holistic excellence at Mount Litera Zee School.',
     },
     {
       icon: Icon_3,
-      title: 'Academic, Co-Curricular, Personal, Emotional, and Spiritual Brilliance',
+      title: 'ACADEMIC, CO-CURRICULAR, PERSONAL, EMOTIONAL, AND SPIRITUAL BRILLIANCE.',
       description: 'Time to ensure that your child gets what he deserves. It’s time to take him to Mount Litera Zee School.',
     },
     {
       icon: Icon_1,
-      title: 'About Mount Litera Zee School',
+      title: 'ABOUT MOUNT LITERA ZEE SCHOOL',
       description: 'Brighten your child’s future at Mount Litera Zee School.',
     },
   ];
-
-
-
 
 
   return (
     <div id="About-section" className="about-section">
       <div className="leader-header_C3">
         <h1 className="text_About_C3">
-          <span className="black-text_C3">About</span>
-          <span className="blue-text_C3"> the School</span>
+          <span className="black-text_C3">ABOUT  THE </span>
+          <span className="blue-text_C3"> SCHOOL</span>
         </h1>
       </div>
       <div className="about-section__cards">

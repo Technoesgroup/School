@@ -5,8 +5,6 @@ import Acitvity3 from  '../../image/Rectangle 23814.png';
 import Acitvity4 from  '../../image/IMG-20241029-WA0056.jpg'; 
 import useScrollToSection from "../Hook/CustomHook2";
 
-
-
 const AcademicsC3 = () => {
 
 useScrollToSection();  

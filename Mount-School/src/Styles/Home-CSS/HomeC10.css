@@ -1,7 +1,7 @@
 @import url('../Font.css');
 
 /* Full-width styles */
-.contact-container {
+.HomeC10-contact-container {
   font-family: 'Degularbold';
   display: flex;
   justify-content: space-between;
@@ -11,23 +11,23 @@
   padding: 20px  70px;
 }
 
-.form-section {
+.HomeC10-form-section {
   flex: 1;
   padding: 40px;
 }
 
-.form-section h2 {
+.HomeC10-form-section h2 {
   font-family: 'Degularbold';
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.form-section .highlight {
+.HomeC10-form-section .highlight {
   color: #2c318f;
 }
 
-.form-section p {
+.HomeC10-form-section p {
   font-family: 'PoppinsSemibold';
   font-weight: 300;
   font-size: 13px;
@@ -59,21 +59,21 @@ form button:hover {
   background: #1f256f;
 }
 
-.contact-info {
+.HomeC10-contact-info {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
+  gap: 80px;
+  align-items:start;
   margin-top: 20px;
   font-size: 14px;
   color: #666;
 }
 
-.contact-info div {
+.HomeC10-contact-info div {
   margin-bottom: 10px;
 }
 
-.contact-info span {
+.HomeC10-contact-info span {
   font-weight: bold;
   color: black;
 }
@@ -87,16 +87,16 @@ form button:hover {
 }
 
 .map-section iframe {
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 10px 10px 0;
   height: 100%;
 }
 
 .map-section-corner-border_1{
   position: absolute;
-  top: 0;
-  right: 3px;
+  top: -5px;
+  right: 1px;
   width: 300px;
-  height: 216px;
+  height: 222px;
   border: 45px solid #2C3192;
   border-top: none;
   border-left: none;
@@ -107,10 +107,10 @@ form button:hover {
 
 .map-section-corner-border_2 {
   position: absolute;
-  bottom: 0; /* Position it at the bottom */
-  right: 3px; /* Align it to the right */
+  bottom: -5px; /* Position it at the bottom */
+  right: 1px; /* Align it to the right */
   width: 300px;
-  height: 216px;
+  height: 222px;
   border: 45px solid #2C3192;
   border-bottom: none; /* Remove the bottom border */
   border-left: none; /* Remove the left border */
@@ -119,11 +119,15 @@ form button:hover {
   pointer-events: none;
 }
 
+.get-in-touch-phn{
+  display: flex;
+  align-items: center;
+}
 
 /*  */
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-  .contact-container {
+  .HomeC10-contact-container {
     flex-direction: column;
     height: auto;
     padding: 10px;
@@ -136,7 +140,7 @@ form button:hover {
     height: 100%;
   }
 
-  .form-section {
+  .HomeC10-form-section {
     padding: 20px;
     text-align: center;
   }
@@ -150,11 +154,11 @@ form button:hover {
   }
 
 
-  .form-section h2 {
+  .HomeC10-form-section h2 {
     font-size: 24px;
   }
 
-  .form-section p {
+  .HomeC10-form-section p {
     font-size: 12px;
     line-height: 1.4;
   }
@@ -168,11 +172,11 @@ form button:hover {
     width: 100%;
   }
 
-  .contact-info {
+  .HomeC10-contact-info {
     margin-top: 10px;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    align-items: start;
     font-size: 12px;
   }
 
@@ -188,7 +192,7 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
-  .form-section h2 {
+  .HomeC10-form-section h2 {
     font-size: 20px;
   }
 
@@ -198,7 +202,7 @@ form button:hover {
     padding: 8px;
   }
 
-  .contact-info span {
+  .HomeC10-contact-info span {
     font-size: 14px;
   }
 }

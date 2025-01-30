@@ -59,16 +59,16 @@ const AppContent = () => {
     <>
       <NavBar toggleForm={toggleForm} />
       <Routes>
-        <Route path="/Academics" element={<Academics />} />
-        <Route path="/admission" element={<Admission />} />
-        <Route path="/Facilities" element={<FacilitiePage />} />
-        <Route path="/CBSE" element={<CBSE />} />
-        <Route path="/Committee" element={<CommitteePage />} />
-        <Route path="/Download" element={<DownloadPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/Academics" element={<Academics  toggleForm={toggleForm}/>} />
+        <Route path="/admission" element={<Admission  toggleForm={toggleForm}/>} />
+        <Route path="/Facilities" element={<FacilitiePage  toggleForm={toggleForm}/>} />
+        <Route path="/CBSE" element={<CBSE  toggleForm={toggleForm}/>} />
+        <Route path="/Committee" element={<CommitteePage  toggleForm={toggleForm}/>} />
+        <Route path="/Download" element={<DownloadPage  toggleForm={toggleForm}/>} />
+        <Route path="/gallery" element={<GalleryPage  toggleForm={toggleForm}/>} />
+        <Route path="/contact-us" element={<ContactUs  toggleForm={toggleForm}/>} />
         <Route path="/" element={<Home toggleForm={toggleForm} />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/About" element={<About toggleForm={toggleForm} />} />
       </Routes>
       <FooterTop toggleForm={toggleForm}/>
       <Footer />

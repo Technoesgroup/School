@@ -1,6 +1,6 @@
 import "../../Styles/Academics-CSS/AcademicsC5.css";
 import image1 from "../../image/1B7A5369.jpg";
-import image2 from "../../image/IMG-20240522-WA0064.jpg";
+import image2 from "../../image/393756555_791390669666349_153801016084109592_n.jpg";
 import image3 from "../../image/332651516_1267840104082038_69494475655152421_n.jpg";
 import image4 from '../../image/s2.jpg';
 import useScrollToSection from "../Hook/CustomHook2";

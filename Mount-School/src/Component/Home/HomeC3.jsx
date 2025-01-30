@@ -8,6 +8,10 @@ import Parent_Orientation_Programme from '../../image/teacher training 2.jpg';
 import Career from '../../image/373300263_759440476194702_7710447674765630293_n.jpg';
 import pre_board from '../../image/Gro.png';
 import Induction from '../../image/Frame(4).jpg';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlayDisabledIcon from '@mui/icons-material/PlayDisabled';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 
 const events = [
   {
@@ -103,13 +107,14 @@ const HomeC3 = () => {
           <h1>Campus Tour</h1>
           <div className="video-controls">
             {/* Play/Pause Button */}
-            <button onClick={handlePlayPause} className="video-control-button">
-              {isPlaying ? 'Pause' : 'Play'}
+            <button onClick={handlePlayPause} className="HomeC3-video-control-button">
+              {isPlaying ?  <PlayArrowIcon /> :  <PlayDisabledIcon />}
             </button>
             {/* Mute/Unmute Button */}
-            <button onClick={handleMuteUnmute} className="video-control-button">
-              {isMuted ? 'Unmute' : 'Mute'}
+            <button onClick={handleMuteUnmute} className="HomeC3-video-control-button" >
+            {isMuted ? <VolumeOffIcon /> : <VolumeUpIcon/>}
             </button>
+             
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
 /* Photo Gallery Container */
 .photo-gallery-container {
   text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 20px 80px; /* Reduced padding for smaller screens */
+  padding: 20px 100px; /* Reduced padding for smaller screens */
 }
 
 .photo-gallery-container h2 {
@@ -25,7 +24,7 @@
 .photo-card {
   position: relative;
   width: 100%; /* Full width of grid item */
-  max-width: 340px; /* Set a max width */
+  max-width: 380px; /* Set a max width */
   height: 250px;
   overflow: hidden;
   border-radius: 8px;

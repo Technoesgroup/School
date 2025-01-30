@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../Styles/Facillities-CSS/LabPage.css";
 import Header from "./Header";
 import image1 from '../../image/Rectangle 23973.png';
@@ -83,25 +83,50 @@ const labs = [
 ];
 
 function LabsPage() {
-    return (
-        <div className="labs-page">
-          <Header />
-          <div className="labs-container">
-            {labs.map((lab, index) => (
-              <div
-                key={index}
-                className={`lab-card ${index % 2 === 1 ? "lab-card-right" : ""}`}
-              >
-                <img src={lab.image} alt={`${lab.title} Image`} />
-                <div>
-                  <h2>{lab.title}</h2>
-                  <p>{lab.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-}
+  const labRefs = useRef([]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("Facilities-show");
+          }
+        });
+      },
+      { threshold: 0.2 } // Adjust threshold as needed
+    );
+
+    labRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      labRefs.current.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
+
+  return (
+    <div className="labs-page">
+      <Header />
+      <div className="labs-container">
+        {labs.map((lab, index) => (
+          <div
+            key={index}
+            className={`lab-card ${index % 2 === 1 ? "lab-card-right" : ""}`}
+            ref={(el) => (labRefs.current[index] = el)}
+          >
+            <img src={lab.image} alt={`${lab.title} Image`} />
+            <div>
+              <h2>{lab.title}</h2>
+              <p>{lab.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 export default LabsPage;

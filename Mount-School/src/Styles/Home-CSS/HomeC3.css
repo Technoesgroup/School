@@ -157,17 +157,17 @@ bottom: 0;
   margin-top: 5px;
 }
 
-.video-control-button {
-  padding: 8px 18px;
-  border: none;
+.HomeC3-video-control-button {
   background-color: #4AAFF7;
+  padding: 5px;
+  border: none;
   color: white;
   border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
 }
 
-.video-control-button:hover {
+.HomeC3-video-control-button:hover{
   background-color: #4AAFF7;
 }
 
