@@ -13,10 +13,9 @@ const Header = ({ toggleForm }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
 
-const handleMenuClick = (menuName) => {
-  setActiveItem(menuName);
-};
-
+  const handleMenuClick = (menuName) => {
+    setActiveItem(menuName);
+  };
 
   const handleMouseEnter = (menuName) => {
     setActiveDropdown(menuName);
@@ -99,7 +98,13 @@ const handleMenuClick = (menuName) => {
         </div>
         <ul className={`navb-items ${isMobileMenuOpen ? "open" : ""}`}>
           <li>
-            <Link to="/" onClick={closeMobileMenu}>
+            <Link
+              to="/"
+              onClick={() => {
+                handleMenuClick("Home");
+                closeMobileMenu();
+              }}
+            >
               Home
             </Link>
           </li>
@@ -110,15 +115,15 @@ const handleMenuClick = (menuName) => {
               onMouseEnter={() => handleMouseEnter(menu)}
               onMouseLeave={handleMouseLeave}
             >
-          <Link
-            to={`/${menu.toLowerCase()}`}
-            onClick={() => {
-            handleMenuClick(menu);
-            closeMobileMenu();
-          }}
-          >
-          {menu}
-          </Link>
+              <Link
+                to={`/${menu.toLowerCase()}`}
+                onClick={() => {
+                  handleMenuClick(menu);
+                  closeMobileMenu();
+                }}
+              >
+                {menu}
+              </Link>
               <ArrowDropDownIcon className="arrow-icon" />
               {activeDropdown === menu && (
                 <div className="dropdown">
@@ -137,22 +142,46 @@ const handleMenuClick = (menuName) => {
           ))}
 
           <li>
-            <Link to="/CBSE" onClick={closeMobileMenu}>
+            <Link
+              to="/CBSE"
+              onClick={() => {
+                handleMenuClick("CBSE");
+                closeMobileMenu();
+              }}
+            >
               CBSE
             </Link>
           </li>
           <li>
-            <Link to="/Facilities" onClick={closeMobileMenu}>
+            <Link
+              to="/Facilities"
+              onClick={() => {
+                handleMenuClick("Facilities");
+                closeMobileMenu();
+              }}
+            >
               Facilities
             </Link>
           </li>
           <li>
-            <Link to="/gallery" onClick={closeMobileMenu}>
+            <Link
+              to="/gallery"
+              onClick={() => {
+                handleMenuClick("Gallery");
+                closeMobileMenu();
+              }}
+            >
               Gallery
             </Link>
           </li>
           <li>
-            <Link to="/contact-us" onClick={closeMobileMenu}>
+            <Link
+              to="/contact-us"
+              onClick={() => {
+                handleMenuClick("Contact Us");
+                closeMobileMenu();
+              }}
+            >
               Contact Us
             </Link>
           </li>
