@@ -24,11 +24,12 @@ padding-left: 0;
 .footer-section p {
   padding-left: 10px;
   font-family: 'Poppins-Regular';
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin: 10px 0;
 }
 
 .footer-section h3 {
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -78,13 +79,13 @@ padding-left: 0;
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 80%;
 }
 
 .Contact-Form2 input {
   background-color: rgb(234, 234, 234);
   width: 100%;
-  padding: 20px 18px;
+  padding:  18px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   z-index: 1;
@@ -152,4 +153,34 @@ a{
 
 .follow-us{
   margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+    align-items: start;
+  }
+  .footer-section {
+    text-align: start;
+  }
+  .contact-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-Quick {
+    font-size: 0.9rem;
+    flex: 0.4; /* Adjusts the flex size for less width */
+    margin-left: 0; /* Keep consistent spacing */
+  }
 }

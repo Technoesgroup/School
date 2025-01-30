@@ -118,22 +118,23 @@ body{
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
-  padding: 8px 80px;
+  padding: 9px 80px;
   color: white;
 }
 
-.Phone {
+.Navbar-Phone{
   position: relative;
   top: 5px;
   color: #2c3191;
 }
 
-.mail {
+.Navbar-mail{
   font-family: 'DegularMedium';
   color: #2c3191;
 }
 
 .header-nav ul li {
+  position: relative;
   font-family: 'DegularMedium';
   display: flex; /* Align icon and text together */
   align-items: center;
@@ -142,9 +143,6 @@ body{
   transition: color 0.3s, transform 0.3s; /* Smooth transition for hover */
 }
 
-.header-nav ul li a:hover {
-  color: #FFC107; /* Change text color to red */
-}
 
 .header-nav ul li a {
   transition: color 0.2s, transform 0.3s;
@@ -154,10 +152,15 @@ body{
   text-decoration: none; /* Default underline ko hata dena */
 }
 
+.header-nav ul li a:hover{
+  color: #FFC107;
+}
+
 .header-nav ul li:hover .arrow-icon {
   color: #FFC107;
   transform: rotate(180deg); /* Rotate the arrow icon */
 }
+
 
 .two-numbers{
   position: relative;
@@ -191,7 +194,7 @@ body{
   height: auto;
   position: absolute;
   top: 100%;
-  border-radius: 12px;
+  border-radius: 5px;
   left: 0;
   text-align: left;
   background-color: #2c3191;
@@ -231,10 +234,6 @@ body{
   padding: 0 ;
   align-items: center;
   transition: transform 0.3s ease-in-out;
-}
-
-.navb-items li {
-  position: relative;
 }
 
 .mobile-logo {

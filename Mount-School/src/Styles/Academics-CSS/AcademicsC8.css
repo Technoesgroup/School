@@ -1,116 +1,92 @@
 @import url('../Font.css');
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
-  
-  .Academics-halloween-event {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px  100px;
-    background-color: #fff;
-    border-radius: 8px;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
-  }
-  
-  .Academics-event-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .Academics-event-header h1 {
-    font-family: 'PoppinsSemibold';
-    font-size: 1.2rem;
-    color: #4AAFF7;
-  }
-  
-  .Academics-event-description {
-    font-family: 'PoppinsMedium';
-    font-size: 0.9rem;
-    margin-bottom: 30px;
-    line-height: 2;
-    color: #252525;
-  }
-  
-  .Academics-event-description p {
-    margin-bottom: 15px;
-    font-family: 'PoppinsMedium';
-  }
-  
-  .Academics-event-gallery {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .Academics-gallery-first-row {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .Academics-small-Halloween-img {
-    width: 100%;
-    max-width: 300px; /* Smaller width */
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .Academics-large-Halloween-img {
-    width: 100%;
-    max-width: 750px; /* Larger width */
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .Academics-gallery-row {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .Academics-equal-Halloween-img {
-    width: 100%;
-    max-width: 400px; /* Equal size for bottom images */
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  /* Responsive styles for smaller screens */
-  @media (max-width: 768px) {
-    .Academics-gallery-first-row img,
-    .Academics-gallery-row img {
-      width: 150px; /* Set a smaller width */
-      height: 150px; /* Set a smaller height */
-      object-fit: cover; /* Ensure images maintain aspect ratio */
-      border-radius: 10px; /* Keep consistent rounded corners */
-    }
-  
-    .Academics-halloween-event {
-      padding: 10px; /* Reduce padding for smaller screens */
-    }
-  
-    .none {
-      display: none; /* Hide the fifth image */
-    }
+.AcademicsC8-Halloween-container {
+  width: 84%;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-    .Academics-event-header h1 {
-      font-size: 1.7rem;
-      color: #333;
-      text-align: left;
-    }
+.AcademicsC8-event-title {
+  font-family: 'PoppinsSemibold';
+  text-align: left;
+  font-size: 1.2rem;
+  color: #4AAFF7;
+  margin-bottom: 20px;
+}
 
-    .Academics-event-description p {
-       font-size: 14px;
-       text-align: left;
-    }
+.AcademicsC8-event-description {
+  font-family: 'PoppinsMedium';
+  text-align: justify;
+  line-height: 2;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.AcademicsC8-image-gallery {
+  display: grid;
+  gap: 10px;
+}
+
+/* Top images (first row) */
+.AcademicsC8-image-gallery .AcademicsC8-top-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Left image smaller, right image larger */
+  gap: 10px;
+}
+
+.AcademicsC8-image-gallery .AcademicsC8-top-row img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 200px; /* Set height as needed */
+  object-fit: cover; /* Ensures images fit nicely */
+}
+
+/* Bottom images (second row) */
+.AcademicsC8-image-gallery .AcademicsC8-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Left image larger, right image smaller */
+  gap: 10px;
+}
+
+.AcademicsC8-image-gallery .AcademicsC8-bottom-row img {
+  width: 100%;
+  height: 200px; /* Set height as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures images fit nicely */
+}
+
+/* General image styles */
+/* Mobile View */
+@media (max-width: 768px) {
+  .AcademicsC8-image-gallery {
+    display: flex;
+    gap: 10px;
   }
-  
-  
+
+  .none-img{
+    display: none;
+  }
+
+  .AcademicsC8-image-gallery .AcademicsC8-top-row,
+  .AcademicsC8-image-gallery .AcademicsC8-bottom-row {
+    grid-template-columns: 1fr; /* Single column for all images */
+  }
+
+  .AcademicsC8-image-gallery .AcademicsC8-bottom-row img {
+    height: 150px;
+  }
+
+  .AcademicsC8-image-gallery .AcademicsC8-top-row img {
+    height: 150px;
+  }
+
+  .AcademicsC8-image-gallery img {
+    width: 100%;
+    height:auto; /* Adjust height automatically */
+    object-fit: contain; /* Ensure images scale properly */
+  }
+}

@@ -55,8 +55,9 @@
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
+  text-shadow: 8px 8px 16px rgb(0, 0, 0); 
 }
 
 .Home5-facility-overlay {
@@ -83,6 +84,7 @@
 }
 
 .Home5-facility-title-overlay-D2 {
+  margin-top: 30px;
   color: white;
   font-size: 0.9rem;
   text-align: center;

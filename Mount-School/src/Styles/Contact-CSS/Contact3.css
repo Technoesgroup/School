@@ -62,6 +62,7 @@
     color: white;
     padding: 20px 70px;
     flex: 1;
+    cursor: pointer;
   }
 
   .Contact-Info h4{

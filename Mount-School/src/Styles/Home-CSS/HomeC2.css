@@ -26,7 +26,7 @@
     font-style: normal;
   }
 
-.About-container {
+.HomeC2-About-container {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center align the content horizontally */
@@ -42,7 +42,7 @@
     opacity: 0.9;
     overflow: hidden; /* Disable scrollbars within the container */
     position: relative;
-    margin-left: 6px;
+
 }
 
 .Apply-btn {
@@ -135,7 +135,7 @@ body {
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-.About-container p {
+.HomeC2-About-container p {
     max-width: 800px; /* Limit width for readability */
     font-size: 0.8rem;
     font-family: 'PoppinsSemiBold';
@@ -178,8 +178,6 @@ body {
     color: #FFC107;
 }
 
-
-
 .stat-title {
     font-family: 'DegularsemiBold';
     font-size: 1.2rem;
@@ -214,13 +212,13 @@ body {
         display: none; /* Hide header for smaller screens */
     }
 
-    .About-container {
+    .HomeC2-About-container {
         padding: 20px; /* Reduce padding for smaller screens */
         text-align: center;
     }
   
 
-    .About-container p {
+    .HomeC2-About-container p {
         font-size: 0.8rem;
         text-align: left;
         line-height: 1.4;

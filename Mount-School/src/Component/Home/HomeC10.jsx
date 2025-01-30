@@ -2,13 +2,12 @@ import React from "react";
 import "../../Styles/Home-CSS/HomeC10.css";
 import DraftsOutlinedIcon from '@mui/icons-material/DraftsOutlined';
 import WifiCalling3OutlinedIcon from '@mui/icons-material/WifiCalling3Outlined';
-import FaxOutlinedIcon from '@mui/icons-material/FaxOutlined';
 
 const HomeC10 = () => {
   return (
-    <div className="contact-container">
+    <div className="HomeC10-contact-container">
       {/* Left Section */}
-      <div className="form-section">
+      <div className="HomeC10-form-section">
         <h2>
           Get in <span className="highlight">Touch</span>
         </h2>
@@ -22,20 +21,16 @@ const HomeC10 = () => {
           <input type="text" placeholder="Phone number *" required />
           <textarea placeholder="Your Message" rows="4"></textarea>
           <br></br>
-          <button type="submit-btn">SEND</button>
+          <button type="HomeC10-submit-btn">SEND</button>
         </form>
-        <div className="contact-info">
+        <div className="HomeC10-contact-info">
           <div>
-            <span> <WifiCalling3OutlinedIcon />PHONE</span>
-            <p>03 5432 1234</p>
+            <span className="get-in-touch-phn"> <WifiCalling3OutlinedIcon />PHONE</span>
+            <p>+91 9771485809</p>
           </div>
           <div>
-            <span> <FaxOutlinedIcon /> FAX</span>
-            <p>03 5432 1234</p>
-          </div>
-          <div>
-            <span><DraftsOutlinedIcon /> EMAIL</span>
-            <p>info@mlzsc.com.au</p>
+            <span  className="get-in-touch-phn"><DraftsOutlinedIcon /> EMAIL</span>
+            <p>mlzsbihta@gmail.com</p>
           </div>
         </div>
       </div>

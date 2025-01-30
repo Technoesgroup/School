@@ -1,24 +1,20 @@
-import "../../Styles/Academics-CSS/AcademicsC8.css";
+import React from "react";
+import "../../Styles/Academics-CSS/AcademicsC8.css"; // Add your CSS file for styling
 import image1 from '../../image/20231031_103916.jpg';
 import image2 from '../../image/20231031_103932.jpg';
-import image3 from '../../image/20231031_103843.jpg';
-import image4 from '../../image/20231031_103847.jpg';
-import image5 from '../../image/20231031_103811.jpg';
-import useScrollToSection from "../Hook/CustomHook2";
+import image3 from '../../image/Bhoot2.svg';
+import image4 from '../../image/bhoot1.svg';
+import image5 from '../../image/Bhoot3.svg';
 
-const HalloweenEvent = () => {
-     
-  useScrollToSection();
-  
+
+const Hallowen = () => {
   return (
-    <div className="Academics-halloween-event">
+    <div className="AcademicsC8-Halloween-container">
       {/* Header Section */}
-      <header className="Academics-event-header">
-        <h1>Halloween Day, 31 Oct 2024</h1>
-      </header>
+      <h1 className="AcademicsC8-event-title">Halloween Day, 31 Oct 2024</h1>
 
       {/* Description Section */}
-      <section className="Academics-event-description">
+      <div className="AcademicsC8-event-description">
         <p>
         Mount Litera Zee School Bihta turned into a spooky wonderland on Halloween Day 2024.
          The students arrived in creative costumes ranging from spooky ghosts to whimsical creatures,
@@ -26,23 +22,25 @@ const HalloweenEvent = () => {
            parade, the event was a thrilling mix of fun, fright, and laughter, making it a memorable 
            celebration for all.
         </p>
-      </section>
+      </div>
 
-  <section className="Academics-event-gallery">
-  <div className="Academics-gallery-first-row">
-    <img className="Academics-small-Halloween-img" src={image1} alt="Left smaller image" />
-    <img className="Academics-large-Halloween-img" src={image2} alt="Right larger image" />
-  </div>
-  <div className="Academics-gallery-row">
-    <img className="Academics-equal-Halloween-img" src={image3} alt="Bottom image 1" />
-    <img className="Academics-equal-Halloween-img" src={image4} alt="Bottom image 2" />
-    <img className="Academics-equal-Halloween-img none" src={image5} alt="Bottom image 3" />
-  </div>
-</section>
+      {/* Image Gallery Section */}
+      <div className="AcademicsC8-image-gallery">
+        {/* Top Row */}
+        <div className="AcademicsC8-top-row">
+          <img src={image1} alt="Halloween Left" />
+          <img src={image2} alt="Halloween Right" />
+        </div>
 
-
+        {/* Bottom Row */}
+        <div className="AcademicsC8-bottom-row">
+          <img src={image3} alt=" Halloween Bottom Left" />
+          <img src={image4} alt=" Halloween Bottom Right" />
+          <img  className="none-img" src={image5} alt=" Halloween Bottom Right" />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default HalloweenEvent;
+export default Hallowen;

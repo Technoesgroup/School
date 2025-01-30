@@ -1,168 +1,182 @@
+/* Import Fonts */
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url('../../../public/Poppins-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DegularBold';
+  src: url('../../../public/Poppins-Regular.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Global Styles */
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'PoppinsMedium', sans-serif;
+}
 
-  @font-face {
-    font-family: 'PoppinsMedium';
-    src: url('../../../public/Poppins-Regular.ttf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-  }
+/* Header */
+.Facilities-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
 
-  @font-face {
-    font-family: 'DegularBold';
-    src: url('../../../public/Poppins-Regular.ttf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .Facilities-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-  }
+.Facilities-header h2 {
+  font-family: 'DegularBold';
+}
 
-  .Facilities-header h2{
-    font-family: 'DegularBold';
-  }
-  
-  .labs-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px; /* Limit the width of the container */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px; /* Reduced padding for better centering */
-    align-items: center; /* Center the lab cards */
-    margin: 0 auto; /* Ensure the container is centered on the page */
-  }
-  
-  .lab-card {
-    width: 100%;
-    max-width: 1090px; /* Constrain the width of each lab card */
-    display: flex;
-    flex-direction: row; /* Stack content vertically for better centering */
-    align-items: center; /* Center align content */
-    justify-content: space-between;
-    background: #fff;
-    padding: 30px 10px; 
-    text-align: left;
-  }
-  
-  .lab-card img {
-    width: 80%; /* Reduce the width of the image for better spacing */
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px; /* Add spacing between the image and text */
-  }
-  
-  .lab-card h2 {
-    font-family: 'DegularBold';
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .lab-card p {
-    font-family: 'PoppinsMedium';
-    text-align: left;
-    font-size: 0.9rem;
-    max-width: 600px;
-    color: #555;
-  }
+.Facilities-header p {
+  font-family: 'PoppinsMedium';
+  max-width: 1100px;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+}
 
-  .lab-card-right {
-    flex-direction: row-reverse; /* Swap the order of the content */
-  }
-  
-  .Facilities-header p {
-    font-family: 'PoppinsMedium';
-    max-width: 1100px;
-    font-size: 1rem;
-    line-height: 2;
-    text-align: center;
-  }
+/* Labs Page */
+.labs-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Facilities-header  h2{
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .labs-page {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+/* Labs Container */
+.labs-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  margin: 0 auto;
+}
 
-  /* Mobile View Styles */
+/* Lab Card */
+.lab-card {
+  width: 100%;
+  max-width: 1090px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 30px 10px;
+  text-align: left;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50px); /* Text moves from left */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Image Animation */
+.lab-card img {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(50px); /* Image moves from right */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When in viewport */
+.lab-card.Facilities-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.lab-card.Facilities-show img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Alternate Layout */
+.lab-card-right {
+  flex-direction: row-reverse;
+}
+
+/* Text Styling */
+.lab-card h2 {
+  font-family: 'DegularBold';
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.lab-card p {
+  font-family: 'PoppinsMedium';
+  text-align: left;
+  font-size: 0.9rem;
+  max-width: 600px;
+  color: #555;
+}
+
+/* Mobile View */
 @media screen and (max-width: 768px) {
   .labs-container {
-    gap: 5px;
-    width: 100%;
-    padding: 10px; /* Reduced padding for better alignment */
+      gap: 5px;
+      width: 100%;
+      padding: 10px;
   }
 
   .lab-card {
-    flex-direction: column; /* Stack the image and content vertically */
-    align-items: flex-start; /* Align content to the left */
-    text-align: left;
-    gap: 15px; /* Add spacing between image and text */
-  }
-
-  .lab-card {
-    width: 100%;
-    max-width: 900px; 
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      gap: 15px;
+      opacity: 1; /* Ensure animation still works */
+      transform: translateX(0);
   }
 
   .lab-card img {
-    width: 100%; /* Full width of the container */
-    max-width: 80%; /* Remove max width for smaller screens */
-    height: auto;
-    margin: 0 auto; /* Center image horizontally */
+      width: 100%;
+      max-width: 80%;
+      height: auto;
+      margin: 0 auto;
+      opacity: 1;
+      transform: translateX(0);
   }
 
   .lab-card h2 {
-    font-size: 18px; /* Adjust font size for smaller screens */
-    margin-bottom: 8px;
+      font-size: 18px;
+      margin-bottom: 8px;
   }
 
   .lab-card p {
-    font-size: 14px; /* Reduce font size for better readability */
-    max-width: 100%; /* Allow text to use full width */
-    margin-bottom: 10px;
+      font-size: 14px;
+      max-width: 100%;
+      margin-bottom: 10px;
   }
 
   .lab-card-right {
-    flex-direction: column; /* Ensure reverse cards also stack properly */
+      flex-direction: column;
   }
 
   .labs-page {
-  width: 90%;
-    padding: 0 15px; /* Add padding to the overall page for spacing */
+      width: 90%;
+      padding: 0 15px;
   }
 
   .Facilities-header {
-    padding: 15px; /* Adjust header padding for smaller screens */
+      padding: 15px;
   }
 
   .Facilities-header h2 {
-    font-size: 24px; /* Adjust header font size */
+      font-size: 24px;
   }
 
   .Facilities-header p {
-    font-size: 14px;
-  }
-  .Facilities-header p {
-    font-family: 'PoppinsMedium';
-    max-width: 900px;
-    line-height: 2;
-    text-align: center;
+      font-size: 14px;
   }
 }
+
 
   

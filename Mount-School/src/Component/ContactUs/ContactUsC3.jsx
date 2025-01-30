@@ -16,9 +16,9 @@ const ContactForm = () => {
         <div className="Contact-Info">
           <h3>Contact Information</h3>
           <h4>Please fill the form and send us your details. We will get in touch with you shortly.</h4>
-          <p><LocalPhoneIcon /> +91 9876543210</p>
+          <p><LocalPhoneIcon />+91 9771485809</p>
           <p><EmailIcon />mlzsbihta@gmail.com</p>
-          <p><FmdGoodIcon /> Jhapura Road, Bihia, Patna, 802103</p>
+          <p><FmdGoodIcon />Jinpura road, Bihta, Bihar 801103</p>
         </div>
         <div class="background-container">
        <div class="circle circle1"></div>

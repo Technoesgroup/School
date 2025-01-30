@@ -4,7 +4,7 @@ import '../../Styles/Academics-CSS/AcademicsC1.css';
 
 function AcademicsC1(){
     return(
-        <div className="container_2">
+        <div className="Academics-container_2">
         <img src={academics_1} alt="Hero" className="hero-img_2" />
       </div>
     )

@@ -4,7 +4,7 @@ import '../../Styles/Gallery-CSS/GalleryC1.css';
 
 function GalleryC(){
     return(
-        <div className="container_2">
+        <div className="Gallery-container_2">
         <img src={GalleryC1} alt="Hero" className="hero-img_Gallery" />
       </div>
     )
