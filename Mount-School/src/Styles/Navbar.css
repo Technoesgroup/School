@@ -152,9 +152,10 @@ body{
   text-decoration: none; /* Default underline ko hata dena */
 }
 
+
 .header-nav ul li a:hover{
   color: #FFC107;
-}
+} 
 
 .header-nav ul li:hover .arrow-icon {
   color: #FFC107;
@@ -194,13 +195,13 @@ body{
   height: auto;
   position: absolute;
   top: 100%;
-  border-radius: 5px;
+  border-radius: 2px;
   left: 0;
   text-align: left;
   background-color: #2c3191;
   border: 1px solid #ffffff;
-  box-shadow: 0 4px 6px rgba(18, 20, 125, 0.546);
-  padding: 20px;
+  box-shadow: 0 4px 6px rgba(18, 20, 125, 0.26);
+  padding: 15px;
   visibility: hidden; /* Make it hidden but still part of the layout */
   z-index: 1000;
 }
@@ -219,10 +220,6 @@ body{
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: 600;
-}
-
-.dropdown a:hover {
-  color: #2c3191;
 }
 
 /* General styles */
