@@ -61,11 +61,11 @@
 
   .closebtn-squire {
     position: absolute;
-    background-color:  #2C3192;
-    top: 6px;
-    right: 6px;
-    width: 30px;
-    height: 30px;
+    background-color:  #2c319276;
+    top: 8px;
+    right: 8px;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;

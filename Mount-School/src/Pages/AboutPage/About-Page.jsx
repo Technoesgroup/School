@@ -17,9 +17,8 @@ function About({toggleForm}) {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
-
   return (
-    <div className="folder-page">
+    <div className="AboutPage-folder">
     <div className="About-content">
     <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Comp1 />
