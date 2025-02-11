@@ -21,14 +21,9 @@ const AcademicsC5 = () => {
       </div>
      </div>
       <div className="AcadC5-content">
-        <h2  className="Academic-titleC5">MIDDLE YEARS</h2>
+        <h2  className="Academic-titleC5">MIDDLE YEARS (Grade VI - Grade VIII)</h2>
         <p>
-        In the Middle Years (grades 6 to 8), students engage in an enriched learning environment
-         where educators collaborate closely with them, fostering continuous skill development and knowledge deepening.
-          Our approach emphasizes differentiation, providing open spaces for exploration and learning from mistakes, ensuring 
-          students excel not only academically but also in diverse co-scholastic pursuits.
-         Extracurricular activities, including sports, arts, and student councils, 
-         allow students to explore interests and develop leadership skills. 
+        In the Middle Year, students engage in an enriched learning environment where educators collaborate closely with them, fostering continuous skill development and knowledge deepening. Our approach emphasizes differentiation, providing open spaces for exploration and learning from mistakes, ensuring students excel not only academically but also in diverse co-scholastic pursuits. Extracurricular activities, including sports, arts, and student councils, allow students to explore interests and develop leadership skills.  
         </p>
        
       </div>

@@ -15,6 +15,7 @@ import DownloadPage from "./Pages/Download-Page/Download-Page";
 import GalleryPage from "./Pages/GalleryPage/GalleryPage";
 import ContactUs from "./Pages/ContactUs-Page/ContactUsPage";
 import AdmissionForm from "./Component/Home/AdmissionForm";
+import CareersPage from "./Pages/CareersPage/CareersPage";
 
 const App = () => {
   return (
@@ -69,11 +70,11 @@ const AppContent = () => {
         <Route path="/contact-us" element={<ContactUs  toggleForm={toggleForm}/>} />
         <Route path="/" element={<Home toggleForm={toggleForm} />} />
         <Route path="/About" element={<About toggleForm={toggleForm} />} />
+        <Route path="/Careers" element={<CareersPage toggleForm={toggleForm} />} />
       </Routes>
       <FooterTop toggleForm={toggleForm}/>
       <Footer />
 
-      {/* Admission Form Overlay */}
       {isFormVisible && (
         <div className="Amission-overlay">
           <div className="admission-form-container">

@@ -1,0 +1,55 @@
+.Careers-page{
+    margin-top: 32.4vh;
+  }
+  @media(max-width:760px){
+      .Careers-page{
+          margin-top: 100px
+      }
+  }
+  
+  .Careers-fixed-button {
+      font-size: 14px;
+      font-family: 'PoppinsMedium';
+      top: 50%;
+      right: 0; /* Place the button on the right */
+      position: fixed; /* Fix the position */
+      transform: translateX(39%) translateY(50%) rotate(270deg); /* Center vertically and rotate */
+      color: white; /* Text color */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Rounded corners */
+      padding: 16px 19px; /* Padding */
+      cursor: pointer; /* Pointer cursor on hover */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+      transition: background-color 0.3s; /* Smooth hover effect */
+      animation: color-flash 1s infinite; /* Flash animation */
+      z-index: 13; /* Ensure it appears above other elements */
+    }
+    
+    .fixed-button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+    
+    @keyframes color-flash {
+      0% {
+        background-color: #2C3192;
+      }
+      50% {
+        background-color: orange;
+        color: black;
+      }
+      100% {
+        background-color: #2C3192;
+      }
+    }
+    
+    @media (max-width: 760px) {
+      .fixed-button {
+        padding: 13px 16px; /* Padding */
+        top: 54%; /* Adjust vertical position for smaller screens */
+      }
+    }
+    @media (max-width: 460px) {
+      .fixed-button {
+        padding: 13px 16px; /* Padding */
+      }
+    }

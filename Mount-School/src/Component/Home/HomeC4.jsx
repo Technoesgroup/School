@@ -14,7 +14,7 @@ const AdmissionsBanner = ({toggleForm}) => {
           innovative <br></br>curriculum and holistic
           development programs
         </p>
-        <button className="enquire-btns"  onClick={toggleForm}>ENQUIRE NOW</button>
+        <button className="Admission-enquire-btns"  onClick={toggleForm}>ENQUIRE NOW</button>
        </div>
       </div>
       <div className="image-sections-4">

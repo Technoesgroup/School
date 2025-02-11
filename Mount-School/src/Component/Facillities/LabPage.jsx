@@ -1,21 +1,21 @@
 import React, { useEffect, useRef } from "react";
 import "../../Styles/Facillities-CSS/LabPage.css";
 import Header from "./Header";
-import image1 from '../../image/Rectangle 23973.png';
-import image2 from '../../image/Rectangle 23974.png';
-import image3 from '../../image/Rectangle 23975.png';
-import image4 from '../../image/Rectangle 23976.png';
-import image5 from '../../image/Rectangle 23977.png';
-import image6 from '../../image/Rectangle 23978.png';
-import image7 from '../../image/Rectangle 239781.png';
+import image1 from '../../image/ATL.jpg';
+import image2 from '../../image/Chemlab.jpg';
+import image3 from '../../image/Biolab.jpg';
+import image4 from '../../image/MathLab.jpg';
+import image5 from '../../image/ComputerLab.jpg';
+import image6 from '../../image/Dance.jpg';
+import image7 from '../../image/Library.jpg';
 import image8 from '../../image/Rectangle 23816.png';
-import image9 from '../../image/Rectangle 239782.png';   
-import image10 from '../../image/Rectangle 239783.png';  
-import image11 from '../../image/fixed-height sec-.png';   
-import image12 from '../../image/Rectangle 239784.png';  
+import image9 from '../../image/Sports.jpg';   
+import image10 from '../../image/ART.svg';  
+import image11 from '../../image/SmartClass.jpg';   
+import image12 from '../../image/MusicLAB.jpg';  
 
 
-const labs = [
+const sections= [
   {
     title: "Physics Laboratory",
     description: "Our Physics Laboratory is fully equipped with cutting-edge apparatus and instruments, allowing students to explore the fundamental laws of nature. With every experiment conducted, we ignite curiosity and foster a deep understanding of the physical world, ensuring that our students become not only learners but innovators in the realm of science.",
@@ -108,24 +108,32 @@ function LabsPage() {
     };
   }, []);
 
-  return (
-    <div className="labs-page">
-      <Header />
-      <div className="labs-container">
-        {labs.map((lab, index) => (
-          <div
-            key={index}
-            className={`lab-card ${index % 2 === 1 ? "lab-card-right" : ""}`}
-            ref={(el) => (labRefs.current[index] = el)}
-          >
-            <img src={lab.image} alt={`${lab.title} Image`} />
-            <div>
-              <h2>{lab.title}</h2>
-              <p>{lab.description}</p>
-            </div>
-          </div>
-        ))}
+  function SectionCard({ title, description, image }) {
+    return (
+      <div className="LabPage-section-card">
+        <div className="LabPage-text-content">
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+       <section  className="CBSE-IMAGE-SECTION-Contains">
+       <img src={image} alt={title} className="LabPage-section-image" />
+       </section>
       </div>
+    );
+  }
+  
+  return (
+    <div className="LabPage-app-container">
+      {sections.map((sec, index) => (
+        <SectionCard
+          key={index}
+          id={sec.id}
+          title={sec.title}
+          description={sec.description}
+          image={sec.image}
+          buttonText={sec.buttonText}
+        />
+      ))}
     </div>
   );
 }

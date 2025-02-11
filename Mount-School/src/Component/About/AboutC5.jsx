@@ -1,4 +1,4 @@
-import  Vision  from '../../image/IMG_20240726_195817.jpg';
+import  Vision  from '../../image/20240209_104231.svg';
 import '../../Styles/About-CSS/AboutC5.css';
 import useScrollToSection from "../Hook/CustomHook2";
 

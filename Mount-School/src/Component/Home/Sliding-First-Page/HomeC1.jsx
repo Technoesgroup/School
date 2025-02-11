@@ -45,7 +45,7 @@ function HomeC1() {
             <br />
             <span className="change-col">Bihta</span>
           </h1>
-          <button className="front-button">
+          <button className="HomeC1-front-button">
             <span onClick={handleAdmissionClick} className="Admission-text-size">
               ADMISSIONS
             </span>

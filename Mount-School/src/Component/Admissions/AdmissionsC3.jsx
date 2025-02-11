@@ -31,7 +31,7 @@ useScrollToSection();
     <div id="Overview-section" className="admission-container">
       <div>
         <h2 className="admission-title">
-          <strong className="highlights">ADMISSION</strong> OVERVIEW
+          ADMISSION  OVERVIEW
         </h2>
         <div className="AdmissionsC3-age-criteria">
           <h3>Age Criteria for Admission</h3>

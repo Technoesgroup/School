@@ -63,6 +63,11 @@ const Home = ({ toggleForm }) => {
         </motion.div>
       </div>
 
+      <a href="https://cbseacademic.nic.in/">
+      <button className="CBSEPAGE-fixed-button-left" onClick={toggleForm}>
+      CBSE MANDATORY DISCLOSURE
+      </button></a>
+
       {/* Enquire Button */}
       <button className="fixed-button" onClick={toggleForm}>
         ENQUIRE FOR ADMISSION

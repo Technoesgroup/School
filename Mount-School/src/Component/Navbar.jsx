@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/Navbar.css";
 import logo from "../image/LogoMLZS.svg";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // Use NavLink instead of Link
 import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -11,11 +11,12 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 const Header = ({ toggleForm }) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState(null);
 
-  const handleMenuClick = (menuName) => {
-    setActiveItem(menuName);
-  };
+  const navigate =  useNavigate();
+
+  useEffect(() => {
+    navigate('/');  
+  }, []);
 
   const handleMouseEnter = (menuName) => {
     setActiveDropdown(menuName);
@@ -27,7 +28,9 @@ const Header = ({ toggleForm }) => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    console.log("Menu Open:", !isMobileMenuOpen);
   };
+  
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
@@ -37,7 +40,7 @@ const Header = ({ toggleForm }) => {
     About: [
       { label: "About the school", to: "About-section" },
       { label: "Vision", to: "Vision-section" },
-      { label: "Mission", to: "Mision-section" },
+      { label: "Mission", to: "Mission-section" },
       { label: "Management", to: "Management-section" },
       { label: "Awards & Honors", to: "Awards-section" },
     ],
@@ -49,6 +52,12 @@ const Header = ({ toggleForm }) => {
       { label: "Overview", to: "Overview-section" },
       { label: "Admission Process", to: "Admission-section" },
       { label: "Course & Fee", to: "Course&Fee-section" },
+    ],
+    CBSE:[
+      { label: "Sample Paper X", to: "Sample-paper-section" },
+      { label: "CBSE Circular", to: "CBSE-Paper-section" },
+      { label: "Book List", to: "Book-list-section" },
+      { label: "Holiday List", to: "Holiday-section" },
     ],
     Committee: [
       { label: "PTA", to: "pta-section" },
@@ -68,9 +77,9 @@ const Header = ({ toggleForm }) => {
         <img src={logo} alt="Logo" className="logo" />
         <div className="contact-info-nav">
           <span className="two-numbers">
-            <a href="tel:+919771485809" className="contact-link">
+            <a href="tel:+919771485809" className="contact-link first-num">
               <PhoneIcon className="Navbar-Phone" />
-              +91 9771485809
+              +91 9771485809 ,
             </a>
             <a href="tel:+919771485810" className="contact-link dusra-num">
               +91 9771485810
@@ -82,9 +91,14 @@ const Header = ({ toggleForm }) => {
             </a>
           </span>
         </div>
-        <button className="enquire-btn" onClick={toggleForm}>
-          ENQUIRE NOW
+     <div>
+       <button className="carrer-btn" onClick={() => navigate('/Careers')} >
+          CAREERS 
         </button>
+        <button className="enquire-btn" onClick={toggleForm}>
+          ENQUIRE
+        </button>
+     </div>
       </div>
 
       <nav className="header-nav">
@@ -95,46 +109,42 @@ const Header = ({ toggleForm }) => {
           ) : (
             <MenuIcon className="menu-icon" />
           )}
+          
         </div>
-        <ul className={`navb-items ${isMobileMenuOpen ? "open" : ""}`}>
+        <ul className={`navb-items ${isMobileMenuOpen ? "mobileNav-open" : ""}`}>
           <li>
-            <Link
+            <NavLink
               to="/"
-              onClick={() => {
-                handleMenuClick("Home");
-                closeMobileMenu();
-              }}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={closeMobileMenu}
             >
               Home
-            </Link>
+            </NavLink>
           </li>
 
-          {Object.keys(dropdownItems).map((menu, index) => (
+          {Object.keys(dropdownItems).map((menu, index) =>(
             <li
               key={index}
               onMouseEnter={() => handleMouseEnter(menu)}
               onMouseLeave={handleMouseLeave}
             >
-              <Link
+             <NavLink
                 to={`/${menu.toLowerCase()}`}
-                onClick={() => {
-                  handleMenuClick(menu);
-                  closeMobileMenu();
-                }}
+                onClick={closeMobileMenu}
               >
                 {menu}
-              </Link>
+              </NavLink>
               <ArrowDropDownIcon className="arrow-icon" />
               {activeDropdown === menu && (
                 <div className="dropdown">
-                  {dropdownItems[menu].map((item, idx) => (
-                    <Link
+                  {dropdownItems[menu].map((item, idx) =>(
+                    <NavLink
                       key={idx}
                       to={`/${menu.toLowerCase()}#${item.to}`}
                       onClick={closeMobileMenu}
                     >
                       {item.label}
-                    </Link>
+                    </NavLink>
                   ))}
                 </div>
               )}
@@ -142,48 +152,30 @@ const Header = ({ toggleForm }) => {
           ))}
 
           <li>
-            <Link
-              to="/CBSE"
-              onClick={() => {
-                handleMenuClick("CBSE");
-                closeMobileMenu();
-              }}
-            >
-              CBSE
-            </Link>
-          </li>
-          <li>
-            <Link
+            <NavLink
               to="/Facilities"
-              onClick={() => {
-                handleMenuClick("Facilities");
-                closeMobileMenu();
-              }}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={closeMobileMenu}
             >
               Facilities
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/gallery"
-              onClick={() => {
-                handleMenuClick("Gallery");
-                closeMobileMenu();
-              }}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              onClick={closeMobileMenu}
             >
               Gallery
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/contact-us"
-              onClick={() => {
-                handleMenuClick("Contact Us");
-                closeMobileMenu();
-              }}
+              onClick={closeMobileMenu}
             >
               Contact Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -192,5 +184,6 @@ const Header = ({ toggleForm }) => {
 };
 
 export default Header;
+
 
 

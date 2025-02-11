@@ -42,39 +42,49 @@
   
   .contact-wrapper {
     display: flex;
-    max-width: 900px;
+    max-width: 1024px;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
   }
   
-  .Contact-Info {
+  .Contact-Us-Info {
+    max-width:550 ;
     font-family: 'PoppinsMedium';
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 15px;
     text-align: left;
     font-size: 0.8rem;
     background: #2C3192;
     color: white;
-    padding: 20px 70px;
+    padding: 20px 50px;
     flex: 1;
     cursor: pointer;
   }
 
-  .Contact-Info h4{
+  .Contact-Us-Info h4{
     font-family: 'PoppinsMedium';
     margin-bottom: 8px;
     font-size: 0.7rem;
     color: rgb(192, 192, 192);
   }
 
-  .Contact-Info p{
+  .Contact-Us-Info p{
+    font-size: 0.6rem;
+    gap: 15px;
     display: flex;
-    gap: 10px;
+  }
+
+  .Contact-Us-Info p .contact-Us-icon{
+    font-size: 17px;
+  }
+
+  .Contact-Us-Info a{
+    color: white;
   }
   
   .contact-form {
@@ -107,10 +117,11 @@
   }
   
   .ContactUs-send-button {
-    margin-left: 260px;
+    position: relative;
+    right: -32%;
     width: 200px;
-    background-color: #4AAFF7;
-    color: white;
+    background-color:#FFC107;
+    color: black;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -119,7 +130,7 @@
   }
   
   .ContactUs-send-button:hover {
-    background-color: #343993;
+  color: white;
   }
   
 @media(max-width:760px){

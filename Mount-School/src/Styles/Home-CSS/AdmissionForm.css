@@ -48,7 +48,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #00bfff;
+    background-color: #2C3192;
     border-radius: 10px;
     width: 100%; /* Smaller form width */
     max-width: 300px; /* Limit max width */
@@ -59,9 +59,27 @@
   }
 
 
+  .Admissionform-Enquire-agreements {
+    display: flex;
+    align-items: center; /* Checkbox aur text ko ek line me laane ke liye */
+    font-size: 0.5rem; /* Thoda bada text */
+    color: #202020;
+    font-family: 'PoppinsSemiBold';
+    margin-top: 5px;
+    margin-bottom: 18px;
+    gap: 5px; /* Checkbox aur text ke beech halka space */
+  }
+  
+  .checkbox-Size {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+  }
+  
+
   .closebtn-squire {
     position: absolute;
-    background-color:  #2c319276;
+    background-color: #FFC107;
     top: 8px;
     right: 8px;
     width: 25px;
@@ -101,12 +119,26 @@
   }
 
 
+  .Admissionform-error{
+    position: relative;
+    font-size: 0.6rem;
+    color: red;
+    top: 0;
+  }
+
+  .Admissionform-SuccessFull{
+    position: relative;
+    color: #202020;
+    top: 0;
+    font-size: 0.6rem;
+  }
+
   .Enquire-close-button {
     background: none;
     border: none;
     font-size: 16px;
     cursor: pointer;
-    color: white;
+    color: black;
     position: relative; /* absolute ki jagah relative use karein */
     top: 0;
     right: 0;
@@ -134,17 +166,6 @@
     color: rgb(176, 176, 176);
   }
 
-
-  .Enquire-form-agreement {
-    text-align: center;
-    font-size: 0.5rem; /* Smaller text */
-    color: #202020;
-    line-height: 2;
-    font-family: 'PoppinsSemiBold';
-    margin-left: 8px;
-    margin-top: 5px;
-    margin-bottom: 18px
-  }
   
   .Enquire-submit-button {
     background-color: #2c3191;
@@ -197,11 +218,7 @@
       padding: 8px; /* Increase padding for better touch experience */
       width: 100%; /* Ensure inputs take full width */
     }
-  
-    .Enquire-form-agreement {
-      font-size: 0.8rem; /* Slightly larger for readability */
-      margin: 10px 0;
-    }
+
   
     .Enquire-submit-button {
       width: 100%; /* Button spans full width */

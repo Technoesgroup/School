@@ -26,10 +26,7 @@ Today the school has a strength of 2000 students and offers CBSE curriculum. The
         <span className="black-text_C7">OUR  </span> 
         <span className="blue-text_C7">  MANAGEMENT</span>
         </h1>
-       {/* <div className="lines_C7">
-        <div className="line_C7 black-line_C7"></div>
-        <div className="line_C7 red-line_C7"></div>
-      </div> */}
+  
       {managementData.map((member, index) => (
         <ManagementCard
           key={index}

@@ -7,9 +7,10 @@
 
 }
 .AcademicsC14-achievement-title {
+  font-family: 'PoppinsBold';
   font-size: 1.4rem;
   font-weight: bold;
-  color: #4AAFF7; /* Tailwind blue-600 */
+  color: #2C3191  ; /* Tailwind blue-600 */
   margin-bottom: 1rem;
 }
 

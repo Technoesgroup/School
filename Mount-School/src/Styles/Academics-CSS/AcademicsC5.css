@@ -1,7 +1,7 @@
 @import url('../Font.css');
 
   .AcadC5-container {
-    padding: 50px 100px;
+    padding: 4vw 7.5vw;
   }
   
   .inner-Container-C5 {
@@ -9,9 +9,9 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1.8vw;
     padding: 10px;
-    border: 1.4px solid rgb(212, 208, 208);
+  
   }
   
   .upper-images-C5 {
@@ -21,15 +21,15 @@
   }
   
   .upper-image-C5 {
-    width: 250px;
-    height: 200px;
+    width: 20vw;
+  height: 16vw;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
   }
   
   .Academic-titleC5 {
-    font-family: 'Degularbold';
+    font-family: 'PoppinsBold';
     text-align: left;
     margin-bottom: 20px;
   }
@@ -46,25 +46,25 @@
   }
   
   .small-C5 {
-    width: 200px;
-    height: 210px;
+    width: 17vw;
+  height: 16vw;
   }
   
   .large-C5 {
-    width: 310px;
-    height: 210px;
+    width: 23vw;
+    height: 16vw;
   }
   
   .AcadC5-content {
     top: 0;
-    max-width: 700px;
+    max-width: 68vw;
     text-align: justify;
   }
   
   .AcadC5-content h2 {
-    font-family: 'Degularbold';
+    font-family: 'PoppinsBold';
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 2.8vw;
   }
   
   .AcadC5-content p {

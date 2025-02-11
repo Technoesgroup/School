@@ -1,10 +1,9 @@
 @import url('../Font.css');
   
-  
   .about-section {
     scroll-margin-top: 110px;
     text-align: center;
-    padding: 25px 10px;
+    padding: 25px 1.2vw;
     margin-bottom: 40px;
   }
   
@@ -16,7 +15,7 @@
   }
   
   .about-section__title .highlight {
-    font-family: 'DegularDemoMedium';
+    font-family: 'PoppinsSemibold';
     color:#292E86 ;
   }
   
@@ -29,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 3vw;
     flex-wrap: wrap;
   }
   
@@ -38,8 +37,8 @@
     position: relative;
     border: 3px dashed #060606;
     border-radius: 8px;
-    padding: 25px  20px;
-    max-width: 280px;
+    padding: 1.5vw  1.5vw;
+    max-width: 22vw;
     height: 180px;
     box-shadow: 0 4px 8px rgba(9, 9, 9, 0.817);
     text-align: center;
@@ -69,17 +68,17 @@
   }
   
   .about-section__card-title {
-    font-family: 'DegularSemibold';
-    font-size: 18px;
+    font-family: 'PoppinsMedium';
+    font-size: 16px;
     color:#FFC107;
     font-weight: bold;
     margin-top: 20px; 
   }
   
   .about-section__card-description {
-    font-family: 'DegularDemoMedium';
+    font-family: 'PoppinsMedium';
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
   }
   
@@ -92,7 +91,7 @@
   }
   
   .text_About_C3{
-    font-family: 'DegularDemoMedium';
+    font-family: 'PoppinsExtraBold';
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;

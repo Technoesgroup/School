@@ -21,16 +21,10 @@ const AcademicsC6 = () => {
       </div>
      </div>
       <div className="AcadC6-content">
-        <h2  className="Academic-titleC6">SECONDARY YEARS</h2>
+        <h2  className="Academic-titleC6">SECONDARY / SR. SECONDARY YEARS 
+        (Grade IX - Grade XII)</h2>
         <p  id="Activities-section">
-        Believing in education aligned with principles of growth, our approach 
-        focuses on fostering personal growth through meaningful experiences. 
-        In senior grades, rigorous research ensures engaging and profound learning experiences,
-         inspiring students to question, investigate, and innovate beyond textbooks. Our Steam 
-         programs and career awareness initiatives empower them to explore, create, and embrace diverse
-          opportunities, while socio-emotional learning encourages reflection, identity awareness, and the
-           development of individual belief systems. The challenges
-         they face include increased academic pressure, peer influence, and decisions about their future paths. 
+        Believing in education aligned with principles of growth, our approach focuses on fostering personal growth through meaningful experiences. In senior grades, rigorous research ensures engaging and profound learning experiences, inspiring students to question, investigate, and innovate beyond textbooks. Our STEAM programs and career awareness initiatives empower them to explore, create, and embrace diverse opportunities, while socio-emotional learning encourages reflection, identity awareness, and the development of individual belief systems. The challenges they face include increased academic pressure, peer influence, and decisions about their future paths. 
         </p>
        
       </div>

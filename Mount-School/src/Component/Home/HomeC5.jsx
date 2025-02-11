@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../../Styles/Home-CSS/HomeC5.css"; 
-import LibraryImg from "../../image/Library.png";
-import PlaygroundImg from "../../image/user-cover-1.png";
-import SmartClassroomImg from "../../image/fixed-height sec-.png";
-import ScienceLabImg from "../../image/ChemistryLab.png";
-import girlImg from "../../image/people-girls-dancing-dance.jpg";
-import ComputerLabImg from "../../image/ComputerLab.png";
+import LibraryImg from "../../image/Library.jpg";
+import PlaygroundImg from "../../image/Sports.jpg";
+import SmartClassroomImg from "../../image/SmartClass.jpg";
+import ScienceLabImg from "../../image/Chemlab.jpg";
+import girlImg from "../../image/Dance.jpg";
+import ComputerLabImg from "../../image/ComputerLab.jpg";
 
 const Facilities = () => {
   const facilities = [

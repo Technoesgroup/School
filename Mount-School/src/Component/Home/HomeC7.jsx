@@ -33,7 +33,7 @@ const events = [
     image: AnualImg, // Replace with the actual image path
   },
   {
-    title: "Special Assembly on Janmashtami",
+    title: "Janmashtami Celebrations",
     description:
       "Mount Litera Zee School, Bihta celebrating the divine festival of Janmashtami with immense joy and enthusiasm. The little stars from the pre-primary section came together to commemorate this ",
     image: Janmashtami, // Replace with the actual image path
@@ -50,16 +50,13 @@ const Events = () => {
   return (
     <div className="events-section">
       <h2 className="events-title">
-        EVENTS AT <span className="highlight-event">MLZS</span>
+      Events At Mount Litera Zee School, Bihta
       </h2>
       <div className="events-grid">
         {events.map((event, index) => (
           <div className="event-card" key={index}>
             <img src={event.image} alt={event.title} className="event-image" />
-            <div className="event-content">
-              <h3 className="event-title">{event.title}</h3>
-              <p className="event-description">{event.description}</p>
-            </div>
+            <h3 className="event-title">{event.title}</h3>
           </div>
         ))}
       </div>

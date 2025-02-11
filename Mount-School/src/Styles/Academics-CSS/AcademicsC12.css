@@ -9,15 +9,14 @@ body{
     width: 84%;
     margin: auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
     color: #333;
   }
   
   .AcademicsC12-event-title {
-    font-family: 'PoppinsSemibold';
+    font-family: 'PoppinsBold';
     text-align: left;
     font-size: 1.2rem;
-    color: #4AAFF7;
+    color:#2C3191;
     margin-bottom: 20px;
   }
   

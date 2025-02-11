@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import  Vision  from '../../image/Image.png';
+import  Vision  from '../../image/393697766_791349383003811_2584252641419563477_n.svg';
 import '../../Styles/About-CSS/AboutC4.css';
 import useScrollToSection from "../Hook/CustomHook2";
 
@@ -8,26 +8,33 @@ function AboutC4(){
       useScrollToSection();
 
     return(
-        <div id='Vision-section' className="bc-con">
+   <div  className="bc-contents">
+         <div id='Vision-section' className="bc-con">
         <div className="sc-con">
         <h1  className="text-C4-h1">
         <span className="black-text_C4">OUR</span> 
         <span className="blue-text_C4">  VISION</span>
         </h1>
-       {/* <div className="lines_C4">
-        <div className="line_C4 black-line_C4"></div>
-        <div className="line_C4 red-line_C4"></div>
-      </div> */}
         <p>
-        Our vision is to foster a dynamic learning environment where students develop into compassionate, confident, and resilient individuals who excel in all aspects of life and contribute meaningfully to a rapidly changing world. 
-        We are committed to providing a holistic education that nurtures intellectual curiosity, critical thinking, and creativity while instilling strong values of integrity, empathy, and respect for diversity. 
-        Through an inclusive and supportive atmosphere, we strive to empower every student to reach their full potential—academically, socially, and emotionally.
+        Mount Litera Zee School, Bihta offers a comprehensive and unique 
+        educational experience, meticulously designed to prepare your child for a successful future
+         in today’s rapidly changing world. Our vision is to establish an institution of excellence, 
+        where timeless human values are seamlessly integrated with the highest quality of teaching and learning.
+        By leveraging modern, technology-driven tools, we strive to nurture a well-rounded individual,
+        ready to contribute meaningfully to society. 
         </p>
         </div>
-        <div className="image">
+        <div className="Vision-image">
           <img src={Vision} alt="Business Illustration" />
         </div>
       </div>
+     <div className="bottom-paragrapgh-div">
+     <p className="bottom-paragraph">
+       Furthermore, we are dedicated to shaping global minds on Indian soil, providing every student access to world-class infrastructure and an innovative curriculum that foster all-round development. This approach ensures that while our students are equipped to face the global challenges of tomorrow,
+       they remain deeply rooted in the rich traditions and values that form the foundation of our culture.
+      </p>
+     </div>
+   </div>
     )
     
 }

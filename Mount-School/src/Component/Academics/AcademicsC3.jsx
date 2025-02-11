@@ -22,11 +22,9 @@ useScrollToSection();
       </p>
       <div className="Academics-content-container">
         <div className="Academics-text-section">
-          <h3>Foundational Years (Nursery - Grade 2)</h3>
+          <h3>Foundational Years (Nursery - Grade II)</h3>
           <p>
-            MLZS takes a comprehensive educational approach, addressing each
-            child's distinct developmental needs. In the Foundational years
-            setting, we emphasize four essential learning domains.
+          Mount Litera Zee School, Bihta,  takes a comprehensive educational approach, addressing each child's distinct developmental needs. In the Foundational years setting, we emphasize four essential learning domains.
           </p>
           <ul className="learning-domains">
             <li>

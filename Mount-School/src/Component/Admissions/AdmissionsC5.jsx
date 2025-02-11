@@ -10,7 +10,7 @@ const AdmissionProcess = () => {
   return (
     <div className="admission-containerC5">
        <div  id="Admission-section">
-       <h2 className="Admission-h2TEXT"><span className="highlists">ADMISSION</span> PROCESS</h2>
+       <h2 className="Admission-h2TEXT">ADMISSION PROCESS</h2>
         <div className="admission-detailsC5">
         <div className="admission-text">
           <p>

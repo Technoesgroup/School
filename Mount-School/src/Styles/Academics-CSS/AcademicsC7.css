@@ -2,16 +2,18 @@
 
 .AcademicsC7-events {
   scroll-margin-top: 160px;
-    padding: 20px  100px;
-    font-family: 'Degularbold';
+  width: 84%;
+  margin: auto;
+  padding: 2vw;
+    font-family: 'PoppinsExtraBold';
     line-height: 1.6;
   }
   
   .AcademicsC7-event-title {
-    font-family: 'PoppinsSemibold';
+    font-family: 'PoppinsBold';
     text-align: left;
     font-size: 1.2rem;
-    color: #4AAFF7;
+    color: #2C318F;
     margin-bottom: 15px;
   }
   

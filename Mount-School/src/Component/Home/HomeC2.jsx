@@ -79,46 +79,28 @@ function AboutUs() {
     </div>
     <div className="HomeC2-About-container" 
     ref={containerRef}>
-      <div className="leader-header_About">
-        <h1>
-          <span className="black-text_About">WELCOME TO</span> 
-          <span className="blue-text_About"> MOUNT LITERA ZEE SCHOOL </span>
+      <div className="HomeC2-leader-header_About">
+        <h1  className="tttt">
+        Welcome to Mount Litera Zee School, Bihta
         </h1>
       </div>
       <p className='About-container-paragraph'>
-      Mount litera Zee School, Bihta was established in 2016, part of the leading education organization 
-      in India-Zee Learn Ltd. [Education Arm of Essel Group]. Mount Litera Zee School provides promising 
-      education to the future generation allowing them to travel around their true unique potential. 
-      Mount litera zee School Bihta is currently the best school for kids in Bihta as we try and create an
-       educational institution which synthesizes human values with the highest quality of teaching- learning
-        using the modern technology-driven tools for preparing a well- groomed all-round personality for our 
-        society.
+      Mount Litera Zee School, Bihta was established in 2016 with a desire to create a 
+      transformative educational environment where students are empowered to realize their full potential. Our school is a beacon of innovative learning, where academic excellence and personal growth go hand in hand. We are committed to providing a space where curiosity thrives, creativity is nurtured, and critical thinking is developed.
       </p>
-
-      <div className="stats-container">
-        <div className="stat">
-          <div className="stat-value">{stats.skilledStaff}+</div>
-          <div className="stat-title">Highly Skilled Staff</div>
-          <div className="stat-description">
-            Dedicated professionals creating a nurturing learning environment.
-          </div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{stats.teacherStudentRatio}:1</div>
-          <div className="stat-title">Student Teacher Ratio</div>
-          <div className="stat-description">
-            Ensuring Every Child Thrives with Focused Guidance and Support.
-          </div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{stats.alumniCount.toLocaleString()}</div>
-          <div className="stat-title">Alumni Across Globe</div>
-          <div className="stat-description">
-            A Global Network of Successful Alumni Inspiring Future Generations
-          </div>
-        </div>
+      <p className='About-container-paragraph'>
+      We recognize that each child is a unique individual with  own strengths, passions, and potential. Our educational philosophy is centered on personalized learning that fosters intellectual, emotional, and social development. We blend a robust academic curriculum with a wide range of co-curricular activities to ensure our students grow holistically, preparing them for the future in all its complexity.
+      </p>
+      <p className='About-container-paragraph'>
+      Our approach to teaching is dynamic and forward-thinking, utilizing diverse pedagogies to cater to different learning styles. From hands-on projects and Enquiry-based exploration to the integration of modern technology, we engage students in meaningful and interactive learning experiences. This ensures that our students are not only prepared for academic success but also equipped with the skills to excel in the real world.
+      </p>
+      <p className='About-container-paragraph'>
+      The school has a well developed infra, including smart classrooms, well-equipped science laboratories, Atal Tinkering Lab, a comprehensive library and many more—all designed to support an enriching learning experience. In addition to academic excellence, we encourage participation in a wide variety of extracurricular activities that develop leadership, creativity, and teamwork.
+      </p>
+      <p  className='About-container-paragraph'>
+      At Mount Litera Zee School, Bihta, we do more than teach—we inspire and mentor. Our dedication to each child’s growth is at the heart of everything we do, and we remain steadfast in our mission to shape the leaders and innovators of tomorrow.
+      </p>
       </div>
-    </div>
     </>
   );
 }

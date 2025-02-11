@@ -1,27 +1,26 @@
 @font-face {
-    font-family: 'DegularDemoMedium';
-    src: url('../../public/fonts/fonnts.com-DegularDemo-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: 'PoppinsExtraBold';
+  src: url('../../public/Poppins-ExtraBold.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
   
-  @font-face {
-    font-family: 'DegularSemibold';
-    src: url('../../public/fonts/fonnts.com-DegularDemo-Semibold.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('../../public/Poppins-Bold.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
 
-
-  @font-face {
-    font-family: 'Degularbold';
-    src: url('../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
   
+@font-face {
+  font-family: 'PoppinsItalic';
+  src: url('../../public/Poppins-Italic.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
   
-  @font-face {
+@font-face {
     font-family: 'Poppins-Regular';
     src: url('../../public/Poppins-Regular.ttf') format('opentype');
     font-weight:800 ;

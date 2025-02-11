@@ -11,6 +11,9 @@ import ImageCard9 from '../../../image/Photo (3).png';
 import ImageCard10 from '../../../image/Photo (6).png'; 
 import ImageCard11 from '../../../image/Photo (7).png'; 
 import ImageCard12 from '../../../image/Photo (8).png'; 
+import ImageCard13 from '../../../image/Trophy_1.svg'; 
+import ImageCard14 from '../../../image/Trophy_2.svg'; 
+import ImageCard15 from '../../../image/Trophy_3.svg'; 
 
 import '../../../Styles/About-CSS/About_Our_Gallery/AboutC9.css'; // CSS for grid layout
 import RecognitionCard from './AboutC8';
@@ -43,21 +46,13 @@ const AboutC9 = () => {
     },
     {
       image: ImageCard4, // Use another image or same based as above
-      title: 'Runner-Up: Under 14 State Handball Competition',
-      description: 'Demonstrating exceptional skill, teamwork, and perseverance, the Under 14 Handball team of Mount Litera Zee School secured the Runner-Up position in the State Handball Competition. Competing against some of the best teams in the state, our players showcased remarkable athleticism, strategic gameplay, and sportsmanship.',
-      date: 'September 13, 2023',
-      author: 'Headmaster',
-      views: 15,
-      comments: 3,
+      title: 'Mount Litera Zee School, Entrepreneur Meet ',
+      description: 'The Entrepreneur Meet hosted by Mount Litera Zee School, Bihta was a landmark event that provided a unique platform for students to explore and develop entrepreneurial skills. With a focus on innovation and problem-solving, the event encouraged participants to present creative business ideas and strategies. This initiative not only inspired students to think outside the box but also instilled in them a sense of confidence and leadership, fostering a generation of future entrepreneurs and leaders.',
     },
     {
       image: ImageCard5, // Use another image or same based as above
-      title: 'Mount Litera Zee School Entrepreneur Meet 2016',
-      description: 'The 2016 Entrepreneur Meet hosted by Mount Litera Zee School was a landmark event that provided a unique platform for students to explore and develop entrepreneurial skills. With a focus on innovation and problem-solving, the event encouraged participants to present creative business ideas and strategies.',
-      date: 'September 13, 2023',
-      author: 'Headmaster',
-      views: 15,
-      comments: 3,
+      title: 'Winner: Karate Championship; The Royal Challengers',
+      description: 'Students of Mount Litera Zee School, Bihta displayed outstanding martial arts skills to emerge as winners at the Karate Championship hosted by The Royal Challengers. Their disciplined training, focus, and perseverance stood out, earning them the top spot in this prestigious competition. This achievement reflects the school’s emphasis on developing physical fitness, discipline, and sportsmanship, shaping students into resilient and determined individuals ready to take on challenges.',
     },
     {
       image: ImageCard6, // Use another image or same based as above
@@ -70,12 +65,8 @@ const AboutC9 = () => {
     },
     {
       image: ImageCard7, // Use another image or same based as above
-      title: 'Winner: KBD Juniors, National Finals; Star Sports Pro Kabaddi',
-      description: 'The KBD Juniors team from Mount Litera Zee School emerged as National Champions in the Star Sports Pro Kabaddi Tournament, showcasing their unparalleled skill, teamwork, and determination. Competing on a national stage, the team demonstrated exceptional strategic gameplay and agility, earning them this prestigious title.',
-      date: 'September 13, 2023',
-      author: 'Headmaster',
-      views: 15,
-      comments: 3,
+      title: 'Winner: KABADDI KING; CBSE Cluster',
+      description: ' Mount Litera Zee School Bihta’s Kabaddi team earned the prestigious title of “KABADDI King” at the CBSE Cluster competition, solidifying their position as champions. Their outstanding performance, marked by agility, teamwork, and tactical brilliance, captivated the audience and left an indelible mark on the tournament. This achievement not only brought immense pride to the school but also reinforced its reputation for fostering excellence in sports and creating champions who excel on and off the field..',
     },
     {
       image: ImageCard8, // Use another image or same based as above
@@ -88,8 +79,8 @@ const AboutC9 = () => {
     },
     {
       image: ImageCard9, // Use another image or same based as above
-      title: 'Patna District Okinawan Shorin-Ryu Karate Do Championship, 2019',
-      description: 'Students from Mount Litera Zee School showcased exemplary martial arts skills at the 2019 Patna District Okinawan Shorin-Ryu Karate Do Championship. Their stellar performance earned them accolades and established the school as a center of excellence in martial arts. This achievement reflects the students’ dedication, discipline as well as the school’s emphasis on nurturing well-rounded individuals.',
+      title: 'Winner: KBD Juniors, National Finals; Star Sports Pro Kabaddi',
+      description: 'The KBD Juniors team from Mount Litera Zee School, Bihta emerged as National Champions in the Star Sports Pro Kabaddi Tournament, showcasing their unparalleled skill, teamwork, and determination. Competing on a national stage, the team demonstrated exceptional strategic gameplay and agility, earning them this prestigious title. This victory not only brought immense pride to the school but also highlighted its emphasis on nurturing sports talent and fostering a winning mindset among students.',
       date: 'September 13, 2023',
       author: 'Headmaster',
       views: 15,
@@ -120,6 +111,21 @@ const AboutC9 = () => {
       author: 'Headmaster',
       views: 15,
       comments: 3,
+    },
+    {
+    image: ImageCard13, // Use another image or same based as above
+     title: 'Memento: Sainik School Nalanda',
+     description: ' Mount Litera Zee School, Bihta was honoured with a Memento by Sainik School Nalanda in recognition of its exemplary participation and contributions to inter-school initiatives. This accolade highlights the school’s dedication to fostering collaborative learning and excellence across various domains. By participating in events alongside other prestigious institutions, the school continues to inspire students to build camaraderie, leadership skills, and a competitive spirit that prepares them for future challenges.',
+    },
+    {
+      image: ImageCard14, // Use another image or same based as above
+      title: 'Participation Memento from Hindustan Olympiad',
+      description: 'The Hindustan Olympiad, a nationwide academic platform, awarded Mount Litera Zee School, Bihta with a Participation Memento, celebrating the school’s enthusiastic involvement. This recognition highlights the dedication of our students and teachers in embracing scholastic challenges that test intellectual abilities. Through participation in this esteemed competition, our students not only showcased their academic brilliance but also gained invaluable exposure to a competitive environment, paving the way for future achievements in the academic arena.',
+    },
+    {
+      image: ImageCard15, // Use another image or same based as above
+      title: 'Letter of Appreciation by Science Olympiad Federation',
+      description: 'Mount Litera Zee School, Bihta proudly received a Letter of Appreciation from the esteemed Science Olympiad Federation for its unwavering commitment to academic excellence. This recognition was awarded to our visionary principal, Dr. Kumar Ravi Prakash, for his outstanding leadership in fostering a culture of scientific Enquiry and critical thinking among students. The award signifies the school’s consistent efforts in encouraging young minds to excel in national-level science competitions and nurturing future innovators.',
     },
   ];
 

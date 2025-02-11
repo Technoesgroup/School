@@ -1,11 +1,12 @@
 /* CSS File */
 .management-card {
-  background-color: #4AAFF7;
+  background-color: #2C3191  ;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   margin: 30px 0;
-  padding: 20px;
+  min-height: 20vw;
+  padding: 1.5vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.283);
 }
 
@@ -21,7 +22,7 @@
 }
 
 .management-card__name {
-  font-family: 'DegularSemibold';
+  font-family: 'PoppinsSemibold';
   font-size: 1.5rem;
   color: #ffffff;
   margin-bottom: 10px;
@@ -29,7 +30,7 @@
 
 .management-card__description {
   font-family: 'PoppinsMedium';
-  line-height: 1.8;
+  line-height: 2;
   font-size: 0.9rem;
   color: #ffffff;
 }

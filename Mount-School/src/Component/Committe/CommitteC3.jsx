@@ -16,7 +16,7 @@ const DocumentSection = () => {
         description:
           "The Parent-Teacher Association (PTA) acts as a vital link between parents and the school, fostering collaboration to enhance the overall educational experience. ",
         image: image1, // Replace with the actual path
-        buttonText: "Download PDF",
+        buttonText: "Download",
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },
       {
@@ -25,7 +25,7 @@ const DocumentSection = () => {
         description:
           "The School Management Committee (SMC) ensures transparency and accountability in the school’s operations. ",
         image:image2, // Replace with the actual path
-        buttonText: "Download PDF",
+        buttonText: "Download",
         pdf: "/pdfs/CBSE_Holidays.pdf",
       },
     ];
@@ -62,7 +62,6 @@ const DocumentSection = () => {
         description={sec.description}
         image={sec.image}
         buttonText={sec.buttonText}
-        reverse={index % 2 === 1} // Alternate layout
       />
     ))}
   </div>

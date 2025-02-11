@@ -2,14 +2,14 @@
 
 .AcademicsC10-co-curricular-container {
   background-color: white;
-  width: 88%;
+  width: 86vw;
   text-align: center;
   margin: auto;
-  padding: 20px;
+  padding: 2vw;
 }
 
 .AcademicsC10-header {
-  font-family: 'Degularbold';
+  font-family: 'PoppinsExtraBold';
   font-size: 24px;
   color: #2C318F;
   font-weight: bold;
@@ -33,7 +33,7 @@
 }
 
 .AcademicsC10-activity{
-  font-family: 'Degularbold';
+  font-family: 'PoppinsExtraBold';
   color: black;
 }
 

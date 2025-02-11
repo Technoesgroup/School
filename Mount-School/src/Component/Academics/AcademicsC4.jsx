@@ -23,21 +23,23 @@ const AcademicsC4 = () => {
       </div>
      </div>
       <div className="AcadeC4-content">
-        <h2  className="Academic-titleC4">PREPARATORY YEARS</h2>
+        <h2  className="Academic-titleC4">PREPARATORY YEARS (Grade III - Grade V)</h2>
         <p>
-          In grades 3 to 5, our pedagogical focus is on instilling the love
-          for learning and the importance of focus and discipline. Through
-          an integrated approach encompassing all the seven domains we build
-          intellectual ability, emotional intelligence, socio-emotional
-          skills, and physical well-being.
+        Our pedagogical focus is on instilling the love for learning and the 
+        importance of focus and discipline. Through an integrated approach encompassing all 
+        the seven domains we build intellectual ability, emotional intelligence, socio-emotional skills,
+         and physical well-being. Deliberately stretching their ability to concentrate, we aim to cultivate
+          a joy for learning, preparing them for the demands of higher grades. Our approach involves immersive 
+          experiences, state-of-the-art STEM labs, 
+        coding exercises, and blended learning to nurture individual talents and collaborative learning journeys.
         </p>
-        <p>
+        {/* <p>
           Deliberately stretching their ability to concentrate, we aim to
           cultivate a joy for learning, preparing them for the demands of
           higher grades. Our approach involves immersive experiences,
           state-of-the-art STEM labs, coding exercises, and blended learning
           to nurture individual talents and collaborative learning journeys.
-        </p>
+        </p> */}
       </div>
    </div>
     </div>

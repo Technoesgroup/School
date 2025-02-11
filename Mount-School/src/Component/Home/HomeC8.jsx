@@ -96,9 +96,9 @@ const Home8 = () => {
   return (
     <div className="Home-section">
       <div className="leader-header_C3">
-        <h1 className="text_About_C3">
-          <span className="black-text_C3">PARENT'S</span>{" "}
-          <span className="blue-text_C3">SPEAK</span>
+        <h1 className="text_About_C8">
+          <span className="black-text_C8">PARENT'S</span>{" "}
+          <span className="blue-text_C8">SPEAK</span>
         </h1>
       </div>
       <div

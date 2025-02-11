@@ -52,8 +52,13 @@ function Academics({toggleForm}) {
         </motion.div>
 
         <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <Comp10 />
+        </motion.div>
+
+        <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Comp7 />
         </motion.div>
+
 
         <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Comp8 />
@@ -61,10 +66,6 @@ function Academics({toggleForm}) {
 
         <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Comp9 />
-        </motion.div>
-
-        <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <Comp10 />
         </motion.div>
 
         <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>

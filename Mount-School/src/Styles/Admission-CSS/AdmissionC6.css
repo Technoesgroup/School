@@ -3,16 +3,17 @@
 .course-fee-container {
     font-family: Arial, sans-serif;
     margin: 20px;
-    padding: 20px 70px;
+    padding: 4vw 7vw;
     line-height: 1.6;
-    color: #333;
+    
   }
   
   .course-fee-title {
-    font-family: 'Degularbold';
+    font-family: 'PoppinsExtraBold';
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
+    color: #2C3192;
   }
   
   .highlight {

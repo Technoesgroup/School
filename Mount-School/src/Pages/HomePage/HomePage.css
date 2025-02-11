@@ -20,14 +20,44 @@
 }
 
 .HomeComponent{
-    /* width: 100%; */
-    margin-top: 130px;
+  margin-top: 21.4vh;
+
 }
+
 @media(max-width:760px){
     .HomeComponent{
-        /* width: 100%; */
         margin-top: 30px;
     }
+}
+
+.CBSEPAGE-fixed-button-left {
+  font-size: 14px;
+  font-family: 'PoppinsMedium';
+  top: 32%;
+  left: 0; /* Place the button on the left */
+  position: fixed; /* Fix the position */
+  transform: translateX(-5%) translateY(50%); /* Rotate and position */
+  color: white; /* Text color */
+  background-color: #2C3192;
+  border: 1px solid white; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 16px 25px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  transition: background-color 0.3s; /* Smooth hover effect */
+  z-index: 13; /* Ensure it appears above other elements */
+}
+
+.CBSEPAGE-fixed-button-left:hover {
+  background-color: #FFC107; /* Darker blue on hover */
+  color: black;
+}
+
+@media (max-width: 760px) {
+  .CBSEPAGE-fixed-button-left {
+    padding: 13px 16px; /* Adjust padding for smaller screens */
+    top: 54%; /* Adjust vertical position */
+  }
 }
 
 

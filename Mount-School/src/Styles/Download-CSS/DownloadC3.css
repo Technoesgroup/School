@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'DegularBold';
-  src: url('../../../public/fonts/fonnts.com-DegularDemo-Bold.otf') format('opentype');
+  font-family: 'PoppinsExtraBold';
+  src: url('../../../public/Poppins-ExtraBold.ttf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .Downloads-text-content h2 {
-  font-family: 'DegularBold';
+  font-family: 'PoppinsExtraBold';
   font-size: 24px;
   margin-bottom: 10px;
 }

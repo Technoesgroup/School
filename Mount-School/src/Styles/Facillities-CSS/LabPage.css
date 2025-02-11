@@ -39,144 +39,146 @@ body {
   text-align: center;
 }
 
-/* Labs Page */
-.labs-page {
-  width: 100%;
-  height: auto;
+
+.LabPage-app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 40px;
+  padding: 40px 100px;
 }
 
-/* Labs Container */
-.labs-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
+.LabPage-section-card {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  align-items: center;
-  margin: 0 auto;
-}
-
-/* Lab Card */
-.lab-card {
-  width: 100%;
-  max-width: 1090px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: #fff;
-  padding: 30px 10px;
-  text-align: left;
-  opacity: 0; /* Initially hidden */
-  transform: translateX(-50px); /* Text moves from left */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  align-items: center;
+  scroll-margin-top: 120px;
+  gap: 4%;
+  padding: 20px;
 }
 
-/* Image Animation */
-.lab-card img {
-  width: 80%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  opacity: 0; /* Initially hidden */
-  transform: translateX(50px); /* Image moves from right */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+.LabPage-section-card{
+  flex-direction: row;
 }
 
-/* When in viewport */
-.lab-card.Facilities-show {
-  opacity: 1;
-  transform: translateX(0);
+.LabPage-section-card img {
+  width: 100%;
 }
 
-.lab-card.Facilities-show img {
-  opacity: 1;
-  transform: translateX(0);
+.LabPage-text-content {
+  flex: 1;
 }
 
-/* Alternate Layout */
-.lab-card-right {
-  flex-direction: row-reverse;
-}
-
-/* Text Styling */
-.lab-card h2 {
+.LabPage-text-content h2 {
   font-family: 'DegularBold';
-  text-align: left;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-.lab-card p {
+.LabPage-text-content p {
   font-family: 'PoppinsMedium';
-  text-align: left;
-  font-size: 0.9rem;
-  max-width: 600px;
+  line-height: 2;
+   width: 100%;
+  font-size: 16px;
   color: #555;
+  margin-bottom: 20px;
 }
 
-/* Mobile View */
+.LabPage-download-btn {
+  font-family: 'PoppinsSemiBold';
+  padding: 12px 15px;
+  background-color: #2C3192;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.LabPage-download-btn:hover {
+  background-color: #003b8b;
+}
+
+.LabPage-section-image {
+  flex: 1;
+  width: 100%;
+  max-width: 370px;
+  height: auto;
+  object-fit: cover;
+}
+
+.CBSE-IMAGE-SECTION-Contains {
+  position: relative;
+  display: inline-block;
+}
+
+.LabPage-corner-border {
+  position: absolute;
+  top: -3px;
+  right: -1px;
+  width: 200px;
+  height: 190px;
+  border: 9px solid #2C3192;
+  border-top: none;
+  border-left: none;
+  transform: rotateX(180deg);
+  border-radius: 2px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Mobile View Styles */
 @media screen and (max-width: 768px) {
-  .labs-container {
-      gap: 5px;
-      width: 100%;
-      padding: 10px;
+  .LabPage-app-container {
+    padding: 20px;
   }
 
-  .lab-card {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      gap: 15px;
-      opacity: 1; /* Ensure animation still works */
-      transform: translateX(0);
+  .LabPage-section-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
   }
 
-  .lab-card img {
-      width: 100%;
-      max-width: 80%;
-      height: auto;
-      margin: 0 auto;
-      opacity: 1;
-      transform: translateX(0);
+  .LabPage-text-content {
+    text-align: left;
   }
 
-  .lab-card h2 {
-      font-size: 18px;
-      margin-bottom: 8px;
+  .LabPage-text-content h2 {
+    font-size: 20px;
   }
 
-  .lab-card p {
-      font-size: 14px;
-      max-width: 100%;
-      margin-bottom: 10px;
+  .LabPage-text-content p {
+    font-size: 14px;
   }
 
-  .lab-card-right {
-      flex-direction: column;
+  .LabPage-download-btn {
+    font-size: 14px;
   }
 
-  .labs-page {
-      width: 90%;
-      padding: 0 15px;
+  .LabPage-section-image {
+    max-width: 100%;
+    height: auto;
   }
 
-  .Facilities-header {
-      padding: 15px;
+  .LabPage-corner-border {
+    display: none; /* Optional: Hide the corner border for better alignment */
+  }
+  
+  .LabPage-section-card.LabPage-reverse  {
+    flex-direction:column;
   }
 
-  .Facilities-header h2 {
-      font-size: 24px;
+  .LabPage-download-btn {
+    padding: 9px 12px;
+    font-size: 10px;
+    margin-bottom: 10px;
   }
-
-  .Facilities-header p {
-      font-size: 14px;
-  }
+  
 }
+
+
+
+
 
 
   

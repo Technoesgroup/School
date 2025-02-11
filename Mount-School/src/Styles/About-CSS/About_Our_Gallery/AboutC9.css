@@ -1,6 +1,6 @@
   .awards-recognition {
     scroll-margin-top: 120px;
-    padding: 60px 100px;
+    padding: 60px 8vw;
     text-align: center;
   }
   
@@ -11,7 +11,7 @@
   
   .awards-recognition__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
     gap: 20px;
   }
   
@@ -53,13 +53,6 @@
     margin-right: 160px;
   }
   
-  .red-line_C9 {
-    background-color: #d32f2f; /* Red color for the second line */
-    margin-top: 4px; /* Add vertical gap between lines */
-    position: absolute;
-    top: 4px;
-    left: 180px; /* Half-right push relative to black line */
-  }
   
   @media (max-width: 768px) {
     .text_About_C9{

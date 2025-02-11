@@ -3,7 +3,7 @@
 .footer {
   background-color: #2b2f77;
   color:rgb(234, 234, 234);
-  padding: 40px 60px;
+  padding: 4vw 6vw;
   display: flex;
   justify-items: center;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@ padding-left: 0;
 
 .footer-section {
   flex: 1;
-  min-width: 262px;
+  min-width: 18vw;
   margin-bottom: 10px;
 }
 
@@ -34,8 +34,8 @@ padding-left: 0;
 }
 
 .footer_img {
-  width: 200px;
-  height: 80px;
+  width: 16vw;
+  height: 8vw;
   
 }
 

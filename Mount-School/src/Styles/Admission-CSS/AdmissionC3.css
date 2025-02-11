@@ -1,13 +1,14 @@
 @import url('../Font.css');
 
 .admission-container {
-    padding: 50px  100px;
+  padding: 4vw 8vw;
     line-height: 1.6;
   }
 
   .admission-title{
-    font-family: 'Degularbold';
+    font-family: 'PoppinsExtraBold';
     text-align: center;
+    color: #2C3192;
     margin-bottom: 10px;
   }
 
@@ -24,7 +25,7 @@
   }
 
   .highlights{
-    font-family: 'Degularbold';
+    font-family: 'PoppinsExtraBold';
     color: #2C3192;
   }
   
@@ -77,7 +78,7 @@
   }
   
   .AdmissionC3-entry-criteria h3{
-    font-family: 'DegularSemibold';
+    font-family: 'PoppinsMedium';
   }
 
   .AdmissionC3-entry-criteria ul {

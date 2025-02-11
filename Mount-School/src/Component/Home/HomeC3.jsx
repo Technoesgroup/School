@@ -23,37 +23,37 @@ const events = [
   {
     title: 'PTM',
     description: 'Mount Litera Zee School Bitha will be hosting the Parent-Teacher Meeting (PTM) for P12/Pre-Board on 18th January. This meeting will provide...',
-    date: 'Jan 2024',
+    date: 'Jan 2025',
     image: PTM,
   },
   {
     title: 'Annual Function',
     description: 'In the waning days of January, Mount Litera Zee School Bitha shall, with great pride, present its Annual Function. This grand occasion...',
-    date: 'Feb 2024',
+    date: 'Feb 2025',
     image: Annual_Function,
   },
   {
     title: 'Parent Orientation Programme',
     description: 'A Parent Orientation Programme is soon to be held, where Mount Litera Zee School Bitha shall reveal SEP (Students Empowerment ...',
-    date: 'Dec 2020',
+    date: 'Dec 2024',
     image: Parent_Orientation_Programme,
   },
   {
     title: 'Career Counselling Session',
     description: 'Mount Litera Zee School Bihta is set to ignite the spark of curiosity with its much-awaited Science Exhibition this December...',
-    date: '27 Dec 2020',
+    date: '27 Dec 2024',
     image: Career,
   },
   {
     title: 'Pre-Board 2 Examinations',
     description: 'Mount Litera Zee School Bihta will be hosting the Parent-Teacher Meeting (PTM) for PT2/Pre-Board on 18th January. This meeting will provide ...',
-    date: 'Jan 2024',
+    date: 'Jan 2025',
     image: pre_board,
   },
   {
     title: 'Parent Induction Programme',
     description: 'In the waning days of January, Mount Litera Zee School Bihta shall, with great pride, present its Annual Function. This grand occasion ...',
-    date: 'Jan 2024',
+    date: 'Jan 2025',
     image: Induction,
   },
 ];

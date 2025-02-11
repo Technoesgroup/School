@@ -6,7 +6,7 @@ const FooterTop = ({toggleForm}) => {
     <div className="hero-section">
       <div className="hero-overlay">
         <div className="hero-content">
-          <h1>Don’t miss the crucial years to build your child’s spiritual foundation.</h1>
+          <h1>Don’t miss the crucial years to <br /> build your child’s spiritual foundation.</h1>
           <br />
           <button className="FooterTop-cta-button"  onClick={toggleForm}>ENQUIRE NOW</button>
         </div>

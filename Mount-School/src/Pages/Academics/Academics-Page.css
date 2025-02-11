@@ -1,12 +1,11 @@
 .Academics-page{
-    margin-top: 133px;
+  margin-top: 21.4vh;
 }
 @media(max-width:760px){
     .Academics-page{
         margin-top: 100px
     }
 }
-
 
 .Academics-fixed-button {
     font-size: 14px;

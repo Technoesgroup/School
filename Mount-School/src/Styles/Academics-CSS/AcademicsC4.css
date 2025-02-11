@@ -1,17 +1,16 @@
 @import url('../Font.css');
 
 .AcadeC4-container {
-  padding: 50px 100px;
+  padding: 4vw 7.5vw;
 }
 
 .inner-Container-C4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 1.8vw;
   padding: 10px;
-  border: 1.4px solid rgb(212, 208, 208);
 }
 
 .upper-images-C4 {
@@ -21,15 +20,15 @@
 }
 
 .upper-image-C4 {
-  width: 250px;
-  height: 200px;
+  width: 20vw;
+  height: 16vw;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
 .Academic-titleC4 {
-  font-family: 'Degularbold';
+  font-family: 'PoppinsBold';
   text-align: left;
   margin-bottom: 20px;
 }
@@ -46,28 +45,29 @@
 }
 
 .small-C4 {
-  width: 200px;
-  height: 210px;
+  width: 17vw;
+  height: 16vw;
 }
 
 .large-C4 {
-  width: 310px;
-  height: 210px;
+  width: 23vw;
+  height: 16vw;
 }
 
 .AcadeC4-content {
   top: 0;
-  max-width: 700px;
+  max-width: 68vw;
   text-align: justify;
 }
 
 .AcadeC4-content h2 {
+  font-family: 'PoppinsBold';
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 2.8vw;
 }
 
 .AcadeC4-content p {
-  font-family: 'PoppinsMedium';
+  font-family: 'Poppins-Regular';
   color: rgb(43, 43, 43);
   margin: 10px 0;
   font-size: 0.9rem;

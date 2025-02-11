@@ -3,16 +3,15 @@
 .AcademicsC8-Halloween-container {
   width: 84%;
   margin: auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 2vw;
   color: #333;
 }
 
 .AcademicsC8-event-title {
-  font-family: 'PoppinsSemibold';
+  font-family: 'PoppinsBold';
   text-align: left;
   font-size: 1.2rem;
-  color: #4AAFF7;
+  color:#2C3191  ;
   margin-bottom: 20px;
 }
 

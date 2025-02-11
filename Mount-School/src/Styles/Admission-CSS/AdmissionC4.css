@@ -2,18 +2,18 @@
 @import url('../Font.css');
 
 .AdmissionC4-documents-container {
-    padding: 40px 100px;
+    padding: 4vw 8vw;
     text-align: center;
     font-family: Arial, sans-serif;
     color: #333;
   }
   
   .AdmissionC4-documents-container h2{
-    font-family: 'DegularSemibold';
+    font-family: 'PoppinsExtraBold';
   }
 
   .AdmissionC4-documents-title {
-    font-family: 'DegularSemibold';
+    font-family: 'PoppinsExtraBold';
     text-align: left;
     font-size: 1.8rem;
     font-weight: bold;

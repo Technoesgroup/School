@@ -1,6 +1,6 @@
 .our-management {
-  scroll-margin-top: 120px;
-    max-width: 1020px;
+    scroll-margin-top: 120px;
+    max-width: 83vw;
     margin: 0 auto;
     padding: 20px;
   }
@@ -17,19 +17,19 @@
   }
 
   .text_About_C7{
-    font-family: 'Degularbold';
+    font-family: 'PoppinsExtraBold';
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
   }
   
   .black-text_C7 {
-    font-family: 'Degularbold';
+    font-family: 'PoppinsExtraBold';
     color: black;
   }
   
   .blue-text_C7 {
-    font-family: 'Degularbold';
+    font-family: 'PoppinsExtraBold';
     color: #2C3192; /* Adjust to match red */
   }
   
