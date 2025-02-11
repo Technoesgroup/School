@@ -12,17 +12,17 @@ const About3 = () => {
     {
       icon: Icon_2,
       title: 'YOUR CHILD DESERVES AN OPPORTUNITY TO ACHIEVE THEIR DREAMS TO THE FULLEST.',
-      description: 'Unlock the doors to all-round holistic excellence at Mount Litera Zee School.',
+      description: 'We provide a nurturing, dynamic environment where students thrive academically, socially, and personally. With world-class education, innovative teaching, and state-of-the-art facilities, we empower every child to grow, explore, and succeed.',
     },
     {
       icon: Icon_3,
       title: 'ACADEMIC, CO-CURRICULAR, PERSONAL, EMOTIONAL, AND SPIRITUAL BRILLIANCE.',
-      description: 'Time to ensure that your child gets what he deserves. It’s time to take him to Mount Litera Zee School.',
+      description: 'We nurture well-rounded individuals through academic excellence, co-curricular growth, and personal development. With a globally aligned curriculum, diverse activities, and state-of-the-art facilities, we empower students to thrive with confidence.',
     },
     {
       icon: Icon_1,
-      title: 'ABOUT MOUNT LITERA ZEE SCHOOL',
-      description: 'Brighten your child’s future at Mount Litera Zee School.',
+      title: 'MOUNT LITERA ZEE SCHOOL BRIGHTENING THE STUDENTS FUTURE',
+      description: 'We empower students with knowledge, skills, and values to thrive academically and beyond. With a holistic approach, we nurture talents, foster growth, and prepare them for a bright future.',
     },
   ];
 

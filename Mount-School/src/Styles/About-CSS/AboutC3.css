@@ -3,7 +3,7 @@
   .about-section {
     scroll-margin-top: 110px;
     text-align: center;
-    padding: 25px 1.2vw;
+    padding: 2vw 1.2vw;
     margin-bottom: 40px;
   }
   
@@ -39,9 +39,9 @@
     border-radius: 8px;
     padding: 1.5vw  1.5vw;
     max-width: 22vw;
-    height: 180px;
+    height: 16vw;
     box-shadow: 0 4px 8px rgba(9, 9, 9, 0.817);
-    text-align: center;
+   text-align: justify;
   }
   
   .White-Circle {

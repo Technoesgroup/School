@@ -5,6 +5,7 @@
   padding: 3vw 8.2vw;
    width: 100%;
   margin: 0 auto;
+  height: auto;
   box-sizing: border-box;
   overflow: hidden;
   text-align: center;
@@ -23,12 +24,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3vw;
+  gap: 2vw;
 }
 
 .HomeC6-content img{
-  width: 15vw;
-  height: 18vw;
+  width: 22vw;
+  height: 34vw;
 } 
 .HomeC6-leader-image {
   border: 2px  solid white;
@@ -37,7 +38,7 @@
 }
 
 .HomeC6-text-section {
-  width: 100%;
+  width: 80%;
   text-align: left;
 }
 
@@ -46,20 +47,22 @@
   color: #ffffff;
   letter-spacing: 2px;
   word-spacing: 3px;
-  font-size: 0.7rem;
-  margin-bottom: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 2vw;
 }
 
 .HomeC6-leader-name {
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .HomeC6-text-section p{
   width: 100%;
   height: 5.6vw;
   font-family: 'Poppins-Regular';
-  line-height: 1.8;
+  line-height: 2;
+  word-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 0.9vw;
 }
 
@@ -70,7 +73,14 @@
 .HomeC6-bottom-Paragrapgh p{
  margin-top: 1.4vw;
  line-height: 2;
+ word-spacing: 2px;
+ letter-spacing: 1px;
  font-size: 0.9vw;
+}
+
+.HomeC6-text-section p,
+.HomeC6-bottom-Paragrapgh p {
+  text-align: justify; /* Justify text for equal left & right alignment */
 }
 
 .HomeC6-leader-position,

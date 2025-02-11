@@ -98,7 +98,7 @@ const Home8 = () => {
       <div className="leader-header_C3">
         <h1 className="text_About_C8">
           <span className="black-text_C8">PARENT'S</span>{" "}
-          <span className="blue-text_C8">SPEAK</span>
+          <span className="blue-text_C8">TESTIMONIALS</span>
         </h1>
       </div>
       <div

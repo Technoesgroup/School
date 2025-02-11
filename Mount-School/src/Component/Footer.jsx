@@ -16,7 +16,7 @@ function Footer() {
         <p>Subscribes us to get recent updates!</p>
         <div className="Contact-Form2">
           <input type="email" placeholder="Email address" />
-          <button className='Send-btn'>Subscribes</button>
+          <button className='Send-btn'>Subscribe</button>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ function Footer() {
         <h3>Contact Information</h3>
         <div className='font-front'>
           <a href="tel:+919771485809"  className='phone-contact-link'>
-        <PhoneIcon /> <p>+91 9771485809</p>
+        <PhoneIcon /> <p>+91 9771485809, +91 9771485810</p>
         </a>
         </div>
         <div className='font-front' >

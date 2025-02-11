@@ -8,7 +8,7 @@ const HomeC10 = () => {
     <div className="HomeC10-contact-container">
       {/* Left Section */}
       <div className="HomeC10-form-section">
-        <h2>
+        <h2  id="get_in_touch">
           Get in <span className="highlight">Touch</span>
         </h2>
         <p>

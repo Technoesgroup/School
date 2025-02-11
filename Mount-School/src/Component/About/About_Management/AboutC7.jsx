@@ -9,8 +9,7 @@ const OurManagement = () => {
     {
       image: ManagementCard_1, // Correct usage of the image URL
       name: 'Mr. Navin Kumar',
-      description: `Mr Navin Kumar, Chairman of Mount Litera Zee School, has steered the school to many successes. Started in 2016, the school provides world class education right from pre-school to high school. Mount Litera Zee is renowned to nurture free-thinking, socially responsible students, in an active and free atmosphere, to make students truly world ready. 
-Today the school has a strength of 2000 students and offers CBSE curriculum. The school believes in a holistic approach to education with expert tutelage, creative freedom and inspiring innovation, being the key to molding students from core to advanced knowledge. `,
+      description: 'Mr Navin Kumar, the chairman of Mount Litera Zee School, Bihta, has steered the school to many successes. Started in 2016, the school provides world class education right from pre-school to high school. Mount Litera Zee is renowned to nurture free-thinking, socially responsible students, in an active and free atmosphere, to make students truly world ready.Today, the school has a good strength of students and offers CBSE curriculum. The school believes in a holistic approach to education with expert tutelage, creative freedom and inspiring innovation, being the key to molding students from core to advanced knowledge.'
     },
     {
       image: ManagementCard_2,
