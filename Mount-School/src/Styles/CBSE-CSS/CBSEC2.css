@@ -129,11 +129,12 @@
   margin: 20px 0;
 }
 
-.mobile-menu-content .menu-list li .text-change {
+.mobile-menu-content .menu-list li .CBSE-text-change {
   padding: 10px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2C3192;
+  color: #000000;
+  font-family: 'PoppinsSemibold';
   text-transform: uppercase;
 }
 

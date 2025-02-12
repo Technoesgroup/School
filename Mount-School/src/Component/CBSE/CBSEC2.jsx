@@ -66,7 +66,7 @@ function CBSEC2() {
                   className={index === activeIndex ? "active" : ""}
                   onClick={() => handleScroll(link.target, index)}
                 >
-                  <span className="text-change">{link.label}</span>
+                  <span className="CBSE-text-change">{link.label}</span>
                 </li>
               ))}
             </ul>

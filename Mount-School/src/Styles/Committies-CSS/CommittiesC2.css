@@ -141,7 +141,8 @@
   padding: 10px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2C3192;
+  font-family: 'PoppinsSemibold';
+  color: #000000;
   text-transform: uppercase;
 }
 

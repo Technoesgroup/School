@@ -63,7 +63,7 @@ function AboutC2() {
                   className={index === activeIndex ? "active" : ""}
                   onClick={() => handleScroll(link.target, index)}
                 >
-                  <span className="text-change">{link.label}</span>
+                  <span className="About-text-change">{link.label}</span>
                 </li>
               ))}
             </ul>
