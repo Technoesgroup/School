@@ -1,60 +1,37 @@
 import React from "react";
 import "../../Styles/Gallery-CSS/GalleryC3.css";
-import image1 from '../../image/20240210_142537.jpg';
-import image2 from '../../image/Takonda.jpg';
-import image3 from '../../image/IMG_20240726_195817.jpg';
-import image4 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
-
 
 const VideoGallery = () => {
   const galleryData = [
-    {
-      id: 1,
-      title: "Annual Day",
-      image: image1,
-      videoLink: "#",
-    },
-    {
-      id: 2,
-      title: "Taekwondo Program",
-      image: image2,
-      videoLink: "#",
-    },
-    {
-      id: 3,
-      title: "Independence Day",
-      image: image3,
-      videoLink: "#",
-    },
-    {
-      id: 4,
-      title: "Run For Unity Marathon",
-      image: image4,
-      videoLink: "#",
-    },
+    { id: 1, videoLink: "https://www.youtube.com/embed/_iWs_2FSgq8" },
+    { id: 2, videoLink: "https://www.youtube.com/embed/dIXF7l9bsPQ" },
+    { id: 3, videoLink: "https://www.youtube.com/embed/dZjMWAZGvjw" },
+    { id: 4, videoLink: "https://www.youtube.com/embed/z6nPOrGMu-g" },
+    { id: 5, videoLink: "https://www.youtube.com/embed/j1YS987Quzc" },
+    { id: 6, videoLink: "https://www.youtube.com/embed/WHCBoIndSyQ" },
+    { id: 7, videoLink: "https://www.youtube.com/embed/2KZte3mfIIw" }, 
+    { id: 8, videoLink: "https://www.youtube.com/embed/01vJV_iUQ0o" }, 
   ];
 
   return (
     <div className="gallery-container">
-      {/* Heading */}
       <h2>GALLERY - VIDEOS & PHOTOS</h2>
       <h3>Video Gallery</h3>
 
-      {/* Video Cards */}
       <div className="GalleryC4-video-grid">
         {galleryData.map((item) => (
           <div key={item.id} className="video-card">
-            <a href={item.videoLink} target="_blank" rel="noreferrer">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="video-thumbnail"
-              />
-              <div className="play-button">
-                <span>&#9654;</span>
-              </div>
-            </a>
-            <p className="video-title">{item.title}</p>
+            <iframe
+              width="560"
+              height="315"
+              src={item.videoLink}
+              title={`Video ${item.id}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+            <p className="video-title">{`Video ${item.id}`}</p>
           </div>
         ))}
       </div>
@@ -63,3 +40,5 @@ const VideoGallery = () => {
 };
 
 export default VideoGallery;
+
+

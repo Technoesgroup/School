@@ -74,13 +74,21 @@
   }
 
   .Contact-Us-Info p{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     gap: 15px;
     display: flex;
   }
 
+  .Contact-Us-Info p:hover{
+    color: #FFC107;
+  }
+
   .Contact-Us-Info p .contact-Us-icon{
-    font-size: 17px;
+    font-size: 1.6rem;
+  }
+
+  .Contact-Us-Info a .contact-Us-icon:hover{
+    color: #FFC107;
   }
 
   .Contact-Us-Info a{
@@ -120,8 +128,8 @@
     position: relative;
     right: -32%;
     width: 200px;
-    background-color:#FFC107;
-    color: black;
+    background-color:#2C3192;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -130,7 +138,8 @@
   }
   
   .ContactUs-send-button:hover {
-  color: white;
+    background-color: #FFC107;
+  color: rgb(0, 0, 0);
   }
   
 @media(max-width:760px){

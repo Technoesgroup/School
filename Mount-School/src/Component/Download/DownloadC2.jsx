@@ -12,7 +12,7 @@ function DownloadC2() {
     { label: "Sample-paper-section", target: "Sample-paper-section" },
     { label: "CBSE Circular", target: "CBSE-Paper-section" },
     { label: "Book List", target: "Book-list-section" },
-    { label: "Holiday List", target: "Holiday-section" },
+    // { label: "Holiday List", target: "Holiday-section" },
   ];
 
   const toggleMobileMenu = () => {

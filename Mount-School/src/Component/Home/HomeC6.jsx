@@ -43,34 +43,18 @@ const MessageComponent = () => {
       a focus on 
       communication skills, and initiatives to foster cultural understanding, we ensure our students grow into well-rounded, responsible citizens.
       </p>
-      {/* <p>
+      <p>
       Mount Litera Zee School, Bihta is more than just a school — it is a place where students are inspired to take 
       on challenges that stretch their limits. We do so with unshakable confidence in the abilities of both
        our teachers and students. The management and staff are wholeheartedly committed to ensuring that every 
        student's educational experience is both exciting and transformative.
-      </p> */}
+      </p>
         <h3 className="HomeC6-leader-name">Mr. Navin Kumar</h3>
         <h3 className="HomeC6-leader-position">Chairman</h3>
         <h3 className="HomeC6-school-name">Mount Litera Zee School, Bihta</h3>
       </div>
     </div>
-    {/* <div className="HomeC6-bottom-Paragrapgh">
-      <p>
-      At Mount Litera Zee School, Bihta, we take great pride in cultivating a 
-      culture of learning where students are encouraged to explore their interests in a variety of fields 
-      while also developing strong character. Values such as integrity, perseverance, civic consciousness, 
-      and the ability to delay gratification are at the core of our teaching. Through extracurricular activities, 
-      a focus on 
-      communication skills, and initiatives to foster cultural understanding, we ensure our students grow into well-rounded, responsible citizens.
-      </p>
-      <p>
-      Mount Litera Zee School, Bihta is more than just a school — it is a place where students are inspired to take 
-      on challenges that stretch their limits. We do so with unshakable confidence in the abilities of both
-       our teachers and students. The management and staff are wholeheartedly committed to ensuring that every 
-       student's educational experience is both exciting and transformative.
-      </p>
-    
-      </div> */}
+  
   </div>
   );
 };

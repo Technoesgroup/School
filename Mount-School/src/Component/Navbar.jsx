@@ -54,10 +54,13 @@ const Header = ({ toggleForm }) => {
       { label: "Course & Fee", to: "Course&Fee-section" },
     ],
     CBSE:[
-      { label: "Sample Paper X", to: "Sample-paper-section" },
-      { label: "CBSE Circular", to: "CBSE-Paper-section" },
-      { label: "Book List", to: "Book-list-section" },
-      { label: "Holiday List", to: "Holiday-section" },
+      { label: "CBSE Holidays", to: "Holiday-section" },
+      { label: "Curriculum", to: "Curriculum-section" },
+      { label: "Affiliation Letter", to: "Affiliation-section" },
+      { label: "NOC ", to: "NOC-section" },
+      { label: "Recognition Certificate", to: "Recognition-section" },
+      { label: "Trust Deed", to: "Trust-section" },
+
     ],
     Committee: [
       { label: "PTA", to: "pta-section" },
@@ -67,7 +70,6 @@ const Header = ({ toggleForm }) => {
       { label: "Sample Paper X", to: "Sample-paper-section" },
       { label: "CBSE Circular", to: "CBSE-Paper-section" },
       { label: "Book List", to: "Book-list-section" },
-      { label: "Holiday List", to: "Holiday-section" },
     ],
   };
 

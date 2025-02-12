@@ -7,12 +7,6 @@
     margin-bottom: 40px;
   }
   
-  .about-section__title {
-    font-family: 'Degularbold';
-    font-size: 26px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
   
   .about-section__title .highlight {
     font-family: 'PoppinsSemibold';
@@ -24,7 +18,7 @@
   }
   
   .about-section__cards {
-    margin-top: 110px;
+    margin-top: 9vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +33,9 @@
     border-radius: 8px;
     padding: 1.5vw  1.5vw;
     max-width: 22vw;
-    height: 16vw;
+    height: auto;
+    min-height: 20vw;
     box-shadow: 0 4px 8px rgba(9, 9, 9, 0.817);
-   text-align: justify;
   }
   
   .White-Circle {
@@ -69,16 +63,19 @@
   
   .about-section__card-title {
     font-family: 'PoppinsMedium';
-    font-size: 16px;
-    color:#FFC107;
+    font-size: 0.9rem;
+    color:#ffffff;
+    width: 20vw;
     font-weight: bold;
-    margin-top: 20px; 
+    margin:1.7vw 0; 
   }
   
   .about-section__card-description {
     font-family: 'PoppinsMedium';
     padding-top: 10px;
-    font-size: 16px;
+    line-height: 2;
+    font-size: 0.7rem;
+    text-align: justify;
     color: #ffffff;
   }
   
@@ -109,8 +106,41 @@
   }
   
   @media(max-width:760px){
+    .about-section__cards {
+      margin-top: 9vw;
+      display: flex;
+      flex-direction: column;
+    }
     .about-section__card {
       margin-bottom: 60px;
+    }
+
+    .about-section__card {
+      background-color:#292E86;
+      position: relative;
+      border: 3px dashed #060606;
+      max-width: 82vw;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(9, 9, 9, 0.817);
+    }
+
+    .about-section__card-title {
+      font-family: 'PoppinsMedium';
+      font-size: 0.9rem;
+      color:#ffffff;
+      width: 80vw;
+      font-weight: bold;
+      margin: 20px 0; 
+    }
+
+    .White-Circle {
+      width: 80px;
+      height: 80px;
+      top: -60px;
+    }
+
+    .about-section__cards{
+      margin-top: 60px;
     }
   }
 

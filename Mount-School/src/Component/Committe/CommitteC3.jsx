@@ -14,7 +14,7 @@ const DocumentSection = () => {
         id:"pta-section",
         title: "PTA Members",
         description:
-          "The Parent-Teacher Association (PTA) acts as a vital link between parents and the school, fostering collaboration to enhance the overall educational experience. ",
+          "The Parent-Teacher Association (PTA) bridges parents, teachers, and school administration to enhance students' educational experience. It fosters collaboration, supports school initiatives, and organizes events like meetings, workshops, and cultural programs. By engaging in PTA activities, parents contribute to a supportive and inclusive school environment. ",
         image: image1, // Replace with the actual path
         buttonText: "Download",
         pdf: "/pdfs/CBSE_Holidays.pdf",
@@ -23,7 +23,7 @@ const DocumentSection = () => {
         id:"SMC-section",
         title: "SMC",
         description:
-          "The School Management Committee (SMC) ensures transparency and accountability in the school’s operations. ",
+          "The SMC ensures efficient school governance, upholding its vision and values. Comprising management, teachers, and parents, it oversees policy decisions, academics, infrastructure, and teacher training. Committed to high-quality education and a safe environment, the SMC drives continuous improvement, fostering holistic development and excellence. ",
         image:image2, // Replace with the actual path
         buttonText: "Download",
         pdf: "/pdfs/CBSE_Holidays.pdf",

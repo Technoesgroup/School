@@ -5,7 +5,7 @@ const ManagementCard = ({ image, name, description }) => {
   return (
     <div className="management-card">
       <div className="management-card__image">
-        <img src={image} alt={name} />
+        <img src={image} alt={name}  className='leaderimage-management' />
       </div>
       <div className="management-card__content">
         <h3 className="management-card__name">{name}</h3>

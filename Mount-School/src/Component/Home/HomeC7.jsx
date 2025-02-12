@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/Home-CSS/HomeC7.css"; // Add custom styles here
-import indImg from "../../image/IMG_20240726_195817.jpg";
+import indImg from "../../image/IndependentDay.svg";
 import RangImg from "../../image/IMG-20241029-WA0060.jpg";
 import DandiyaImg from "../../image/IMG20241009115034.jpg";
 import AnualImg from "../../image/HindiDiwas.svg";
@@ -9,7 +9,7 @@ import GreenDayCelebrations from "../../image/GreenDay.jpg";
 
 const events = [
   {
-    title: "INDEPENDENCE DAY",
+    title: "Republic Day Celebration",
     description:
     "Mount Litera Zee School celebrated Independence Day with immense enthusiasm and pride. Our students mesmerized everyone with a splendid cultural program",
     image: indImg, // Replace with the actual image path
@@ -56,10 +56,12 @@ const Events = () => {
         {events.map((event, index) => (
           <div className="event-card" key={index}>
             <img src={event.image} alt={event.title} className="event-image" />
-            <h3 className="event-title">{event.title}</h3>
+            <h3 className="Image-event-title">{event.title}</h3>
+            <div className="HomeC7-overlay"></div>
           </div>
         ))}
       </div>
+      <button  className="view-btn-events">View All</button>
     </div>
   );
 };

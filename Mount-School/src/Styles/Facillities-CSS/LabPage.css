@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'DegularBold';
-  src: url('../../../public/Poppins-Regular.ttf') format('opentype');
+  src: url('../../../public/Poppins-Bold.ttf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
@@ -28,12 +28,14 @@ body {
 }
 
 .Facilities-header h2 {
+  font-size: 2rem;
   font-family: 'DegularBold';
+  color: #2C3192;
 }
 
 .Facilities-header p {
   font-family: 'PoppinsMedium';
-  max-width: 1100px;
+  max-width: 108vw;
   font-size: 1rem;
   line-height: 2;
   text-align: center;
@@ -50,7 +52,7 @@ body {
 .LabPage-section-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   scroll-margin-top: 120px;
   gap: 4%;
   padding: 20px;
@@ -70,7 +72,7 @@ body {
 
 .LabPage-text-content h2 {
   font-family: 'DegularBold';
-  font-size: 24px;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
@@ -78,8 +80,9 @@ body {
   font-family: 'PoppinsMedium';
   line-height: 2;
    width: 100%;
-  font-size: 16px;
-  color: #555;
+  font-size: 1rem;
+  color: #010101;
+  text-align: justify;
   margin-bottom: 20px;
 }
 
@@ -102,7 +105,7 @@ body {
 .LabPage-section-image {
   flex: 1;
   width: 100%;
-  max-width: 370px;
+  max-width: 28vw;
   height: auto;
   object-fit: cover;
 }

@@ -124,6 +124,7 @@ function LabsPage() {
   
   return (
     <div className="LabPage-app-container">
+      <Header />
       {sections.map((sec, index) => (
         <SectionCard
           key={index}

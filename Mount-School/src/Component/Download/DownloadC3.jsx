@@ -13,7 +13,7 @@ const DocumentSection = () => {
         id:"Sample-paper-section",
         title: "Sample Paper X/XII",
         description:
-          "The CBSE Board has released Sample Paper X to help students understand the exam pattern and marking scheme. We encourage all students to download and practice this paper for better preparation.",
+          "The CBSE Board has released Sample Paper X/XII to help students understand the exam pattern and marking scheme. We encourage all students to download and practice this paper for better preparation.",
         image: image1, // Replace with the actual path
         buttonText: "Click here",
         link: "https://cbseacademic.nic.in/SQP_CLASSX_2019_20.html",
@@ -31,9 +31,9 @@ const DocumentSection = () => {
         id:"Book-list-section",
         title: "Book List",
         description:
-          "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject. ",
+          "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject.",
         image: image3, // Replace with the actual path
-        buttonText: "Click here",
+        buttonText: "Download",
         link: "/pdfs/CBSE_Holidays.pdf",
       },
 

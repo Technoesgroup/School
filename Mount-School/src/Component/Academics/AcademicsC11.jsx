@@ -11,7 +11,7 @@ const AnnualDay = () => {
   return (
     <div className="AcademicsC11-AnnualDay-container">
       {/* Header Section */}
-      <h1 className="AcademicsC11-event-title">Annual Sports Day, 09 Feb 2024</h1>
+      <h1 className="AcademicsC11-event-title">Annual Sports Day,  2024</h1>
 
       {/* Description Section */}
       <div className="AcademicsC11-event-description">

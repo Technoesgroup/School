@@ -10,18 +10,18 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 10px;
+  padding: 1vw;
 }
 
 .upper-images-C6 {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1vw;
 }
 
 .upper-image-C6 {
-  width: 20vw;
-  height: 16vw;
+  width: 19vw;
+  height: 15vw;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -45,13 +45,13 @@
 }
 
 .small-C6 {
-  width: 17vw;
-  height: 16vw;
+  width: 16vw;
+  height: 15vw;
 }
 
 .large-C6 {
-  width: 23vw;
-  height: 16vw;
+  width: 22vw;
+  height: 15vw;
 }
 
 .AcadC6-content {
@@ -119,7 +119,43 @@
 
 
   .inner-Container-C6 {
+    flex-direction: column-reverse;
     padding: 10px;
     border: none;
   }
+}
+
+
+
+.DownloadC4-button-container {
+  display: flex;
+  align-items: center;
+  background-color: #1e258d;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  width: fit-content;
+}
+
+.DownloadC4-button-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.DownloadC4-download-button {
+  margin-left: 16px;
+  padding: 8px 16px;
+  background-color: white;
+  color: #1e258d;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.DownloadC4-download-button:hover {
+  background-color: #FFC107;
+  color:black;
 }

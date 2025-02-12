@@ -11,12 +11,12 @@ const Hallowen = () => {
   return (
     <div className="AcademicsC8-Halloween-container">
       {/* Header Section */}
-      <h1 className="AcademicsC8-event-title">Halloween Day, 31 Oct 2024</h1>
+      <h1 className="AcademicsC8-event-title">Halloween Day, 2024</h1>
 
       {/* Description Section */}
       <div className="AcademicsC8-event-description">
         <p>
-        Mount Litera Zee School Bihta turned into a spooky wonderland on Halloween Day 2024.
+        Mount Litera Zee School , Bihta , turned into a spooky wonderland on Halloween Day 2024.
          The students arrived in creative costumes ranging from spooky ghosts to whimsical creatures,
           adding to the fun and excitement of the day. With themed games, decorations, and a costume
            parade, the event was a thrilling mix of fun, fright, and laughter, making it a memorable 

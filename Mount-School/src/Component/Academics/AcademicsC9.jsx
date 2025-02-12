@@ -10,7 +10,7 @@ const RaasDandiya = () => {
   return (
     <div className="AcademicsC9-raas-dandiya-container">
       {/* Header Section */}
-      <h1 className="AcademicsC9-event-title">Raas Dandiya, 09 Oct 2024</h1>
+      <h1 className="AcademicsC9-event-title">Raas Dandiya, 2024</h1>
 
       {/* Description Section */}
       <div className="AcademicsC9-event-description">

@@ -1,0 +1,93 @@
+
+@import url('../Font.css');
+
+body{
+    background-color: #FFFFFF;
+}
+
+.AcademicsC15-Teacher-container {
+    width: 84%;
+    margin: auto;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .AcademicsC15-event-title {
+    font-family: 'PoppinsBold';
+    text-align: left;
+    font-size: 1.2rem;
+    color:#2C3191;
+    margin-bottom: 20px;
+  }
+  
+  .AcademicsC15-event-description {
+    font-family: 'PoppinsMedium';
+    text-align: justify;
+    line-height: 2;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  .AcademicsC15-image-gallery {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* Top images (first row) */
+  .AcademicsC15-image-gallery .AcademicsC15-top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Left image smaller, right image larger */
+    gap: 10px;
+  }
+  
+  .AcademicsC15-image-gallery .AcademicsC15-top-row img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 18vw; /* Set height as needed */
+    object-fit: cover; /* Ensures images fit nicely */
+  }
+  
+  /* Bottom images (second row) */
+  .AcademicsC15-image-gallery .AcademicsC15-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Left image larger, right image smaller */
+    gap: 10px;
+  }
+  
+  .AcademicsC15-image-gallery .AcademicsC15-bottom-row img {
+    width: 100%;
+    height: 18vw; /* Set height as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Ensures images fit nicely */
+  }
+  
+  /* General image styles */
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .AcademicsC15-image-gallery {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .AcademicsC15-image-gallery .AcademicsC15-top-row,
+    .AcademicsC15-image-gallery .AcademicsC15-bottom-row {
+      grid-template-columns: 1fr; /* Single column for all images */
+    }
+  
+    .AcademicsC15-image-gallery .AcademicsC15-bottom-row img {
+      height: 150px;
+    }
+  
+    .AcademicsC15-image-gallery .AcademicsC15-top-row img {
+      height: 150px;
+    }
+  
+    .AcademicsC15-image-gallery img {
+      width: 100%;
+      height:auto; /* Adjust height automatically */
+      object-fit: contain; /* Ensure images scale properly */
+    }
+  }
+  

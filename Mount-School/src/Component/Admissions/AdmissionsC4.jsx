@@ -42,7 +42,7 @@ const AdmissionsC4 = () => {
         ))}
       </div>
       <p className="AdmissionC4-documents-footer">
-        <strong>Kindly bring the originals & zerox of all documents mentioned above at the time of admission.</strong>
+        <strong>Note :- Kindly bring the originals & xerox of all documents mentioned above at the time of admission.</strong>
       </p>
     </div>
   );

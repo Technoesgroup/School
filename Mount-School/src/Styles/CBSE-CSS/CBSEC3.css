@@ -21,17 +21,17 @@ body {
 .CBSE3-app-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 40px 100px;
+  gap: 3vw;
+  padding: 3vw 8vw;
 }
 
 .CBSEC3-section-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   scroll-margin-top: 120px;
   gap: 28%;
-  padding: 20px;
+  padding: 1vw;
 }
 
 .CBSEC3-section-card.CBSEC3-reverse {
@@ -55,9 +55,10 @@ body {
 .CBSE3-text-content p {
   font-family: 'PoppinsMedium';
   line-height: 2;
-  max-width: 400px;
-  font-size: 16px;
-  color: #555;
+  max-width: 30vw;
+  text-align: justify;
+  font-size: 1rem;
+  color: #0e0e0e;
   margin-bottom: 20px;
 }
 
@@ -70,20 +71,21 @@ body {
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .CBSE3-download-btn:hover {
-  background-color: #003b8b;
+  background-color: #FFC107;
 }
 
 .CBSE3-section-image {
-  flex: 1;
-  width: 100%;
-  max-width: 370px;
-  height: auto;
-  object-fit: cover;
+  max-width: 26vw;  /* Set a fixed width */
+  height: 22vw; /* Set a fixed height */
+  object-fit: cover; /* Ensures uniform image scaling */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  display: block;
 }
+
 
 .CBSE-IMAGE-SECTION-Contains {
   position: relative;
@@ -92,11 +94,11 @@ body {
 
 .CBSE3-corner-border {
   position: absolute;
-  top: -3px;
-  right: -1px;
-  width: 200px;
-  height: 190px;
-  border: 9px solid #2C3192;
+  top: -0.2vw;
+  right: -0.1vw;
+  width: 16vw;
+  height: 14vw;
+  border: 10px solid #2C3192;
   border-top: none;
   border-left: none;
   transform: rotateX(180deg);
@@ -108,13 +110,26 @@ body {
 /* Mobile View Styles */
 @media screen and (max-width: 768px) {
   .CBSE3-app-container {
-    padding: 20px;
+    padding: 20px  40px;
   }
 
   .CBSEC3-section-card {
     flex-direction: column;
     gap: 20px;
     text-align: left;
+  }
+  .CBSE3-section-image {
+    max-width: 80%; 
+    height: auto; /* Set a fixed width */
+    /* Set a fixed height */
+    object-fit: cover; /* Ensures uniform image scaling */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    display: block;
+  }
+  .CBSE3-text-content p {
+    font-family: 'PoppinsMedium';
+    line-height: 2;
+    max-width: 300px;
   }
 
   .CBSE3-text-content {
@@ -133,10 +148,6 @@ body {
     font-size: 14px;
   }
 
-  .CBSE3-section-image {
-    max-width: 100%;
-    height: auto;
-  }
 
   .CBSE3-corner-border {
     display: none; /* Optional: Hide the corner border for better alignment */

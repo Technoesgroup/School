@@ -2,24 +2,21 @@
     scroll-margin-top: 120px;
     max-width: 83vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2vw;
   }
   
   .our-management__title {
     text-align: center;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 1.8vw;
   }
   
-  .our-management__title span {
-    color: #c53c3d;
-  }
-
   .text_About_C7{
     font-family: 'PoppinsExtraBold';
     text-align: center;
     font-size: 2rem;
+    color: #2C3192;
     font-weight: bold;
   }
   
@@ -34,6 +31,12 @@
   }
   
 @media(max-width:760px){
+  .our-management {
+    scroll-margin-top: 120px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2vw;
+  }
   .our-management__title {
     font-size: 1.4rem;
   }

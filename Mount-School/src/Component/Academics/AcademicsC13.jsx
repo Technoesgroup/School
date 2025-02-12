@@ -9,23 +9,15 @@ const SGFI_Tournament = () => {
   return (
     <div className="AcademicsC13-SGFI_Tournament-container">
       {/* Header Section */}
-      <h1 className="AcademicsC13-event-title">The SGFI Tournament Triumphs, 09 Oct 2024</h1>
+      <h1 className="AcademicsC13-event-title">The SGFI Tournament Triumphs, 2024</h1>
 
       {/* Description Section */}
       <div className="AcademicsC13-event-description">
         <p>
-          The Raas Dandiya celebration as a true embodiment of the vibrant and festive spirit.
-          The event commenced with a warm and gracious welcome extended by our talented students,
-          setting the stage for a day filled with joy, energy, and cultural pride. The symbolic
-          lighting of the lamp by our Director Sir marked the beginning of the festivities,
-          establishing an atmosphere of positivity and reverence for the occasion.
+        The erudite scholars of Mount Litera Zee School, Bihta, spell of honor and valour and indefatigable spirit, partook in the venerable SGFI (School Games Federation of India) tournament held at the esteemed Patliputra Sports Complex, Patna. These paragons of youthful excellence, displaying prodigious skill and resolute determination, emerged victorious, bringing home a bounty of laurels that now grace the name of our illustrious institution. Their triumphs stand as a shining testament to the school’s unwavering commitment to fostering talent and nurturing a spirit of excellence.
         </p>
         <p>
-          The highlights included spirited dance performances, heartfelt speeches, and the
-          captivating Dandiya dances performed by our students. The rhythmic beats, synchronized
-          steps, and colourful attire brought the spirit of Navratri to life, showcasing the
-          beauty of this age-old tradition. The celebration was a true reflection of our school's
-          commitment to preserving and honouring cultural heritage.
+        In a solemn yet joyous ceremony held at the school, these remarkable champions were duly felicitated for their extraordinary achievements. Their victories, echoing the valor of ancient heroes, remind us that sports are far more than mere recreation; they are arenas where virtues such as discipline, perseverance, and teamwork are tested, refined, and exalted. Through such contests, the minds and bodies of our youth are honed, forging individuals of indomitable character and unwavering will.
         </p>
       </div>
 

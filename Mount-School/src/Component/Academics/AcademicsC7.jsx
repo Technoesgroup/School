@@ -11,11 +11,18 @@ const AcademicsC7 = () => {
   return (
     <div className="AcademicsC7-events">
       <h2><strong>Events</strong></h2>
-      <h3 className="AcademicsC7-event-title">Independence Day Celebrations, 15 Aug 2024</h3>
+      <h3 className="AcademicsC7-event-title">Republic Day Celebration, 2024</h3>
       <p className="AcademicsC7-event-description">
-      Mount Litera Zee School celebrated Independence Day with immense enthusiasm and pride. Our students mesmerized everyone with a splendid cultural program, beautifully showcasing the diversity and richness of our nation through dance, music, and drama. It was a day filled with reverence, as we remembered the brave martyrs who sacrificed their lives for the freedom we cherish today.
-     <br />Our Director and Principal shared heartfelt messages with the students, encouraging them to uphold the timeless values of freedom, unity, and integrity as they continue their journey in life.  <br />
-     Let us all remain steadfast in honouring the legacy of our freedom fighters and work together to build a brighter future for our beloved nation
+      Mount Litera Zee School, Bihta, celebrated Republic Day with great fervor and patriotism, honouring the spirit of unity, diversity, and national pride. The event was marked by a splendid array of performances that captured the essence of India’s rich cultural heritage. Our students mesmerized the audience with a vibrant cultural program, featuring heartfelt songs, energetic dances, and thought-provoking skits that paid tribute to our nation’s journey and the ideals enshrined in our Constitution.
+      </p>
+      <p>
+      The ceremony commenced with the hoisting of the national flag, followed by the National Anthem, which resonated through the school grounds, filling everyone with a deep sense of pride and patriotism. As we reflected on the significance of this day, we remembered the founding principles of justice, equality, and liberty that form the bedrock of our democracy.
+      </p>
+      <p>
+      Our Director and Principal delivered inspiring speeches, urging students to embrace the values of integrity, unity, and responsibility as they play their part in shaping the future of our nation. They emphasized the importance of nurturing the vision of a progressive India, where every citizen’s rights are respected, and freedom is cherished
+      </p>
+      <p>
+      As we commemorate Republic Day, let us all reaffirm our commitment to upholding the legacy of our founding fathers, striving for a harmonious and prosperous future, and working together to strengthen the fabric of our great nation.
       </p>
 
       <div className="AcademicsC7-event-images">

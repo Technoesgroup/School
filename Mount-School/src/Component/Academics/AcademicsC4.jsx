@@ -1,5 +1,5 @@
 import "../../Styles/Academics-CSS/AcademicsC4.css";
-import image1 from "../../image/Frame(4).jpg";
+import image1 from "../../image/WhatsApp Image 2025-02-12 at 16.03.34_1d2af211.jpg";
 import image2 from "../../image/1B7A5541.jpg";
 import image3 from "../../image/Frame12.jpg";
 import image4 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
@@ -15,7 +15,7 @@ const AcademicsC4 = () => {
    <div>
      <div className="upper-images-C4">
         <img src={image1} alt="Image1" className="upper-image-C4" />
-        <img src={image2} alt="Image2" className="upper-image-C4" />
+        {/* <img src={image2} alt="Image2" className="upper-image-C4" /> */}
       </div>
       <div className="lower-images-C4">
         <img src={image3} alt="Image3" className="lower-image-C4 small-C4" />

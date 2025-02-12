@@ -29,7 +29,7 @@
 
 .HomeC6-content img{
   width: 22vw;
-  height: 34vw;
+  height: 38vw;
 } 
 .HomeC6-leader-image {
   border: 2px  solid white;
@@ -45,7 +45,7 @@
 .HomeC6-italicContent {
   font-family: 'PoppinsItalic';
   color: #ffffff;
-  letter-spacing: 2px;
+  letter-spacing: 0.1vw;
   word-spacing: 3px;
   font-size: 0.9rem;
   margin-bottom: 2vw;
@@ -53,18 +53,19 @@
 
 .HomeC6-leader-name {
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 2.2vw;
 }
 
-.HomeC6-text-section p{
+.HomeC6-text-section p {
   width: 100%;
-  height: 5.6vw;
+  height: auto; /* Remove the fixed height */
   font-family: 'Poppins-Regular';
   line-height: 2;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-size: 0.9vw;
 }
+
 
 .HomeC6-bottom-Paragrapgh{
   text-align: left;
@@ -108,5 +109,24 @@
     height: 200px;
   }
 
+}
+
+@media(max-width:760px){
+
+  .HomeC6-text-section p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .HomeC6-content img{
+    width: 42vw;
+    height: 48vw;
+  } 
+
+  .HomeC6-leader-message-container {
+    background-color: #2E2A6E;
+    color: white;
+    padding: 20px;
+  }
 }
 

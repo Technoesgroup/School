@@ -14,12 +14,13 @@
     text-align: left;
     font-size: 1.2rem;
     color: #2C318F;
-    margin-bottom: 15px;
+    margin: 15px 0;
   }
   
   .AcademicsC7-events p{
     font-family: 'PoppinsMedium';
     font-size: 0.9rem;
+    text-align: justify;
     line-height: 2;
   }
   .AcademicsC7-event-description {

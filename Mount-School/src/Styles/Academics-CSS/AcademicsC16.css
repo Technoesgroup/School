@@ -1,0 +1,85 @@
+@import url('../Font.css');
+
+.AcademicsC16-Hindi_Diwas-container {
+    width: 84%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .AcademicsC16-event-title {
+    font-family: 'PoppinsBold';
+    font-size: 1.2rem;
+    text-align: left;
+    color: #2C3191;
+    margin-bottom: 20px;
+  }
+  
+  .AcademicsC16-event-description {
+    font-family: 'PoppinsMedium';
+    text-align: justify;
+    line-height: 2;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  .AcademicsC16-image-gallery {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* Top images (first row) */
+  .AcademicsC16-image-gallery .AcademicsC16-top-row {
+    display: grid;
+    grid-template-columns: 2fr; /* Left image smaller, right image larger */
+    gap: 10px;
+  }
+  
+  .AcademicsC16-image-gallery .AcademicsC16-top-row img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 18vw; /* Set height as needed */
+    object-fit: cover; /* Ensures images fit nicely */
+  }
+  
+  /* Bottom images (second row) */
+  .AcademicsC16-image-gallery .AcademicsC16-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Left image larger, right image smaller */
+    gap: 10px;
+  }
+  
+  .AcademicsC16-image-gallery .AcademicsC16-bottom-row img {
+    width: 100%;
+    height: 18vw; /* Set height as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Ensures images fit nicely */
+
+  }
+  
+  /* General image styles */
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .AcademicsC16-image-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .AcademicsC16-image-gallery .AcademicsC16-bottom-row img {
+      height: 150px;
+    }
+  
+    .AcademicsC16-image-gallery .AcademicsC16-top-row img {
+      height: 150px;
+    }
+  
+    .AcademicsC16-image-gallery img {
+      width: 100%;
+      height:auto; /* Adjust height automatically */
+      object-fit: contain; /* Ensure images scale properly */
+    }
+  }

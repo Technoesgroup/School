@@ -1,35 +1,29 @@
 import React from "react";
 import "../../Styles/CBSE-CSS/CBSEC3.css";
-import image1 from '../../image/Calender.png';
-import image2 from '../../image/377790227_768746751930741_393656229437923242_n.jpg';
-import image3 from '../../image/Circulum.png';
-import image4 from '../../image/Affilication.png';
-import image5 from '../../image/NOC.png';
-import image6 from '../../image/jj.png';
+import useScrollToSection from "../Hook/CustomHook";
+import image1 from '../../image/IMG-20250211-WA0008.jpg';
+// import image2 from '../../image/377790227_768746751930741_393656229437923242_n.jpg';
+import image3 from '../../image/IMG-20250211-WA0004.jpg';
+import image4 from '../../image/IMG-20250211-WA0006.jpg';
+import image5 from '../../image/No_obj.jpg';
+import image6 from '../../image/IMG-20250211-WA0005.jpg';
 import image7 from '../../image/hh.png';
 
 
 
 const DocumentSection = () => {
 
+  useScrollToSection();
+
   const sections = [
     {
       id:"Holiday-section",
-      title: "CBSE Holidays",
+      title: "Holidays",
       description:
-      "Stay updated with the official CBSE holiday schedule for the academic year. The list includes all national and regional holidays observed by our school, ensuring a smooth and planned academic year.",
+      "Stay updated with the  holiday schedule for the academic year. The list includes all national and regional holidays observed by our school, ensuring a smooth and planned academic year.",
       image: image1, // Replace with the actual path
       buttonText: "Download ",
       pdf: "/PDF/aa85706cdd5e2aff50aafeae19ae072d.pdf",
-    },
-    {
-      id:"Norms-section",
-      title: "Norms",
-      description:
-        "Our school follows CBSE norms to maintain a high standard of education. This includes guidelines for classroom practices, evaluation, attendance, and extracurricular activities that align with the CBSE framework.",
-      image:image2, // Replace with the actual path
-      buttonText: "Download ",
-      pdf: "/PDF/b690e1cf887de75fa6c7bb950ad11957.pdf",
     },
     {
       id:"Curriculum-section",
@@ -69,7 +63,7 @@ const DocumentSection = () => {
     },
     {
       id:"Trust-section",
-      title: "Trust Dead",
+      title: "Trust Deed",
       description:
         "Legal trust deed documentation outlining the governance and management structure of the school.",
       image:image7, // Replace with the actual path

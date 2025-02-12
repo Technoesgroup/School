@@ -26,7 +26,7 @@ const HomeC10 = () => {
         <div className="HomeC10-contact-info">
           <div>
             <span className="get-in-touch-phn"> <WifiCalling3OutlinedIcon />PHONE</span>
-            <p>+91 9771485809</p>
+            <p>+91 9771485809, +91 9771485810</p>
           </div>
           <div>
             <span  className="get-in-touch-phn"><DraftsOutlinedIcon /> EMAIL</span>

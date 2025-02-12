@@ -28,22 +28,20 @@ body {
 .Downloads-app-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 40px 100px;
+  gap: 4vw;
+  padding: 4vw 8vw;
 }
 
 .Downloads-section-card {
   display: flex;
   justify-content: space-between;
   scroll-margin-top: 120px;
-  align-items: center;
   gap: 20px;
   padding: 20px;
 }
 
 .Downloads-section-card.Downloads-reverse {
   display: flex;
-  gap: 25%;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
@@ -65,15 +63,16 @@ body {
 .Downloads-text-content p {
   font-family: 'PoppinsMedium';
   line-height: 2;
-  max-width: 400px;
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
+  max-width: 44vw;
+  text-align: justify;
+  font-size: 1rem;
+  color: #313131;
+  margin-bottom: 2vw;
 }
 
 .Downloads-download-btn {
   font-family: 'PoppinsSemiBold';
-  padding: 12px 15px;
+  padding: 1vw 1.4vw;
   background-color: #2C3192;
   color: #fff;
   border: none;
@@ -84,14 +83,15 @@ body {
 }
 
 .Downloads-download-btn:hover {
-  background-color: #003b8b;
+  background-color: #FFC107;
 }
 
 .Downloads-section-image {
   flex: 1;
   width: 100%;
-  max-width: 370px;
-  height: auto;
+  max-width: 28vw;
+  max-height: 20vw;
+  /* height: auto; */
   object-fit: cover;
 }
 
@@ -102,11 +102,11 @@ body {
 
 .Downloads-corner-border {
   position: absolute;
-  top: -4px; /* Adjust for proper positioning */
-  right: -1px; /* Adjust for proper positioning */
+  top: -0.3vw; /* Adjust for proper positioning */
+  right: -0.6px; /* Adjust for proper positioning */
   width: 180px; /* Width of the border */
   height: 150px; /* Height of the border */
-  border: 9px solid #2C3192; /* Blue border */
+  border: 10px solid #2C3192; /* Blue border */
   border-top: none; /* Remove the top part of the border */
   border-left: none; /* Remove the left part of the border */
   transform: rotateX(180deg);
@@ -137,6 +137,25 @@ body {
 
   .Downloads-text-content p {
     font-size: 14px;
+  }
+
+  .Downloads-section-image {
+    flex: 1;
+    width: 100%;
+    max-width: 280px;
+    max-height: 200px;
+    /* height: auto; */
+    object-fit: cover;
+  }
+
+  .Downloads-text-content p {
+    font-family: 'PoppinsMedium';
+    line-height: 2;
+    max-width: 440px;
+    text-align: justify;
+    font-size: 1rem;
+    color: #0a0a0a;
+    margin-bottom: 20px;
   }
 
   .Downloads-download-btn {

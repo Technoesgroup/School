@@ -35,11 +35,6 @@ useScrollToSection();
         </h2>
         <div className="AdmissionsC3-age-criteria">
           <h3>Age Criteria for Admission</h3>
-          <p>
-            As per rules promulgated by the CBSE, the Board Examinations (Secondary level) shall
-            be open to students who have reached the age of 14 years as on 1st April of the year
-            in which they have taken examination.
-          </p>
         </div>
       </div>
        

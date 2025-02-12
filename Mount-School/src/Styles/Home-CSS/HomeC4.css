@@ -121,7 +121,7 @@ body{
     background: none; /* Remove background color */
     color: white; /* Ensure text is visible on dark overlay */
     z-index: 2; /* Above the overlay */
-    padding: 45px; /* Add some padding */
+    padding: 7.6vw; /* Add some padding */
     text-align: left; /* Center align text */
   }
 
@@ -143,9 +143,9 @@ body{
     font-size: 0.8rem;
   }
 
-  .enquire-btns {
-    margin-top: 20px;
-    padding: 10px 14px;
+  .Admission-enquire-btns {
+    margin-top: 4vw;
+    padding: 8px  10px;
     font-size: 0.9rem;
   }
 }

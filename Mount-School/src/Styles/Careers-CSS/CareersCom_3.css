@@ -1,114 +1,108 @@
 .CareersCom_3-container {
-    padding: 2rem;
-    max-width: 1024px;
-    margin: auto;
+  padding: 2vw 8vw;
+  max-width: 85vw;
+  margin: auto;
+}
+
+.CareersCom_3-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.CareersCom_3-job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.CareersCom_3-job-card {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(165, 165, 165, 0.45);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.CareersCom_3-job-card.selected {
+  border-color: #2C3191;
+}
+
+.CareersCom_3-job-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.CareersCom_3-application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.CareersCom_3-form-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.CareersCom_3-input-field {
+  border: 1px solid #ccc;
+  padding: 0.7rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.Careers-C3-pdf {
+  display: flex;
+  gap: 12vw;
+}
+
+.CareersCom_3-apply-button {
+  width: 100%;
+  background-color: #2C3191;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.CareersCom_3-apply-button:hover {
+  background-color: #2C3191;
+  color: white;
+}
+
+.CareersCom_3-job-para {
+  font-size: 0.8rem;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .CareersCom_3-container {
+    padding: 5vw;
+    max-width: 100%;
   }
-  
-  .CareersCom_3-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
+
   .CareersCom_3-job-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
   }
 
-  .CareersCom_3-job-card {
-    display: flex;
-    gap: 20px;
-    border: none;
-    /* border: 1px solid #ccc; */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(165, 165, 165, 0.45);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .CareersCom_3-job-card.selected {
-    border-color: #2C3191;
-  }
-  
-  .CareersCom_3-job-date {
-    width: 60px;
-    height: 30px;
-    font-size: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    background: #86cdff;
-    padding: 0.3rem;
+  .CareersCom_3-form-group {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  .CareersCom_3-subjects-p{
-    margin-top: 10px;
-    display: flex;
-    gap:10px;
-  }
-  .CareersCom_3-subjects-p p{
-    background-color: #f3f3f3;
-    padding: 0.1rem 0.2rem;
-    border-radius: 3px;
-    font-size: 0.6rem;
-  }
-  
-  .CareersCom_3-job-title {
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-  
-  .CareersCom_3-application-form {
-    display: flex;
+  .Careers-C3-pdf {
     flex-direction: column;
     gap: 1rem;
   }
-  
-  .CareersCom_3-form-group {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .CareersCom_3-input-field {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    border-radius: 4px;
-    width: 100%;
-  }
-  .CareersCom_3-input-field-Position{
-    padding:0;
-  }
-  
+
   .CareersCom_3-apply-button {
     width: 100%;
-    background-color:#FFC107;
-    color: black;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
   }
-
-  .CareersCom_3-job-All-Data{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .CareersCom_3-apply-button:hover {
-    background-color:#2C3191;
-    color: white;
-  }
-
-  .Chosse-File-Input{
-    margin-top: 8px;
-    border: none;
-  }
-  .CareersCom_3-job-para{
-    font-size: 0.5rem;
-  }
+}

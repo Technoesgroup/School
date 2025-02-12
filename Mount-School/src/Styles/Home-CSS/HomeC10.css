@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: linear-gradient(to right, white 50%, #f4f5fc 50%);
+  background: linear-gradient(to right, white 50%, #ffffff 50%);
   height: 550px;
   padding: 20px  70px;
 }
@@ -131,7 +131,7 @@ form button:hover {
     flex-direction: column;
     height: auto;
     padding: 10px;
-    background: linear-gradient(to bottom, white 50%, #f4f5fc 50%);
+    background: linear-gradient(to bottom, white 50%, #fcfcfc 50%);
   }
 
   .map-section {

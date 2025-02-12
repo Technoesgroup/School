@@ -44,24 +44,24 @@ function AcademicsC2() {
       </div>
 
       {/* Mobile menu with hamburger icon */}
-      <div className="mobile-menu">
-        <div className="menu-icon" onClick={toggleMobileMenu}>
+      <div className="AcademicsC2-mobile-menu">
+        <div className="AcademicsC2-menu-icon" onClick={toggleMobileMenu}>
           <MenuIcon />
         </div>
 
         {isMobileMenuOpen && (
-          <div className="mobile-menu-content">
-            <div className="close-icon" onClick={toggleMobileMenu}>
+          <div className="AcademicsC2-mobile-menu-content">
+            <div className="AcademicsC2-close-icon" onClick={toggleMobileMenu}>
               <CloseIcon />
             </div>
-            <ul className="menu-list">
+            <ul className="AcademicsC2-menu-list">
               {links.map((link, index) => (
                 <li
                   key={index}
                   className={index === activeIndex ? "active" : ""}
                   onClick={() => handleScroll(link.target, index)}
                 >
-                  <span className="text-change">{link.label}</span>
+                  <span className="Academics-text-change">{link.label}</span>
                 </li>
               ))}
             </ul>

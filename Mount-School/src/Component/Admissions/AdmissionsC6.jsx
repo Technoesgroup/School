@@ -21,16 +21,18 @@ const CourseFee = () => {
         <li>Processing Fee</li>
         <li>Annual Fee</li>
         <li>Tuition Fee</li>
-        <li>Abacus Fee</li>
+        <li>SEP Fee</li>
       </ul>
       <p className="additional-info">
         Stay informed and plan your journey with us effectively. For further assistance, feel free to contact our admissions team.
       </p>
-      <a href="/path-to-pdf" className="download-link" download>
-        Download Course & Fee Structure PDF
-      </a>
-      <button className="download-button">Download</button>
     </div>
+    <a href="/path-to-pdf" className="download-link" download>
+      <div className="DownloadC4-button-container">
+      <span className="DownloadC4-button-text">Download Course & Fee Structure PDF</span>
+      <button className="DownloadC4-download-button">Download</button>
+    </div>
+      </a>
     </div>
   );
 };

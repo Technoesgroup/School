@@ -6,26 +6,28 @@ function AboutC5(){
          useScrollToSection();
 
     return(
-        <div id="Mision-section" className="b-con">
-        <div className="s-con">
-        <h1  className="text_About_C5">
-        <span className="black-text_C5">OUR</span> 
-        <span className="blue-text_C5">  MISSION</span>
-        </h1>
-       {/* <div className="lines_C5">
-        <div className="line_C5 black-line_C5"></div>
-        <div className="line_C5 red-line_C5"></div>
-      </div> */}
-        <p>
-        Our mission is to provide a holistic education that empowers students to become lifelong learners, critical thinkers, and compassionate leaders. We are dedicated to fostering intellectual curiosity and 
-        creativity while ensuring academic excellence across all disciplines.
-         Our school seeks to create a nurturing and inclusive environment where every student feels valued, respected, and inspired to reach their full potential. We aim to instill core values of integrity, empathy, and respect for cultural and individual diversity.
-        </p>
-        </div>
-        <div className="image">
-          <img src={Vision} alt="Business Illustration" />
-        </div>
-      </div>
+      <div  className="bc-contents">
+            <div id='Vision-section' className="b-con">
+              <div className="s-con">
+              <h1  className="text_About_C5">
+             OUR
+               MISION
+              </h1>
+              <p>
+              Every child is unique. It is a well-known fact that no two thumbprints are alike. In the same way, we believe that every child is born unique.  Each child has a unique brain network that shapes how he/she absorbs and responds to stimuli.  One way of teaching does not work for every child. We need to teach the way they learn, not force them to learn the way we teach. Education should foster real understanding: Understanding is different from acquiring information. 
+              </p>
+              </div>
+              <div className="Mision-image">
+                <img src={Vision} alt="Business Illustration" />
+              </div>
+            </div>
+           <div className="bottom-paragrapgh-div">
+           <p className="bottom-paragraph">
+           Mere acquisition of information relies on memory, understanding relies on conceptual clarity. We are not assembly lines of syllabus and exams rather we help children make meaning of life and develop the muscle to lead life effectively. For this, we go beyond academics to include life skills, values and habits. Real understanding comes from an integrated approach and we have a vision of the child we aim to graduate and everything in our school is designed around that vision. Building design, pedagogy, teachers, curriculum content, activities and examinations – all are integrated to achieve this vision. A school is an eco-system where different factors have an effect on the child. Teachers, curriculum, assessments, environment, infrastructure, activities all come together to nurture the unique potential of the child.
+
+            </p>
+           </div>
+         </div>
     )
     
 }

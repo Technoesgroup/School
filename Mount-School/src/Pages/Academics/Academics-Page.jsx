@@ -15,6 +15,9 @@ import Comp11 from "../../Component/Academics/AcademicsC11";
 import Comp12 from "../../Component/Academics/AcademicsC12";
 import Comp13 from "../../Component/Academics/AcademicsC13";
 import Comp14 from "../../Component/Academics/AcademicsC14";
+import Comp15 from "../../Component/Academics/AcademicsC15";
+import Comp16 from "../../Component/Academics/AcademicsC16";
+import Comp17 from "../../Component/Academics/AcademicsC17";
 
 function Academics({toggleForm}) {
   // Motion settings for smooth scroll animations
@@ -81,8 +84,22 @@ function Academics({toggleForm}) {
         </motion.div>
 
         <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <Comp15 />
+        </motion.div>
+            
+        <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <Comp16 />
+        </motion.div>
+
+                
+        <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <Comp17 />
+        </motion.div>
+
+        <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Comp14 />
         </motion.div>
+   
       </div>
       <button className="Academics-fixed-button" onClick={toggleForm}>
         ENQUIRE FOR ADMISSION

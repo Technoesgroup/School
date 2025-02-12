@@ -11,14 +11,12 @@ useScrollToSection();
 
   return (
     <div  id="Learning-section" className="learning-pathways-container">
-      <h2 >
-        <span className="learning-title">LEARNING</span>{" "}
-        <span className="pathways-title">PATHWAYS</span>
+      <h2  className="Learning-path-h1">
+       LEARNING
+       PATHWAYS
       </h2>
       <p className="Academics-description">
-        At MLZS, every student gets a personalized Learning Pathway, covering
-        intellectual, physical, social, and emotional aspects through one of
-        four designated pathways
+      At Mount Litera Zee School,Bihta, every student gets a personalized Learning Pathway, covering intellectual, physical, social, and emotional aspects through one of four designated pathways.
       </p>
       <div className="Academics-content-container">
         <div className="Academics-text-section">

@@ -10,10 +10,13 @@ import ImageCard8 from '../../../image/Photo (4).png';
 import ImageCard9 from '../../../image/Photo (3).png'; 
 import ImageCard10 from '../../../image/Photo (6).png'; 
 import ImageCard11 from '../../../image/Photo (7).png'; 
-import ImageCard12 from '../../../image/Photo (8).png'; 
-import ImageCard13 from '../../../image/Trophy_1.svg'; 
-import ImageCard14 from '../../../image/Trophy_2.svg'; 
-import ImageCard15 from '../../../image/Trophy_3.svg'; 
+import ImageCard12 from '../../../image/Trophy_7.svg';
+import ImageCard13 from '../../../image/Trophy_6.svg';  
+import ImageCard14 from '../../../image/Trophy_4.svg'; 
+import ImageCard15 from '../../../image/Trophy_8.svg'; 
+import ImageCard16 from '../../../image/Trophy_1.svg'; 
+import ImageCard17 from '../../../image/Trophy_2.svg'; 
+import ImageCard18 from '../../../image/Trophy_3.svg'; 
 
 import '../../../Styles/About-CSS/About_Our_Gallery/AboutC9.css'; // CSS for grid layout
 import RecognitionCard from './AboutC8';
@@ -56,12 +59,8 @@ const AboutC9 = () => {
     },
     {
       image: ImageCard6, // Use another image or same based as above
-      title: 'Winner: District Level Sports Meet 2021, Government of Bihar',
-      description: 'Mount Litera Zee School achieved a stellar victory at the District Level Sports Meet 2021, organized by the Government of Bihar. This accomplishment highlights the extraordinary talent, dedication, and discipline of our students in various sports categories. Competing against top schools in the district, our athletes showcased their prowess in individual and team events, bringing glory to the school.',
-      date: 'September 13, 2023',
-      author: 'Headmaster',
-      views: 15,
-      comments: 3,
+      title: 'Winner: U-19 Boys, CBSE Cluster',
+      description: 'The Under-19 Boys team of Mount Litera Zee School, Bihta emerged victorious in the CBSE Cluster tournament, displaying exceptional athletic skills and teamwork. Competing against strong opponents, the team exhibited unparalleled determination, strategic gameplay, and sportsmanship. This victory underscores the school’s dedication to nurturing young talent and providing a robust platform for students to shine in sports while balancing their academic pursuits.',
     },
     {
       image: ImageCard7, // Use another image or same based as above
@@ -96,8 +95,8 @@ const AboutC9 = () => {
     },
     {
       image: ImageCard11, // Use another image or same based as above
-      title: 'Winner: District-Level School Sports Competition, The Department of Art, Youth & Culture',
-      description: 'At the District-Level School Sports Competition organized by The Department of Art, Youth & Culture, Mount Litera Zee School secured the winner’s title in multiple categories. This prestigious event showcased the athletic prowess and teamwork of our students, who performed exceptionally well against other leading schools',
+      title: 'Winner: District Level Sports Meet, Government of Bihar',
+      description: 'Mount Litera Zee School, Bihta achieved a stellar victory at the District Level Sports Meet, organized by the Government of Bihar. This accomplishment highlights the extraordinary talent, dedication, and discipline of our students in various sports categories. Competing against top schools in the district, our athletes showcased their prowess in individual and team events, bringing glory to the school. This achievement reinforces the school’s dedication to promoting physical fitness and sports excellence.',
       date: 'September 13, 2023',
       author: 'Headmaster',
       views: 15,
@@ -114,28 +113,43 @@ const AboutC9 = () => {
     },
     {
     image: ImageCard13, // Use another image or same based as above
-     title: 'Memento: Sainik School Nalanda',
-     description: ' Mount Litera Zee School, Bihta was honoured with a Memento by Sainik School Nalanda in recognition of its exemplary participation and contributions to inter-school initiatives. This accolade highlights the school’s dedication to fostering collaborative learning and excellence across various domains. By participating in events alongside other prestigious institutions, the school continues to inspire students to build camaraderie, leadership skills, and a competitive spirit that prepares them for future challenges.',
+     title: 'Winner: KBD Juniors, National Finals; Star Sports Pro Kabaddi',
+     description: 'The KBD Juniors team from Mount Litera Zee School, Bihta emerged as National Champions in the Star Sports Pro Kabaddi Tournament, showcasing their unparalleled skill, teamwork, and determination. Competing on a national stage, the team demonstrated exceptional strategic gameplay and agility, earning them this prestigious title. This victory not only brought immense pride to the school but also highlighted its emphasis on nurturing sports talent and fostering a winning mindset among students.',
     },
     {
       image: ImageCard14, // Use another image or same based as above
-      title: 'Participation Memento from Hindustan Olympiad',
-      description: 'The Hindustan Olympiad, a nationwide academic platform, awarded Mount Litera Zee School, Bihta with a Participation Memento, celebrating the school’s enthusiastic involvement. This recognition highlights the dedication of our students and teachers in embracing scholastic challenges that test intellectual abilities. Through participation in this esteemed competition, our students not only showcased their academic brilliance but also gained invaluable exposure to a competitive environment, paving the way for future achievements in the academic arena.',
+      title: 'IMA Star Fighter: Guest of Honour, Karate Championship ',
+      description: 'Mount Litera Zee School, Bihta was privileged to be recognized as a Guest of Honour at the IMA Star Fighter Karate Championship. This accolade acknowledges the school’s significant contribution to promoting martial arts and fostering a spirit of discipline and sportsmanship among students. The event highlighted the school’s dedication to nurturing talent and providing platforms for students to showcase their abilities at prestigious events, contributing to their overall growth and confidence.',
     },
     {
       image: ImageCard15, // Use another image or same based as above
-      title: 'Letter of Appreciation by Science Olympiad Federation',
-      description: 'Mount Litera Zee School, Bihta proudly received a Letter of Appreciation from the esteemed Science Olympiad Federation for its unwavering commitment to academic excellence. This recognition was awarded to our visionary principal, Dr. Kumar Ravi Prakash, for his outstanding leadership in fostering a culture of scientific Enquiry and critical thinking among students. The award signifies the school’s consistent efforts in encouraging young minds to excel in national-level science competitions and nurturing future innovators.',
+      title: ' Memento: Inner Wheel Club, Patna',
+      description: 'The Inner Wheel Club of Patna presented Mount Litera Zee School, Bihta with a Memento in recognition of its impactful contributions to community welfare. The award acknowledges the school’s efforts in organizing meaningful initiatives that benefit society and inspire students to engage in social causes. Through its programs, the school continues to instill values of compassion, service, and leadership in students, empowering them to make a positive difference in their communities.',
     },
+    {
+      image: ImageCard16, // Use another image or same based as above
+       title: 'Memento: Sainik School Nalanda',
+       description: ' Mount Litera Zee School, Bihta was honoured with a Memento by Sainik School Nalanda in recognition of its exemplary participation and contributions to inter-school initiatives. This accolade highlights the school’s dedication to fostering collaborative learning and excellence across various domains. By participating in events alongside other prestigious institutions, the school continues to inspire students to build camaraderie, leadership skills, and a competitive spirit that prepares them for future challenges.',
+      },
+      {
+        image: ImageCard17, // Use another image or same based as above
+        title: 'Participation Memento from Hindustan Olympiad',
+        description: 'The Hindustan Olympiad, a nationwide academic platform, awarded Mount Litera Zee School, Bihta with a Participation Memento, celebrating the school’s enthusiastic involvement. This recognition highlights the dedication of our students and teachers in embracing scholastic challenges that test intellectual abilities. Through participation in this esteemed competition, our students not only showcased their academic brilliance but also gained invaluable exposure to a competitive environment, paving the way for future achievements in the academic arena.',
+      },
+      {
+        image: ImageCard18, // Use another image or same based as above
+        title: 'Letter of Appreciation by Science Olympiad Federation',
+        description: 'Mount Litera Zee School, Bihta proudly received a Letter of Appreciation from the esteemed Science Olympiad Federation for its unwavering commitment to academic excellence. This recognition was awarded to our visionary principal, Dr. Kumar Ravi Prakash, for his outstanding leadership in fostering a culture of scientific Enquiry and critical thinking among students. The award signifies the school’s consistent efforts in encouraging young minds to excel in national-level science competitions and nurturing future innovators.',
+      },
   ];
 
 
   return (
     <div id='Awards-section' className="awards-recognition">
         <h1  className="text_About_C9">
-        <span className="black-text_C9">AWARDS</span> 
-       &nbsp;  <span className="blue-text_C9"> & </span>
-       <span className="black-text_C9">HONORS</span> 
+         AWARDS
+       & 
+      HONORS  
         </h1>
        {/* <div className="lines_C9">
         <div className="line_C9 black-line_C9"></div>

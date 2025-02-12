@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 1.8vw;
   padding: 10px;
 }
@@ -20,8 +20,8 @@
 }
 
 .upper-image-C4 {
-  width: 20vw;
-  height: 16vw;
+  width: 38.6vw;
+  height: 15vw;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -45,13 +45,13 @@
 }
 
 .small-C4 {
-  width: 17vw;
-  height: 16vw;
+  width: 16vw;
+  height: 15vw;
 }
 
 .large-C4 {
-  width: 23vw;
-  height: 16vw;
+  width: 22vw;
+  height: 15vw;
 }
 
 .AcadeC4-content {
@@ -78,15 +78,16 @@
 @media (max-width: 1024px) {
   .AcadeC4-container {
     padding: 30px 50px;
+    margin-bottom: 20px;
   }
 
   .inner-Container-C4 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
   }
 
   .upper-image-C4 {
-    width: 150px;
+    width: 300px;
     height: 120px;
     object-fit: cover;
     border-radius: 8px;

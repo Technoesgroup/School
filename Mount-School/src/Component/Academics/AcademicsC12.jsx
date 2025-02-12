@@ -10,23 +10,15 @@ const Diwali = () => {
   return (
     <div className="AcademicsC12-Diwali-container">
       {/* Header Section */}
-      <h1 className="AcademicsC12-event-title">Diwali Celebration, 29 Oct 2024</h1>
+      <h1 className="AcademicsC12-event-title">Diwali Celebration, 2024</h1>
 
       {/* Description Section */}
       <div className="AcademicsC12-event-description">
         <p>
-        On the occasion of Diwali, the students of Mount Litera Zee School, Bihta, embraced the spirit of 
-        the Festival of Lights with much fervor and creativity. Each grade participated with great enthusiasm,
-         engaging in a variety of festive activities. The students crafted vibrant diyas, rangolis, eco-friendly 
-         torans, candle holders, origami, and festive collages, infusing the school with the colours and lights of 
-         the season. The creation of tissue paper lanterns, thumbprint diya cards, clay diyas, 3D paper
-         diyas, handmade lanterns, and deepawali wall murals adorned the school, making it a truly festive sight.
+        On the occasion of Diwali, the students of Mount Litera Zee School, Bihta, embraced the spirit of the Festival of Lights with much fervor and creativity. Each grade participated with great enthusiasm, engaging in a variety of festive activities. The students crafted vibrant diyas, rangolis, eco-friendly torans, candle holders, origami, and festive collages, infusing the school with the colours and lights of the season. The creation of tissue paper lanterns, thumbprint diya cards, clay diyas, 3D paper diyas, handmade lanterns, and deepawali wall murals adorned the school, making it a truly festive sight.
         </p>
         <p>
-         Students shared insightful presentations on the profound significance of Diwali,
-         reflecting on the timeless values of peace, joy, and enlightenment that the festival brings. 
-         The day was filled with 
-        creativity, learning, and a warm festive spirit, marking the true essence of this auspicious occasion.
+        Students shared insightful presentations on the profound significance of Diwali, reflecting on the timeless values of peace, joy, and enlightenment that the festival brings. The day was filled with creativity, learning, and a warm festive spirit, marking the true essence of this auspicious occasion.
         </p>
       </div>
 

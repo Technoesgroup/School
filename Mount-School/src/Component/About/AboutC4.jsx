@@ -9,11 +9,11 @@ function AboutC4(){
 
     return(
    <div  className="bc-contents">
-         <div id='Vision-section' className="bc-con">
+      <div id='Vision-section' className="bc-con">
         <div className="sc-con">
         <h1  className="text-C4-h1">
-        <span className="black-text_C4">OUR</span> 
-        <span className="blue-text_C4">  VISION</span>
+       OUR
+         VISION
         </h1>
         <p>
         Mount Litera Zee School, Bihta offers a comprehensive and unique 
@@ -30,8 +30,12 @@ function AboutC4(){
       </div>
      <div className="bottom-paragrapgh-div">
      <p className="bottom-paragraph">
-       Furthermore, we are dedicated to shaping global minds on Indian soil, providing every student access to world-class infrastructure and an innovative curriculum that foster all-round development. This approach ensures that while our students are equipped to face the global challenges of tomorrow,
-       they remain deeply rooted in the rich traditions and values that form the foundation of our culture.
+     Furthermore, we are dedicated to shaping global minds on Indian soil,
+          providing every student access to world-class infrastructure and an
+          innovative curriculum that fosters all-round development. This approach
+          ensures that while our students are equipped to face the global
+          challenges of tomorrow, they remain deeply rooted in the rich
+          traditions and values that form the foundation of our culture
       </p>
      </div>
    </div>

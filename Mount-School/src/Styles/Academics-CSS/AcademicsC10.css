@@ -10,7 +10,7 @@
 
 .AcademicsC10-header {
   font-family: 'PoppinsExtraBold';
-  font-size: 24px;
+  font-size: 2rem;
   color: #2C318F;
   font-weight: bold;
   margin-bottom: 20px;
@@ -21,13 +21,14 @@
   justify-content: space-between;
   justify-items: center;
   align-items: center;
-  gap: 60px;
+  /* gap: 2vw; */
+  margin-left: 10px;
   /* margin: 0 auto; */
 }
 
 .AcademicsC10-text-section {
   flex: 1;
-  padding: 20px;
+  padding: 0 1vw;
   border-radius: 8px;
   background-color: #ffffff;
 }
@@ -40,7 +41,8 @@
 .AcademicsC10-text-section p {
   font-family: 'PoppinsMedium';
   text-align: left;
-  font-size: 14px;
+  text-align: justify;
+  font-size: 1rem;
   line-height: 2;
   color: #161616;
 }
@@ -51,7 +53,7 @@
 
 .AcademicsC10-activity-image {
   width: 100%;
-  max-width: 450px;
+  max-width: 36vw;
   height:min-content;
   border-radius: 10px;
   object-fit: cover;

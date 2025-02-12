@@ -1,11 +1,14 @@
+@import url('../../Font.css');
+  
   .awards-recognition {
     scroll-margin-top: 120px;
-    padding: 60px 8vw;
+    padding: 6vw 8vw;
     text-align: center;
   }
   
   .awards-recognition__title {
-    font-size: 24px;
+    font-family: 'PoppinsExtraBold';
+    font-size: 2rem;
     margin-bottom: 20px;
   }
   
@@ -16,42 +19,18 @@
   }
   
   .text_About_C9{
-    margin-bottom: 30px;
+    margin-bottom: 2.8vw;
     text-align: center;
     font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .black-text_C9 {
-    font-family: 'Degularbold';
-    color: black;
+    color: #2C3192;
+    font-family: 'PoppinsExtraBold';
+   
   }
   
   .blue-text_C9 {
-    font-family: 'Degularbold';
     color: #2C3192; /* Adjust to match red */
   }
   
-  .lines_C9 {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    position: relative;
-    display: inline-block; /* To ensure lines center with the text */
-  }
-  
-  .line_C9 {
-    width: 300px; /* Width of the lines */
-    height: 2px; /* Line thickness */
-    border-radius: 5px;
-  }
-  
-  .black-line_C9 {
-    background-color: #3c3c3c; /* Dark gray color for the black line */
-    margin-left: 0;
-    margin-right: 160px;
-  }
   
   
   @media (max-width: 768px) {
