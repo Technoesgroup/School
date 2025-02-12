@@ -77,7 +77,7 @@ export default function JobApplication() {
             <p>Please Upload Your Resume*</p>
           </div>
         </div>
-        <button type="submit" className="CareersCom_3-apply-button">NEXT</button>
+        <button type="submit" className="CareersCom_3-apply-button">APLLY</button>
       </form>
     </div>
   );
