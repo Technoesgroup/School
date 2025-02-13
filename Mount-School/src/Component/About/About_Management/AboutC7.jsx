@@ -1,6 +1,6 @@
 import React from 'react';
-import ManagementCard_1 from '../../../image/First-Image.png';
-import ManagementCard_2 from '../../../image/Second-Image.png';
+import ManagementCard_1 from '../../../image/firstpicleader.svg';
+import ManagementCard_2 from '../../../image/Rectangle 23839.svg';
 import '../../../Styles/About-CSS/About_Management_Css/AboutC7.css'; // For page layout
 import ManagementCard from './AboutC6';
 
