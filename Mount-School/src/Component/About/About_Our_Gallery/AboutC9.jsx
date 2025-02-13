@@ -17,6 +17,8 @@ import ImageCard15 from '../../../image/Trophy_8.svg';
 import ImageCard16 from '../../../image/Trophy_1.svg'; 
 import ImageCard17 from '../../../image/Trophy_2.svg'; 
 import ImageCard18 from '../../../image/Trophy_3.svg'; 
+import ImageCard19 from '../../../image/Trophy_10.png'; 
+import ImageCard20 from '../../../image/Trophy_11.png'; 
 
 import '../../../Styles/About-CSS/About_Our_Gallery/AboutC9.css'; // CSS for grid layout
 import RecognitionCard from './AboutC8';
@@ -140,6 +142,16 @@ const AboutC9 = () => {
         image: ImageCard18, // Use another image or same based as above
         title: 'Letter of Appreciation by Science Olympiad Federation',
         description: 'Mount Litera Zee School, Bihta proudly received a Letter of Appreciation from the esteemed Science Olympiad Federation for its unwavering commitment to academic excellence. This recognition was awarded to our visionary principal, Dr. Kumar Ravi Prakash, for his outstanding leadership in fostering a culture of scientific Enquiry and critical thinking among students. The award signifies the school’s consistent efforts in encouraging young minds to excel in national-level science competitions and nurturing future innovators.',
+      },
+      {
+        image: ImageCard19, // Use another image or same based as above
+        title: 'Memento: Peace Scout Guide',
+        description: 'Mount Litera Zee School, Bihta received the prestigious Peace Scout Guide Memento for its exceptional efforts in promoting peace, leadership, and community service. This recognition underscores the school’s commitment to instilling values of harmony, teamwork, and service in students. By engaging in activities that foster a sense of responsibility and global citizenship, the school has inspired students to be proactive contributors to society and advocates of peace in their communities.',
+      },
+      {
+        image: ImageCard20, // Use another image or same based as above
+        title: 'Patna District Okinawan Shorin-Ryu Karate Do Championship',
+        description: 'Students from Mount Litera Zee School, Bihta showcased exemplary martial arts skills at the  Patna District Okinawan Shorin-Ryu Karate Do Championship. Their stellar performance earned them accolades and established the school as a center of excellence in martial arts. This achievement reflects the students’ dedication, discipline, and rigorous training, as well as the school’s emphasis on nurturing well-rounded individuals who excel in both academics and co-curricular activities.',
       },
   ];
 
