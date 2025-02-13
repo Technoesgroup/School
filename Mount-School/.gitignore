@@ -10,8 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist.zip
-dist.Zip
-dist-ssr
+School/Mount-School/dist.zip
+Mount-School/dist.zip
+# dist.Zip
+dist-zip
 *.local
 
 # Editor directories and files
