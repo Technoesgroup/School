@@ -19,68 +19,91 @@
   font-style: normal;
 }
 
-.HomeComponent{
-  margin-top: 21.4vh;
-
-}
-
-@media(max-width:760px){
-    .HomeComponent{
-        margin-top: 30px;
-    }
-}
-
 .CBSEPAGE-fixed-button-left {
-  font-size: 14px;
+  font-size: 18px;
   font-family: 'PoppinsMedium';
   top: 32%;
-  left: 0; /* Place the button on the left */
-  position: fixed; /* Fix the position */
-  transform: translateX(-5%) translateY(50%); /* Rotate and position */
-  color: white; /* Text color */
+  left: 0;
+  position: fixed;
+  transform: translateX(-5%) translateY(50%);
+  color: white;
   background-color: #2C3192;
-  border: 1px solid white; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 16px 25px; /* Padding */
-  cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  transition: background-color 0.3s; /* Smooth hover effect */
-  z-index: 13; /* Ensure it appears above other elements */
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 16px 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  z-index: 13;
 }
 
 .CBSEPAGE-fixed-button-left:hover {
-  background-color: #FFC107; /* Darker blue on hover */
+  background-color: #FFC107;
+  color: black;
+}
+
+.CBSEPAGE-fixed-button-left-full {
+  font-size: 14px;
+  font-family: 'PoppinsMedium';
+  top: 32%;
+  left: 0;
+  position: fixed;
+  transform: translateX(-5%) translateY(50%);
+  color: white;
+  background-color: #2C3192;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 16px 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  z-index: 13;
+}
+
+.CBSEPAGE-fixed-button-left-full .HomePage-arrowforword{
+  font-size: 0.9rem;
+ }
+
+.CBSEPAGE-fixed-button-left-full:hover {
+  background-color: #FFC107;
   color: black;
 }
 
 @media (max-width: 760px) {
-  .CBSEPAGE-fixed-button-left {
-    padding: 13px 16px; /* Adjust padding for smaller screens */
-    top: 54%; /* Adjust vertical position */
+  .CBSEPAGE-fixed-button-left,
+  .CBSEPAGE-fixed-button-left-full {
+    padding: 10px 14px;
+    top: 72%;
   }
 }
-
 
 .fixed-button {
   font-size: 14px;
   font-family: 'PoppinsMedium';
   top: 60%;
-  right: 0; /* Place the button on the right */
-  position: fixed; /* Fix the position */
-  transform: translateX(39%) translateY(50%) rotate(270deg); /* Center vertically and rotate */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 16px 19px; /* Padding */
-  cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
-  transition: background-color 0.3s; /* Smooth hover effect */
-  animation: color-flash 1s infinite; /* Flash animation */
-  z-index: 13; /* Ensure it appears above other elements */
+  right: 0;
+  position: fixed;
+  transform: translateX(39%) translateY(50%) rotate(270deg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 16px 19px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  animation: color-flash 1s infinite;
+  z-index: 13;
+}
+
+
+.CBSEPAGE-fixed-button-left{
+  display: flex;
+  gap: 10px;
+align-items: center;
 }
 
 .fixed-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 @keyframes color-flash {
@@ -98,12 +121,13 @@
 
 @media (max-width: 760px) {
   .fixed-button {
-    padding: 13px 16px; /* Padding */
-    top: 54%; /* Adjust vertical position for smaller screens */
+    padding: 13px 16px;
+    top: 54%;
   }
 }
+
 @media (max-width: 460px) {
   .fixed-button {
-    padding: 13px 16px; /* Padding */
+    padding: 13px 16px;
   }
 }

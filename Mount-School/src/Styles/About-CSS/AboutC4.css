@@ -107,4 +107,10 @@
     height: auto;
     margin-top: 20px; /* Add space between text and image */
   }
+
+  .Vision-image img {
+    top: 0;
+    max-width: 300px;
+    max-height: 300px;
+  }
 }

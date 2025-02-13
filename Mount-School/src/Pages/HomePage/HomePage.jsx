@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import "../HomePage/HomePage.css";
 import Comp1 from "../../Component/Home/Sliding-First-Page/HomeC1";
@@ -10,9 +11,15 @@ import Comp7 from "../../Component/Home/HomeC7";
 import Comp8 from "../../Component/Home/HomeC8";
 import Comp9 from "../../Component/Home/HomeC9";
 import Comp10 from "../../Component/Home/HomeC10";
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Home = ({ toggleForm }) => {
-  // Motion settings for components appearing on scroll
+  const [showFullButton, setShowFullButton] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowFullButton(true);
+  };
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -64,9 +71,17 @@ const Home = ({ toggleForm }) => {
       </div>
 
       <a href="https://cbseacademic.nic.in/">
-      <button className="CBSEPAGE-fixed-button-left" onClick={toggleForm}>
-      CBSE MANDATORY DISCLOSURE
-      </button></a>
+        {/* Conditionally render the button based on showFullButton */}
+        {!showFullButton ? (
+          <button className="CBSEPAGE-fixed-button-left" onClick={handleButtonClick}>
+          CBSE  {/* CBSE  <ArrowForwardIcon  className="HomePage-arrowforword" /> */}
+          </button>
+        ) : (
+          <button className="CBSEPAGE-fixed-button-left-full" onClick={toggleForm}>
+            CBSE MANDATORY DISCLOSURE
+          </button>
+        )}
+      </a>
 
       {/* Enquire Button */}
       <button className="fixed-button" onClick={toggleForm}>
@@ -77,4 +92,5 @@ const Home = ({ toggleForm }) => {
 };
 
 export default Home;
+
 
