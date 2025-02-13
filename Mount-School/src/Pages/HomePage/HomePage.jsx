@@ -70,7 +70,7 @@ const Home = ({ toggleForm }) => {
         </motion.div>
       </div>
 
-      <a href="https://cbseacademic.nic.in/">
+      <a href="">
         {/* Conditionally render the button based on showFullButton */}
         {!showFullButton ? (
           <button className="CBSEPAGE-fixed-button-left" onClick={handleButtonClick}>

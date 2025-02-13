@@ -37,7 +37,12 @@
   
   .Mision-image img {
     max-width: 30vw;
-    height: auto;
+    height: 200px;
+  }
+
+  .Mision-image{
+    width: 100%;
+    height: 100%;
   }
 
 
