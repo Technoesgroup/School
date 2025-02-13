@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../Styles/Admission-CSS/AdmissionC5.css";
 import girlsImage from '../../image/Rectangle 23934.svg';
 import useScrollToSection from "../Hook/CustomHook2";
-import { useNavigate } from "react-router-dom";
+
 
 
 const AdmissionProcess = ({toggleForm}) => {

@@ -11,14 +11,22 @@ import Comp7 from "../../Component/Home/HomeC7";
 import Comp8 from "../../Component/Home/HomeC8";
 import Comp9 from "../../Component/Home/HomeC9";
 import Comp10 from "../../Component/Home/HomeC10";
+import { useNavigate } from "react-router-dom";
 // import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Home = ({ toggleForm }) => {
   const [showFullButton, setShowFullButton] = useState(false);
 
+const  navigate =  useNavigate();
+
+
   const handleButtonClick = () => {
     setShowFullButton(true);
-  };
+  }; 
+
+  const  handlebtn =  () =>{
+    navigate("/CBSE")
+  }
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 100 },
@@ -70,10 +78,13 @@ const Home = ({ toggleForm }) => {
         </motion.div>
       </div>
 
-      <a href="">
+      
         {/* Conditionally render the button based on showFullButton */}
         {!showFullButton ? (
-          <button className="CBSEPAGE-fixed-button-left" onClick={handleButtonClick}>
+          <button className="CBSEPAGE-fixed-button-left"  onClick={() => {
+            handleButtonClick(); 
+            handlebtn();
+          }}>
           CBSE  {/* CBSE  <ArrowForwardIcon  className="HomePage-arrowforword" /> */}
           </button>
         ) : (
@@ -81,7 +92,7 @@ const Home = ({ toggleForm }) => {
             CBSE MANDATORY DISCLOSURE
           </button>
         )}
-      </a>
+      {/* </a> */}
 
       {/* Enquire Button */}
       <button className="fixed-button" onClick={toggleForm}>

@@ -18,6 +18,10 @@
   font-weight: 500;
   font-style: normal;
 }
+.HomeComponent{
+  margin-top: 12.4vh;
+    background-color: white;
+}
 
 .CBSEPAGE-fixed-button-left {
   font-size: 18px;
