@@ -23,6 +23,12 @@
     background-color: white;
 }
 
+@media(max-width:760px){
+  .HomeComponent{
+      margin-top: 40px;
+  }
+}
+
 .CBSEPAGE-fixed-button-left {
   font-size: 18px;
   font-family: 'PoppinsMedium';
@@ -77,7 +83,7 @@
   .CBSEPAGE-fixed-button-left,
   .CBSEPAGE-fixed-button-left-full {
     padding: 10px 14px;
-    top: 72%;
+    top: 25%;
   }
 }
 
