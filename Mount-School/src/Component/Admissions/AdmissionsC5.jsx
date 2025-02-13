@@ -17,7 +17,7 @@ const AdmissionProcess = () => {
             We warmly invite prospective parents and students to visit our
             school and experience our vibrant learning environment firsthand.
             School visits are conducted from Monday to Saturday
-            between  11:00 am to 2:00 PM. During the visit, you will have the
+            between  9:00 AM to 2:00 PM. During the visit, you will have the
             opportunity to tour our campus, meet our dedicated faculty, and gain
             insights into our academic and extracurricular programs. To schedule
             a visit, please contact us prior. We look forward to welcoming you
