@@ -45,7 +45,7 @@ function Footer() {
         </a>
         </div>
        <div  className='font-front'>
-      <a href=""> <HomeIcon /> <p>Jinpura road, Bihta, Bihar 801103</p></a>
+      <a href=""> <HomeIcon /> <p>Jinpura Road, Bihta Patna, Bihar - 801103</p></a>
        </div>
 
         <h3 className='follow-us'>Follow us</h3>

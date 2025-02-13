@@ -26,7 +26,7 @@ const ContactForm = () => {
           <p><EmailIcon  className='contact-Us-icon' />mlzsbihta@gmail.com</p>
           </a>
          <a href="">
-         <p><FmdGoodIcon  className='contact-Us-icon'/>Jinpura road, Bihta, Bihar 801103</p>
+         <p><FmdGoodIcon  className='contact-Us-icon'/>Jinpura Road, Bihta Patna, Bihar - 801103</p>
          </a>
          <a href="https://www.instagram.com/mlzsbihta/">
          <p><InstagramIcon  className='contact-Us-icon'/>

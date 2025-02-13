@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import "../../Styles/Admission-CSS/AdmissionC5.css";
 import girlsImage from '../../image/Rectangle 23934.svg';
 import useScrollToSection from "../Hook/CustomHook2";
+import { useNavigate } from "react-router-dom";
+
 
 const AdmissionProcess = () => {
 
+  const  navigate = useNavigate();
  useScrollToSection();
 
   return (
@@ -49,7 +52,7 @@ const AdmissionProcess = () => {
             have applied. The Principal will meet the parent with the child and
             on his approval parents can proceed with the admission.
           </p>
-          <button className="admission-enroll-button">ENROLL NOW</button>
+          <button className="admission-enroll-button"  onClick={navigate("/admission")}>ENROLL NOW</button>
         </div>
       </div>
     </div>
