@@ -24,7 +24,6 @@ function AboutC5(){
            <div className="bottom-paragrapgh-div">
            <p className="bottom-paragraph">
            Mere acquisition of information relies on memory, understanding relies on conceptual clarity. We are not assembly lines of syllabus and exams rather we help children make meaning of life and develop the muscle to lead life effectively. For this, we go beyond academics to include life skills, values and habits. Real understanding comes from an integrated approach and we have a vision of the child we aim to graduate and everything in our school is designed around that vision. Building design, pedagogy, teachers, curriculum content, activities and examinations – all are integrated to achieve this vision. A school is an eco-system where different factors have an effect on the child. Teachers, curriculum, assessments, environment, infrastructure, activities all come together to nurture the unique potential of the child.
-
             </p>
            </div>
          </div>
