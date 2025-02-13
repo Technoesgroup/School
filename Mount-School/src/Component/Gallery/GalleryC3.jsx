@@ -25,13 +25,13 @@ const VideoGallery = () => {
               width="560"
               height="315"
               src={item.videoLink}
-              title={`Video ${item.id}`}
+              title={`${item.id}`}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
-            <p className="video-title">{`Video ${item.id}`}</p>
+            {/* <p className="video-title">{`Video ${item.id}`}</p> */}
           </div>
         ))}
       </div>

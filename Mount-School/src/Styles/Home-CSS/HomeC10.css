@@ -21,6 +21,7 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #2c318f;
 }
 
 .HomeC10-form-section .highlight {
@@ -33,7 +34,7 @@
   font-size: 13px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #8c8c8c;
+  color: #2c318f;
 }
 
 form input,
@@ -122,6 +123,10 @@ form button:hover {
 .get-in-touch-phn{
   display: flex;
   align-items: center;
+}
+
+.get-in-touch-phn p{
+  color: #2C3192;
 }
 
 /*  */

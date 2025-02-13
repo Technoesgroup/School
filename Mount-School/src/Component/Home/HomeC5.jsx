@@ -6,9 +6,17 @@ import PlaygroundImg from "../../image/Sports.jpg";
 import SmartClassroomImg from "../../image/SmartClass.jpg";
 import ScienceLabImg from "../../image/Chemlab.jpg";
 import girlImg from "../../image/Dance.jpg";
+import { useNavigate } from 'react-router-dom';
 import ComputerLabImg from "../../image/ComputerLab.jpg";
 
 const Facilities = () => {
+
+    const navigate = useNavigate();
+
+    const handleApllybtn = ()=>{
+      navigate("/Facilities")
+    }
+
   const facilities = [
     { title: "LIBRARY", image: LibraryImg, description1: 'LIBRARY', description2: 'The School offers over 5000 books, journals, and resources that inspire learning, nurture imagination, and support intellectual growth.' },
     { title: "SPORTS & OPEN GYM", image: PlaygroundImg, description1: 'SPORTS & OPEN GYM', description2: 'The School provides students with opportunities to stay active, build teamwork, and develop discipline through a variety of outdoor sports and fitness training.' },
@@ -46,7 +54,9 @@ const Facilities = () => {
             </div>
           </motion.div>
         ))}
+       
       </div>
+      <button  className="Home5-facility-button"  onClick={handleApllybtn}>View All</button>
     </motion.div>
   );
 };

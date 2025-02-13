@@ -81,7 +81,7 @@ const Header = ({ toggleForm }) => {
           <span className="two-numbers">
             <a href="tel:+919771485809" className="contact-link first-num">
               <PhoneIcon className="Navbar-Phone" />
-              +91 9771485809 ,
+              +91 9771485809,
             </a>
             <a href="tel:+919771485810" className="contact-link dusra-num">
               +91 9771485810

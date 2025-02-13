@@ -9,7 +9,7 @@ const HomeC10 = () => {
       {/* Left Section */}
       <div className="HomeC10-form-section">
         <h2  id="get_in_touch">
-          Get in <span className="highlight">Touch</span>
+          Get in Touch
         </h2>
         <p>
           Have questions? Submit your inquiry and let us guide you toward <br /> the

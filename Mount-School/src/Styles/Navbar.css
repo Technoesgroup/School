@@ -197,6 +197,10 @@ body{
   top: -1px;
 }
 
+.two-numbers a:hover{
+  color: #FFC107;
+}
+
 /* Ensure smooth rotation */
 .arrow-icon {
   transition: transform 0.3s ease; /* Smooth rotation animation */

@@ -4,10 +4,12 @@ import indImg from "../../image/IndependentDay.svg";
 import RangImg from "../../image/IMG-20241029-WA0060.jpg";
 import DandiyaImg from "../../image/IMG20241009115034.jpg";
 import AnualImg from "../../image/HindiDiwas.svg";
+import { useNavigate } from 'react-router-dom';
 import Janmashtami from "../../image/janmastmi2.svg";
 import GreenDayCelebrations from "../../image/GreenDay.jpg";
 
 const events = [
+
   {
     title: "Republic Day Celebration",
     description:
@@ -21,7 +23,7 @@ const events = [
     image: RangImg, // Replace with the actual image path
   },
   {
-    title: "DANDIYA CELEBRATION",
+    title: " Rass Dandiya Celebration",
     description:
       "The Raas Dandiya celebration as a true embodiment of the vibrant and festive spirit. The event commenced with a warm and gracious welcome extended by our talented students, setting the stage for a day filled with joy, energy",
     image:DandiyaImg, // Replace with the actual image path
@@ -47,6 +49,12 @@ const events = [
 ];
 
 const Events = () => {
+   const navigate = useNavigate();
+
+   const handleApllybtn = ()=>{
+    navigate("/academics#Activities-section")
+  }
+
   return (
     <div className="events-section">
       <h2 className="events-title">
@@ -61,7 +69,7 @@ const Events = () => {
           </div>
         ))}
       </div>
-      <button  className="view-btn-events">View All</button>
+      <button  className="view-btn-events" onClick={handleApllybtn} >View All</button>
     </div>
   );
 };

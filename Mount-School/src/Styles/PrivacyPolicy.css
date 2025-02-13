@@ -1,8 +1,8 @@
 .privacy-container {
     position: relative;
-    transform: translateY(5%);
+    transform: translateY(3%);
     max-width: 900vw;
-    margin: 60px auto;
+    margin: 50px auto;
     padding: 20px  7vw;
     background-color: #f9f9f9;
     border-radius: 8px;
