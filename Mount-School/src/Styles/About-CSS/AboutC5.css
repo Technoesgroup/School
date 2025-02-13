@@ -36,8 +36,9 @@
  
   
   .Mision-image img {
-    max-width: 30vw;
-    height: 200px;
+    top: 0;
+    max-width: 420px;
+    max-height: 420px;
   }
 
   .Mision-image{
