@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import '../Styles/Footer.css'; // CSS file for styling
 import FooterImg from '../image/LogoMLZS.svg';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -23,11 +24,11 @@ function Footer() {
       <div className="footer-section section-Quick">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#news">News/Events</a></li>
-          <li><a href="#admissions">Admissions</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#careers">Careers</a></li>
+          <li><Link to="/about" >About Us</Link></li>
+          <li><Link to="/academics" >Academics</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/Facilities">Facilities</Link></li>
+          <li><Link to="/contact-us">Contact Us</Link></li>
         </ul>
       </div>
 
@@ -64,7 +65,7 @@ function Footer() {
       <hr className="footer-line" />
       <div className="footer-content">
       <p>© 2025 Mount Litera Zee School Bihta </p>
-      <a href="#privacy">Privacy Policy</a>
+      <Link to="/privacy-policy">Privacy Policy</Link>
       </div>
   </div>
     </footer>

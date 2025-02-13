@@ -1,0 +1,47 @@
+.privacy-container {
+    position: relative;
+    transform: translateY(5%);
+    max-width: 900vw;
+    margin: 60px auto;
+    padding: 20px  7vw;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .privacy-container p a{
+    color: blue;
+    font-size: 1rem;
+  }
+
+  .privacy-container span{
+    color: black;
+    font: bold;
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .privacy-container {
+      max-width: 100%;
+      transform: translateY(3%);
+      margin: 10px auto;
+      padding: 20px;
+    }
+  }
+  
+  .privacy-container h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .privacy-container p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  

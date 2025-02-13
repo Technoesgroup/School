@@ -16,6 +16,7 @@ import GalleryPage from "./Pages/GalleryPage/GalleryPage";
 import ContactUs from "./Pages/ContactUs-Page/ContactUsPage";
 import AdmissionForm from "./Component/Home/AdmissionForm";
 import CareersPage from "./Pages/CareersPage/CareersPage";
+import PrivacyPolicy from "./Component/Privacy_Policy";
 
 const App = () => {
   return (
@@ -71,6 +72,7 @@ const AppContent = () => {
         <Route path="/" element={<Home toggleForm={toggleForm} />} />
         <Route path="/About" element={<About toggleForm={toggleForm} />} />
         <Route path="/Careers" element={<CareersPage toggleForm={toggleForm} />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <FooterTop toggleForm={toggleForm}/>
       <Footer />
