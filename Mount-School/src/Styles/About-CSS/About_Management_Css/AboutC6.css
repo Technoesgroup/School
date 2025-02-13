@@ -14,12 +14,14 @@
 .management-card__image img {
   width: 100%;
   border: none;
+  background-color: white;
   height: auto;
   border-radius: 8px;
 }
 
 .leaderimage-management{
   /* height: 22vw; */
+  background-color: white;
   border: none;
 }
 .management-card__content {
