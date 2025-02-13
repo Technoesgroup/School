@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../../Styles/Careers-CSS/CareersCom_3.css";
 
 const jobListings = [
-  { id: 1, title: "PRT", time: "16 Jan 2024", description: "Graduation with at least 50% marks and B.Ed/D.El.Ed Minimum work Experience of two years." },
-  { id: 2, title: "TGT", time: "16 Jan 2024", description: "Graduation with at least 50% marks in the concerned subject & in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
-  { id: 3, title: "PGT", time: "16 Jan 2024", description: "Post Graduation in concerned subject with at least 50% marks in aggregate and B.Ed from a recognized university Minimum work Experience of three years." },
-  { id: 4, title: "Activity Facilitator", time: "16 Jan 2024", description: "Graduation Equivalent qualification in the relevant field. Minimum work Experience of three years" },
+  { id: 1, title: "PRT", description: "Graduation with at least 50% marks and B.Ed/D.El.Ed . Minimum work Experience of two years." },
+  { id: 2, title: "TGT",  description: "Graduation with at least 50% marks in the concerned subject & in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
+  { id: 3, title: "PGT",  description: "Post Graduation in concerned subject with at least 50% marks in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
+  { id: 4, title: "Activity Facilitator",  description: "Graduation/Equivalent qualification in the relevant field. Minimum work Experience of three years" },
 ];
 
 const subjects = {
