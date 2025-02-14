@@ -50,7 +50,7 @@ const DocumentSection = () => {
       'The NOC is issued by the Education Department, confirming that the school is recognized and authorized to operate. It is an essential document for the establishment and management of educational institutions.',
       image: image5, // Replace with the actual path
       buttonText: "Download ",
-      pdf: "/PDF/37e39244351ae807944dc8d7caa7c409.pdf",
+      pdf: "/PDF/NOC.pdf",
     },
     {
       id:"Recognition-section",
@@ -59,7 +59,7 @@ const DocumentSection = () => {
         "We are proud to announce that our school has been honored with a Recognition Certificate by the Central Board of Secondary Education (CBSE). This achievement reflects our commitment to academic excellence, holistic development, and adherence to the highest educational standards.",
       image:image6, // Replace with the actual path
       buttonText: "Download ",
-      pdf: "/PDF/d9c4e5dd3e4caa09bec8f001fc85e38d.pdf",
+      pdf: "/PDF/Recognition.pdf",
     },
     {
       id:"Trust-section",
@@ -68,7 +68,7 @@ const DocumentSection = () => {
         "Legal trust deed documentation outlining the governance and management structure of the school.",
       image:image7, // Replace with the actual path
       buttonText: "Download",
-      pdf: "/PDF/fc95cd7e60c6541a3ebf841b4c37aad7.pdf",
+      pdf: "/PDF/Trust_Deed.pdf",
     },
 
   ];
