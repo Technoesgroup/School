@@ -41,7 +41,7 @@ const DocumentSection = () => {
       "This document is the official confirmation of our school’s affiliation with CBSE. It assures parents and guardians of the school’s adherence to the CBSE’s rules and regulations, ensuring quality education.",
       image: image4, // Replace with the actual path
       buttonText: "Download ",
-      pdf: "/PDF/Grant Letter.pdf",
+      pdf: "/PDF/Grant_Letter.pdf",
     },
     {
       id:"NOC-section",
