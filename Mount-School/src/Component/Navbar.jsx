@@ -54,7 +54,7 @@ const Header = ({ toggleForm }) => {
       { label: "Course & Fee", to: "Course&Fee-section" },
     ],
     CBSE:[
-      { label: "CBSE Holidays", to: "Holiday-section" },
+      { label: "Holidays", to: "Holiday-section" },
       { label: "Curriculum", to: "Curriculum-section" },
       { label: "Affiliation Letter", to: "Affiliation-section" },
       { label: "NOC ", to: "NOC-section" },

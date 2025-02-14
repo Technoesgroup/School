@@ -32,7 +32,7 @@ const DocumentSection = () => {
       "We provide a well-structured curriculum designed by CBSE to foster holistic growth, including subjects, co-curricular activities, and special programs aimed at developing students' academic and personal skills.",
       image: image3, // Replace with the actual path
       buttonText: "Download ",
-      pdf: "/PDF/Circulum.pdf",
+      pdf: "/PDF/Curriculum.pdf",
     },
     {
       id:"Affiliation-section",
@@ -41,7 +41,7 @@ const DocumentSection = () => {
       "This document is the official confirmation of our school’s affiliation with CBSE. It assures parents and guardians of the school’s adherence to the CBSE’s rules and regulations, ensuring quality education.",
       image: image4, // Replace with the actual path
       buttonText: "Download ",
-      pdf: "/PDF/000a509a478c711d7d4bf9912e7e5e6e.pdf",
+      pdf: "/PDF/Grant_Letter.pdf",
     },
     {
       id:"NOC-section",

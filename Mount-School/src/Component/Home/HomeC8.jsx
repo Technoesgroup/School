@@ -33,63 +33,63 @@ const Home8 = () => {
       description:
         "I’ve noticed a profound change in my child’s behaviour, becoming more considerate and socially aware. The school’s focus on empathy and teaching students to understand and respect others.",
       title: "Mr. Milind Mahipal",
-      father_of: "F/O: Saumya Mahipal, Class-VIIA",
+      father_of: "F/O: Saumya Mahipal, Gr. VII-A",
     },
     {
       icon: imageParents2,
       title: "Mr. Chandan Singh",
       description:
         "I feel so supported by Mount Litera Zee School in my role as a parent. The school maintains an open line of communication, and the parent-teacher meetings are always insightful.",
-      father_of: "F/O: Prachit Singh ,Class-IA",
+      father_of: "F/O: Prachit Singh, Gr. I-A",
     },
     {
       icon: imageParents3,
       title: "Mr. Avinash Kumar",
       description:
         "As a parent, I always prioritize the safety of my child, and Mount Litera Zee School, Bihta has exceeded my expectations. The campus is secure, and the staff are attentive and caring.",
-      father_of: "F/O: Harshita Kumari ,Class-IB",
+      father_of: "F/O: Harshita Kumari, Gr. I-B",
     },
     {
       icon: imageParents4,
       title: "Sunil Kumar Sinha",
       description:
         "The community outreach programs at MLZS, Bihta have made a lasting impact on my child. Through volunteering, environmental initiatives, social projects, my child has learned the importance of giving back to society.",
-      father_of: "F/O: Trisha Kumari ,Class-III & Tanishka Kumari ,Class-VII",
+      father_of: "F/O: Trisha Kumari, Gr. III & Tanishka Kumari, Gr. VII",
     },
     {
       icon: imageParents5,
       title: "Mr. Rajendra Kumar",
       description:
         "My three children have gained confidence in speaking in front of an audience. The school has truly helped my child become more articulate, confident, and able to express themselves clearly.",
-      father_of: "F/O: Sristi ,Class-VII-A, Sakshi ,Class-VA & Surbhi ,Class-Sr.Kg",
+      father_of: "F/O: Sristi, Gr. VII-A, Sakshi, Gr .V-A & Surbhi, Gr. Sr.Kg",
     },
     {
       icon: imageParents6,
       title: "Mr. Sonu Kunal",
       description:
         "My child now navigates social situations with more maturity, and I’m grateful for the school’s emphasis on emotional well-being alongside academics.",
-      father_of: "F/O: Sanidhya Kunal ,Class-VII-A & Shaurya Kunal ,Class-I-B",
+      father_of: "F/O: Sanidhya Kunal, Gr. VII-A & Shaurya Kunal, Gr. I-B",
     },
     {
       icon: imageParents7,
       title: "Mr. Shyam Jee",
       description:
         "My child loves the hands-on approach to learning, and I can see that their curiosity and love for learning have grown immensely. The school's blend of traditional methods with modern teaching strategies.",
-      father_of: "F/O: Ananya, ,Class-IIIA",
+      father_of: "F/O: Ananya, Gr. IIIA",
     },
     {
       icon: imageParents8,
       title: "Mr. Dhiraj Singh",
       description:
         "The opportunities for my children to engage in creative activities like painting, music have been incredible. Mount Litera Zee School places a strong emphasis on nurturing creative expression.",
-      father_of: "F/O: Chhavi Singh ,Class-XA & Naman Singh ,Class-IV",
+      father_of: "F/O: Chhavi Singh, Gr. XA & Naman Singh, Gr. IV",
     },
     {
       icon: imageParents9,
       title: "Mr. Sanmay Bharadwaj",
       description:
         "I’m thrilled with how Mount Litera Zee School focuses on well-rounded development. They provide not only rigorous academics but also foster physical fitness, artistic expression, and character building.",
-      father_of: "F/O: Aarambh Bharadwaj ,Class II-A",
+      father_of: "F/O: Aarambh Bharadwaj, Gr. II-A",
     },
   ];
 
