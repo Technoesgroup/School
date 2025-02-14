@@ -2,7 +2,7 @@
 
 .hero-section {
     position: relative;
-    height: 480px;
+    height: 40vw;
     background: url('../../public/s2.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
