@@ -27,15 +27,14 @@ const DocumentSection = () => {
         buttonText: "Click here",
         link: "https://cbseacademic.nic.in/circulars.html",
       },
-      // {
-      //   id:"Book-list-section",
-      //   title: "Book List",
-      //   description:
-      //     "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject.",
-      //   image: image3, // Replace with the actual path
-      //   buttonText: "Download",
-      //   pdf: "/PDF/MLZS_Litera Gear Composition_G1 to G10_AY 2024-25-Revised_21_03_24.pdf",
-      // },
+      {
+        id:"Book-list-section",
+        title: "Book List",
+        description:
+          "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject.",
+        image: image3, // Replace with the actual path
+        buttonText: "Download", 
+      },
 
     ];
 
