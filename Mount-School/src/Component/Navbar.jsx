@@ -67,7 +67,7 @@ const Header = ({ toggleForm }) => {
       { label: "SMC", to: "smc-section" },
     ],
     Download: [
-      { label: "Sample Paper X", to: "Sample-paper-section" },
+      { label: "Sample Paper X/XII", to: "Sample-paper-section" },
       { label: "CBSE Circular", to: "CBSE-Paper-section" },
       { label: "Book List", to: "Book-list-section" },
     ],
