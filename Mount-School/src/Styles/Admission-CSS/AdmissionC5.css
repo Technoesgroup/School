@@ -6,7 +6,7 @@
     flex-direction: column;
     gap: 30px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #1e1e1e;
     padding: 4vw 8vw;
   }
 
@@ -35,7 +35,7 @@
   }
   
   .appointment-boxC5 {
-    width: 250px;
+    width: 18vw;
     flex: 1;
     line-height: 1.9;
     background-color: #2C3192;
