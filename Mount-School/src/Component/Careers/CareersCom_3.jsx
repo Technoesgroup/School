@@ -3,9 +3,9 @@ import "../../Styles/Careers-CSS/CareersCom_3.css";
 
 const jobListings = [
   { id: 1, title: "PRT", description: "Graduation with at least 50% marks and B.Ed/D.El.Ed . Minimum work Experience of two years." },
-  { id: 2, title: "TGT",  description: "Graduation with at least 50% marks in the concerned subject & in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
-  { id: 3, title: "PGT",  description: "Post Graduation in concerned subject with at least 50% marks in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
-  { id: 4, title: "Activity Facilitator",  description: "Graduation/Equivalent qualification in the relevant field. Minimum work Experience of three years" },
+  { id: 2, title: "TGT", description: "Graduation with at least 50% marks in the concerned subject & in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
+  { id: 3, title: "PGT", description: "Post Graduation in concerned subject with at least 50% marks in aggregate and B.Ed from a recognized university. Minimum work Experience of three years." },
+  { id: 4, title: "Activity Facilitator", description: "Graduation/Equivalent qualification in the relevant field. Minimum work Experience of three years" },
 ];
 
 const subjects = {
@@ -46,10 +46,23 @@ export default function JobApplication() {
         <div className="CareersCom_3-form-group">
           <input type="text" placeholder="Full Name*" className="CareersCom_3-input-field" required />
         </div>
+
+        {/* ✅ Phone, Email, Gender, and DOB in One Row */}
         <div className="CareersCom_3-form-group">
           <input type="text" placeholder="Phone*" className="CareersCom_3-input-field" required />
           <input type="email" placeholder="Email*" className="CareersCom_3-input-field" required />
         </div>
+
+        <div  className="CareersCom_3-form-group">
+        <select className="CareersCom_3-input-field" required>
+            <option value="">Select Gender*</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="date" placeholder="Date of Birth*" className="CareersCom_3-input-field" required />
+        </div>
+
         <div className="CareersCom_3-form-group">
           <select className="CareersCom_3-input-field" required onChange={handlePositionChange}>
             <option value="">Select Position*</option>
@@ -64,9 +77,11 @@ export default function JobApplication() {
             ))}
           </select>
         </div>
+
         <div className="CareersCom_3-form-group">
           <input type="text" placeholder="Address*" className="CareersCom_3-input-field" required />
         </div>
+
         <div className="CareersCom_3-form-group Careers-C3-pdf">
           <div>
             <input type="file" className="CareersCom_3-inputsss" required />
@@ -77,6 +92,7 @@ export default function JobApplication() {
             <p>Please Upload Your Resume*</p>
           </div>
         </div>
+
         <button type="submit" className="CareersCom_3-apply-button">APPLY</button>
       </form>
     </div>
