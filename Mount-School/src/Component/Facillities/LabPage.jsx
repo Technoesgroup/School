@@ -32,7 +32,7 @@ const sections= [
     image: image3,
   },
   {
-    title: "Mathmatics Laboratory",
+    title: "Mathematics Laboratory",
     description: "Our Mathematics Laboratory transforms abstract concepts into tangible realities. Through interactive models and digital tools, students engage directly with mathematical principles, deepening their understanding and sparking new insights. This facility ensures that mathematical exploration is not confined to theory but is experienced firsthand, making the subject both accessible and exciting.",
     image:image4,
   }, 

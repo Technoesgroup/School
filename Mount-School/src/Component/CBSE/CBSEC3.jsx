@@ -23,7 +23,7 @@ const DocumentSection = () => {
       "Stay updated with the  holiday schedule for the academic year. The list includes all national and regional holidays observed by our school, ensuring a smooth and planned academic year.",
       image: image1, // Replace with the actual path
       buttonText: "Download ",
-      pdf: "/PDF/aa85706cdd5e2aff50aafeae19ae072d.pdf",
+      pdf: "/PDF/Holiday List.pdf",
     },
     {
       id:"Curriculum-section",

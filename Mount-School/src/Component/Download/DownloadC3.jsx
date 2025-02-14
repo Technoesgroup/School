@@ -16,7 +16,7 @@ const DocumentSection = () => {
           "The CBSE Board has released Sample Paper X/XII to help students understand the exam pattern and marking scheme. We encourage all students to download and practice this paper for better preparation.",
         image: image1, // Replace with the actual path
         buttonText: "Click here",
-        link: "https://cbseacademic.nic.in/SQP_CLASSX_2019_20.html",
+        link: "https://cbseacademic.nic.in/sqp_classx_2024-25.html",
       },
       {
         id:"CBSE-Paper-section",
@@ -25,17 +25,17 @@ const DocumentSection = () => {
           "Stay updated with the latest notifications, guidelines, and announcements from the CBSE Board. This circular contains crucial information regarding academic schedules, examination patterns, and other key updates for the academic year.",
         image:image2, // Replace with the actual path
         buttonText: "Click here",
-        link: "https://cbseacademic.nic.in/",
+        link: "https://cbseacademic.nic.in/circulars.html",
       },
-      {
-        id:"Book-list-section",
-        title: "Book List",
-        description:
-          "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject.",
-        image: image3, // Replace with the actual path
-        buttonText: "Download",
-        link: "/pdfs/CBSE_Holidays.pdf",
-      },
+      // {
+      //   id:"Book-list-section",
+      //   title: "Book List",
+      //   description:
+      //     "Ensure you have all the recommended textbooks and reference materials for the upcoming academic session. This comprehensive list is curated as per the CBSE curriculum and includes all the required books for every grade and subject.",
+      //   image: image3, // Replace with the actual path
+      //   buttonText: "Download",
+      //   pdf: "/PDF/MLZS_Litera Gear Composition_G1 to G10_AY 2024-25-Revised_21_03_24.pdf",
+      // },
 
     ];
 
