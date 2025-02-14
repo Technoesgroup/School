@@ -48,7 +48,7 @@ const DocumentSection = () => {
             <h2>{title}</h2>
             <p>{description}</p>
     
-            {/* Book List ke liye special condition */}
+         
             {id === "Book-list-section" ? (
               <button className="Downloads-download-btn" onClick={() => {
                 const linkElement = document.createElement("a");
