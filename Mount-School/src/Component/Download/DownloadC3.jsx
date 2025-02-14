@@ -42,25 +42,40 @@ const DocumentSection = () => {
    
 
 
-   function SectionCard({ id, title, description, image, buttonText, reverse, link }) {
-    return (
-      <div id={id} className={`Downloads-section-card ${reverse ? "Downloads-reverse" : ""}`}>
-        <div className="Downloads-text-content">
-          <h2>{title}</h2>
-          <p>{description}</p>
-                
-          <button className="Downloads-download-btn" onClick={() => window.open(link, "_blank")}>
-            {buttonText}
-          </button>
-
+    function SectionCard({ id, title, description, image, buttonText, reverse, link }) {
+      return (
+        <div id={id} className={`Downloads-section-card ${reverse ? "Downloads-reverse" : ""}`}>
+          <div className="Downloads-text-content">
+            <h2>{title}</h2>
+            <p>{description}</p>
+    
+            {/* Book List ke liye special condition */}
+            {id === "Book-list-section" ? (
+              <button className="Downloads-download-btn" onClick={() => {
+                const linkElement = document.createElement("a");
+                linkElement.href = link;
+                linkElement.download = "000a509a478c711d7d4bf9912e7e5e6e.pdf"; // File ka naam set karein
+                document.body.appendChild(linkElement);
+                linkElement.click();
+                document.body.removeChild(linkElement);
+              }}>
+                {buttonText}
+              </button>
+            ) : (
+              <button className="Downloads-download-btn" onClick={() => window.open(link, "_blank")}>
+                {buttonText}
+              </button>
+            )}
+          </div>
+    
+          <section className="Downloads-IMAGE-SECTION-Contains">
+            <img src={image} alt={title} className="Downloads-section-image" />
+            <div className="Downloads-corner-border"></div>
+          </section>
         </div>
-       <section  className="Downloads-IMAGE-SECTION-Contains">
-       <img src={image} alt={title} className="Downloads-section-image" />
-       <div  className="Downloads-corner-border"></div>
-       </section>
-      </div>
-    );
-  }
+      );
+    }
+    
 
   return (
     <div className="Downloads-app-container">
