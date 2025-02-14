@@ -28,7 +28,7 @@
   
   .admission-text  p{
     font-family: 'PoppinsMedium';
-    max-width: 500px;
+    max-width: 42vw;
     flex: 2;
     font-size: 0.9rem;
     line-height: 1.9;
