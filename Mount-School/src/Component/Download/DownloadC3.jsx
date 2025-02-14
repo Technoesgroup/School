@@ -53,7 +53,7 @@ const DocumentSection = () => {
               <button className="Downloads-download-btn" onClick={() => {
                 const linkElement = document.createElement("a");
                 linkElement.href = link;
-                linkElement.download = "000a509a478c711d7d4bf9912e7e5e6e.pdf"; // File ka naam set karein
+                linkElement.download = "MLZS_Litera Gear Composition_G1 to G10_AY 2024-25-Revised_21_03_24.pdf"; // File ka naam set karein
                 document.body.appendChild(linkElement);
                 linkElement.click();
                 document.body.removeChild(linkElement);
