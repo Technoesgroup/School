@@ -51,7 +51,7 @@ const AdmissionForm = ({ closeForm }) => {
       <div className="Enquire-form-container">
         <div className="Enquire-form-header">
           <h2>ENQUIRE FOR ADMISSION</h2>
-          <hr className="Enquire-header-line" />
+          {/* <hr className="Enquire-header-line" /> */}
           <span className="closebtn-squire">
             <button className="Enquire-close-button" onClick={closeForm}>X</button>
           </span>

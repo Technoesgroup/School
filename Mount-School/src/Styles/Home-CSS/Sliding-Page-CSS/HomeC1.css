@@ -16,7 +16,7 @@
 .Home-container-box {
   position: relative;
   width: 100%;
-  height: 600px; /* Full viewport height */
+  height: 47vw; /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,18 +42,19 @@
 
 .hero-slider {
   width: 100%;
-  height: 600px; /* Ensures slider takes the container's full height */
+  height: 52vw; /* Ensures slider takes the container's full height */
 }
 
 .hero-slider .slick-slide {
-  height: 600px; /* Ensures each slide is full height */
+  height: 52vw; 
 }
 
-.hero-slider .slick-slide img {
+
+ .hero-slider .slick-slide img {
   width: 100%;
-  height: 600px; /* Forces the image to fill the slide */
+  height: 52vw; 
   object-fit: cover; /* Keeps image proportions */
-  position: relative;
+  /* position: relative; */
 }
 
 
