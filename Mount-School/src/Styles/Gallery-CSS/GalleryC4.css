@@ -54,6 +54,14 @@
   border-radius: 8px;
 }
 
+.back-button{
+  padding: 15px  35px;
+  background-color: #2c3191;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
 /* Text on Overlay */
 .photo-title {
   position: absolute;

@@ -18,9 +18,15 @@ const subjects = {
 export default function JobApplication() {
   const [selectedJob, setSelectedJob] = useState(null);
   const [selectedPosition, setSelectedPosition] = useState("");
+  const [gender, setGender] = useState("");
 
   const handlePositionChange = (e) => {
     setSelectedPosition(e.target.value);
+  };
+
+  const handleGenderChange = (e) => {
+    setGender(e.target.value);
+    setSelectedPosition(""); // Reset position selection when gender changes
   };
 
   return (
@@ -53,22 +59,24 @@ export default function JobApplication() {
           <input type="email" placeholder="Email*" className="CareersCom_3-input-field" required />
         </div>
 
-        <div  className="CareersCom_3-form-group">
-        <select className="CareersCom_3-input-field" required>
+        <div  className="CareersCom_3-form-group  male-selector">
+        <select className="CareersCom_3-input-field" required onChange={handleGenderChange}>
             <option value="">Select Gender*</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
           </select>
-          <input type="date" placeholder="Date of Birth*" className="CareersCom_3-input-field" required />
+          <input type="date" placeholder="Date of Birth*" className="CareersCom_3-input-field date-of-birth" required />
         </div>
 
         <div className="CareersCom_3-form-group">
-          <select className="CareersCom_3-input-field" required onChange={handlePositionChange}>
+          <select className="CareersCom_3-input-field" required onChange={handlePositionChange} value={selectedPosition}>
             <option value="">Select Position*</option>
-            {jobListings.map((job) => (
-              <option key={job.id} value={job.title}>{job.title}</option>
-            ))}
+            {jobListings
+              .filter((job) => gender !== "Male" || job.title !== "PRT") // Male ke liye PRT hide
+              .map((job) => (
+                <option key={job.id} value={job.title}>{job.title}</option>
+              ))}
           </select>
           <select className="CareersCom_3-input-field" required>
             <option value="">Select Subject*</option>
