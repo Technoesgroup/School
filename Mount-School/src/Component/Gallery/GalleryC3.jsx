@@ -11,7 +11,7 @@ const VideoGallery = () => {
     { id: 6, videoLink: "https://www.youtube.com/embed/WHCBoIndSyQ" },
     { id: 7, videoLink: "https://www.youtube.com/embed/2KZte3mfIIw" }, 
     { id: 8, videoLink: "https://www.youtube.com/embed/01vJV_iUQ0o" },
-    { id: 9, videoLink: "https://www.youtube.com/embed/BEB35iqRqIA" }, // ✅ Corrected embed link
+    { id: 9, videoLink: "https://www.youtube.com/embed/BEB35iqRqIA" }, 
   ];
   
 
