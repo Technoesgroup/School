@@ -6,6 +6,7 @@
 
 .photo-gallery-container h2 {
   font-family: 'DegularBold';
+  color: #2c3191;
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -15,7 +16,7 @@
 .GalleryC4-photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-  gap: 30px;
+  gap: 20px;
   justify-items: center;
   margin-top: 20px;
 }
@@ -24,8 +25,8 @@
 .photo-card {
   position: relative;
   width: 100%; /* Full width of grid item */
-  max-width: 380px; /* Set a max width */
-  height: 250px;
+  max-width: 32vw; /* Set a max width */
+  height: 300px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -59,7 +60,12 @@
   background-color: #2c3191;
   color: white;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
+}
+
+.back-button:hover{
+  background-color: #23287a;
 }
 
 /* Text on Overlay */

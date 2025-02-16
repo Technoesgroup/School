@@ -1,60 +1,60 @@
 // Import all images
 import Farewell1 from '../../image/IMG-20241029-WA0050.jpg';
-import Farewell2 from '../../image/IMG-20241029-WA0050.jpg';
+import Farewell2 from '../../image/332651516_1267840104082038_69494475655152421_n.jpg';
 import Farewell3 from '../../image/IMG-20241029-WA0050.jpg';
 import Farewell4 from '../../image/IMG-20241029-WA0050.jpg';
 import Farewell5 from '../../image/IMG-20241029-WA0050.jpg';
 import Farewell6 from '../../image/IMG-20241029-WA0050.jpg';
 import Farewell7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import Hallo1 from '../../image/IMG-20241029-WA0050.jpg';
+import Hallo1 from '../../image/bhoot1.svg';
 import Hallo2 from '../../image/IMG-20241029-WA0050.jpg';
-import Hallo3 from '../../image/IMG-20241029-WA0050.jpg';
-import Hallo4 from '../../image/IMG-20241029-WA0050.jpg';
-import Hallo5 from '../../image/IMG-20241029-WA0050.jpg';
-import Hallo6 from '../../image/IMG-20241029-WA0050.jpg';
+import Hallo3 from '../../image/20231031_103932.jpg';
+import Hallo4 from '../../image/Bhoot3.svg';
+import Hallo5 from '../../image/20231031_103847.jpg';
+import Hallo6 from '../../image/20231031_103916.jpg';
 import Hallo7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import Diwali1 from '../../image/IMG-20241029-WA0050.jpg';
+import Diwali1 from '../../image/IMG-20241029-WA0060.jpg';
 import Diwali2 from '../../image/IMG-20241029-WA0050.jpg';
-import Diwali3 from '../../image/IMG-20241029-WA0050.jpg';
+import Diwali3 from '../../image/IMG-20241029-WA0052.jpg';
 import Diwali4 from '../../image/IMG-20241029-WA0050.jpg';
 import Diwali5 from '../../image/IMG-20241029-WA0050.jpg';
 import Diwali6 from '../../image/IMG-20241029-WA0050.jpg';
 
 
-import Annual1 from '../../image/IMG-20241029-WA0050.jpg';
-import Annual2 from '../../image/IMG-20241029-WA0050.jpg';
-import Annual3 from '../../image/IMG-20241029-WA0050.jpg';
-import Annual4 from '../../image/IMG-20241029-WA0050.jpg';
-import Annual5 from '../../image/IMG-20241029-WA0050.jpg';
-import Annual6 from '../../image/IMG-20241029-WA0050.jpg';
-import Annual7 from '../../image/IMG-20241029-WA0050.jpg';
+import Annual1 from '../../image/1B7A5369.jpg';
+import Annual2 from '../../image/1B7A5541.jpg';
+import Annual3 from '../../image/1B7A4945.jpg';
+import Annual4 from '../../image/1B7A5328.jpg';
+import Annual5 from '../../image/Alday.jpg';
+import Annual6 from '../../image/1B7A5554.jpg';
+import Annual7 from '../../image/1B7A5297.jpg';
 
 import Hindi1 from '../../image/IMG-20241029-WA0050.jpg';
-import Hindi2 from '../../image/IMG-20241029-WA0050.jpg';
-import Hindi3 from '../../image/IMG-20241029-WA0050.jpg';
-import Hindi4 from '../../image/IMG-20241029-WA0050.jpg';
+import Hindi2 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
+import Hindi3 from '../../image/304783286_3341234766202615_9176711875652758687_n.jpg';
+import Hindi4 from '../../image/HindiDiwas.svg';
 import Hindi5 from '../../image/IMG-20241029-WA0050.jpg';
 import Hindi6 from '../../image/IMG-20241029-WA0050.jpg';
 import Hindi7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Janmashtami1 from '../../image/IMG-20241029-WA0050.jpg';
-import Janmashtami2 from '../../image/IMG-20241029-WA0050.jpg';
-import Janmashtami3 from '../../image/IMG-20241029-WA0050.jpg';
-import Janmashtami4 from '../../image/IMG-20241029-WA0050.jpg';
-import Janmashtami5 from '../../image/IMG-20241029-WA0050.jpg';
+import Janmashtami2 from '../../image/janmastmi.svg';
+import Janmashtami3 from '../../image/janmastmi2.svg';
+import Janmashtami4 from '../../image/22222.png';
+import Janmashtami5 from '../../image/1111.png';
 import Janmashtami6 from '../../image/IMG-20241029-WA0050.jpg';
 import Janmashtami7 from '../../image/IMG-20241029-WA0050.jpg';
 
 
-import Vijay1 from '../../image/IMG-20241029-WA0050.jpg';
-import Vijay2 from '../../image/IMG-20241029-WA0050.jpg';
-import Vijay3 from '../../image/IMG-20241029-WA0050.jpg';
-import Vijay4 from '../../image/IMG-20241029-WA0050.jpg';
-import Vijay5 from '../../image/IMG-20241029-WA0050.jpg';
-import Vijay6 from '../../image/IMG-20241029-WA0050.jpg';
-import Vijay7 from '../../image/IMG-20241029-WA0050.jpg';
+import Vijay1 from '../../image/IMG_20240726_195817.jpg';
+import Vijay2 from '../../image/Ind2.png';
+import Vijay3 from '../../image/Group 1000004199.png';
+import Vijay4 from '../../image/s6.jpg';
+import Vijay5 from '../../image/Ind1.png';
+import Vijay6 from '../../image/Ind3.png';
+// import Vijay7 from '../../image/IMG-20241029-WA0050.jpg';
 
 
 import ATL1 from '../../image/IMG-20241029-WA0050.jpg';
@@ -66,7 +66,7 @@ import ATL6 from '../../image/IMG-20241029-WA0050.jpg';
 import ATL7 from '../../image/IMG-20241029-WA0050.jpg';
 
 
-import Summer1 from '../../image/IMG-20241029-WA0050.jpg';
+import Summer1 from '../../image/SummerCamp.jpg';
 import Summer2 from '../../image/IMG-20241029-WA0050.jpg';
 import Summer3 from '../../image/IMG-20241029-WA0050.jpg';
 import Summer4 from '../../image/IMG-20241029-WA0050.jpg';
@@ -74,28 +74,28 @@ import Summer5 from '../../image/IMG-20241029-WA0050.jpg';
 import Summer6 from '../../image/IMG-20241029-WA0050.jpg';
 import Summer7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import dandiya1 from '../../image/IMG-20241029-WA0050.jpg';
-import dandiya2 from '../../image/IMG-20241029-WA0050.jpg';
-import dandiya3 from '../../image/IMG-20241029-WA0050.jpg';
-import dandiya4 from '../../image/IMG-20241029-WA0050.jpg';
-import dandiya5 from '../../image/IMG-20241029-WA0050.jpg';
+import dandiya1 from '../../image/IMG20241009115034.jpg';
+import dandiya2 from '../../image/IMG20241009121318.jpg';
+import dandiya3 from '../../image/IMG20241009121322.jpg';
+import dandiya4 from '../../image/IMG20241009121829.jpg';
+import dandiya5 from '../../image/Rass1.png';
 import dandiya6 from '../../image/IMG-20241029-WA0050.jpg';
 import dandiya7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import SGFI1 from '../../image/IMG-20241029-WA0050.jpg';
-import SGFI2 from '../../image/IMG-20241029-WA0050.jpg';
-import SGFI3 from '../../image/IMG-20241029-WA0050.jpg';
-import SGFI4 from '../../image/IMG-20241029-WA0050.jpg';
+import SGFI1 from '../../image/Takonda.jpg';
+import SGFI2 from '../../image/Takonda2.png';
+import SGFI3 from '../../image/tokanda3.svg';
+import SGFI4 from '../../image/tokanda4.svg';
 import SGFI5 from '../../image/IMG-20241029-WA0050.jpg';
 import SGFI6 from '../../image/IMG-20241029-WA0050.jpg';
 import SGFI7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Green1 from '../../image/IMG-20241029-WA0050.jpg';
 import Green2 from '../../image/IMG-20241029-WA0050.jpg';
-import Green3 from '../../image/IMG-20241029-WA0050.jpg';
+import Green3 from '../../image/GreenDay.jpg';
 import Green4 from '../../image/IMG-20241029-WA0050.jpg';
 import Green5 from '../../image/IMG-20241029-WA0050.jpg';
-import Green6 from '../../image/IMG-20241029-WA0050.jpg';
+import Green6 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
 import Green7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Investiture1 from '../../image/IMG-20241029-WA0050.jpg';
@@ -174,7 +174,7 @@ export const photoData = [
     title: "Vijay Diwas",
     category: "Vijay",
     coverImage: Vijay1, // Title Image
-    images: [Vijay1, Vijay2, Vijay3, Vijay4, Vijay5, Vijay6, Vijay7],
+    images: [Vijay1, Vijay2, Vijay3, Vijay4, Vijay5, Vijay6],
   },
   {
     id: 10,

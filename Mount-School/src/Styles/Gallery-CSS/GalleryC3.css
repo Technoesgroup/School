@@ -13,6 +13,7 @@
 .gallery-container h2 {
   font-family: 'DegularBold';
   font-size: 1.8rem;
+  color: #2c3191;
   margin-bottom: 60px;
   font-weight: bold;
 }
@@ -27,7 +28,7 @@
 .GalleryC4-video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
-  gap: 20px; /* Reduce gap to prevent overlap */
+  gap: 10px; /* Reduce gap to prevent overlap */
   justify-content: center;
   margin-top: 20px;
   width: 100%;
@@ -38,7 +39,7 @@
 .video-card {
   position: relative;
   width: 100%;
-  max-width: 350px;
+  max-width: 28vw;
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
