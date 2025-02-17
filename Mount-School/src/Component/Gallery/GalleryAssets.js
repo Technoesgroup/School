@@ -17,7 +17,7 @@ import Hallo7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Diwali1 from '../../image/IMG-20241029-WA0060.jpg';
 import Diwali2 from '../../image/IMG-20241029-WA0050.jpg';
-import Diwali3 from '../../image/IMG-20241029-WA0052.jpg';
+import Diwali3 from '../../image/diwali celebration.jpg';
 import Diwali4 from '../../image/IMG-20241029-WA0050.jpg';
 import Diwali5 from '../../image/IMG-20241029-WA0050.jpg';
 import Diwali6 from '../../image/IMG-20241029-WA0050.jpg';
@@ -54,7 +54,7 @@ import Vijay3 from '../../image/Group 1000004199.png';
 import Vijay4 from '../../image/s6.jpg';
 import Vijay5 from '../../image/Ind1.png';
 import Vijay6 from '../../image/Ind3.png';
-// import Vijay7 from '../../image/IMG-20241029-WA0050.jpg';
+import Vijay7 from '../../image/WhatsApp Image 2025-01-28 at 16.25.22_a6936595.jpg';
 
 
 import ATL1 from '../../image/IMG-20241029-WA0050.jpg';
@@ -174,7 +174,7 @@ export const photoData = [
     title: "Vijay Diwas",
     category: "Vijay",
     coverImage: Vijay1, // Title Image
-    images: [Vijay1, Vijay2, Vijay3, Vijay4, Vijay5, Vijay6],
+    images: [Vijay1, Vijay2, Vijay3, Vijay4, Vijay5, Vijay6, Vijay7],
   },
   {
     id: 10,
