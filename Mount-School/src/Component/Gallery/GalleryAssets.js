@@ -26,7 +26,7 @@ import Diwali6 from '../../image/IMG-20241029-WA0050.jpg';
 import Annual1 from '../../image/1B7A5369.jpg';
 import Annual2 from '../../image/1B7A5541.jpg';
 import Annual3 from '../../image/1B7A4945.jpg';
-import Annual4 from '../../image/1B7A5328.jpg';
+// import Annual4 from '../../image/1B7A5328.jpg';
 import Annual5 from '../../image/Alday.jpg';
 import Annual6 from '../../image/1B7A5554.jpg';
 import Annual7 from '../../image/1B7A5297.jpg';
@@ -143,7 +143,7 @@ export const photoData = [
         title: "Annual Day",
         category: "Annual",
         coverImage: Annual1,
-        images: [Annual1, Annual2, Annual3, Annual4, Annual5, Annual6, Annual7],
+        images: [Annual1, Annual2, Annual3, Annual5, Annual6, Annual7],
       },
       {
         id: 6,
