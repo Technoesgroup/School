@@ -31,10 +31,10 @@ import Annual5 from '../../image/Alday.jpg';
 import Annual6 from '../../image/1B7A5554.jpg';
 import Annual7 from '../../image/1B7A5297.jpg';
 
-import Hindi1 from '../../image/l.png';
+import Hindi1 from '../../image/HindiDiwas.svg';
 import Hindi2 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
 import Hindi3 from '../../image/304783286_3341234766202615_9176711875652758687_n.jpg';
-import Hindi4 from '../../image/HindiDiwas.svg';
+import Hindi4 from '../../image/l.png';
 import Hindi5 from '../../image/IMG-20241029-WA0050.jpg';
 import Hindi6 from '../../image/IMG-20241029-WA0050.jpg';
 import Hindi7 from '../../image/IMG-20241029-WA0050.jpg';
@@ -57,7 +57,7 @@ import Vijay6 from '../../image/Ind3.png';
 import Vijay7 from '../../image/WhatsApp Image 2025-01-28 at 16.25.22_a6936595.jpg';
 
 
-import ATL1 from '../../image/IMG-20241029-WA0050.jpg';
+import ATL1 from '../../image/ATL.jpg';
 import ATL2 from '../../image/IMG-20241029-WA0050.jpg';
 import ATL3 from '../../image/IMG-20241029-WA0050.jpg';
 import ATL4 from '../../image/IMG-20241029-WA0050.jpg';
