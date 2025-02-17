@@ -31,13 +31,13 @@ function HomeC1() {
 
   return (
     <>
-      <div className="header-banner">
+      {/* <div className="header-banner">
         <div className="scroll-wrapper">
           <p>Welcome To Mount Litera Zee School, Bihta</p>
           <p>Admission Open Now For Year 2025 to 2026</p>
           <p>Welcome To Mount Litera Zee School, Bihta</p>
         </div>
-      </div>
+      </div> */}
       <div className="Home-container-box">
         <div className="hero-contents">
           <h1>

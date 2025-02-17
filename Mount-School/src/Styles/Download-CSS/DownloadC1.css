@@ -1,7 +1,7 @@
 .Download-container_2 {
     position: relative;
     width: 100%;
-    height: 450px; /* Adjust as needed */
+    height: 38vw; /* Adjust as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,4 +15,18 @@
     top: 0;
     left: 0;
     z-index: 1; /* Ensure image is below content */
+  }
+
+  @media (max-width: 768px) {
+
+    .Download-container_2{
+      position: relative;
+      width: 100%;
+      height: 90vw;
+    }
+
+    .hero-img_2{
+      width: 100%;
+      height: 90vw;
+    }
   }

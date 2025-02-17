@@ -25,7 +25,7 @@ body{
 }
 
 .nav-header {
-  position: fixed; /* Fixes the header at the top */
+  position: sticky; /* Fixes the header at the top */
   top: 0;
   left: 0;
   width: 100%; /* Takes full width of the screen */
@@ -44,17 +44,6 @@ body{
 .logo {
   width: 13vw;
   height: 13vh;
-}
-
-
-.header-banner{
- position: relative;
- font-family: 'Degularbold';
- /* height: 4vh; */
- padding: 8px 0;
- background-color: #4AAFF7;
- color: white;
- text-align: center;
 }
 
 .contact-info-nav {

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const useScrollToSection = (offset = 120) => {
+const useScrollToSection = (offset = 150) => {
   const location = useLocation();
 
   useEffect(() => {
