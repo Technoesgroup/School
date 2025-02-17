@@ -82,8 +82,9 @@
 @media (max-width: 760px) {
   .CBSEPAGE-fixed-button-left,
   .CBSEPAGE-fixed-button-left-full {
-    padding: 10px 14px;
-    top: 25%;
+    padding: 9px 12px;
+    font-size: 0.8rem;
+    top: 18%;
   }
 }
 
