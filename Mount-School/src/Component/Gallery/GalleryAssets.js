@@ -16,7 +16,7 @@ import Hallo6 from '../../image/20231031_103916.jpg';
 import Hallo7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Diwali1 from '../../image/IMG-20241029-WA0060.jpg';
-import Diwali2 from '../../image/IMG-20241029-WA0050.jpg';
+import Diwali2 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
 import Diwali3 from '../../image/diwali celebration.jpg';
 import Diwali4 from '../../image/IMG-20241029-WA0050.jpg';
 import Diwali5 from '../../image/IMG-20241029-WA0050.jpg';
@@ -31,7 +31,7 @@ import Annual5 from '../../image/Alday.jpg';
 import Annual6 from '../../image/1B7A5554.jpg';
 import Annual7 from '../../image/1B7A5297.jpg';
 
-import Hindi1 from '../../image/IMG-20241029-WA0050.jpg';
+import Hindi1 from '../../image/l.png';
 import Hindi2 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
 import Hindi3 from '../../image/304783286_3341234766202615_9176711875652758687_n.jpg';
 import Hindi4 from '../../image/HindiDiwas.svg';
