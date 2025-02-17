@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../Styles/Home-CSS/AdmissionForm.css";
+import emailjs from "emailjs-com"; // Install using: npm install emailjs-com
+import '../../Styles/Home-CSS/AdmissionForm.css'
 
 const AdmissionForm = ({ closeForm }) => {
   const [formData, setFormData] = useState({
@@ -18,32 +19,42 @@ const AdmissionForm = ({ closeForm }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Form validation
     if (Object.values(formData).some((value) => value.trim() === "")) {
       setError("All fields are required!");
       return;
     }
 
-    try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    const templateParams = {
+      from_name: `${formData.First_Name} ${formData.Last_Name}`,
+      Phone_Number: formData.Phone_Number, // Ensure same as EmailJS template
+      Email: formData.Email, 
+      Location: formData.Location,
+      Grade: formData.Grade,
+    };
+    
 
-      const data = await response.json();
-      if (response.ok) {
+    emailjs
+      .send("service_itr9g8o", "template_ddo2ykb", templateParams, "ADdrIXlo1yY_vNDBI")
+      .then((response) => {
+        console.log("Email sent!", response);
         setSuccess("Email sent successfully!");
-        setFormData({ First_Name: "", Last_Name: "", Phone_Number: "", Email: "", Location: "", Grade: "" });
-      } else {
-        setError(data.message || "Failed to send email.");
-      }
-    } catch (err) {
-      setError("Server error. Please try again.");
-    }
+        setError("");
+        setFormData({
+          First_Name: "",
+          Last_Name: "",
+          Phone_Number: "",
+          Email: "",
+          Location: "",
+          Grade: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        setError("Failed to send email. Try again!");
+      });
   };
 
   return (
@@ -51,7 +62,6 @@ const AdmissionForm = ({ closeForm }) => {
       <div className="Enquire-form-container">
         <div className="Enquire-form-header">
           <h2>ENQUIRE FOR ADMISSION</h2>
-          {/* <hr className="Enquire-header-line" /> */}
           <span className="closebtn-squire">
             <button className="Enquire-close-button" onClick={closeForm}>X</button>
           </span>
@@ -67,14 +77,14 @@ const AdmissionForm = ({ closeForm }) => {
             <input name="Grade" type="text" placeholder="Grade" value={formData.Grade} onChange={handleChange} required />
 
             <span className="Admissionform-Enquire-agreements">
-              <span><input type="checkbox"  placeholder="check"  className="checkbox-Size" /></span>
+              <span><input type="checkbox" className="checkbox-Size" required /></span>
               <p>By submitting this form, I agree to receive notifications from the School in the form of SMS/E-mail/Call.</p>
             </span>
 
-            {error && <p  className="Admissionform-error">{error}</p>}
-            {success && <p  className="Admissionform-SuccessFull">{success}</p>}
+            {error && <p className="Admissionform-error">{error}</p>}
+            {success && <p className="Admissionform-SuccessFull">{success}</p>}
 
-            <button type="submit" className="Enquire-submit-button">Submit</button>
+            <button type="submit" className="Enquire-submit-button">Send Email</button>
           </form>
         </div>
       </div>

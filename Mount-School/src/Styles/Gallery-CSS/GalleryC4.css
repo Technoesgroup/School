@@ -32,6 +32,10 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* .photo-card:hover{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+} */
+
 /* Image Style */
 .photo-image {
   width: 100%;
@@ -39,7 +43,13 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* .photo-image:hover{
+  background-color: transparent;
+  object-fit: contain;
+  transform: scale(1.1) translate(10px, -10px); 
+} */
 
 /* Black Shadow Overlay */
 .photo-card::before {
@@ -71,7 +81,7 @@
 /* Text on Overlay */
 .photo-title {
   position: absolute;
-  top: 88%;
+  top: 89%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;

@@ -28,6 +28,16 @@
     display: flex; /* Flex to arrange all images horizontally */
     animation: scroll-left-right 20s linear infinite; /* Infinite scrolling */
   }
+
+  .gallery-view-all-btn{
+    margin-top: 30px;
+    padding: 10px 25px ;
+    background-color: #13187B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
   /* Animation to scroll images from left to right */
   @keyframes scroll-left-right {

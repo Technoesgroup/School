@@ -8,19 +8,18 @@ import Farewell6 from '../../image/IMG-20241029-WA0050.jpg';
 import Farewell7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Hallo1 from '../../image/bhoot1.svg';
-import Hallo2 from '../../image/IMG-20241029-WA0050.jpg';
 import Hallo3 from '../../image/20231031_103932.jpg';
 import Hallo4 from '../../image/Bhoot3.svg';
 import Hallo5 from '../../image/20231031_103847.jpg';
 import Hallo6 from '../../image/20231031_103916.jpg';
-import Hallo7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import Diwali1 from '../../image/IMG-20241029-WA0060.jpg';
-import Diwali2 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
+
+import Diwali1 from '../../image/IMG-20241029-WA0052.jpg';
+import Diwali2 from '../../image/IMG-20241029-WA0056.jpg';
 import Diwali3 from '../../image/diwali celebration.jpg';
-import Diwali4 from '../../image/IMG-20241029-WA0050.jpg';
-import Diwali5 from '../../image/IMG-20241029-WA0050.jpg';
-import Diwali6 from '../../image/IMG-20241029-WA0050.jpg';
+import Diwali4 from '../../image/IMG-20241029-WA0082.jpg';
+// import Diwali5 from '../../image/IMG-20241029-WA0050.jpg';
+// import Diwali6 from '../../image/IMG-20241029-WA0050.jpg';
 
 
 import Annual1 from '../../image/1B7A5369.jpg';
@@ -39,13 +38,13 @@ import Hindi5 from '../../image/IMG-20241029-WA0050.jpg';
 import Hindi6 from '../../image/IMG-20241029-WA0050.jpg';
 import Hindi7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import Janmashtami1 from '../../image/IMG-20241029-WA0050.jpg';
+import Janmashtami1 from '../../image/IMG-20240106-WA0086.jpg';
 import Janmashtami2 from '../../image/janmastmi.svg';
 import Janmashtami3 from '../../image/janmastmi2.svg';
 import Janmashtami4 from '../../image/22222.png';
 import Janmashtami5 from '../../image/1111.png';
-import Janmashtami6 from '../../image/IMG-20241029-WA0050.jpg';
-import Janmashtami7 from '../../image/IMG-20241029-WA0050.jpg';
+// import Janmashtami6 from '../../image/IMG-20241029-WA0050.jpg';
+// import Janmashtami7 from '../../image/IMG-20241029-WA0050.jpg';
 
 
 import Vijay1 from '../../image/IMG_20240726_195817.jpg';
@@ -58,21 +57,19 @@ import Vijay7 from '../../image/WhatsApp Image 2025-01-28 at 16.25.22_a6936595.j
 
 
 import ATL1 from '../../image/ATL.jpg';
-import ATL2 from '../../image/IMG-20241029-WA0050.jpg';
-import ATL3 from '../../image/IMG-20241029-WA0050.jpg';
-import ATL4 from '../../image/IMG-20241029-WA0050.jpg';
-import ATL5 from '../../image/IMG-20241029-WA0050.jpg';
-import ATL6 from '../../image/IMG-20241029-WA0050.jpg';
-import ATL7 from '../../image/IMG-20241029-WA0050.jpg';
+import ATL2 from '../../image/Biolab.jpg';
+import ATL3 from '../../image/Chemlab.jpg';
+import ATL4 from '../../image/ComputerLab.jpg';
+import ATL5 from '../../image/20240427_100302.jpg';
+import ATL6 from '../../image/20240427_100441.jpg';
+import ATL7 from '../../image/20240427_100544.jpg';
 
 
 import Summer1 from '../../image/SummerCamp.jpg';
-import Summer2 from '../../image/IMG-20241029-WA0050.jpg';
-import Summer3 from '../../image/IMG-20241029-WA0050.jpg';
+import Summer2 from '../../image/IMG-20240601-WA0049.jpg';
+import Summer3 from '../../image/IMG-20240528-WA0072.jpg';
 import Summer4 from '../../image/IMG-20241029-WA0050.jpg';
-import Summer5 from '../../image/IMG-20241029-WA0050.jpg';
-import Summer6 from '../../image/IMG-20241029-WA0050.jpg';
-import Summer7 from '../../image/IMG-20241029-WA0050.jpg';
+
 
 import dandiya1 from '../../image/IMG20241009115034.jpg';
 import dandiya2 from '../../image/IMG20241009121318.jpg';
@@ -84,11 +81,10 @@ import dandiya7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import SGFI1 from '../../image/Takonda.jpg';
 import SGFI2 from '../../image/Takonda2.png';
-import SGFI3 from '../../image/tokanda3.svg';
+import SGFI3 from '../../image/WhatsApp Image 2024-05-18 at 3.59.14 PM.jpeg';
 import SGFI4 from '../../image/tokanda4.svg';
-import SGFI5 from '../../image/IMG-20241029-WA0050.jpg';
-import SGFI6 from '../../image/IMG-20241029-WA0050.jpg';
-import SGFI7 from '../../image/IMG-20241029-WA0050.jpg';
+import SGFI5 from '../../image/WhatsApp Image 2024-05-18 at 8.32.59 PM (1).jpeg';
+import SGFI6 from '../../image/441657370_931321039006644_6605212505274571651_n.jpg';
 
 import Green1 from '../../image/IMG-20241029-WA0050.jpg';
 import Green2 from '../../image/IMG-20241029-WA0050.jpg';
@@ -96,11 +92,11 @@ import Green3 from '../../image/GreenDay.jpg';
 import Green4 from '../../image/IMG-20241029-WA0050.jpg';
 import Green5 from '../../image/IMG-20241029-WA0050.jpg';
 import Green6 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
-import Green7 from '../../image/IMG-20241029-WA0050.jpg';
+// import Green7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import Investiture1 from '../../image/IMG-20241029-WA0050.jpg';
-import Investiture2 from '../../image/IMG-20241029-WA0050.jpg';
-import Investiture3 from '../../image/IMG-20241029-WA0050.jpg';
+import Investiture1 from '../../image/IMG-20240522-WA0046.jpg';
+import Investiture2 from '../../image/IMG-20240522-WA0064.jpg';
+import Investiture3 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
 import Investiture4 from '../../image/IMG-20241029-WA0050.jpg';
 import Investiture5 from '../../image/IMG-20241029-WA0050.jpg';
 import Investiture6 from '../../image/IMG-20241029-WA0050.jpg';
@@ -122,7 +118,7 @@ export const photoData = [
         title: "Halloween 2024",
         category: "Halloween",
         coverImage: Hallo1,
-        images: [Hallo1, Hallo2, Hallo3, Hallo4, Hallo5, Hallo6, Hallo7],
+        images: [Hallo1, Hallo3, Hallo4, Hallo5, Hallo6, ],
       },
       {
         id: 3,
@@ -136,7 +132,7 @@ export const photoData = [
         title: "Diwali Celebration",
         category: "Diwali",
         coverImage: Diwali1,
-        images: [Diwali1, Diwali2, Diwali3, Diwali4, Diwali5, Diwali6,],
+        images: [Diwali1, Diwali2, Diwali3, Diwali4,],
       },
       {
         id: 5,
@@ -150,7 +146,7 @@ export const photoData = [
         title: "Janmashtami Celebration",
         category: "Janmashtami",
         coverImage: Janmashtami1,
-        images: [Janmashtami1, Janmashtami2, Janmashtami3, Janmashtami4, Janmashtami5, Janmashtami6, Janmashtami7],
+        images: [Janmashtami1, Janmashtami2, Janmashtami3, Janmashtami4, Janmashtami5,],
       },
 
   {
@@ -158,7 +154,7 @@ export const photoData = [
     title: "SGFI Tournament",
     category: "Tournament",
     coverImage: SGFI1, // Title Image
-    images: [SGFI1, SGFI2, SGFI3, SGFI4, SGFI5, SGFI6, SGFI7],
+    images: [SGFI1, SGFI2, SGFI3, SGFI4, SGFI5, SGFI6,],
   },
  
  
@@ -167,7 +163,7 @@ export const photoData = [
     title: "Summer Camp",
     category: "Summer",
     coverImage: Summer1, // Title Image
-    images: [Summer1, Summer2, Summer3, Summer4, Summer5, Summer6, Summer7],
+    images: [Summer1, Summer2, Summer3, Summer4,],
   },
   {
     id: 9,
@@ -188,14 +184,14 @@ export const photoData = [
     title: "ATL",
     category: "ATL",
     coverImage: ATL1, // Title Image
-    images: [ATL1, ATL2, ATL3, ATL4, ATL5, ATL6, ATL7],
+    images: [ATL1, ATL2, ATL3, ATL4,ATL5, ATL7, ATL6],
   },
   {
     id: 12,
     title: "Green Day",
     category: "Green",
     coverImage: Green1, // Title Image
-    images: [Green1, Green2, Green3, Green4, Green5, Green6, Green7],
+    images: [Green1, Green2, Green3, Green4, Green5, Green6],
   },
   {
     id: 13,

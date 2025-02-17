@@ -5,12 +5,12 @@ import C2 from '../../image/1B7A4922.jpg';
 import C3 from '../../image/Rectangle 23816.png';
 import C4 from '../../image/1B7A5554.jpg';
 import C5 from '../../image/393756555_791390669666349_153801016084109592_n.jpg';
-// import C6 from '../../image/1B7A5328.jpg';
 import C7 from '../../image/Takonda2.png';
 import C8 from '../../image/1B7A4945.jpg';
 import C9 from '../../image/s5.jpg';
 import C10 from '../../image/IMG-20241029-WA0056.jpg';
 import C11 from '../../image/1B7A5333.jpg';
+
 
 const HomeGallery = () => {
   const photoData = [
@@ -43,6 +43,7 @@ const HomeGallery = () => {
           ))}
         </div>
       </div>
+      <div className="gallery-button" ><button className="gallery-view-all-btn">View All</button></div>
     </div>
   );
 };
