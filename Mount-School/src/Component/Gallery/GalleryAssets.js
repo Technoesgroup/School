@@ -109,7 +109,7 @@ import Saraswati4 from '../../image/Sarswatipooja/20240214_142545.jpg';
 import Saraswati5 from '../../image/Sarswatipooja/20240214_144208.jpg';
 import Saraswati6 from '../../image/Sarswatipooja/20240214_144210.jpg';
 import Saraswati7 from '../../image/Sarswatipooja/20240223_120840.jpg';
-
+import Saraswati8 from '../../image/1B7A4984.jpg';
 export const photoData = [
 
     {
@@ -183,7 +183,7 @@ export const photoData = [
     title: "Saraswati Puja",
     category: "Saraswati",
     coverImage: Saraswati1, // Title Image
-    images: [Saraswati1, Saraswati2, Saraswati3, Saraswati4, Saraswati5, Saraswati6, Saraswati7],
+    images: [Saraswati1, Saraswati2, Saraswati3, Saraswati4, Saraswati5, Saraswati6, Saraswati7,Saraswati8],
   },
   {
     id: 11,
