@@ -83,7 +83,7 @@ import dandiya2 from '../../image/IMG20241009121318.jpg';
 import dandiya3 from '../../image/IMG20241009121322.jpg';
 import dandiya4 from '../../image/IMG20241009121829.jpg';
 import dandiya5 from '../../image/Rass1.png';
-import dandiya6 from '../../image/Rass-Daniya/DSC_8962.JPG';
+import dandiya6 from '../../image/Rass-Daniya/DSC_8962.jpg';
 import dandiya7 from '../../image/Rass-Daniya/DSC_8878.jpg';
 import dandiya8 from '../../image/Rass-Daniya/DSC_8851.jpg';
 
