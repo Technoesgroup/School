@@ -33,9 +33,9 @@ import Hindi1 from '../../image/HindiDiwas.svg';
 import Hindi2 from '../../image/400493600_805418674930215_5780913748664188151_n.jpg';
 import Hindi3 from '../../image/304783286_3341234766202615_9176711875652758687_n.jpg';
 import Hindi4 from '../../image/l.png';
-import Hindi5 from '../../image/IMG-20241029-WA0050.jpg';
-import Hindi6 from '../../image/IMG-20241029-WA0050.jpg';
-import Hindi7 from '../../image/IMG-20241029-WA0050.jpg';
+// import Hindi5 from '../../image/IMG-20241029-WA0050.jpg';
+// import Hindi6 from '../../image/IMG-20241029-WA0050.jpg';
+// import Hindi7 from '../../image/IMG-20241029-WA0050.jpg';
 
 import Janmashtami1 from '../../image/IMG-20240106-WA0086.jpg';
 import Janmashtami2 from '../../image/janmastmi.svg';
@@ -102,15 +102,13 @@ import Green5 from '../../image/IMG-20241029-WA0050.jpg';
 import Green6 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
 // import Green7 from '../../image/IMG-20241029-WA0050.jpg';
 
-import Saraswati1 from '../../image/IMG-20240522-WA0046.jpg';
-import Saraswati2 from '../../image/IMG-20240522-WA0064.jpg';
-import Saraswati3 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
-import Saraswati4 from '../../image/IMG-20241029-WA0050.jpg';
-import Saraswati5 from '../../image/IMG-20241029-WA0050.jpg';
-import Saraswati6 from '../../image/IMG-20241029-WA0050.jpg';
-import Saraswati7 from '../../image/IMG-20241029-WA0050.jpg';
-
-// Add similar imports for all other categories
+import Saraswati1 from '../../image/Sarswatipooja/20240214_120247.jpg';
+import Saraswati2 from '../../image/Sarswatipooja/20240214_125513.jpg';
+import Saraswati3 from '../../image/Sarswatipooja/20240214_125529.jpg';
+import Saraswati4 from '../../image/Sarswatipooja/20240214_142545.jpg';
+import Saraswati5 from '../../image/Sarswatipooja/20240214_144208.jpg';
+import Saraswati6 from '../../image/Sarswatipooja/20240214_144210.jpg';
+import Saraswati7 from '../../image/Sarswatipooja/20240223_120840.jpg';
 
 export const photoData = [
 
@@ -206,7 +204,7 @@ export const photoData = [
     title: "Hindi Diwas",
     category: "Hindi",
     coverImage: Hindi1, // Title Image
-    images: [Hindi1, Hindi2, Hindi3, Hindi4, Hindi5, Hindi6, Hindi7],
+    images: [Hindi1, Hindi2, Hindi3, Hindi4],
   },
   
 ];
