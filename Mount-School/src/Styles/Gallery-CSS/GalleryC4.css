@@ -1,7 +1,7 @@
 /* Photo Gallery Container */
 .photo-gallery-container {
   text-align: center;
-  padding: 20px 100px; /* Reduced padding for smaller screens */
+  padding: 20px 7.8vw; /* Reduced padding for smaller screens */
 }
 
 .photo-gallery-container h2 {
@@ -22,7 +22,8 @@
 }
 
 .GalleryC4-photo-Column{
-  column-count: 3;
+  margin-left: 20px;
+  column-count: 4;
   max-width: 80rem;
 }
 
@@ -58,7 +59,7 @@
 .photo-images{
   width: 100%;
   box-shadow: 0  0 12px grey;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* Black Shadow Overlay */
