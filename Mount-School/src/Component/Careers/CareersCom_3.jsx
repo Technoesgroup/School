@@ -16,17 +16,44 @@ const subjects = {
 };
 
 export default function JobApplication() {
-  const [selectedJob, setSelectedJob] = useState(null);
-  const [selectedPosition, setSelectedPosition] = useState("");
-  const [gender, setGender] = useState("");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    gender: "",
+    dob: "",
+    position: "",
+    subject: "",
+    address: "",
+  });
 
-  const handlePositionChange = (e) => {
-    setSelectedPosition(e.target.value);
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleGenderChange = (e) => {
-    setGender(e.target.value);
-    setSelectedPosition(""); // Reset position selection when gender changes
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwth6Nh8GPMB_QOeAcgqutldi9lR3_yrdKKvHGaoa2yAFbcNkw6Jk0tCZRRAGv3d_Ch/exec";
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      alert("Application Submitted Successfully!");
+
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong! Try again.");
+    }
   };
 
   return (
@@ -48,57 +75,45 @@ export default function JobApplication() {
       </div>
 
       <h2 className="CareersCom_3-heading">Apply Here</h2>
-      <form className="CareersCom_3-application-form">
+      <form className="CareersCom_3-application-form" onSubmit={handleSubmit}>
         <div className="CareersCom_3-form-group">
-          <input type="text" placeholder="Full Name*" className="CareersCom_3-input-field" required />
+          <input type="text" name="fullName" placeholder="Full Name*" className="CareersCom_3-input-field" required onChange={handleChange} />
         </div>
 
-        {/* ✅ Phone, Email, Gender, and DOB in One Row */}
         <div className="CareersCom_3-form-group">
-          <input type="text" placeholder="Phone*" className="CareersCom_3-input-field" required />
-          <input type="email" placeholder="Email*" className="CareersCom_3-input-field" required />
+          <input type="text" name="phone" placeholder="Phone*" className="CareersCom_3-input-field" required onChange={handleChange} />
+          <input type="email" name="email" placeholder="Email*" className="CareersCom_3-input-field" required onChange={handleChange} />
         </div>
 
-        <div  className="CareersCom_3-form-group  male-selector">
-        <select className="CareersCom_3-input-field" required onChange={handleGenderChange}>
+        <div className="CareersCom_3-form-group male-selector">
+          <select name="gender" className="CareersCom_3-input-field" required onChange={handleChange}>
             <option value="">Select Gender*</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
           </select>
-          <input type="date" placeholder="Date of Birth*" className="CareersCom_3-input-field date-of-birth" required />
+          <input type="date" name="dob" placeholder="Date of Birth*" className="CareersCom_3-input-field date-of-birth" required onChange={handleChange} />
         </div>
 
         <div className="CareersCom_3-form-group">
-          <select className="CareersCom_3-input-field" required onChange={handlePositionChange} value={selectedPosition}>
+          <select name="position" className="CareersCom_3-input-field" required onChange={handleChange}>
             <option value="">Select Position*</option>
             {jobListings
-              .filter((job) => gender !== "Male" || job.title !== "PRT") // Male ke liye PRT hide
+              .filter((job) => formData.gender !== "Male" || job.title !== "PRT")
               .map((job) => (
                 <option key={job.id} value={job.title}>{job.title}</option>
               ))}
           </select>
-          <select className="CareersCom_3-input-field" required>
+          <select name="subject" className="CareersCom_3-input-field" required onChange={handleChange}>
             <option value="">Select Subject*</option>
-            {selectedPosition && subjects[selectedPosition] && subjects[selectedPosition].map((subject, index) => (
+            {formData.position && subjects[formData.position] && subjects[formData.position].map((subject, index) => (
               <option key={index} value={subject}>{subject}</option>
             ))}
           </select>
         </div>
 
         <div className="CareersCom_3-form-group">
-          <input type="text" placeholder="Address*" className="CareersCom_3-input-field" required />
-        </div>
-
-        <div className="CareersCom_3-form-group Careers-C3-pdf">
-          <div>
-            <input type="file" className="CareersCom_3-inputsss" required />
-            <p>Please Upload Your Photo*</p>
-          </div>
-          <div>
-            <input type="file" className="CareersCom_3-inputsss" required />
-            <p>Please Upload Your Resume*</p>
-          </div>
+          <input type="text" name="address" placeholder="Address*" className="CareersCom_3-input-field" required onChange={handleChange} />
         </div>
 
         <button type="submit" className="CareersCom_3-apply-button">APPLY</button>
@@ -106,5 +121,6 @@ export default function JobApplication() {
     </div>
   );
 }
+
 
 
