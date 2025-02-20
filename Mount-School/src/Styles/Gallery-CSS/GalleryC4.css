@@ -12,13 +12,18 @@
   margin-bottom: 20px;
 }
 
-/* Photo Grid Layout */
+
 .GalleryC4-photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 20px;
   justify-items: center;
   margin-top: 20px;
+}
+
+.GalleryC4-photo-Column{
+  column-count: 3;
+  max-width: 80rem;
 }
 
 /* Individual Photo Card */
@@ -26,10 +31,15 @@
   position: relative;
   width: 100%; /* Full width of grid item */
   max-width: 32vw; /* Set a max width */
-  height: 300px;
+  height: auto;
+  margin-bottom: 10px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.photo-cards{
+  margin-bottom: 20px;
 }
 
 /* .photo-card:hover{
@@ -41,15 +51,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  /* object-position: center; */
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* .photo-image:hover{
-  background-color: transparent;
-  object-fit: contain;
-  transform: scale(1.1) translate(10px, -10px); 
-} */
+.photo-images{
+  width: 100%;
+  box-shadow: 0  0 12px grey;
+  border-radius: 8px;
+}
 
 /* Black Shadow Overlay */
 .photo-card::before {
@@ -72,6 +82,7 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .back-button:hover{
@@ -81,7 +92,7 @@
 /* Text on Overlay */
 .photo-title {
   position: absolute;
-  top: 89%;
+  bottom: -24px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -111,9 +122,15 @@
     padding: 10px; /* Further reduce padding for smaller screens */
   }
 
-  .GalleryC4-photo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller grid items */
-    gap: 5px; /* Reduce gap for tighter layout */
+  .GalleryC4-photo-Column{
+    column-count: 2;
+    max-width: 80rem;
+  }
+
+  .photo-images{
+    width: 100%;
+    box-shadow: 0  0 12px grey;
+    border-radius: 5px;
   }
 
   .photo-card {

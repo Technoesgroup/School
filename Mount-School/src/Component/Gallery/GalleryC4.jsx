@@ -22,10 +22,10 @@ const PhotoGallery = () => {
       ) : (
         <>
           <button  className="back-button" onClick={() => setSelectedCategory(null)}>Back</button>
-          <div className="GalleryC4-photo-grid">
+          <div className="GalleryC4-photo-Column">
             {selectedCategory.images.map((img, index) => (
-              <div key={index} className="photo-card">
-                <img src={img} alt={`Image ${index + 1}`} className="photo-image" />
+              <div key={index} className="photo-cards">
+                <img src={img} alt={`Image ${index + 1}`} className="photo-images" />
               </div>
             ))}
           </div>
