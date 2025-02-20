@@ -95,10 +95,10 @@ import SGFI5 from '../../image/WhatsApp Image 2024-05-18 at 8.32.59 PM (1).jpeg'
 import SGFI6 from '../../image/441657370_931321039006644_6605212505274571651_n.jpg';
 
 import Green1 from '../../image/GreenDay/440234319_912370534235028_8413446880797611209_n.jpg';
-import Green2 from '../../image/IMG-20241029-WA0050.jpg';
+import Green2 from '../../image/GreenDay/455890399_993063542832393_3488613761012588131_n.jpg';
 import Green3 from '../../image/GreenDay.jpg';
-import Green4 from '../../image/IMG-20241029-WA0050.jpg';
-import Green5 from '../../image/IMG-20241029-WA0050.jpg';
+import Green4 from '../../image/GreenDay/455695279_993063582832389_2013694006679314227_n.jpg';
+import Green5 from '../../image/GreenDay/455695279_993063582832389_2013694006679314227_n.jpg';
 import Green6 from '../../image/398656726_799334345538648_1497034543001386452_n.jpg';
 // import Green7 from '../../image/IMG-20241029-WA0050.jpg';
 
@@ -110,6 +110,8 @@ import Saraswati5 from '../../image/Sarswatipooja/20240214_144208.jpg';
 import Saraswati6 from '../../image/Sarswatipooja/20240214_144210.jpg';
 import Saraswati7 from '../../image/Sarswatipooja/20240223_120840.jpg';
 import Saraswati8 from '../../image/1B7A4984.jpg';
+
+
 export const photoData = [
 
     {
