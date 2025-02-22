@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import "../../Styles/Gallery-CSS/GalleryC4.css";
 import { photoData } from "../../Component/Gallery/GalleryAssets";
 
@@ -9,23 +9,26 @@ const PhotoGallery = () => {
     <div className="photo-gallery-container">
       <h2>PHOTO GALLERY</h2>
 
-      {/* Show categories with title image */}
       {selectedCategory === null ? (
         <div className="GalleryC4-photo-grid">
           {photoData.map((item) => (
             <div key={item.id} className="photo-card" onClick={() => setSelectedCategory(item)}>
-              <img src={item.coverImage} alt={item.title} className="photo-image" />
+              <Suspense fallback={<div>Loading Image...</div>}>
+                <img src={item.coverImage} alt={item.title} className="photo-image" />
+              </Suspense>
               <p className="photo-title">{item.title}</p>
             </div>
           ))}
         </div>
       ) : (
         <>
-          <button  className="back-button" onClick={() => setSelectedCategory(null)}>Back</button>
+          <button className="back-button" onClick={() => setSelectedCategory(null)}>Back</button>
           <div className="GalleryC4-photo-Column">
-            {selectedCategory.images.map((img, index) => (
+            {selectedCategory.images.map((ImgComponent, index) => (
               <div key={index} className="photo-cards">
-                <img src={img} alt={`Image ${index + 1}`} className="photo-images" />
+                <Suspense fallback={<div>Loading Image...</div>}>
+                  <ImgComponent />
+                </Suspense>
               </div>
             ))}
           </div>
@@ -36,3 +39,4 @@ const PhotoGallery = () => {
 };
 
 export default PhotoGallery;
+
