@@ -266,6 +266,31 @@ body{
   top: 2px;
 }
 
+
+@media (max-width: 1200px) {
+  .carrer-btn{
+    display: none;
+  }
+
+
+  .header-nav ul {
+    height: 3.4vw;
+    padding: 0  7.5vw;
+    color: white;
+  }
+
+  .header-nav ul li a{
+    font-size: 0.7rem;
+  }
+
+  .header-top {
+    padding: 6px 6vw;
+    background-color: #fff;
+  }
+
+
+}
+
 /* Mobile-specific styles */
 @media (max-width: 760px) {
   .header-top {
