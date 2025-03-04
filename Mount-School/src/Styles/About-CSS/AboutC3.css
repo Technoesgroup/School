@@ -63,7 +63,7 @@
   
   .about-section__card-title {
     font-family: 'PoppinsMedium';
-    font-size: 0.9rem;
+    font-size: 1rem;
     color:#ffffff;
     width: 20vw;
     font-weight: bold;
@@ -72,9 +72,9 @@
   
   .about-section__card-description {
     font-family: 'PoppinsMedium';
-    padding-top: 10px;
+    padding-top: 0.8vw;
     line-height: 2;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: justify;
     color: #ffffff;
   }
