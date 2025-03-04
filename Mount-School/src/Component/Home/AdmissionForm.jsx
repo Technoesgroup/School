@@ -37,7 +37,7 @@ const AdmissionForm = ({ closeForm }) => {
     
 
     emailjs
-      .send("service_itr9g8o", "template_ddo2ykb", templateParams, "ADdrIXlo1yY_vNDBI")
+      .send("service_udoijld", "template_ryxxmx1", templateParams, "DnatJJaE1aUN_TCUP")
       .then((response) => {
         console.log("Email sent!", response);
         setSuccess("Email sent successfully!");

@@ -24,14 +24,15 @@ const PhotoGallery = () => {
         <>
           <button className="back-button" onClick={() => setSelectedCategory(null)}>Back</button>
           <div className="GalleryC4-photo-Column">
-            {selectedCategory.images.map((ImgComponent, index) => (
-              <div key={index} className="photo-cards">
-                <Suspense fallback={<div>Loading Image...</div>}>
-                  <ImgComponent />
-                </Suspense>
-              </div>
-            ))}
-          </div>
+  {selectedCategory.images.map((imageSrc, index) => (
+    <div key={index} className="photo-cards">
+      <Suspense fallback={<div>Loading Image...</div>}>
+        <img src={imageSrc} alt={`Image ${index + 1}`} className="photo-image" />
+      </Suspense>
+    </div>
+  ))}
+</div>
+
         </>
       )}
     </div>

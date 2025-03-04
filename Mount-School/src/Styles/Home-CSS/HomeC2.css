@@ -35,6 +35,7 @@
 .Apply-btn {
     font-family: 'PoppinsSemiBold';
     color: white;
+    background-color: #2C3191;
     margin-left: 10px;
     border-radius: 18px;
     cursor: pointer;
@@ -44,29 +45,14 @@
     font-weight: 600;
     padding: 9px 18px;
     transition: background-color 0.3s ease-in-out; /* Smooth color change */
-    animation: color-flash2 1s infinite; /* Background color animation */
     position: relative; /* Required for pseudo-elements */
     overflow: hidden; /* Prevent border from affecting content inside */
 }
 
 
-@keyframes color-flash2 {
-    0% {
-        background-color: #2C3192;
-        color:white;
-    }
-    50% {
-        background-color: rgb(245, 245, 245);
-        color: #2C3192;
-    }
-    100% {
-        background-color: #2C3192;
-        color: white;
-    }
-}
+
 
 .HomeC2-blue-text_About{
-  
     text-align: left;
     font-family: 'PoppinsExtraBold';
     color: #2C3191;
