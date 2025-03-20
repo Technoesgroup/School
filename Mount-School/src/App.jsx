@@ -17,6 +17,7 @@ import ContactUs from "./Pages/ContactUs-Page/ContactUsPage";
 import AdmissionForm from "./Component/Home/AdmissionForm";
 import CareersPage from "./Pages/CareersPage/CareersPage";
 import PrivacyPolicy from "./Component/Privacy_Policy";
+import Module from "./Component/Module";
 
 const App = () => {
   return (
@@ -41,17 +42,7 @@ const ScrollToTop = () => {
 const AppContent = () => {
   const location = useLocation();
   const [isFormVisible, setFormVisible] = useState(false);
-
-  useEffect(() => {
-
-   
-    // Show the admission form only on the homepage
-    if (location.pathname === "/") {
-      setFormVisible(true);
-    } else {
-      setFormVisible(false);
-    }
-  }, [location]);
+  const [isModuleVisible, setModuleVisible] = useState(true); // Show on page load
 
   const toggleForm = () => {
     setFormVisible(!isFormVisible);
@@ -61,21 +52,23 @@ const AppContent = () => {
     <>
       <NavBar toggleForm={toggleForm} />
       <Routes>
-        <Route path="/Academics" element={<Academics  toggleForm={toggleForm}/>} />
-        <Route path="/admission" element={<Admission  toggleForm={toggleForm}/>} />
-        <Route path="/Facilities" element={<FacilitiePage  toggleForm={toggleForm}/>} />
-        <Route path="/CBSE" element={<CBSE  toggleForm={toggleForm}/>} />
-        <Route path="/Committee" element={<CommitteePage  toggleForm={toggleForm}/>} />
-        <Route path="/Download" element={<DownloadPage  toggleForm={toggleForm}/>} />
-        <Route path="/gallery" element={<GalleryPage  toggleForm={toggleForm}/>} />
-        <Route path="/contact-us" element={<ContactUs  toggleForm={toggleForm}/>} />
         <Route path="/" element={<Home toggleForm={toggleForm} />} />
+        <Route path="/Academics" element={<Academics toggleForm={toggleForm} />} />
+        <Route path="/admission" element={<Admission toggleForm={toggleForm} />} />
+        <Route path="/Facilities" element={<FacilitiePage toggleForm={toggleForm} />} />
+        <Route path="/CBSE" element={<CBSE toggleForm={toggleForm} />} />
+        <Route path="/Committee" element={<CommitteePage toggleForm={toggleForm} />} />
+        <Route path="/Download" element={<DownloadPage toggleForm={toggleForm} />} />
+        <Route path="/gallery" element={<GalleryPage toggleForm={toggleForm} />} />
+        <Route path="/contact-us" element={<ContactUs toggleForm={toggleForm} />} />
         <Route path="/About" element={<About toggleForm={toggleForm} />} />
         <Route path="/Careers" element={<CareersPage toggleForm={toggleForm} />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
-      <FooterTop toggleForm={toggleForm}/>
+      <FooterTop toggleForm={toggleForm} />
       <Footer />
+
+      {isModuleVisible && <Module closeModule={() => setModuleVisible(false)} />} 
 
       {isFormVisible && (
         <div className="Amission-overlay">
@@ -87,6 +80,7 @@ const AppContent = () => {
     </>
   );
 };
+
 
 export default App;
 

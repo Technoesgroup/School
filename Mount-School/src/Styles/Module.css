@@ -1,0 +1,188 @@
+/* General Styles */
+.Module-card {
+    background: darkblue;
+    border-radius: 12px;
+    max-width: 60vw;
+    width: 100%;
+    text-align: center;
+    padding: 0.6vw 0;
+}
+
+.Module-title {
+    letter-spacing: 2px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+}
+
+.Module-line {
+    margin: 0 auto;
+    width: 80%;
+    height: 0.2vw;
+    background-color: white;
+}
+
+.Module-description {
+    font-size: 1.2vw;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: white;
+    margin: 1vw 0;
+}
+
+.Module-speakers, .Module-event-details {
+    background: #FFC107;
+    padding: 1.2vw;
+    margin-bottom: 1vw;
+    border-radius: 8px;
+}
+
+.Module-sub-title {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1vw;
+}
+
+.Module-event-details ul {
+    list-style-type: none;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.Module-event-details ul li {
+    font-size: 1.1vw;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+
+.Module-event-details ul li::marker {
+    content: none;
+}
+
+
+.Module-icon {
+    color: #007bff;
+}
+
+.Module-email {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.Module-footer {
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 10px;
+}
+
+.Module-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.Module-container {
+    background: darkblue;
+    padding: 2vw;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 60vw;
+    width: 100%;
+    border: 4px solid white;
+    text-align: center;
+    position: relative;
+}
+
+.Module-close {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7vw;
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+    .Module-container {
+        max-width: 80vw;
+        max-height: 130vw;
+        padding: 5vw;
+    }
+
+    .Module-title {
+        padding: 1.5vw;
+        font-size: 3.8vw;
+    }
+
+    .Module-line {
+        width: 90%;
+    }
+
+    .Module-description {
+        font-size: 2.6vw;
+        padding: 2vw;
+    }
+
+    .Module-speakers, .Module-event-details {
+        padding: 3vw;
+    }
+
+    .Module-sub-title {
+        font-size: 4vw;
+    }
+
+    .Module-event-details ul li {
+        font-size: 2.6vw;
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .Module-footer {
+        margin-top: 6px;
+        font-size: 3vw;
+    }
+
+    .Module-close {
+        width: 8vw;
+        height: 8vw;
+        font-size: 6vw;
+    }
+
+    .Module-speakers ul li{
+        font-size: 2.3vw;
+        width: 100%;
+    }
+
+    .Module-card {
+        background: darkblue;
+        border-radius: 12px;
+        max-width: 83vw;
+        width: 100%;
+        text-align: center;
+        padding: 0.6vw 0;
+    }
+}
+
+  
+  
+  
+  

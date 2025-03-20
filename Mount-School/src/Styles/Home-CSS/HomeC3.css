@@ -34,7 +34,7 @@ body {
 .campus-video {
   width: 100%;
   height: auto; /* Default for responsive */
-  max-height: 360px; /* Set a max-height for consistency */
+  max-height: 27.3vw; /* Set a max-height for consistency */
   object-fit: cover; /* Ensure video fits well */
   border-radius: 8px;
 }
@@ -72,8 +72,8 @@ body {
 .Home3-event-containerss {
   background-color: #FFC107;
   height: auto;
-  min-height: 315px;
-  max-height: 315px; /* Fixed height for scrollable section */
+  min-height: 24.5vw;
+  max-height: 24.5vw; /* Fixed height for scrollable section */
   overflow-y: auto; /* Enable vertical scrolling */
   overflow-x: hidden; /* Prevent horizontal scrolling */
   display: flex;
