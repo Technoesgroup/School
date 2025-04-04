@@ -2,15 +2,15 @@
 .Module-card {
     background: darkblue;
     border-radius: 12px;
-    max-width: 60vw;
+    max-width: 62vw;
     width: 100%;
     text-align: center;
     padding: 0.6vw 0;
 }
 
 .Module-title {
-    letter-spacing: 2px;
-    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    font-size: 1.4vw;
     font-weight: bold;
     color: white;
 }
@@ -23,16 +23,16 @@
 }
 
 .Module-description {
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 1.5;
-    letter-spacing: 1px;
+    letter-spacing: 0.09vw;
     color: white;
     margin: 1vw 0;
 }
 
 .Module-speakers, .Module-event-details {
     background: #FFC107;
-    padding: 1.2vw;
+    padding: 1vw;
     margin-bottom: 1vw;
     border-radius: 8px;
 }
@@ -76,10 +76,10 @@
 }
 
 .Module-footer {
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: bold;
-    color: #d9534f;
-    margin-top: 10px;
+    color: #ffffff;
+    margin-top: 3px;
 }
 
 .Module-overlay {
@@ -109,15 +109,20 @@
 
 .Module-close {
     position: absolute;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.3vw;
+    height: 2.3vw;
     border-radius: 50%;
-    top: 10px;
-    right: 10px;
+    top: 0.4vw;
+    right: 0.4vw;
     background: white;
     border: none;
     cursor: pointer;
-    font-size: 2.3vw;
+    font-size: 2.1vw;
+}
+
+
+.Module-speakers p{
+    font-size: 0.8rem;
 }
 
 /* Responsive Design for Mobile View */

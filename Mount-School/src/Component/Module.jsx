@@ -3,7 +3,6 @@ import "../Styles/Module.css";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PushPinIcon from "@mui/icons-material/PushPin";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import AccessAlarmsIcon from "@mui/icons-material/AccessAlarms";
 import CloseIcon from "@mui/icons-material/Close"; // Import Close Icon
 
 export default function Module({ closeModule }) {
@@ -14,46 +13,43 @@ export default function Module({ closeModule }) {
           <button className="Module-close" onClick={closeModule}>
             <CloseIcon />
           </button>
-          <h2 className="Module-title">Exciting Opportunity for Students & Parents!</h2>
+          <h3 className="Module-title">Student Empowerment Programme (SEP) – Demo Classes Announcement</h3>
           <div className="Module-line"></div>
           <p className="Module-description">
-            IIT Patna invites students (Class 9 & above) and parents to an exclusive
-            <span className="Module-highlight"> Career Counselling Session</span> on
-            <span className="Module-highlight"> 23rd March 2025</span> at IIT Patna Campus.
+            We are delighted to announce that <span className="Module-highlight">SEP Demo Classes</span> for Grades VI to X will commence from
+            <span className="Module-highlight"> 7th April 2025</span> at Mount Litera Zee School, Bihta.
           </p>
 
           <div className="Module-speakers">
-            <h3 className="Module-sub-title">Speakers:</h3>
-            <ul>
-              <li>
-                <span className="Module-highlight">VJ Sir (Vishal Joshi)</span> – Renowned mentor & motivational speaker
-              </li>
-              <li>
-                <span className="Module-highlight">Shri T N Singh</span> – Hon’ble Director, IIT Patna
-              </li>
-            </ul>
+            <h3 className="Module-sub-title">About SEP:</h3>
+            <p>
+              SEP (Student Empowerment Programme) is an exclusive academic initiative designed to prepare our students for prestigious competitive examinations
+              such as <span className="Module-highlight">IIT-JEE, NEET, Olympiads</span>, and other national-level tests.
+              The programme focuses on building a strong conceptual foundation, sharpening analytical skills, and fostering scientific temperament among students from an early stage.
+            </p>
           </div>
 
           <div className="Module-event-details">
-            <h3 className="Module-sub-title">📅 Event Details:</h3>
+            <h3 className="Module-sub-title">Event Details:</h3>
             <ul>
               <li>
-                <CalendarMonthIcon className="Module-icon" /> <strong>Date:</strong> 23rd March 2025
+                <CalendarMonthIcon className="Module-icon" /> <strong>Start Date:</strong> 7th April 2025
               </li>
               <li>
-                <AccessAlarmsIcon className="Module-icon" /> <strong>Time:</strong> 11:00 AM onwards
+                <LocationOnIcon className="Module-icon" /> <strong>Venue:</strong> Mount Litera Zee School, Bihta
               </li>
               <li>
-                <LocationOnIcon className="Module-icon" /> <strong>Venue:</strong> IIT Patna
-              </li>
-              <li>
-                <PushPinIcon className="Module-icon" /> <strong>Confirm by:</strong> 22nd March 2025 via email at{" "}
-                <span className="Module-email">iitpatna.bih@gmail.com</span>
+                <PushPinIcon className="Module-icon" /> <strong>Target Audience:</strong> Students of Grades VI to X
               </li>
             </ul>
           </div>
 
-          <p className="Module-footer">Don’t miss out!!</p>
+          <p className="Module-footer">
+            We encourage all interested students and parents to take part in these demo sessions and experience the vision of SEP firsthand.
+          </p>
+          <p className="Module-footer">
+            For further details, kindly contact the school office.
+          </p>
         </div>
       </div>
     </div>
