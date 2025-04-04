@@ -1,0 +1,29 @@
+.AdminLogin-Page{
+    display: flex;
+    flex-direction: column;
+    border: 2px  solid white;
+    padding: 40px;
+    width: 40%;
+    margin-bottom:40px ;
+}
+
+.AdminLogin-Page h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.AdminLogin-Page input{
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid rgb(203, 203, 203);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.Login-btn{
+    border-radius: 8px;
+    margin: 20px  0;
+    width: 15%;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+}

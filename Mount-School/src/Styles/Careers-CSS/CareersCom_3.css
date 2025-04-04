@@ -45,6 +45,21 @@
   gap: 2rem;
 }
 
+.input-postions{
+  padding: 10px 12px;
+  width: 81.5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-section{
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+
 .CareersCom_3-form-group {
   display: flex;
   gap: 2rem;
@@ -83,6 +98,12 @@
   font-size: 0.8rem;
 }
 
+.pdf-section{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .male-selector{
   height: 45px !important;
 }
@@ -96,6 +117,15 @@
     max-width: 100%;
   }
 
+  .input-section{
+    width: 100%;
+    gap: 10px;
+  }
+
+  .input-postions option{
+    width: 100%;
+  }
+
   .CareersCom_3-job-list {
     grid-template-columns: 1fr;
   }
@@ -103,6 +133,11 @@
   .CareersCom_3-form-group {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .pdf-section{
+    display: flex;
+    flex-direction: column;
   }
 
   .Careers-C3-pdf {

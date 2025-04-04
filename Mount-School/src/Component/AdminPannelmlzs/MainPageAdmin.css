@@ -1,0 +1,60 @@
+/* AdminPanel.css */
+.MainPage-admin-panel {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .MainPage-sidebar {
+    width: 250px;
+    background: white;
+    border-right: 1px solid #ddd;
+    padding: 16px;
+  }
+  
+  .MainPage-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .MainPage-logo {
+    height: 50px;
+  }
+  
+  .MainPage-admin-text {
+    color: gray;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .MainPage-nav-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: white;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .MainPage-nav-button .icon {
+    margin-right: 8px;
+  }
+  
+  .MainPage-nav-button:hover {
+    background: #f1f1f1;
+  }
+  
+  .MainPage-nav-button.active {
+    background: #fee2e2;
+    border-color: #fca5a5;
+  }
+  
+  .MainPage-main-content {
+    flex: 1;
+    background: #f9fafb;
+    padding: 24px;
+  }
+  

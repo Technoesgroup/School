@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com"; // Install using: npm install emailjs-com
-import '../../Styles/Home-CSS/AdmissionForm.css'
+import "../../Styles/Home-CSS/AdmissionForm.css";
 
 const AdmissionForm = ({ closeForm }) => {
   const [formData, setFormData] = useState({
@@ -19,7 +18,13 @@ const AdmissionForm = ({ closeForm }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const validatePhoneNumber = (number) => {
+    const phonePattern = /^(\+91)?[6-9]\d{9}$/; // Allows +91XXXXXXXXXX or XXXXXXXXXX
+    return phonePattern.test(number);
+  };
+  
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (Object.values(formData).some((value) => value.trim() === "")) {
@@ -27,20 +32,21 @@ const AdmissionForm = ({ closeForm }) => {
       return;
     }
 
-    const templateParams = {
-      from_name: `${formData.First_Name} ${formData.Last_Name}`,
-      Phone_Number: formData.Phone_Number, // Ensure same as EmailJS template
-      Email: formData.Email, 
-      Location: formData.Location,
-      Grade: formData.Grade,
-    };
-    
+    if (!validatePhoneNumber(formData.Phone_Number)) {
+      setError("Invalid phone number! It should be 10 digits, with or without +91.");
+      return;
+    }
 
-    emailjs
-      .send("service_udoijld", "template_ryxxmx1", templateParams, "DnatJJaE1aUN_TCUP")
-      .then((response) => {
-        console.log("Email sent!", response);
-        setSuccess("Email sent successfully!");
+    try {
+      const response = await fetch("http://localhost:4000/admission", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        setSuccess("Form submitted successfully!");
         setError("");
         setFormData({
           First_Name: "",
@@ -50,11 +56,13 @@ const AdmissionForm = ({ closeForm }) => {
           Location: "",
           Grade: "",
         });
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-        setError("Failed to send email. Try again!");
-      });
+      } else {
+        throw new Error(result.message || "Something went wrong!");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setError("Failed to submit form. Please try again!");
+    }
   };
 
   return (
@@ -84,7 +92,7 @@ const AdmissionForm = ({ closeForm }) => {
             {error && <p className="Admissionform-error">{error}</p>}
             {success && <p className="Admissionform-SuccessFull">{success}</p>}
 
-            <button type="submit" className="Enquire-submit-button">Send Email</button>
+            <button type="submit" className="Enquire-submit-button">Submit</button>
           </form>
         </div>
       </div>
@@ -93,4 +101,6 @@ const AdmissionForm = ({ closeForm }) => {
 };
 
 export default AdmissionForm;
+
+
 

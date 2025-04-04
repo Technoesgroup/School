@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-const Header = ({ toggleForm }) => {
+const Header = ({ toggleForm, toggleLogin}) => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -99,6 +99,10 @@ const Header = ({ toggleForm }) => {
         </button>
         <button className="enquire-btn" onClick={toggleForm}>
           ENQUIRE
+        </button>
+
+        <button className="Admin-Login-btn" onClick={toggleLogin}>
+          Login
         </button>
      </div>
       </div>

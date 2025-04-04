@@ -12,6 +12,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PlayDisabledIcon from '@mui/icons-material/PlayDisabled';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
+import imgjet from  '../../image/Marks.png';
 
 const events = [
   {
@@ -55,6 +56,13 @@ const events = [
     description: 'In the waning days of January, Mount Litera Zee School Bihta shall, with great pride, present its Annual Function. This grand occasion ...',
     date: 'Jan 2025',
     image: Induction,
+  },
+
+  {
+    title: 'Student Empowerment Programme (SEP) – Demo Classes Announcement',
+    description: 'We are delighted to announce that SEP Demo Classes for Grades VI to X will commence from 7th April 2025 at Mount Litera Zee School, Bihta.',
+    date: '7 April 2025',
+    image: imgjet,
   },
 ];
 
