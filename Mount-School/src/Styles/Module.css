@@ -129,9 +129,15 @@
 @media (max-width: 768px) {
     .Module-container {
         max-width: 80vw;
-        max-height: 130vw;
+        max-height: 135vw;
         padding: 5vw;
     }
+
+
+    
+.Module-speakers p{
+    font-size: 0.7rem;
+}
 
     .Module-title {
         padding: 1.5vw;
@@ -163,7 +169,7 @@
 
     .Module-footer {
         margin-top: 6px;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .Module-close {
