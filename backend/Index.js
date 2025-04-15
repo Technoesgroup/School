@@ -4,10 +4,11 @@ const mongoose = require("mongoose");
 const Enquire = require("./Schema/EnquireForm");
 const JobApplication = require("./Schema/Career");
 const path = require("path");
+require("dotenv").config();
 
 const app = express();
-const PORT = 4000;
-const MONGO_URI = "mongodb+srv://MLZS369:MLZS3690@mlzs.vc6qx.mongodb.net/YOUR_DATABASE_NAME?retryWrites=true&w=majority&appName=MLZS";
+const PORT = process.env.PORT || 4000;
+const MONGO_URI = process.env.MONGO_URI;
 
 
 app.use(cors());
@@ -17,7 +18,7 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 
 
 
-mongoose.connect(MONGO_URI)
+mongoose.connect( MONGO_URI)
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
 
