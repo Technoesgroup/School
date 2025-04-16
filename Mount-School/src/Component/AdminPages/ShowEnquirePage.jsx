@@ -8,16 +8,17 @@ const AdmissionList = () => {
   useEffect(() => {
     const fetchAdmissions = async () => {
       try {
-        const response = await fetch("http://localhost:4000/admission");
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/admission`);
         const data = await response.json();
         setAdmissions(data);
       } catch (error) {
         setError("Failed to fetch admissions data");
       }
     };
-
+  
     fetchAdmissions();
   }, []);
+  
 
   return (
     <div className="admission-list-container">
