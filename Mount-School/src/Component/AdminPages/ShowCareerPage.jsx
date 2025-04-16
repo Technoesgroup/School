@@ -11,7 +11,7 @@ const JobApplicationsList = () => {
 
         console.log("API URL: ", process.env.REACT_APP_API_URL);
 
-        const response = await fetch("ttps://school-1lst.onrender.com/JobApplication");
+        const response = await fetch("https://school-1lst.onrender.com/JobApplication");
         const data = await response.json();
         setApplications(data);
       } catch (error) {
