@@ -9,8 +9,6 @@ const AdmissionList = () => {
     const fetchAdmissions = async () => {
       try {
 
-        console.log("API URL: ", process.env.REACT_APP_API_URL);
-
         const response = await fetch("https://school-1lst.onrender.com/admission");
         const data = await response.json();
         setAdmissions(data);
