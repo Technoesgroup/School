@@ -12,7 +12,7 @@ const MONGO_URI = process.env.MONGO_URI;
 
 
 app.use(cors({
-  origin: "https://mlzsbihta.com/",  // Hostinger domain
+  origin: "http://localhost:5173/",  // Hostinger domain
   credentials: true
 }));
 
