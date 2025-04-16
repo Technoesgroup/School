@@ -1,12 +1,13 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "backend/index.js",
 
 
   "scripts": {
     "server": "nodemon server.js",
-    "start":"node index.js"
+    "start": "node backend/index.js"
+
 
   },
   "author": "",
