@@ -11,8 +11,13 @@ const PORT = process.env.PORT || 4000;
 const MONGO_URI = process.env.MONGO_URI;
 
 
+const allowedOrigins = [
+  "http://localhost:5173",                      // Local
+  "https://mlzsbihta.com"         // Live frontend
+];
+
 app.use(cors({
-  origin: ["http://localhost:5173/" , "https://mlzsbihta.com/"],  // Hostinger domain
+  origin: allowedOrigins,  // Hostinger domain
   credentials: true
 }));
 
