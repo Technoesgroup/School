@@ -8,6 +8,9 @@ const AdmissionList = () => {
   useEffect(() => {
     const fetchAdmissions = async () => {
       try {
+
+        console.log("API URL: ", process.env.REACT_APP_API_URL);
+        
         const response = await fetch(`${process.env.REACT_APP_API_URL}/admission`);
         const data = await response.json();
         setAdmissions(data);
