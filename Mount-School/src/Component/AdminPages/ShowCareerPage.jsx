@@ -8,6 +8,9 @@ const JobApplicationsList = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
+
+        console.log("API URL: ", process.env.REACT_APP_API_URL);
+
         const response = await fetch(`${process.env.REACT_APP_API_URL}/JobApplication`);
         const data = await response.json();
         setApplications(data);
