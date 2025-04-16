@@ -1,14 +1,13 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "main": "backend/index.js",
+  "main": "index.js",
 
 
   "scripts": {
-    "server": "nodemon server.js",
-    "start": "node backend/index.js"
-
-
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",                                 
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,3 +22,9 @@
     "nodemon": "^3.1.9"
   }
 }
+
+
+
+
+
+
