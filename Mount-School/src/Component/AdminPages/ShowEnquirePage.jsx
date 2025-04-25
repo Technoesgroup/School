@@ -13,7 +13,7 @@ const AdmissionList = () => {
       try {
         const response = await fetch("https://school-1lst.onrender.com/admission");
         const data = await response.json();
-        console.log("Admissions data:", data); // ✅ Console log to confirm createdAt
+        console.log("Admissions data:", data); 
         setAdmissions(data);
       } catch (error) {
         setError("Failed to fetch admissions data");
