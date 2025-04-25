@@ -7,7 +7,7 @@ import "../AdminPannelmlzs/MainPageAdmin.css";
 import AdmissionList from '../AdminPages/ShowEnquirePage'; 
 import CareerList from '../AdminPages/ShowCareerPage'; 
 
-const Sidebar = ({ setActiveSection }) => {
+const Sidebar = ({ setActiveSection, activeSection }) => {
   return (
     <div className="MainPage-sidebar">
       {/* Logo */}
@@ -16,13 +16,22 @@ const Sidebar = ({ setActiveSection }) => {
       </div>
       <p className="MainPage-admin-text">Admin Panel</p>
       <nav>
-        <button className="MainPage-nav-button" onClick={() => setActiveSection("enquire")}>
+        <button
+          className={`MainPage-nav-button ${activeSection === "enquire" ? "active" : ""}`}
+          onClick={() => setActiveSection("enquire")}
+        >
           <TableViewIcon className="MainPage-icon" /> Enquire Form Data
         </button>
-        <button className="MainPage-nav-button" onClick={() => setActiveSection("Career-Form")}>
+        <button
+          className={`MainPage-nav-button ${activeSection === "Career-Form" ? "active" : ""}`}
+          onClick={() => setActiveSection("Career-Form")}
+        >
           <AllInboxIcon className="MainPage-icon" /> Career Form Data
         </button>
-        <button className="MainPage-nav-button" onClick={() => setActiveSection("Gallery")}>
+        <button
+          className={`MainPage-nav-button ${activeSection === "Gallery" ? "active" : ""}`}
+          onClick={() => setActiveSection("Gallery")}
+        >
           <SellIcon className="MainPage-icon" /> Gallery
         </button>
       </nav>
@@ -30,12 +39,13 @@ const Sidebar = ({ setActiveSection }) => {
   );
 };
 
+
 const AdminPanel = () => {
   const [activeSection, setActiveSection] = useState("enquire"); // Default to Enquire Form Data
 
   return (
     <div className="MainPage-admin-panel">
-      <Sidebar setActiveSection={setActiveSection} />
+      <Sidebar setActiveSection={setActiveSection} activeSection={activeSection} />
       <div className="MainPage-main-content">
         {activeSection === "enquire" && <AdmissionList />}
         {activeSection === "Career-Form" && <CareerList />}
@@ -44,5 +54,6 @@ const AdminPanel = () => {
     </div>
   );
 };
+
 
 export default AdminPanel;

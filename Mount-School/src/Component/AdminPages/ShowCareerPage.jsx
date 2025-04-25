@@ -36,7 +36,9 @@ const JobApplicationsList = () => {
       ) : error ? (
         <p className="error">{error}</p>
       ) : (
-        <table>
+
+        <div className="overflow-wrapper">
+        <table  className="overflow-table">
           <thead>
             <tr>
               <th>Submitted At</th> {/* 👈 New Column */}
@@ -70,7 +72,7 @@ const JobApplicationsList = () => {
                       href={`data:${app.resumeMimeType};base64,${app.resumeFile}`}
                       download={app.resumeName}
                     >
-                      Download Resume
+                      Download <br />Resume
                       <DownloadForOfflineIcon />
                     </a>
                   </td>
@@ -90,6 +92,7 @@ const JobApplicationsList = () => {
             )}
           </tbody>
         </table>
+        </div>
       )}
     </div>
   );

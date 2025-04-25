@@ -1,83 +1,133 @@
-/* Container */
 .job-applications-container {
-    max-width: 120vw;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Title */
-  .job-applications-container h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Table */
-  .job-applications-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .job-applications-table th,
-  .job-applications-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .job-applications-table th {
-    background: #007bff;
-    color: white;
-  }
-  
-  /* Alternate row styling */
-  .job-applications-table tbody tr:nth-child(even) {
-    background: #f2f2f2;
-  }
-  
-  /* File Links */
-  .file-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .file-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Error Message */
-  .error-message {
-    text-align: center;
-    color: red;
-    font-weight: bold;
-  }
-  
-  /* No Data Message */
-  .no-data {
-    text-align: center;
-    padding: 20px;
-    color: #777;
+  width: 100%;
+  padding: 20px  0;
+  font-family: Arial, sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.job-applications-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Wrapper for Table with Horizontal Scroll */
+.overflow-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px;
+}
+
+.overflow-table {
+  width: 100%;
+  min-width: 1200px; /* Ensure table takes enough space */
+  border-collapse: collapse;
+}
+
+.overflow-table th,
+.overflow-table td {
+  font-size: 0.9rem;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+/* For Submitted At and DOB columns, limit their width */
+.overflow-table th.date-col, 
+.overflow-table td.date-col {
+  width: 120px; /* Limit width for date-related columns */
+}
+
+/* For Email column, ensure it takes full width */
+.overflow-table th.email-col,
+.overflow-table td.email-col {
+  width: 250px; /* Larger width for the email column */
+}
+
+.overflow-table th {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.overflow-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.file-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+.applicant-photo {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+  .overflow-table th,
+  .overflow-table td {
+    font-size: 0.85rem;
+    padding: 6px 8px;
   }
 
-  .applicant-photo{
-    width: 100%;
+  .applicant-photo {
+    width: 80px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .job-applications-container {
-      padding: 10px;
-    }
-  
-    .job-applications-table th,
-    .job-applications-table td {
-      padding: 8px;
-      font-size: 14px;
-    }
+}
+
+@media (max-width: 768px) {
+  .overflow-table {
+    min-width: 1000px;
   }
-  
+
+  .overflow-table th,
+  .overflow-table td {
+    font-size: 0.75rem;
+  }
+
+  .applicant-photo {
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overflow-table {
+    min-width: 900px;
+  }
+
+  .overflow-table th,
+  .overflow-table td {
+    font-size: 0.7rem;
+  }
+
+  .applicant-photo {
+    width: 60px;
+  }
+}
+
