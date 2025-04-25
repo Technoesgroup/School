@@ -38,7 +38,7 @@ const AdmissionForm = ({ closeForm }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/admission", {
+      const response = await fetch("https://school-1lst.onrender.com/admission", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

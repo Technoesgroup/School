@@ -93,7 +93,7 @@ export default function JobApplication() {
         photoName: photo?.name,
       };
 
-      const response = await fetch("http://localhost:4000/JobApplication", {
+      const response = await fetch("https://school-1lst.onrender.com/JobApplication", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
