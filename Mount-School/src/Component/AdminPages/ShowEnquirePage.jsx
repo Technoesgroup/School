@@ -39,7 +39,7 @@ const AdmissionList = () => {
         <table>
           <thead>
             <tr>
-              <th>Submitted At</th> {/* 🕒 Time column added */}
+              <th>Submitted At</th> 
               <th>First Name</th>
               <th>Last Name</th>
               <th>Phone Number</th>
