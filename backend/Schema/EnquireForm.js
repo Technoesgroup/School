@@ -11,7 +11,7 @@ const admissionSchema = new mongoose.Schema({
   Email: { type: String, required: true },
   Location: { type: String, required: true },
   Grade: { type: String, required: true },
-});
+}, { timestamps: true });
 
 const Admission = mongoose.model("Admission", admissionSchema);
 module.exports = Admission;

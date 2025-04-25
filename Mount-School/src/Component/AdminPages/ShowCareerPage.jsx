@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../AdminPages/ShowCareerPage.css";
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import CircularProgress from '@mui/material/CircularProgress'; // 👈 Import loader
-import Box from '@mui/material/Box'; // 👈 For centering
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const JobApplicationsList = () => {
   const [applications, setApplications] = useState([]);
@@ -30,7 +30,7 @@ const JobApplicationsList = () => {
       <h2>Job Applications</h2>
       {loading ? (
         <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
-          <CircularProgress /> 
+          <CircularProgress />
           <p>Loading Career data...</p>
         </Box>
       ) : error ? (
@@ -39,6 +39,7 @@ const JobApplicationsList = () => {
         <table>
           <thead>
             <tr>
+              <th>Submitted At</th> {/* 👈 New Column */}
               <th>Full Name</th>
               <th>Phone</th>
               <th>Email</th>
@@ -55,6 +56,7 @@ const JobApplicationsList = () => {
             {applications.length > 0 ? (
               applications.map((app, index) => (
                 <tr key={index}>
+                  <td>{new Date(app.createdAt).toLocaleString()}</td> {/* 👈 Display time */}
                   <td>{app.fullName}</td>
                   <td>{app.phone}</td>
                   <td>{app.email}</td>
@@ -83,7 +85,7 @@ const JobApplicationsList = () => {
               ))
             ) : (
               <tr>
-                <td colSpan="10">No applications available</td>
+                <td colSpan="11">No applications available</td>
               </tr>
             )}
           </tbody>
@@ -94,3 +96,4 @@ const JobApplicationsList = () => {
 };
 
 export default JobApplicationsList;
+
