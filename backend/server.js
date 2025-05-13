@@ -5,6 +5,7 @@ const Enquire = require("./Schema/EnquireForm");
 const JobApplication = require("./Schema/Career");
 const path = require("path");
 require("dotenv").config();
+const videoRoutes  = require("./routes/video");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -29,6 +30,9 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 mongoose.connect( MONGO_URI)
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
+
+
+app.use("/api", videoRoutes);
 
     app.post("/admission", async (req, res) => {
       try {
@@ -55,7 +59,6 @@ mongoose.connect( MONGO_URI)
       }
     });
     
-
 
 
     app.post("/JobApplication", async (req, res) => {

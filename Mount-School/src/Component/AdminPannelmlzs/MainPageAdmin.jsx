@@ -6,6 +6,7 @@ import mlzslogo from '../../image/LogoMLZS.svg';
 import "../AdminPannelmlzs/MainPageAdmin.css";
 import AdmissionList from '../AdminPages/ShowEnquirePage'; 
 import CareerList from '../AdminPages/ShowCareerPage'; 
+import Video from '../AdminPages/VideoPage'; 
 
 const Sidebar = ({ setActiveSection, activeSection }) => {
   return (
@@ -28,12 +29,22 @@ const Sidebar = ({ setActiveSection, activeSection }) => {
         >
           <AllInboxIcon className="MainPage-icon" /> Career Form Data
         </button>
+
+            <button
+          className={`MainPage-nav-button ${activeSection === "Video" ? "active" : ""}`}
+          onClick={() => setActiveSection("Video")}
+        >
+          <SellIcon className="MainPage-icon" /> Video
+        </button>
+
         <button
           className={`MainPage-nav-button ${activeSection === "Gallery" ? "active" : ""}`}
           onClick={() => setActiveSection("Gallery")}
         >
           <SellIcon className="MainPage-icon" /> Gallery
         </button>
+
+
       </nav>
     </div>
   );
@@ -49,6 +60,7 @@ const AdminPanel = () => {
       <div className="MainPage-main-content">
         {activeSection === "enquire" && <AdmissionList />}
         {activeSection === "Career-Form" && <CareerList />}
+        {activeSection === "Video" && <Video />}
         {activeSection === "Gallery" && <h2>Gallery Content</h2>}
       </div>
     </div>
