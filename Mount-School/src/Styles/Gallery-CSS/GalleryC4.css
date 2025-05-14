@@ -30,8 +30,8 @@
 
 .photo-card {
   position: relative;
-  width: 100%; /* Full width of grid item */
-  max-width: 32vw; /* Set a max width */
+  width: 90%; /* Full width of grid item */
+  max-width: 28vw; /* Set a max width */
   height: auto;
   margin-bottom: 10px;
   overflow: hidden;
@@ -49,8 +49,8 @@
 
 /* Image Style */
 .photo-image {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   /* object-position: center; */
   border-radius: 8px;
@@ -62,7 +62,7 @@
   border-radius: 5px;
 }
 
-/* Black Shadow Overlay */
+
 .photo-card::before {
   content: '';
   position: absolute;

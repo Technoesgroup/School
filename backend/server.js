@@ -6,6 +6,7 @@ const JobApplication = require("./Schema/Career");
 const path = require("path");
 require("dotenv").config();
 const videoRoutes  = require("./routes/video");
+const galleryRoutes = require("./routes/Gallery"); 
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -13,14 +14,21 @@ const MONGO_URI = process.env.MONGO_URI;
 
 
 const allowedOrigins = [
-  "http://localhost:5173",                      // Local
-  "https://mlzsbihta.com"         // Live frontend
+  "http://localhost:5173",                   
+  "https://mlzsbihta.com"         
 ];
 
 app.use(cors({
-  origin: allowedOrigins,  // Hostinger domain
+  origin: allowedOrigins,  
   credentials: true
 }));
+
+
+app.use('/uploads', express.static('uploads'));
+
+app.use("/uploads", express.static(path.join(__dirname, "public/uploads")));
+
+
 
 app.use(express.json({ limit: "10mb" })); 
 app.use(express.urlencoded({ limit: "10mb", extended: true })); 
@@ -33,6 +41,7 @@ mongoose.connect( MONGO_URI)
 
 
 app.use("/api", videoRoutes);
+app.use("/api", galleryRoutes);
 
     app.post("/admission", async (req, res) => {
       try {

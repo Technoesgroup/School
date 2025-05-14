@@ -7,6 +7,7 @@ import "../AdminPannelmlzs/MainPageAdmin.css";
 import AdmissionList from '../AdminPages/ShowEnquirePage'; 
 import CareerList from '../AdminPages/ShowCareerPage'; 
 import Video from '../AdminPages/VideoPage'; 
+import Gallery from '../AdminPages/GalleryPage'; 
 
 const Sidebar = ({ setActiveSection, activeSection }) => {
   return (
@@ -61,7 +62,7 @@ const AdminPanel = () => {
         {activeSection === "enquire" && <AdmissionList />}
         {activeSection === "Career-Form" && <CareerList />}
         {activeSection === "Video" && <Video />}
-        {activeSection === "Gallery" && <h2>Gallery Content</h2>}
+        {activeSection === "Gallery" && <Gallery />}
       </div>
     </div>
   );
