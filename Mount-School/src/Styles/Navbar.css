@@ -48,7 +48,7 @@ body{
 
 .contact-info-nav {
   display: flex;
-  gap: 50px;
+  gap:40px;
   font-weight: 500;
   color: #525252;
 }
@@ -61,7 +61,7 @@ body{
 
 .contact-info-nav span a{
   font-size: 1rem;
-  gap: 8px;
+  gap: 5px;
 }
 
 .carrer-btn{

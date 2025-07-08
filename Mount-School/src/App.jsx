@@ -22,6 +22,7 @@ import Module from "./Component/Module";
 import Login from "./Component/AdminLogin/AdminLogin";
 import ProtectedRoute from "./Component/AdminLogin/PrivateRoute";
 import { Navigate } from "react-router-dom";
+import PDFCardSection from "./Component/Forms";
 
 const App = () => {
   return (
@@ -79,6 +80,7 @@ const AppContent = () => {
         <Route path="/About" element={<About toggleForm={toggleForm} />} />
         <Route path="/Careers" element={<CareersPage toggleForm={toggleForm} />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/mlzs-forms" element={<PDFCardSection />}></Route>
      {/* Other public routes */}
   <Route path="/login" element={<Login onLogin={() => {
     localStorage.setItem("isLoggedIn", "true");
@@ -103,12 +105,12 @@ const AppContent = () => {
       )}
 
       {!isAdminPage && isModuleVisible && <Module closeModule={() => setModuleVisible(false)} />}
-
+{/* 
       {!isAdminPage && isLoggedIn ? (
         <button onClick={handleLogout}>Logout</button>
       ) : (
         !isAdminPage && <button onClick={toggleLogin}>Login</button>
-      )}
+      )} */}
 
       {isLoginVisible && !isAdminPage && (
         <div className="Login-overlay">

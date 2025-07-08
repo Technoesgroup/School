@@ -183,6 +183,14 @@ const Header = ({ toggleForm, toggleLogin}) => {
               Contact Us
             </NavLink>
           </li>
+             <li>
+            <NavLink
+              to="/mlzs-forms"
+              onClick={closeMobileMenu}
+            >
+              Forms
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
