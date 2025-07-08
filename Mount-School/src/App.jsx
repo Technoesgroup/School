@@ -23,6 +23,7 @@ import Login from "./Component/AdminLogin/AdminLogin";
 import ProtectedRoute from "./Component/AdminLogin/PrivateRoute";
 import { Navigate } from "react-router-dom";
 import PDFCardSection from "./Component/Forms";
+import ScrollingLine from "./Component/Scrolling";
 
 const App = () => {
   return (
@@ -66,6 +67,7 @@ const AppContent = () => {
   return (
     <>
       {!isAdminPage && <NavBar toggleForm={toggleForm} toggleLogin={toggleLogin} />}
+      <ScrollingLine />
 
       <Routes>
         <Route path="/" element={<Home toggleForm={toggleForm} />} />

@@ -91,11 +91,11 @@ app.use("/api", galleryRoutes);
           dob,
           address,
           position,
-          subject, // Ensure subject is passed
-          photoFile, // Corrected field name
+          subject, 
+          photoFile, 
           photoMimeType,
           photoName,
-          resumeFile, // Corrected field name
+          resumeFile, 
           resumeMimeType,
           resumeName,
         });

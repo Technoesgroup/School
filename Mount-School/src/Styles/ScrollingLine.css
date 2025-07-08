@@ -1,0 +1,69 @@
+.scrolling-container {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #d0f1ff;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  padding-left: 100%;
+}
+
+.scrolling-container:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-link {
+  margin-right: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #111111;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.scroll-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Optional: if you use image instead of emoji */
+.new-image-icon {
+  width: 55px;
+  height: 55px;
+}
+
+
+.new-image-icon{
+    animation: bl 1s infinite;
+}
+
+@keyframes bl {
+    0%, 100%{
+opacity: 1;
+
+    }
+    50%{
+        opacity: 0;
+    }
+}
