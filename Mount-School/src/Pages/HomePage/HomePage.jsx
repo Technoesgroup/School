@@ -12,7 +12,6 @@ import Comp8 from "../../Component/Home/HomeC8";
 import Comp9 from "../../Component/Home/HomeC9";
 import Comp10 from "../../Component/Home/HomeC10";
 import { useNavigate } from "react-router-dom";
-// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Home = ({ toggleForm }) => {
   const [showFullButton, setShowFullButton] = useState(false);
@@ -36,7 +35,7 @@ const  navigate =  useNavigate();
   return (
     <div className="Component">
       <div className="HomeComponent">
-        {/* Wrap each component with motion.div */}
+
         <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Comp1 />
         </motion.div>

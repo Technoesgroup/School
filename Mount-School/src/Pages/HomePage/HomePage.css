@@ -19,13 +19,7 @@
   font-style: normal;
 }
 .HomeComponent{
-    background-color: white;
-}
 
-@media(max-width:760px){
-  .HomeComponent{
-      margin-top: 40px;
-  }
 }
 
 .CBSEPAGE-fixed-button-left {
