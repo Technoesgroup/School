@@ -7,7 +7,7 @@ function AboutUs() {
   const navigate = useNavigate();
 
   const handleApllybtn = ()=>{
-    navigate("/#get_in_touch")
+    navigate("/contact-us")
   }
   const [stats, setStats] = useState({
     skilledStaff: 0,
