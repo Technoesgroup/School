@@ -84,7 +84,7 @@ const DocumentSection = () => {
           </a>
         </div>
         <section className="CBSE-IMAGE-SECTION-Contains">
-          <img src={image} alt={title} className="CBSE3-section-image" />
+          <img   loading="lazy" src={image} alt={title} className="CBSE3-section-image" />
           <div className="CBSE3-corner-border"></div>
         </section>
       </div>

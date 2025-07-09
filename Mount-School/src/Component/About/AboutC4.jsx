@@ -25,7 +25,7 @@ function AboutC4(){
         </p>
         </div>
         <div className="Vision-image">
-          <img src={Vision} alt="Business Illustration" />
+          <img   loading="lazy" src={Vision} alt="Business Illustration" />
         </div>
       </div>
      <div className="bottom-paragrapgh-div">

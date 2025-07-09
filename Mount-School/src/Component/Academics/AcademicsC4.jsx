@@ -14,12 +14,12 @@ const AcademicsC4 = () => {
    <div className="inner-Container-C4">
    <div>
      <div className="upper-images-C4">
-        <img src={image1} alt="Image1" className="upper-image-C4" />
+        <img  loading="lazy"  src={image1} alt="Image1" className="upper-image-C4" />
         {/* <img src={image2} alt="Image2" className="upper-image-C4" /> */}
       </div>
       <div className="lower-images-C4">
-        <img src={image3} alt="Image3" className="lower-image-C4 small-C4" />
-        <img src={image4} alt="Image4" className="lower-image-C4 large-C4" />
+        <img   loading="lazy" src={image3} alt="Image3" className="lower-image-C4 small-C4" />
+        <img   loading="lazy" src={image4} alt="Image4" className="lower-image-C4 large-C4" />
       </div>
      </div>
       <div className="AcadeC4-content">

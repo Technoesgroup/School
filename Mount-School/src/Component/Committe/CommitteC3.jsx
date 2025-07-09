@@ -45,7 +45,7 @@ const DocumentSection = () => {
         </a>
         </div>
        <section  className="Committee-IMAGE-SECTION-Contains">
-       <img src={image} alt={title} className="Committee-section-image" />
+       <img   loading="lazy" src={image} alt={title} className="Committee-section-image" />
        <div  className="Committee-corner-border"></div>
        </section>
       </div>

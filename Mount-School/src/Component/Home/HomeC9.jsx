@@ -38,7 +38,7 @@ const HomeGallery = () => {
         <div className="Home-photo-images">
           {photoData.map((item) => (
             <div key={item.id} className="Home-photo-card">
-              <img src={item.image} alt={item.title} className="Home-photo-image" />
+              <img   loading="lazy" src={item.image} alt={item.title} className="Home-photo-image" />
             </div>
           ))}
         </div>

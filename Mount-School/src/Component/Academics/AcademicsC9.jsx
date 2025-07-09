@@ -34,14 +34,14 @@ const RaasDandiya = () => {
       <div className="AcademicsC9-image-gallery">
         {/* Top Row */}
         <div className="AcademicsC9-top-row">
-          <img src={image1} alt="Dandiya Dance Left" />
-          <img src={image2} alt="Dandiya Dance Right" />
+          <img   loading="lazy" src={image1} alt="Dandiya Dance Left" />
+          <img   loading="lazy" src={image2} alt="Dandiya Dance Right" />
         </div>
 
         {/* Bottom Row */}
         <div className="AcademicsC9-bottom-row">
-          <img src={image3} alt="Dandiya Dance Bottom Left" />
-          <img src={image4} alt="Dandiya Dance Bottom Right" />
+          <img   loading="lazy" src={image3} alt="Dandiya Dance Bottom Left" />
+          <img   loading="lazy" src={image4} alt="Dandiya Dance Bottom Right" />
         </div>
       </div>
     </div>

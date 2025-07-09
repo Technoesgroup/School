@@ -5,7 +5,7 @@ import '../../Styles/CBSE-CSS/CBSEC1.css';
 function cbsec(){
     return(
         <div className="CBSE-container_2">
-        <img src={CBSEC1} alt="Hero" className="hero-img_CBSE" />
+        <img   loading="lazy" src={CBSEC1} alt="Hero" className="hero-img_CBSE" />
       </div>
     )
 }

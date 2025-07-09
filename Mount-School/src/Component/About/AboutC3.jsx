@@ -40,7 +40,7 @@ const About3 = () => {
           <div key={index} className="about-section__card">
             <div className="White-Circle">
               <div className="about-section__icon">
-                <img className="img-Icon" src={card.icon} alt="Card Icon" />
+                <img   loading="lazy" className="img-Icon" src={card.icon} alt="Card Icon" />
               </div>
             </div>
             <h3 className="about-section__card-title">{card.title}</h3>

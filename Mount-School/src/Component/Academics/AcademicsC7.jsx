@@ -26,11 +26,11 @@ const AcademicsC7 = () => {
       </p>
 
       <div className="AcademicsC7-event-images">
-        <img src={AcademicC71} alt="Students performing in rows" className="AcademicsC7-event-img" />
+        <img   loading="lazy" src={AcademicC71} alt="Students performing in rows" className="AcademicsC7-event-img" />
       </div>
       <div  className='AcademicsC7-lower-image-C7'>
-      <img src={AcademicC72} alt="Group performance by students" className="AcademicsC7-event-img-lower  AcademicsC7-small-img-C7" />
-      <img src={AcademicC73} alt="Students in NCC uniforms" className="AcademicsC7-event-img-lower  AcademicsC7-large-img-C7" />
+      <img   loading="lazy" src={AcademicC72} alt="Group performance by students" className="AcademicsC7-event-img-lower  AcademicsC7-small-img-C7" />
+      <img   loading="lazy" src={AcademicC73} alt="Students in NCC uniforms" className="AcademicsC7-event-img-lower  AcademicsC7-large-img-C7" />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import '../../Styles/About-CSS/AboutC1.css';
 function AboutC1(){
     return(
         <div className="container_2">
-        <img src={about_1} alt="Hero" className="hero-img_2" />
+        <img   loading="lazy" src={about_1} alt="Hero" className="hero-img_2" />
       </div>
     )
 }

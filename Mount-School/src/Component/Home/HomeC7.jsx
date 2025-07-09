@@ -63,7 +63,7 @@ const Events = () => {
       <div className="events-grid">
         {events.map((event, index) => (
           <div className="event-card" key={index}>
-            <img src={event.image} alt={event.title} className="event-image" />
+            <img   loading="lazy" src={event.image} alt={event.title} className="event-image" />
             <h3 className="Image-event-title">{event.title}</h3>
             <div className="HomeC7-overlay"></div>
           </div>

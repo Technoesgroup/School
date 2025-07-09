@@ -30,14 +30,14 @@ const Janmashtami = () => {
       <div className="AcademicsC17-image-gallery">
         {/* Top Row */}
         <div className="AcademicsC17-top-row">
-          <img src={image1} alt="Teacher  Left" />
-          <img src={image2} alt="Teacher  Right" />
+          <img   loading="lazy" src={image1} alt="Teacher  Left" />
+          <img   loading="lazy" src={image2} alt="Teacher  Right" />
         </div>
 
         {/* Bottom Row */}
         <div className="AcademicsC17-bottom-row">
-          <img src={image3} alt="Teacher  Bottom Left" />
-          <img src={image4} alt="Teacher  Bottom Right" />
+          <img   loading="lazy" src={image3} alt="Teacher  Bottom Left" />
+          <img   loading="lazy" src={image4} alt="Teacher  Bottom Right" />
         </div>
       </div>
     </div>

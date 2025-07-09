@@ -12,12 +12,12 @@ const AcademicsC5 = () => {
      <div className="inner-Container-C5">
      <div>
      <div className="upper-images-C5">
-        <img src={image1} alt="Image1" className="upper-image-C5" />
-        <img src={image2} alt="Image2" className="upper-image-C5  upper-image-2" />
+        <img   loading="lazy" src={image1} alt="Image1" className="upper-image-C5" />
+        <img   loading="lazy" src={image2} alt="Image2" className="upper-image-C5  upper-image-2" />
       </div>
       <div className="lower-images-C5">
-        <img src={image3} alt="Image3" className="lower-image-C5 small-C5" />
-        <img src={image4} alt="Image4" className="lower-image-C5 large-C5" />
+        <img   loading="lazy" src={image3} alt="Image3" className="lower-image-C5 small-C5" />
+        <img   loading="lazy" src={image4} alt="Image4" className="lower-image-C5 large-C5" />
       </div>
      </div>
       <div className="AcadC5-content">

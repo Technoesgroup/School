@@ -69,7 +69,7 @@ const events = [
 const EventCard = ({ title, description, date, image }) => {
   return (
     <div className="Home3-event-card">
-      <img src={image} alt={title} className="Home3-event-image" />
+      <img   loading="lazy" src={image} alt={title} className="Home3-event-image" />
       <div className="Home3-event-details">
         <h3 className="Home3-event-title">{title}</h3>
         <p className="Home3-event-description">{description}</p>

@@ -51,6 +51,7 @@ const PhotoGallery = () => {
               <div key={index} className="photo-cards">
                 <Suspense fallback={<div>Loading Image...</div>}>
                   <img
+                    loading="lazy"
                     src={`http://localhost:4000/uploads/${imageSrc}`}
                     alt={`Image ${index + 1}`}
                     className="photo-image"

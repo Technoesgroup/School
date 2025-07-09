@@ -18,7 +18,7 @@ function AboutC5(){
               </p>
               </div>
               <div className="Mision-image">
-                <img src={Vision} alt="Business Illustration"  className='AboutC5-Mision-image'/>
+                <img   loading="lazy" src={Vision} alt="Business Illustration"  className='AboutC5-Mision-image'/>
               </div>
             </div>
            <div className="bottom-paragrapgh-div">

@@ -38,6 +38,7 @@ const AdmissionProcess = ({toggleForm}) => {
       {/* Bottom Section */}
       <div className="admission-footerC5">
         <img
+          loading="lazy"
           src={girlsImage}
           alt="Students"
           className="admission-image"

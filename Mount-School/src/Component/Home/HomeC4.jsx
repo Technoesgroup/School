@@ -19,6 +19,7 @@ const AdmissionsBanner = ({toggleForm}) => {
       </div>
       <div className="image-sections-4">
         <img
+          loading="lazy"
           src={SchoolImg} // Replace with your image path
           alt="Students in class"
         />

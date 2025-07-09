@@ -28,14 +28,14 @@ const Hallowen = () => {
       <div className="AcademicsC8-image-gallery">
         {/* Top Row */}
         <div className="AcademicsC8-top-row">
-          <img src={image1} alt="Halloween Left" />
-          <img src={image2} alt="Halloween Right" />
+          <img   loading="lazy" src={image1} alt="Halloween Left" />
+          <img   loading="lazy" src={image2} alt="Halloween Right" />
         </div>
 
         {/* Bottom Row */}
         <div className="AcademicsC8-bottom-row">
-          <img src={image3} alt=" Halloween Bottom Left" />
-          <img src={image4} alt=" Halloween Bottom Right" />
+          <img   loading="lazy" src={image3} alt=" Halloween Bottom Left" />
+          <img   loading="lazy" src={image4} alt=" Halloween Bottom Right" />
           <img  className="none-img" src={image5} alt=" Halloween Bottom Right" />
         </div>
       </div>

@@ -25,13 +25,13 @@ const SGFI_Tournament = () => {
       <div className="AcademicsC16-image-gallery">
         {/* Top Row */}
         <div className="AcademicsC16-top-row">
-          <img src={image1} alt=" Hindi_DiwasLeft" />
+          <img   loading="lazy" src={image1} alt=" Hindi_DiwasLeft" />
         </div>
 
         {/* Bottom Row */}
         <div className="AcademicsC16-bottom-row">
-          <img src={image2} alt=" Hindi_Diwas Right" />
-          <img src={image4} alt=" Hindi_Diwas Bottom Right" />
+          <img   loading="lazy" src={image2} alt=" Hindi_Diwas Right" />
+          <img   loading="lazy" src={image4} alt=" Hindi_Diwas Bottom Right" />
         </div>
       </div>
     </div>

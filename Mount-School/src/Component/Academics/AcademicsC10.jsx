@@ -14,6 +14,7 @@ const CoCurricular = () => {
         </div>
         <div className="AcademicsC10-image-section">
           <img 
+            loading="lazy"
             src={Activity_Image} 
             alt="Co-Curricular Activities" 
             className="AcademicsC10-activity-image"

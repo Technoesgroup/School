@@ -10,6 +10,7 @@ const MessageComponent = () => {
     <h2 className="HomeC6-title">MESSAGE  FROM  OUR  LEADER</h2>
     <div className="HomeC6-content">
       <img
+        loading="lazy"
         src={leaderImg} // Replace with the actual image path
         alt="Leader"
         className="HomeC6-leader-image"

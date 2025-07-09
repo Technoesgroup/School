@@ -5,7 +5,7 @@ import '../../Styles/Admission-CSS/AdmissionC1.css';
 function AdmissionsC1(){
     return(
         <div className="Admission-container_2">
-        <img src={AdmissionC1} alt="Hero" className="hero-img_2" />
+        <img   loading="lazy" src={AdmissionC1} alt="Hero" className="hero-img_2" />
       </div>
     )
 }

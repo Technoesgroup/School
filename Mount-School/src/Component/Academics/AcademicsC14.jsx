@@ -26,6 +26,7 @@ const KabaddiAchievement = () => {
       {/* Image Section */}
       <div className="AcademicsC14-achievement-image-container">
         <img
+          loading="lazy"
           src={image}
           alt="Kabaddi Team Champions"
           className="AcademicsC14-achievement-image"

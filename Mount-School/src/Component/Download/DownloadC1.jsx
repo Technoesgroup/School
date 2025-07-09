@@ -5,7 +5,7 @@ import '../../Styles/Download-CSS/DownloadC1.css';
 function DownloadC(){
     return(
         <div className="Download-container_2">
-        <img src={DownloadC1} alt="Hero" className="hero-img_2" />
+        <img   loading="lazy" src={DownloadC1} alt="Hero" className="hero-img_2" />
       </div>
     )
 }

@@ -42,10 +42,10 @@ useScrollToSection();
           </ul>
         </div>
         <div className="Academic-image-section">
-          <img src={Acitvity1} alt="Activity 1" />
-          <img src={Acitvity2} alt="Activity 2" />
-          <img src={Acitvity3} alt="Activity 3" />
-          <img src={Acitvity4} alt="Activity 4" />
+          <img  loading="lazy" src={Acitvity1} alt="Activity 1" />
+          <img  loading="lazy" src={Acitvity2} alt="Activity 2" />
+          <img  loading="lazy" src={Acitvity3} alt="Activity 3" />
+          <img  loading="lazy" src={Acitvity4} alt="Activity 4" />
         </div>
       </div>
     </div>

@@ -61,7 +61,7 @@ const DocumentSection = () => {
         </div>
   
         <section className="Downloads-IMAGE-SECTION-Contains">
-          <img src={image} alt={title} className="Downloads-section-image" />
+          <img   loading="lazy" src={image} alt={title} className="Downloads-section-image" />
           <div className="Downloads-corner-border"></div>
         </section>
       </div>

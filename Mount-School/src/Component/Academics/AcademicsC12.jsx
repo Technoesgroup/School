@@ -26,14 +26,14 @@ const Diwali = () => {
       <div className="AcademicsC12-image-gallery">
         {/* Top Row */}
         <div className="AcademicsC12-top-row">
-          <img src={image1} alt="Diwali Dance Left" />
-          <img src={image2} alt="Diwali Dance Right" />
+          <img  loading="lazy"  src={image1} alt="Diwali Dance Left" />
+          <img   loading="lazy" src={image2} alt="Diwali Dance Right" />
         </div>
 
         {/* Bottom Row */}
         <div className="AcademicsC12-bottom-row">
-          <img src={image3} alt="Diwali Dance Bottom Left" />
-          <img src={image4} alt="Diwali Dance Bottom Right" />
+          <img  loading="lazy"  src={image3} alt="Diwali Dance Bottom Left" />
+          <img   loading="lazy" src={image4} alt="Diwali Dance Bottom Right" />
         </div>
       </div>
     </div>

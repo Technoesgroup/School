@@ -35,7 +35,7 @@ const AdmissionsC4 = () => {
         {documentList.map((doc) => (
           <div key={doc.id} className="AdmissionC4-document-item">
             <div className="Adimission-icon">
-                <img src={doc.icon} alt=""  className=" AdmissionC4-img"/>
+                <img    loading="lazy" src={doc.icon} alt=""  className=" AdmissionC4-img"/>
             </div>
             <p className="AdmissionC4-document-text">{doc.text}</p>
           </div>
