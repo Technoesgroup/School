@@ -15,6 +15,8 @@
   animation: scroll-left 20s linear infinite;
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: 4px !important;
+  word-spacing: 4px;
   color: #333;
   padding-left: 100%;
 }
@@ -39,7 +41,7 @@
   color: #111111;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
 }
 
 .scroll-link:hover {

@@ -10,7 +10,7 @@ const PhotoGallery = () => {
   useEffect(() => {
     const fetchGallery = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/getallgallery");
+        const res = await axios.get("https://school-1lst.onrender.com/api/getallgallery");
         setGalleryData(res.data);
         setLoading(false);
       } catch (error) {
@@ -30,18 +30,19 @@ const PhotoGallery = () => {
 
       {selectedCategory === null ? (
         <div className="GalleryC4-photo-grid">
-          {galleryData.map((item) => (
-            <div key={item._id} className="photo-card" onClick={() => setSelectedCategory(item)}>
-              <Suspense fallback={<div>Loading Image...</div>}>
-                <img
-                  src={`http://localhost:4000/uploads/${item.coverImage}`}
-                  alt={item.title}
-                  className="photo-image"
-                />
-              </Suspense>
-              <p className="photo-title">{item.title}</p>
-            </div>
-          ))}
+    {galleryData.map((item) => (
+  <div key={item._id} className="photo-card" onClick={() => setSelectedCategory(item)}>
+    <Suspense fallback={<div>Loading Image...</div>}>
+      <img
+        src={`https://school-1lst.onrender.com/uploads/${item.coverImage}`}
+        alt={item.title}
+        className="photo-image"
+      />
+    </Suspense>
+    <p className="photo-title">{item.title}</p>
+  </div>
+))}
+
         </div>
       ) : (
         <>
@@ -52,7 +53,7 @@ const PhotoGallery = () => {
                 <Suspense fallback={<div>Loading Image...</div>}>
                   <img
                     loading="lazy"
-                    src={`http://localhost:4000/uploads/${imageSrc}`}
+                    src={`https://school-1lst.onrender.com/uploads/${imageSrc}`}
                     alt={`Image ${index + 1}`}
                     className="photo-image"
                   />
